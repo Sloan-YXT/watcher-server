@@ -26,7 +26,7 @@ static const char *create_board_tale =
     "temp varchar(10) not null,"
     "humi varchar(10) not null,"
     "light varchar(10) not null,"
-    "smoke varchar(10) not null,"
+    "smoke varchar(10) not null"
     ");";
 char deleteA[100] =
     "delete from board_data where month !=";

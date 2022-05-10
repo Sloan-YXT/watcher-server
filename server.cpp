@@ -276,7 +276,7 @@ public:
     string faces, photos, voices;
     double high_temp, high_humi, wrong_light, wrong_smoke;
     // unordered_map<string, pthread_mutex_t> face_locks;
-    pthread_t *threadVal;
+    unique_ptr<pthread_t> threadVal = unique_ptr<pthread_t>(new pthread_t());
 };
 bool operator==(const ANodeInfo &a, const ANodeInfo &b)
 {
@@ -397,7 +397,7 @@ void clean_sock(void)
     {
         close(gepfd[i]);
     }
-    DEBUG("begore rm graph dir");
+    DEBUG("before rm graph dir");
     // execlp("rm", "rm", "-rf", tmp.c_str(), NULL);
     DEBUG("clean failed");
 }
@@ -593,6 +593,7 @@ void *Adata(void *arg)
                     message_box[n] = 0;
                     DEBUG(message_box);
                     a_info->message = message_box;
+                    puts(message_box);
                     json data;
                     try
                     {
@@ -651,6 +652,8 @@ void *Adata(void *arg)
                                 reply["humi"] = data["humi"];
                                 DEBUG("");
                                 reply["position"] = data["position"];
+                                reply["light"] = data["light"];
+                                reply["smoke"] = data["smoke"];
                                 string reply_string = reply.dump();
                                 DEBUG("before send data to B");
                                 p->second->connection.lock();
@@ -845,7 +848,8 @@ void *Agraph(void *arg)
                         DEBUG("after delete");
                         continue;
                     }
-                    time_buffer[n] = 0;
+                    // get '\n' fucked
+                    time_buffer[n - 1] = 0;
                     string photo_time = time_buffer;
                     string fileName = info->photos + "/" + time_buffer;
                     n = recv(connfd, &len, sizeof(len), MSG_WAITALL);
@@ -902,6 +906,7 @@ void *Agraph(void *arg)
                     else
                     {
                         close(gfd);
+                        ERROR_ACTION(munmap(graph_buffer, len));
                         DEBUG("");
                         //多线程图像访问不需要加锁，除非mmap
                         int numFaces = faceDetect(info->face_conf, info->photos + "/" + photo_time, info->faces + "/" + photo_time + ".jpg");
@@ -951,8 +956,8 @@ void *Agraph(void *arg)
                         }
                         info->connection.unlock();
                     }
-                    ERROR_ACTION(munmap(graph_buffer, len));
-                    close(gfd);
+
+                    // close(gfd);
                 }
                 else if (a_graph_event[i].events & EPOLLERR)
                 {
@@ -991,44 +996,59 @@ void *stm32DataThread(void *args)
     ANodeInfo *data = (ANodeInfo *)args;
     int fd_data = data->fd_data, fd_graph = data->fd_graph;
     int len, rlen, n;
-    char temp[17], humi[17], light[17], smoke[17];
-    temp[16] = humi[16] = light[16] = smoke[16] = '\0';
+    char temp[18], humi[18], light[2], smoke[2];
+    temp[17] = humi[17] = '\0';
+    light[1] = smoke[1] = '\0';
     char message_box[MESSAE_LENGTH];
     char *graph_buffer;
     int gfd;
     string position;
     n = recv(fd_data, &rlen, sizeof(rlen), MSG_WAITALL);
     if (n <= 0)
+    {
+        DEBUG("stm32 recv position len n < 0");
         goto clean_end;
+    }
     len = ntohl(rlen);
     if (len <= 0)
+    {
+        DEBUG("stm32 recv position len err");
         goto clean_end;
+    }
     n = recv(fd_data, message_box, len, MSG_WAITALL);
+    if (n <= 0)
+    {
+        DEBUG("stm32 recv position n < 0");
+        goto clean_end;
+    }
     position = message_box;
     data->position = message_box;
-
+    puts(message_box);
     while (1)
     {
         n = recv(fd_data, &rlen, sizeof(rlen), MSG_WAITALL);
         if (n <= 0)
             break;
         len = ntohl(rlen);
-        if (len != 64)
+        if (len != 36)
         {
             break;
         }
-        n = recv(fd_data, temp, 16, MSG_WAITALL);
-        if (n < 16)
+        n = recv(fd_data, temp, 17, MSG_WAITALL);
+        if (n < 17)
             break;
-        n = recv(fd_data, humi, 16, MSG_WAITALL);
-        if (n < 16)
+        n = recv(fd_data, humi, 17, MSG_WAITALL);
+        if (n < 17)
             break;
-        n = recv(fd_data, light, 16, MSG_WAITALL);
-        if (n < 16)
+        n = recv(fd_data, light, 1, MSG_WAITALL);
+        if (n < 1)
             break;
-        n = recv(fd_data, smoke, 16, MSG_WAITALL);
-        if (n < 16)
+        n = recv(fd_data, smoke, 1, MSG_WAITALL);
+        if (n < 1)
             break;
+        trim(temp);
+        trim(humi);
+        printf("recv temp = %s;humi = %s\n", temp, humi);
         data->temp = temp;
         data->humi = humi;
         data->light = light;
@@ -1050,6 +1070,10 @@ void *stm32DataThread(void *args)
         }
         clock_after = time(NULL);
         unsigned int sec = difftime(clock_after, wood_time);
+        double temp;
+        double humi;
+        double light;
+        double smoke;
         if (sec >= 60 * 60 * STORE_HOUR)
         {
             json j;
@@ -1063,21 +1087,27 @@ void *stm32DataThread(void *args)
             save_board_data(j.dump());
             data->wood_time = clock_after;
         }
-        double temp = stod(data->temp);
-        double humi = stod(data->humi);
-        double light = stod(data->light);
-        double smoke = stod(data->smoke);
+        try
+        {
+            temp = stod(data->temp);
+            humi = stod(data->humi);
+            light = stod(data->light);
+            smoke = stod(data->smoke);
+        }
+        catch (exception &e)
+        {
+            cout << e.what() << endl;
+            exit(1);
+        }
         if (temp > data->high_temp || humi > data->high_humi || light == data->wrong_light || smoke == data->wrong_smoke)
         {
             json reply;
-            DEBUG("");
             reply["type"] = "data";
-            DEBUG("");
             reply["boardName"] = data->name;
             reply["temp"] = data->temp;
-            DEBUG("");
             reply["humi"] = data->humi;
-            DEBUG("");
+            reply["light"] = data->light;
+            reply["smoke"] = data->smoke;
             reply["position"] = data->position;
             string reply_string = reply.dump();
             DEBUG("before send data to B");
@@ -1127,8 +1157,12 @@ void *stm32DataThread(void *args)
         {
             break;
         }
+        printf("glen=%d\n", len);
         time_t time_pic_in = time(NULL);
-        const char *time_pic = asctime(localtime(&time_pic_in));
+        char time_pic[20];
+        asctime_r(localtime(&time_pic_in), time_pic);
+        // get '\n' fucked,or there's bug for bmp
+        time_pic[strlen(time_pic) - 1 - 1] = '\0';
         string fileName = data->photos + "/" + time_pic;
         gfd = open(fileName.c_str(), O_RDWR | O_CREAT | O_TRUNC, 0777);
         DEBUG("");
@@ -1153,8 +1187,11 @@ void *stm32DataThread(void *args)
         {
             break;
         }
+        ERROR_ACTION(munmap(graph_buffer, len));
         close(gfd);
         DEBUG("");
+        string s = data->photos + "/" + time_pic;
+        printf("filename=%s\n", s.c_str());
         int numFaces = faceDetect(data->face_conf, data->photos + "/" + time_pic, data->faces + "/" + time_pic + ".jpg");
         if (numFaces == 0)
         {
@@ -1902,6 +1939,7 @@ void *AThread(void *arg)
         else
         {
             n = recv(connfdData, message_buffer, len_tmp, MSG_WAITALL);
+            puts(message_buffer);
             if (n < 0 && errno != ECONNRESET)
             {
                 exit(1);
@@ -1919,6 +1957,7 @@ void *AThread(void *arg)
         ERROR_ACTION(n)
         if (n == 0)
         {
+            DEBUG("select return 0;");
             close(connfdData);
             continue;
         }
@@ -1930,6 +1969,7 @@ void *AThread(void *arg)
             ERROR_ACTION(n)
             if (n == 0)
             {
+                DEBUG("select return 0;");
                 close(connfdData);
                 continue;
             }
@@ -1942,6 +1982,7 @@ void *AThread(void *arg)
         ERROR_ACTION(n)
         if (n == 0)
         {
+            DEBUG("select return 0;");
             close(connfdData);
             continue;
         }
@@ -1954,11 +1995,13 @@ void *AThread(void *arg)
             }
             if (n == 0 | errno == ECONNRESET)
             {
+                DEBUG("let me know");
                 close(connfdData);
                 continue;
             }
         }
         type_buffer[n] = 0;
+        puts(type_buffer);
         string t = type_buffer;
         int rcode, code = -1;
         if (t == "raspi")
@@ -2061,15 +2104,33 @@ void *AThread(void *arg)
         }
         else if (n == 0)
         {
+            DEBUG("select return 0;");
             close(connfdData);
             continue;
         }
+        FD_ZERO(&accept_tout);
+        FD_SET(listenAgraph, &accept_tout);
+        maxfd = listenAgraph + 1;
+        n = select(maxfd, &accept_tout, NULL, NULL, &tout);
+        if (n < 0)
+        {
+            printf("select failed in %d:%s\n", __LINE__, strerror(errno));
+            exit(1);
+        }
+        else if (n == 0)
+        {
+            DEBUG("select return 0;");
+            close(connfdData);
+            continue;
+        }
+        DEBUG("let me know");
         connfdGraph = accept(listenAgraph, (struct sockaddr *)&client_graph, &client_graph_addr_len);
         if (connfdData < 0)
         {
             perror("error accepting from board(graph)");
             exit(1);
         }
+        DEBUG("let me know");
         FD_ZERO(&accept_tout);
         FD_SET(listenAtick, &accept_tout);
         maxfd = listenAtick + 1;
@@ -2081,6 +2142,7 @@ void *AThread(void *arg)
         }
         else if (n == 0)
         {
+            DEBUG("select return 0;");
             close(connfdData);
             close(connfdGraph);
             continue;
@@ -2093,12 +2155,7 @@ void *AThread(void *arg)
         }
         DEBUG(message_buffer);
         a_info_1 = new ANodeInfo;
-        DEBUG("LET ME KNOW");
-
         a_info_1->vcode = code;
-
-        DEBUG("");
-
         cout << s << endl;
         // a_info_1->name = s;
         DEBUG("");
@@ -2182,11 +2239,10 @@ void *AThread(void *arg)
         }
         else if (t == "stm32")
         {
-            a_info_1->threadVal = new (pthread_t);
             nodesA.lock();
             nodesA.emplace(message_buffer, a_info_1);
             nodesA.unlock();
-            pthread_create(a_info_1->threadVal, NULL, stm32DataThread, a_info_1);
+            pthread_create(a_info_1->threadVal.get(), NULL, stm32DataThread, a_info_1);
         }
 
         tickInfo *tickData = new tickInfo();
