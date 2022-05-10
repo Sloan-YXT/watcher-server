@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/yaoxuetao/CMPW-server/faceDetect.cpp
+opencv4/opencv2/core/core.hpp
+-
+opencv4/opencv2/imgproc/imgproc.hpp
+-
+opencv4/opencv2/opencv.hpp
+-
+vector
+-
+cstdio
+-
+faceDetect.h
+/home/yaoxuetao/CMPW-server/faceDetect.h
+
+/home/yaoxuetao/CMPW-server/faceDetect.h
+string
+-
+
+/home/yaoxuetao/CMPW-server/test_graph/test_graph.cpp
+../faceDetect.h
+/home/yaoxuetao/CMPW-server/faceDetect.h
+iostream
+-
+

@@ -1162,7 +1162,7 @@ void *stm32DataThread(void *args)
         char time_pic[20];
         asctime_r(localtime(&time_pic_in), time_pic);
         // get '\n' fucked,or there's bug for bmp
-        time_pic[strlen(time_pic) - 1 - 1] = '\0';
+        time_pic[strlen(time_pic) - 1] = '\0';
         string fileName = data->photos + "/" + time_pic;
         gfd = open(fileName.c_str(), O_RDWR | O_CREAT | O_TRUNC, 0777);
         DEBUG("");
@@ -1191,7 +1191,10 @@ void *stm32DataThread(void *args)
         close(gfd);
         DEBUG("");
         string s = data->photos + "/" + time_pic;
-        printf("filename=%s\n", s.c_str());
+        string t = data->faces + "/" + time_pic + ".jpg";
+        // printf("filename=%s\n", s.c_str());
+        // printf("conf data=%s\n", data->face_conf.c_str());
+        // printf("dest=%s\n", t.c_str());
         int numFaces = faceDetect(data->face_conf, data->photos + "/" + time_pic, data->faces + "/" + time_pic + ".jpg");
         if (numFaces == 0)
         {
@@ -2193,6 +2196,7 @@ void *AThread(void *arg)
         inf.exceptions(ios::eofbit | ios::badbit | ios::failbit);
         inf >> a_info_1->high_temp >> a_info_1->high_humi >> a_info_1->wrong_light >> a_info_1->wrong_smoke;
         inf.close();
+        a_info_1->face_conf = face_conf;
         a_info_1->faces = user_dir + "/" + s + "/" + FACES;
         a_info_1->photos = user_dir + "/" + s + "/" + PHOTOS;
         if (access(face_conf.c_str(), F_OK))
