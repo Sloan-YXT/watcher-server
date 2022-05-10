@@ -37,6 +37,7 @@
 #include <dirent.h>
 #include "database.h"
 #include "faceDetect.h"
+#include "cutil.h"
 #define portAgraph 6667
 #define portAdata 6666
 #define portBdata 7777
@@ -1731,6 +1732,10 @@ void *Bconnect(void *arg)
                                     DEBUG("send err");
                                     exit(1);
                                 }
+                            }
+                            else if (type == "delete faces")
+                            {
+                                rmAll(info->faces.c_str());
                             }
                         }
                     }

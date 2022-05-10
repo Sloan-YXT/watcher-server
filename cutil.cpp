@@ -50,7 +50,6 @@ char *trim(char *str)
 }
 void rmAll(const char *path)
 {
-    int pid = fork();
     char all[1000] = {0};
     sprintf(all, "rm %s/*", path);
     system(all);
