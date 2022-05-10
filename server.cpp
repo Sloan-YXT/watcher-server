@@ -319,7 +319,7 @@ public:
     auto erase(string key)
     {
         // cout << "debug:erase" << endl;
-        DEBUG(key.c_str());
+        // DEBUG(key.c_str());
         return nodes.erase(key);
     }
     auto begin()
@@ -816,8 +816,12 @@ void *Agraph(void *arg)
                     connfd = info->fd_graph;
                     DEBUG("in Agraph");
                     n = recv(connfd, &len, sizeof(len), MSG_WAITALL);
-                    ERROR_ACTION(n)
-                    if (n == 0)
+                    if (n < 0 && n != ECONNRESET)
+                    {
+                        perror("recv err;");
+                        exit(1);
+                    }
+                    if (n == 0 | n == ECONNRESET)
                     {
                         DEBUG("N==0");
                         if (epoll_ctl(epfd, EPOLL_CTL_DEL, connfd, NULL) == -1)
@@ -834,8 +838,12 @@ void *Agraph(void *arg)
                     DEBUG("in Agraph");
                     len = ntohl(len);
                     n = recv(connfd, time_buffer, len, MSG_WAITALL);
-                    ERROR_ACTION(n)
-                    if (n == 0)
+                    if (n < 0 && n != ECONNRESET)
+                    {
+                        perror("recv err;");
+                        exit(1);
+                    }
+                    if (n == 0 | n == ECONNRESET)
                     {
                         if (epoll_ctl(epfd, EPOLL_CTL_DEL, connfd, NULL) == -1)
                         {
@@ -853,8 +861,12 @@ void *Agraph(void *arg)
                     string photo_time = time_buffer;
                     string fileName = info->photos + "/" + time_buffer;
                     n = recv(connfd, &len, sizeof(len), MSG_WAITALL);
-                    ERROR_ACTION(n)
-                    if (n == 0)
+                    if (n < 0 && n != ECONNRESET)
+                    {
+                        perror("recv err;");
+                        exit(1);
+                    }
+                    if (n == 0 | n == ECONNRESET)
                     {
                         if (epoll_ctl(epfd, EPOLL_CTL_DEL, connfd, NULL) == -1)
                         {
@@ -888,8 +900,12 @@ void *Agraph(void *arg)
                         exit(1);
                     }
                     n = recv(connfd, graph_buffer, len, MSG_WAITALL);
-                    ERROR_ACTION(n)
-                    if (n == 0)
+                    if (n < 0 && n != ECONNRESET)
+                    {
+                        perror("recv err;");
+                        exit(1);
+                    }
+                    if (n == 0 | n == ECONNRESET)
                     {
                         DEBUG("");
                         if (epoll_ctl(epfd, EPOLL_CTL_DEL, connfd, NULL) == -1)
@@ -1183,12 +1199,12 @@ void *stm32DataThread(void *args)
             exit(1);
         }
         n = recv(data->fd_graph, graph_buffer, len, MSG_WAITALL);
+        ERROR_ACTION(munmap(graph_buffer, len));
+        close(gfd);
         if (n < GLEN_32)
         {
             break;
         }
-        ERROR_ACTION(munmap(graph_buffer, len));
-        close(gfd);
         DEBUG("");
         string s = data->photos + "/" + time_pic;
         string t = data->faces + "/" + time_pic + ".jpg";
