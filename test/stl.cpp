@@ -33,4 +33,8 @@ int main(void)
     cout << "insert" << endl;
     A b;
     a.insert({3, b});
+    cout << "emplace(存在)" << endl;
+    a.emplace(3, b);
+    cout << "emplace(不存在)" << endl;
+    a.emplace(4, b);
 }

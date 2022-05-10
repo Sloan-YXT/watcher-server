@@ -2,6 +2,9 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
+#include <unistd.h>
+#include <wait.h>
+#include <dirent.h>
 char *rtrim(char *str)
 {
     if (str == NULL || *str == '\0')
@@ -11,7 +14,7 @@ char *rtrim(char *str)
 
     int len = strlen(str);
     char *p = str + len - 1;
-    while (p >= str  && isspace(*p))
+    while (p >= str && isspace(*p))
     {
         *p = '\0';
         --p;
@@ -19,7 +22,6 @@ char *rtrim(char *str)
 
     return str;
 }
-
 
 char *ltrim(char *str)
 {
@@ -45,4 +47,11 @@ char *trim(char *str)
     str = rtrim(str);
     str = ltrim(str);
     return str;
+}
+void rmAll(const char *path)
+{
+    int pid = fork();
+    char all[1000] = {0};
+    sprintf(all, "rm %s/*", path);
+    system(all);
 }

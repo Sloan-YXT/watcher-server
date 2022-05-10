@@ -33,6 +33,8 @@
 #include <sys/select.h>
 #include <memory>
 #include <fstream>
+#include <sys/sendfile.h>
+#include <dirent.h>
 #include "database.h"
 #include "faceDetect.h"
 #define portAgraph 6667
@@ -191,6 +193,7 @@ public:
     struct sockaddr_in clientData;
     string client_name;
     string board_name;
+    string faces;
 };
 template <class V>
 class WrapList
@@ -376,9 +379,9 @@ unsigned int curA,
 Num numer;
 char *ip_addr = "0.0.0.0";
 int listenAdata, listenAgraph, listenAtick, listenBdata, listenBwarn, listenBother;
-#define exit ::exit
-#define free ::free
-#define memset ::memset
+// #define exit ::exit
+// #define free ::free
+// #define memset ::memset
 void clean_sock(void)
 {
     perror("clean check error");
@@ -387,6 +390,7 @@ void clean_sock(void)
     close(listenAtick);
     close(listenBdata);
     close(listenBwarn);
+    close(listenBother);
     DEBUG("in clean");
     for (int i = 0; i < 4; i++)
     {
@@ -906,7 +910,7 @@ void *Agraph(void *arg)
                         }
                         json j;
                         j["type"] = "face";
-                        j["location"] = fileName;
+                        j["time"] = time_buffer;
                         string warning = j.dump();
                         len = htonl(warning.length());
                         DEBUG("");
@@ -986,7 +990,8 @@ void *stm32DataThread(void *args)
     ANodeInfo *data = (ANodeInfo *)args;
     int fd_data = data->fd_data, fd_graph = data->fd_graph;
     int len, rlen, n;
-    char temp[16], humi[16], light[16], smoke[16];
+    char temp[17], humi[17], light[17], smoke[17];
+    temp[16] = humi[16] = light[16] = smoke[16] = '\0';
     char message_box[MESSAE_LENGTH];
     char *graph_buffer;
     int gfd;
@@ -1156,7 +1161,7 @@ void *stm32DataThread(void *args)
         }
         json j;
         j["type"] = "face";
-        j["location"] = fileName;
+        j["time"] = time_pic;
         string warning = j.dump();
         len = htonl(warning.length());
         data->connection.lock();
@@ -1311,7 +1316,7 @@ void *TickTock(void *arg)
         DEBUG("after tick recv");
     }
 }
-void *BData(void *arg)
+void *Bdata(void *arg)
 {
     printf("Bconnect:%d\n", syscall(__NR_gettid));
     BNodeInfo *info;
@@ -1352,6 +1357,7 @@ void *BData(void *arg)
 
                     if (n == 0 | errno == ECONNRESET)
                     {
+                        epoll_ctl(epfd, EPOLL_CTL_DEL, fd, NULL);
                         close(fd);
                         delete info;
                         continue;
@@ -1366,6 +1372,7 @@ void *BData(void *arg)
                     ERROR_ACTION(n)
                     if (n == 0 | errno == ECONNRESET)
                     {
+                        epoll_ctl(epfd, EPOLL_CTL_DEL, fd, NULL);
                         close(fd);
                         delete info;
                         continue;
@@ -1386,6 +1393,15 @@ void *BData(void *arg)
                     n = send(fd, &len, sizeof(len), 0);
                     if (n == ECONNRESET | n == EPIPE)
                     {
+                        epoll_ctl(epfd, EPOLL_CTL_DEL, fd, NULL);
+                        close(fd);
+                        delete info;
+                        continue;
+                    }
+                    n = send(fd, msg.c_str(), msg.length(), 0);
+                    if (n == ECONNRESET | n == EPIPE)
+                    {
+                        epoll_ctl(epfd, EPOLL_CTL_DEL, fd, NULL);
                         close(fd);
                         delete info;
                         continue;
@@ -1419,10 +1435,12 @@ void *Bconnect(void *arg)
     int nfds;
     int n;
     char request[REQUEST_LENGTH];
+    char message_box[MESSAE_LENGTH];
     BNodeInfo *info;
     int fd;
     int i;
     int len;
+    int rlen;
     while (1)
     {
         DEBUG("Bconn working");
@@ -1455,24 +1473,26 @@ void *Bconnect(void *arg)
                         char *p = (char *)malloc(20);
                         time_t now;
                         now = time(NULL);
-                        printf("%s:socket error:connection with board%s [%s:%d]:%s\n", asctime(localtime(&now)), info->client_name.c_str(), inet_ntop(AF_INET, &info->clientData.sin_addr, p, 20), ntohs(info->clientData.sin_port), strerror(errno));
+                        printf("%s:socket error:connection with board [%s:%d]:%s\n", info->client_name.c_str(), inet_ntop(AF_INET, &info->clientData.sin_addr, p, 20), ntohs(info->clientData.sin_port), strerror(errno));
                         free(p);
                         ERROR_ACTION(epoll_ctl(epfd, EPOLL_CTL_DEL, fd, &ev));
                         if (info->board_name != BBBEFORE)
                         {
                             nodesA.lock();
                             auto c = nodesA.find(info->board_name);
+                            nodesA.unlock();
                             if (c != nodesA.end())
                             {
+                                c->second->connection.lock();
                                 c->second->connection.remove(info);
+                                c->second->connection.unlock();
                                 // c->second->gdata_node->connection.remove(info);
                             }
-                            nodesA.unlock();
                         }
                         //顺序不能反：运气好见到了反了的话，在刚关闭socket还未删节点时出问题：bad file descriptor
                         close(fd);
 
-                        // close(info->fd_data);
+                        close(info->fd_warn);
                         delete info;
                         numer.decreaseB();
                         continue;
@@ -1493,23 +1513,25 @@ void *Bconnect(void *arg)
                             char *p = (char *)malloc(20);
                             time_t now;
                             now = time(NULL);
-                            printf("%s:socket error:connection with board%s [%s:%d]:%s\n", asctime(localtime(&now)), info->client_name.c_str(), inet_ntop(AF_INET, &info->clientData.sin_addr, p, 20), ntohs(info->clientData.sin_port), strerror(errno));
+                            printf("%s:socket error:connection with board [%s:%d]:%s\n", info->client_name.c_str(), inet_ntop(AF_INET, &info->clientData.sin_addr, p, 20), ntohs(info->clientData.sin_port), strerror(errno));
                             free(p);
                             ERROR_ACTION(epoll_ctl(epfd, EPOLL_CTL_DEL, fd, &ev));
                             close(fd);
 
-                            // close(info->fd_data);
+                            close(info->fd_warn);
 
                             if (info->board_name != BBBEFORE)
                             {
                                 nodesA.lock();
                                 auto c = nodesA.find(info->board_name);
+                                nodesA.unlock();
                                 if (c != nodesA.end())
                                 {
+                                    c->second->connection.lock();
                                     c->second->connection.remove(info);
+                                    c->second->connection.unlock();
                                     // c->second->gdata_node->connection.remove(info);
                                 }
-                                nodesA.unlock();
                             }
                             delete info;
                             numer.decreaseB();
@@ -1541,7 +1563,7 @@ void *Bconnect(void *arg)
                                     // c->second->gdata_node->connection.push_back(info);
                                     c->second->connection.unlock();
                                 }
-
+                                info->faces = c->second->faces;
                                 int vcode = c->second->vcode;
                                 vcode = htonl(vcode);
                                 n = send(fd, &vcode, sizeof(vcode), 0);
@@ -1578,6 +1600,137 @@ void *Bconnect(void *arg)
                                 time_t time_now = time(NULL);
                                 struct tm *now = localtime(&time_now);
                                 delete_data(now->tm_mon + 1, name);
+                            }
+                            else if (type == "face")
+                            {
+                                n = recv(fd, &len, sizeof(len), MSG_WAITALL);
+                                if (n == 0 | n == ECONNRESET)
+                                {
+                                    if (info->board_name != BBBEFORE)
+                                    {
+                                        nodesA.lock();
+                                        auto c = nodesA.find(info->board_name);
+                                        nodesA.unlock();
+                                        if (c != nodesA.end())
+                                        {
+                                            c->second->connection.lock();
+                                            c->second->connection.remove(info);
+                                            c->second->connection.unlock();
+                                            // c->second->gdata_node->connection.remove(info);
+                                        }
+                                    }
+                                    DEBUG("android disconnect;");
+                                    close(fd);
+                                    close(info->fd_warn);
+                                    delete info;
+                                    numer.decreaseB();
+                                }
+                                else if (n < 0)
+                                {
+                                    DEBUG("recv err");
+                                    exit(1);
+                                }
+                                len = ntohl(len);
+                                n = recv(fd, message_box, len, MSG_WAITALL);
+                                if (n == 0 | n == ECONNRESET)
+                                {
+                                    if (info->board_name != BBBEFORE)
+                                    {
+                                        nodesA.lock();
+                                        auto c = nodesA.find(info->board_name);
+                                        nodesA.unlock();
+                                        if (c != nodesA.end())
+                                        {
+                                            c->second->connection.lock();
+                                            c->second->connection.remove(info);
+                                            c->second->connection.unlock();
+                                            // c->second->gdata_node->connection.remove(info);
+                                        }
+                                    }
+                                    DEBUG("android disconnect;");
+                                    close(fd);
+                                    close(info->fd_warn);
+                                    delete info;
+                                    numer.decreaseB();
+                                }
+                                else if (n < 0)
+                                {
+                                    DEBUG("recv err");
+                                    exit(1);
+                                }
+                                message_box[len] = '\0';
+                                string fileName = info->faces + "/" + message_box;
+                                DEBUG("file name: " + fileName);
+                                int fd_tmp = open(fileName.c_str(), O_RDONLY);
+                                if (fd >= 0)
+                                {
+                                    len = lseek(fd_tmp, 0, SEEK_END);
+                                    rlen = htonl(len);
+                                    n = send(fd, &rlen, sizeof(rlen), 0);
+                                    if (n <= 0 && errno != EPIPE && errno != EPIPE)
+                                    {
+                                        DEBUG("send err");
+                                        exit(1);
+                                    }
+                                    lseek(fd_tmp, 0, SEEK_SET);
+                                    n = sendfile(fd, fd_tmp, 0, len);
+                                    if (n <= 0 && errno != EPIPE && errno != EPIPE)
+                                    {
+                                        DEBUG("send err");
+                                        exit(1);
+                                    }
+                                    close(fd_tmp);
+                                }
+                                else
+                                {
+                                    const char *note = "sys error:picture not found,please contact 649535675@qq.com";
+                                    len = strlen(note);
+                                    rlen = htonl(len);
+                                    n = send(fd, &rlen, sizeof(rlen), 0);
+                                    if (n <= 0 && errno != EPIPE && errno != EPIPE)
+                                    {
+                                        DEBUG("send err");
+                                        exit(1);
+                                    }
+                                    n = send(fd, note, len, 0);
+                                    if (n <= 0 && errno != EPIPE && errno != EPIPE)
+                                    {
+                                        DEBUG("send err");
+                                        exit(1);
+                                    }
+                                }
+                            }
+                            else if (type == "all faces")
+                            {
+                                vector<string> files;
+                                string a;
+                                DIR *face_dir = opendir(info->faces.c_str());
+                                while (1)
+                                {
+                                    struct dirent *face_d = readdir(face_dir);
+                                    if (face_d == NULL)
+                                        break;
+                                    string tmp = face_d->d_name;
+                                    files.push_back(tmp);
+                                }
+                                closedir(face_dir);
+                                json j;
+                                j["data"] = files;
+                                string faces_data = j.dump();
+                                len = faces_data.length();
+                                rlen = htonl(len);
+                                n = send(fd, &rlen, sizeof(len), 0);
+                                if (n <= 0 && errno != EPIPE && errno != EPIPE)
+                                {
+                                    DEBUG("send err");
+                                    exit(1);
+                                }
+                                n = send(fd, faces_data.c_str(), len, 0);
+                                if (n <= 0 && errno != EPIPE && errno != EPIPE)
+                                {
+                                    DEBUG("send err");
+                                    exit(1);
+                                }
                             }
                         }
                     }
@@ -2049,8 +2202,8 @@ void *AThread(void *arg)
 void *BThread(void *arg)
 {
     printf("BThread:%d", syscall(__NR_gettid));
-    BNodeInfo *info;
-    pthread_t bthread;
+    BNodeInfo *info_1, *info_2;
+    pthread_t bconnect, bdata;
     int epfdConnect, epfdData;
     int fdpro;
     epfdConnect = epoll_create(BNUM);
@@ -2060,12 +2213,13 @@ void *BThread(void *arg)
     gepfd[3] = epfdData;
     gepfd[4] = epfdConnect;
     struct sockaddr_in serverData, serverWarn, serverOther, clientData, clientWarn, clientOther;
-    struct epoll_event ev;
+    struct epoll_event ev1, ev2;
     int connfdData, connfdWarn, connfdOther;
     ERROR_ACTION(listenBdata = socket(AF_INET, SOCK_STREAM, 0))
     ERROR_ACTION(listenBwarn = socket(AF_INET, SOCK_STREAM, 0))
     ERROR_ACTION(listenBother = socket(AF_INET, SOCK_STREAM, 0))
-    pthread_create(&bthread, NULL, Bconnect, (void *)epfdConnect);
+    pthread_create(&bconnect, NULL, Bconnect, (void *)epfdConnect);
+    pthread_create(&bdata, NULL, Bdata, (void *)epfdData);
     memset(&serverData, 0, sizeof(serverData));
     serverData.sin_family = AF_INET;
     serverData.sin_port = htons(portBdata);
@@ -2174,15 +2328,7 @@ void *BThread(void *arg)
             continue;
             // exit(1);
         }
-        info = new BNodeInfo;
-        ev.events = EPOLLIN | EPOLLET | EPOLLERR;
-        ev.data.ptr = info;
-        info->clientData = clientData;
-        info->fd_data = connfdData;
-        info->fd_other = connfdOther;
-        info->fd_warn = connfdWarn;
-        info->client_name = BCBEFORE;
-        info->board_name = BBBEFORE;
+
         json Bdata;
         nodesA.lock();
         int num = nodesA.size();
@@ -2208,7 +2354,7 @@ void *BThread(void *arg)
             close(connfdData);
             close(connfdWarn);
             close(connfdOther);
-            delete info;
+            // delete info_2;
             continue;
         }
         else if (n <= 0)
@@ -2222,7 +2368,7 @@ void *BThread(void *arg)
             close(connfdData);
             close(connfdWarn);
             close(connfdOther);
-            delete info;
+            // delete info_2;
             continue;
         }
         else if (n <= 0)
@@ -2230,7 +2376,27 @@ void *BThread(void *arg)
             exit_database();
             exit(1);
         }
-        epoll_ctl(epfdConnect, EPOLL_CTL_ADD, connfdOther, &ev);
+        info_2 = new BNodeInfo;
+        ev2.events = EPOLLIN | EPOLLET | EPOLLERR;
+        ev2.data.ptr = info_2;
+        info_2->clientData = clientData;
+        info_2->fd_data = connfdData;
+        info_2->fd_other = connfdOther;
+        info_2->fd_warn = connfdWarn;
+        info_2->client_name = BCBEFORE;
+        info_2->board_name = BBBEFORE;
+
+        epoll_ctl(epfdConnect, EPOLL_CTL_ADD, connfdOther, &ev2);
+        info_1 = new BNodeInfo;
+        ev1.events = EPOLLIN | EPOLLET | EPOLLERR;
+        ev1.data.ptr = info_1;
+        info_1->clientData = clientData;
+        info_1->fd_data = connfdData;
+        info_1->fd_other = connfdOther;
+        info_1->fd_warn = connfdWarn;
+        info_1->client_name = BCBEFORE;
+        info_1->board_name = BBBEFORE;
+        epoll_ctl(epfdData, EPOLL_CTL_ADD, connfdData, &ev1);
         numer.increaseB();
     }
 }
@@ -2251,10 +2417,10 @@ int main(void)
     struct passwd *cur_user = getpwuid(getuid());
     user_dir = cur_user->pw_dir;
     struct sigaction sigpipe, sigalarm;
-    sigemptyset(&sigalarm.sa_mask);
-    sigalarm.sa_flags = 0;
-    sigalarm.sa_flags |= SA_RESTART;
-    sigalarm.sa_handler = timeOut;
+    // sigemptyset(&sigalarm.sa_mask);
+    // sigalarm.sa_flags = 0;
+    // sigalarm.sa_flags |= SA_RESTART;
+    // sigalarm.sa_handler = timeOut;
     // if (sigaction(SIGALRM, &sigalarm, NULL) == -1)
     // {
     //     perror("sigaction error:");

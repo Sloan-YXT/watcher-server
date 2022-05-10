@@ -60,15 +60,15 @@ include CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/server.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/server.cpp.o: ../server.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yaoxuetao/CMPW-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/server.dir/server.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/server.cpp.o -c /home/yaoxuetao/CMPW-server/server.cpp
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/server.cpp.o -c /home/yaoxuetao/CMPW-server/server.cpp
 
 CMakeFiles/server.dir/server.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/server.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yaoxuetao/CMPW-server/server.cpp > CMakeFiles/server.dir/server.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yaoxuetao/CMPW-server/server.cpp > CMakeFiles/server.dir/server.cpp.i
 
 CMakeFiles/server.dir/server.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/server.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yaoxuetao/CMPW-server/server.cpp -o CMakeFiles/server.dir/server.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yaoxuetao/CMPW-server/server.cpp -o CMakeFiles/server.dir/server.cpp.s
 
 CMakeFiles/server.dir/server.cpp.o.requires:
 
@@ -84,15 +84,15 @@ CMakeFiles/server.dir/server.cpp.o.provides.build: CMakeFiles/server.dir/server.
 CMakeFiles/server.dir/database.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/database.cpp.o: ../database.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yaoxuetao/CMPW-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/server.dir/database.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/database.cpp.o -c /home/yaoxuetao/CMPW-server/database.cpp
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/database.cpp.o -c /home/yaoxuetao/CMPW-server/database.cpp
 
 CMakeFiles/server.dir/database.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/database.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yaoxuetao/CMPW-server/database.cpp > CMakeFiles/server.dir/database.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yaoxuetao/CMPW-server/database.cpp > CMakeFiles/server.dir/database.cpp.i
 
 CMakeFiles/server.dir/database.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/database.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yaoxuetao/CMPW-server/database.cpp -o CMakeFiles/server.dir/database.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yaoxuetao/CMPW-server/database.cpp -o CMakeFiles/server.dir/database.cpp.s
 
 CMakeFiles/server.dir/database.cpp.o.requires:
 
@@ -108,15 +108,15 @@ CMakeFiles/server.dir/database.cpp.o.provides.build: CMakeFiles/server.dir/datab
 CMakeFiles/server.dir/cutil.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/cutil.cpp.o: ../cutil.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yaoxuetao/CMPW-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/server.dir/cutil.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/cutil.cpp.o -c /home/yaoxuetao/CMPW-server/cutil.cpp
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/cutil.cpp.o -c /home/yaoxuetao/CMPW-server/cutil.cpp
 
 CMakeFiles/server.dir/cutil.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/cutil.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yaoxuetao/CMPW-server/cutil.cpp > CMakeFiles/server.dir/cutil.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yaoxuetao/CMPW-server/cutil.cpp > CMakeFiles/server.dir/cutil.cpp.i
 
 CMakeFiles/server.dir/cutil.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/cutil.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yaoxuetao/CMPW-server/cutil.cpp -o CMakeFiles/server.dir/cutil.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yaoxuetao/CMPW-server/cutil.cpp -o CMakeFiles/server.dir/cutil.cpp.s
 
 CMakeFiles/server.dir/cutil.cpp.o.requires:
 
@@ -132,15 +132,15 @@ CMakeFiles/server.dir/cutil.cpp.o.provides.build: CMakeFiles/server.dir/cutil.cp
 CMakeFiles/server.dir/faceDetect.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/faceDetect.cpp.o: ../faceDetect.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yaoxuetao/CMPW-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/server.dir/faceDetect.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/faceDetect.cpp.o -c /home/yaoxuetao/CMPW-server/faceDetect.cpp
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/faceDetect.cpp.o -c /home/yaoxuetao/CMPW-server/faceDetect.cpp
 
 CMakeFiles/server.dir/faceDetect.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/faceDetect.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yaoxuetao/CMPW-server/faceDetect.cpp > CMakeFiles/server.dir/faceDetect.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yaoxuetao/CMPW-server/faceDetect.cpp > CMakeFiles/server.dir/faceDetect.cpp.i
 
 CMakeFiles/server.dir/faceDetect.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/faceDetect.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yaoxuetao/CMPW-server/faceDetect.cpp -o CMakeFiles/server.dir/faceDetect.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yaoxuetao/CMPW-server/faceDetect.cpp -o CMakeFiles/server.dir/faceDetect.cpp.s
 
 CMakeFiles/server.dir/faceDetect.cpp.o.requires:
 
