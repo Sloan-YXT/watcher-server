@@ -385,6 +385,7 @@ int listenAdata, listenAgraph, listenAtick, listenBdata, listenBwarn, listenBoth
 // #define memset ::memset
 void clean_sock(void)
 {
+    //需要注意连续exit两次导致exit注册函数栈错误的错误退出，无法生成核心转储文件
     perror("clean check error");
     close(listenAdata);
     close(listenAgraph);
@@ -487,15 +488,17 @@ void *Adata(void *arg)
                                 if (m <= 0 && errno != EPIPE)
                                 {
                                     printf("send breset failed in %d:%s\n", __LINE__, strerror(errno));
-                                    exit_database();
-                                    exit(1);
+                                    // exit_database();
+                                    // exit(1);
+                                    continue;
                                 }
                                 m = send((*b)->fd_warn, a.c_str(), a.size(), 0);
                                 if (m <= 0 && errno != EPIPE)
                                 {
                                     printf("send breset failed in %d:%s\n", __LINE__, strerror(errno));
-                                    exit_database();
-                                    exit(1);
+                                    // exit_database();
+                                    // exit(1);
+                                    continue;
                                 }
                                 DEBUG(a.c_str());
                             }
@@ -560,15 +563,17 @@ void *Adata(void *arg)
                                 if (m <= 0 && errno != EPIPE)
                                 {
                                     printf("send breset failed in %d:%s\n", __LINE__, strerror(errno));
-                                    exit_database();
-                                    exit(1);
+                                    // exit_database();
+                                    // exit(1);
+                                    continue;
                                 }
                                 m = send((*b)->fd_data, a.c_str(), a.size(), 0);
                                 if (m <= 0 && errno != EPIPE)
                                 {
                                     printf("send breset failed in %d:%s\n", __LINE__, strerror(errno));
-                                    exit_database();
-                                    exit(1);
+                                    // exit_database();
+                                    // exit(1);
+                                    continue;
                                 }
                             }
                             c->second->connection.unlock();
@@ -670,12 +675,14 @@ void *Adata(void *arg)
                                         DEBUG("EPIPE");
                                         // close((*m)->fd_data);
                                         // p->second->connection.remove(*m);
+                                        continue;
                                     }
                                     else if (n <= 0)
                                     {
                                         perror("send len to client failed");
-                                        exit_database();
-                                        exit(1);
+                                        // exit_database();
+                                        // exit(1);
+                                        continue;
                                     }
                                     n = send(fd_tmp, reply_string.c_str(), reply_string.size(), 0);
                                     if (n <= 0 && (errno == EPIPE | errno == ECONNRESET))
@@ -683,12 +690,15 @@ void *Adata(void *arg)
                                         DEBUG("EPIPE");
                                         // close((*m)->fd_data);
                                         // p->second->connection.remove(*m);
+                                        continue;
                                     }
                                     else if (n <= 0)
                                     {
                                         perror("send data to client failed");
-                                        exit_database();
-                                        exit(1);
+                                        // exit_database();
+                                        // exit(1);
+                                        continue;
+                                        //发送时可能突然断开连接
                                     }
                                     DEBUG(reply_string.c_str());
                                 }
@@ -726,15 +736,17 @@ void *Adata(void *arg)
                                     if (m <= 0 && errno != EPIPE)
                                     {
                                         printf("send breset failed in %d:%s\n", __LINE__, strerror(errno));
-                                        exit_database();
-                                        exit(1);
+                                        // exit_database();
+                                        // exit(1);
+                                        continue;
                                     }
                                     m = send((*b)->fd_data, a.c_str(), a.size(), 0);
                                     if (m <= 0 && errno != EPIPE)
                                     {
                                         printf("send breset failed in %d:%s\n", __LINE__, strerror(errno));
-                                        exit_database();
-                                        exit(1);
+                                        // exit_database();
+                                        // exit(1);
+                                        continue;
                                     }
                                 }
                                 c->second->connection.unlock();
@@ -816,12 +828,12 @@ void *Agraph(void *arg)
                     connfd = info->fd_graph;
                     DEBUG("in Agraph");
                     n = recv(connfd, &len, sizeof(len), MSG_WAITALL);
-                    if (n < 0 && n != ECONNRESET)
+                    if (n < 0 && errno != ECONNRESET)
                     {
                         perror("recv err;");
                         exit(1);
                     }
-                    if (n == 0 | n == ECONNRESET)
+                    if (n == 0 | errno == ECONNRESET)
                     {
                         DEBUG("N==0");
                         if (epoll_ctl(epfd, EPOLL_CTL_DEL, connfd, NULL) == -1)
@@ -838,7 +850,7 @@ void *Agraph(void *arg)
                     DEBUG("in Agraph");
                     len = ntohl(len);
                     n = recv(connfd, time_buffer, len, MSG_WAITALL);
-                    if (n < 0 && n != ECONNRESET)
+                    if (n < 0 && errno != ECONNRESET)
                     {
                         perror("recv err;");
                         exit(1);
@@ -861,7 +873,7 @@ void *Agraph(void *arg)
                     string photo_time = time_buffer;
                     string fileName = info->photos + "/" + time_buffer;
                     n = recv(connfd, &len, sizeof(len), MSG_WAITALL);
-                    if (n < 0 && n != ECONNRESET)
+                    if (n < 0 && errno != ECONNRESET)
                     {
                         perror("recv err;");
                         exit(1);
@@ -900,7 +912,7 @@ void *Agraph(void *arg)
                         exit(1);
                     }
                     n = recv(connfd, graph_buffer, len, MSG_WAITALL);
-                    if (n < 0 && n != ECONNRESET)
+                    if (n < 0 && errno != ECONNRESET)
                     {
                         perror("recv err;");
                         exit(1);
@@ -946,12 +958,14 @@ void *Agraph(void *arg)
                                 DEBUG("EPIPE");
                                 // close((*m)->fd_graph);
                                 // info->connection.remove(*m);
+                                continue;
                             }
                             else if (n <= 0)
                             {
                                 perror("send glen to client failed");
-                                exit_database();
-                                exit(1);
+                                // exit_database();
+                                // exit(1);
+                                continue;
                             }
                             printf("debug:graph len=%d\n", len);
                             n = send((*m)->fd_warn, warning.c_str(), len, 0);
@@ -960,12 +974,14 @@ void *Agraph(void *arg)
                                 DEBUG("EPIPE");
                                 // close((*m)->fd_graph);
                                 // info->connection.remove(*m);
+                                continue;
                             }
                             else if (n <= 0)
                             {
                                 perror("send gdata to client failed");
-                                exit_database();
-                                exit(1);
+                                // exit_database();
+                                // exit(1);
+                                continue;
                             }
                             DEBUG("send graph to client:");
                             DEBUG((*m)->client_name.c_str());
@@ -1141,12 +1157,14 @@ void *stm32DataThread(void *args)
                     DEBUG("EPIPE");
                     // close((*m)->fd_data);
                     // p->second->connection.remove(*m);
+                    continue;
                 }
                 else if (n <= 0)
                 {
                     perror("send len to client failed");
-                    exit_database();
-                    exit(1);
+                    // exit_database();
+                    // exit(1);
+                    continue;
                 }
                 n = send(fd_tmp, reply_string.c_str(), reply_string.size(), 0);
                 if (n <= 0 && (errno == EPIPE | errno == ECONNRESET))
@@ -1154,12 +1172,14 @@ void *stm32DataThread(void *args)
                     DEBUG("EPIPE");
                     // close((*m)->fd_data);
                     // p->second->connection.remove(*m);
+                    continue;
                 }
                 else if (n <= 0)
                 {
                     perror("send data to client failed");
-                    exit_database();
-                    exit(1);
+                    // exit_database();
+                    // exit(1);
+                    continue;
                 }
             }
             DEBUG(reply_string.c_str());
@@ -1232,12 +1252,14 @@ void *stm32DataThread(void *args)
                 DEBUG("EPIPE");
                 // close((*m)->fd_graph);
                 // info->connection.remove(*m);
+                continue;
             }
             else if (n <= 0)
             {
                 perror("send glen to client failed");
-                exit_database();
-                exit(1);
+                // exit_database();
+                // exit(1);
+                continue;
             }
             printf("debug:graph len=%d\n", len);
             n = send((*m)->fd_warn, warning.c_str(), len, 0);
@@ -1246,12 +1268,14 @@ void *stm32DataThread(void *args)
                 DEBUG("EPIPE");
                 // close((*m)->fd_graph);
                 // info->connection.remove(*m);
+                continue;
             }
             else if (n <= 0)
             {
                 perror("send gdata to client failed");
-                exit_database();
-                exit(1);
+                // exit_database();
+                // exit(1);
+                continue;
             }
             DEBUG("send graph to client:");
             DEBUG((*m)->client_name.c_str());
@@ -1273,15 +1297,17 @@ clean_end:
         if (m <= 0 && errno != EPIPE)
         {
             printf("send breset failed in %d:%s\n", __LINE__, strerror(errno));
-            exit_database();
-            exit(1);
+            // exit_database();
+            // exit(1);
+            continue;
         }
         m = send((*b)->fd_warn, a.c_str(), a.size(), 0);
         if (m <= 0 && errno != EPIPE)
         {
             printf("send breset failed in %d:%s\n", __LINE__, strerror(errno));
-            exit_database();
-            exit(1);
+            // exit_database();
+            // exit(1);
+            continue;
         }
         DEBUG(a.c_str());
     }
@@ -1375,7 +1401,7 @@ void *TickTock(void *arg)
 }
 void *Bdata(void *arg)
 {
-    printf("Bconnect:%d\n", syscall(__NR_gettid));
+    printf("Bdata:%d\n", syscall(__NR_gettid));
     BNodeInfo *info;
     struct epoll_event ev;
     int epfd = (long)arg;
@@ -1407,6 +1433,7 @@ void *Bdata(void *arg)
         default:
             for (i = 0; i < nfds; i++)
             {
+                info = (BNodeInfo *)b_connect_event[i].data.ptr;
                 if (b_connect_event[i].events & EPOLLIN)
                 {
                     fd = info->fd_data;
