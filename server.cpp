@@ -855,7 +855,7 @@ void *Agraph(void *arg)
                         perror("recv err;");
                         exit(1);
                     }
-                    if (n == 0 | n == ECONNRESET)
+                    if (n == 0 | errno == ECONNRESET)
                     {
                         if (epoll_ctl(epfd, EPOLL_CTL_DEL, connfd, NULL) == -1)
                         {
@@ -878,7 +878,7 @@ void *Agraph(void *arg)
                         perror("recv err;");
                         exit(1);
                     }
-                    if (n == 0 | n == ECONNRESET)
+                    if (n == 0 | errno == ECONNRESET)
                     {
                         if (epoll_ctl(epfd, EPOLL_CTL_DEL, connfd, NULL) == -1)
                         {
@@ -917,7 +917,7 @@ void *Agraph(void *arg)
                         perror("recv err;");
                         exit(1);
                     }
-                    if (n == 0 | n == ECONNRESET)
+                    if (n == 0 | errno == ECONNRESET)
                     {
                         DEBUG("");
                         if (epoll_ctl(epfd, EPOLL_CTL_DEL, connfd, NULL) == -1)
@@ -1475,7 +1475,7 @@ void *Bdata(void *arg)
                     len = msg.length();
                     len = htonl(len);
                     n = send(fd, &len, sizeof(len), 0);
-                    if (n == ECONNRESET | n == EPIPE)
+                    if (errno == ECONNRESET | errno == EPIPE)
                     {
                         epoll_ctl(epfd, EPOLL_CTL_DEL, fd, NULL);
                         close(fd);
@@ -1483,7 +1483,7 @@ void *Bdata(void *arg)
                         continue;
                     }
                     n = send(fd, msg.c_str(), msg.length(), 0);
-                    if (n == ECONNRESET | n == EPIPE)
+                    if (errno == ECONNRESET | errno == EPIPE)
                     {
                         epoll_ctl(epfd, EPOLL_CTL_DEL, fd, NULL);
                         close(fd);
@@ -1650,7 +1650,100 @@ void *Bconnect(void *arg)
                                 info->faces = c->second->faces;
                                 int vcode = c->second->vcode;
                                 vcode = htonl(vcode);
-                                n = send(fd, &vcode, sizeof(vcode), 0);
+                                n = send(fd, &vcode, 4, 0);
+                                if (n < 0 && (errno == EPIPE | errno == ECONNRESET))
+                                {
+                                }
+                                else if (n <= 0)
+                                {
+                                    printf("send failed in %d:%s\n", __LINE__, strerror(errno));
+                                    exit_database();
+                                    exit(1);
+                                }
+                                string high_temp = to_string(c->second->high_temp);
+                                string high_humi = to_string(c->second->high_humi);
+                                string wrong_light = to_string(c->second->wrong_light);
+                                string wrong_smoke = to_string(c->second->wrong_smoke);
+                                int len = high_temp.length();
+                                int rlen = htonl(len);
+                                n = send(fd, &rlen, sizeof(rlen), 0);
+                                if (n < 0 && (errno == EPIPE | errno == ECONNRESET))
+                                {
+                                }
+                                else if (n <= 0)
+                                {
+                                    printf("send failed in %d:%s\n", __LINE__, strerror(errno));
+                                    exit_database();
+                                    exit(1);
+                                }
+                                n = send(fd, high_temp.c_str(), len, 0);
+                                if (n < 0 && (errno == EPIPE | errno == ECONNRESET))
+                                {
+                                }
+                                else if (n <= 0)
+                                {
+                                    printf("send failed in %d:%s\n", __LINE__, strerror(errno));
+                                    exit_database();
+                                    exit(1);
+                                }
+                                len = high_humi.length();
+                                rlen = htonl(len);
+                                n = send(fd, &rlen, sizeof(rlen), 0);
+                                //这里exception的好处就来了，这么多只需写一个try-catch,而且和主逻辑分离
+                                if (n < 0 && (errno == EPIPE | errno == ECONNRESET))
+                                {
+                                }
+                                else if (n <= 0)
+                                {
+                                    printf("send failed in %d:%s\n", __LINE__, strerror(errno));
+                                    exit_database();
+                                    exit(1);
+                                }
+                                n = send(fd, high_humi.c_str(), len, 0);
+                                if (n < 0 && (errno == EPIPE | errno == ECONNRESET))
+                                {
+                                }
+                                else if (n <= 0)
+                                {
+                                    printf("send failed in %d:%s\n", __LINE__, strerror(errno));
+                                    exit_database();
+                                    exit(1);
+                                }
+                                len = wrong_light.length();
+                                rlen = htonl(len);
+                                n = send(fd, &rlen, sizeof(rlen), 0);
+                                if (n < 0 && (errno == EPIPE | errno == ECONNRESET))
+                                {
+                                }
+                                else if (n <= 0)
+                                {
+                                    printf("send failed in %d:%s\n", __LINE__, strerror(errno));
+                                    exit_database();
+                                    exit(1);
+                                }
+                                n = send(fd, wrong_light.c_str(), len, 0);
+                                if (n < 0 && (errno == EPIPE | errno == ECONNRESET))
+                                {
+                                }
+                                else if (n <= 0)
+                                {
+                                    printf("send failed in %d:%s\n", __LINE__, strerror(errno));
+                                    exit_database();
+                                    exit(1);
+                                }
+                                len = wrong_smoke.length();
+                                rlen = htonl(len);
+                                n = send(fd, &rlen, sizeof(rlen), 0);
+                                if (n < 0 && (errno == EPIPE | errno == ECONNRESET))
+                                {
+                                }
+                                else if (n <= 0)
+                                {
+                                    printf("send failed in %d:%s\n", __LINE__, strerror(errno));
+                                    exit_database();
+                                    exit(1);
+                                }
+                                n = send(fd, wrong_smoke.c_str(), len, 0);
                                 if (n < 0 && (errno == EPIPE | errno == ECONNRESET))
                                 {
                                 }
@@ -1688,7 +1781,7 @@ void *Bconnect(void *arg)
                             else if (type == "face")
                             {
                                 n = recv(fd, &len, sizeof(len), MSG_WAITALL);
-                                if (n == 0 | n == ECONNRESET)
+                                if (n == 0 | errno == ECONNRESET)
                                 {
                                     if (info->board_name != BBBEFORE)
                                     {
@@ -1716,7 +1809,7 @@ void *Bconnect(void *arg)
                                 }
                                 len = ntohl(len);
                                 n = recv(fd, message_box, len, MSG_WAITALL);
-                                if (n == 0 | n == ECONNRESET)
+                                if (n == 0 | errno == ECONNRESET)
                                 {
                                     if (info->board_name != BBBEFORE)
                                     {
@@ -1751,14 +1844,14 @@ void *Bconnect(void *arg)
                                     len = lseek(fd_tmp, 0, SEEK_END);
                                     rlen = htonl(len);
                                     n = send(fd, &rlen, sizeof(rlen), 0);
-                                    if (n <= 0 && errno != EPIPE && errno != EPIPE)
+                                    if (n <= 0 && errno != EPIPE && errno != ECONNRESET)
                                     {
                                         DEBUG("send err");
                                         exit(1);
                                     }
                                     lseek(fd_tmp, 0, SEEK_SET);
                                     n = sendfile(fd, fd_tmp, 0, len);
-                                    if (n <= 0 && errno != EPIPE && errno != EPIPE)
+                                    if (n <= 0 && errno != EPIPE && errno != ECONNRESET)
                                     {
                                         DEBUG("send err");
                                         exit(1);
@@ -1771,13 +1864,13 @@ void *Bconnect(void *arg)
                                     len = strlen(note);
                                     rlen = htonl(len);
                                     n = send(fd, &rlen, sizeof(rlen), 0);
-                                    if (n <= 0 && errno != EPIPE && errno != EPIPE)
+                                    if (n <= 0 && errno != EPIPE && errno != ECONNRESET)
                                     {
                                         DEBUG("send err");
                                         exit(1);
                                     }
                                     n = send(fd, note, len, 0);
-                                    if (n <= 0 && errno != EPIPE && errno != EPIPE)
+                                    if (n <= 0 && errno != EPIPE && errno != ECONNRESET)
                                     {
                                         DEBUG("send err");
                                         exit(1);
@@ -1800,6 +1893,7 @@ void *Bconnect(void *arg)
                                 closedir(face_dir);
                                 json j;
                                 j["data"] = files;
+                                j["num"] = files.size();
                                 string faces_data = j.dump();
                                 len = faces_data.length();
                                 rlen = htonl(len);
@@ -2457,7 +2551,7 @@ void *BThread(void *arg)
         int len = data_string.length();
         len = htonl(len);
         n = send(connfdOther, &len, sizeof(len), 0);
-        if (n < 0 && errno == SIGPIPE)
+        if (n < 0 && (errno == EPIPE | errno == ECONNRESET))
         {
             close(connfdData);
             close(connfdWarn);
@@ -2471,7 +2565,7 @@ void *BThread(void *arg)
             exit(1);
         }
         n = send(connfdOther, data_string.c_str(), data_string.size(), 0);
-        if (n < 0 && errno == SIGPIPE)
+        if (n < 0 && (errno == EPIPE | errno == ECONNRESET))
         {
             close(connfdData);
             close(connfdWarn);
