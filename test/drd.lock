@@ -1,0 +1,20 @@
+==31104== drd, a thread error detector
+==31104== Copyright (C) 2006-2020, and GNU GPL'd, by Bart Van Assche.
+==31104== Using Valgrind-3.19.0 and LibVEX; rerun with -h for copyright info
+==31104== Command: ./testValgrind
+==31104== 
+==31104== Recursive locking not allowed: mutex 0x1ffefffbb0, recursion count 1, owner 1.
+==31104==    at 0x4C45F10: pthread_mutex_lock_intercept (drd_pthread_intercepts.c:932)
+==31104==    by 0x4C45F10: pthread_mutex_lock (drd_pthread_intercepts.c:945)
+==31104==    by 0x10879C: main (testValgrind.cpp:12)
+==31104== mutex 0x1ffefffbb0 was first observed at:
+==31104==    at 0x4C44270: pthread_mutex_init_intercept (drd_pthread_intercepts.c:868)
+==31104==    by 0x4C44270: pthread_mutex_init (drd_pthread_intercepts.c:877)
+==31104==    by 0x108784: main (testValgrind.cpp:10)
+==31104== 
+==31104== 
+==31104== Process terminating with default action of signal 2 (SIGINT)
+==31104==    at 0x10879D: main (testValgrind.cpp:15)
+==31104== 
+==31104== For lists of detected and suppressed errors, rerun with: -s
+==31104== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)

@@ -1,0 +1,158 @@
+tick debug:debug:1364,yaoxuetao's raspi
+debug:fd_tick:17
+debug:1366,before tick recv
+debug:1410,tao's raspi still in connection
+yaoxuetao's raspi still in connection
+yaoxuetao's raspi still in con
+debug:1413,after tick recv
+debug:1359,
+tick debug:debug:1364,yaoxuetao's raspi
+debug:fd_tick:17
+debug:1366,before tick recv
+debug:1410,nection
+yaoxuetao's raspi still in connection
+yaoxuetao's raspi still in connection
+yaoxuetao's rasp
+debug:1413,after tick recv
+debug:1359,
+tick debug:debug:1364,yaoxuetao's raspi
+debug:fd_tick:17
+debug:1366,before tick recv
+debug:1410,i still in connection
+yaoxuetao's raspi still in connection
+yaoxuetao's raspi still in connection
+ya
+debug:1413,after tick recv
+debug:1359,
+tick debug:debug:1364,yaoxuetao's raspi
+debug:fd_tick:17
+debug:1366,before tick recv
+debug:1410,oxuetao's raspi still in connection
+yaoxuetao's raspi still in connection
+yaoxuetao's raspi still in
+debug:1413,after tick recv
+debug:1359,
+tick debug:debug:1364,yaoxuetao's raspi
+debug:fd_tick:17
+debug:1366,before tick recv
+debug:1410, connection
+yaoxuetao's raspi still in connection
+yaoxuetao's raspi still in connection
+yaoxuetao's 
+debug:1413,after tick recv
+debug:1359,
+tick debug:debug:1364,yaoxuetao's raspi
+debug:fd_tick:17
+debug:1366,before tick recv
+debug:1410,raspi still in connection
+yaoxuetao's raspi still in connection
+yaoxuetao's raspi still in connectio
+debug:1413,after tick recv
+debug:1359,
+tick debug:debug:1364,yaoxuetao's raspi
+debug:fd_tick:17
+debug:1366,before tick recv
+debug:1410,n
+yaoxuetao's raspi still in connection
+yaoxuetao's raspi still in connection
+yaoxuetao's raspi stil
+debug:1413,after tick recv
+debug:1359,
+tick debug:debug:1364,yaoxuetao's raspi
+debug:fd_tick:17
+debug:1366,before tick recv
+debug:1410,l in connection
+yaoxuetao's raspi still in connection
+yaoxuetao's raspi still in connection
+yaoxueta
+debug:1413,after tick recv
+debug:1359,
+tick debug:debug:1364,yaoxuetao's raspi
+debug:fd_tick:17
+debug:1366,before tick recv
+debug:1410,o's raspi still in connection
+yaoxuetao's raspi still in connection
+yaoxuetao's raspi still in conne
+debug:1413,after tick recv
+debug:1359,
+tick debug:debug:1364,yaoxuetao's raspi
+debug:fd_tick:17
+debug:1366,before tick recv
+debug:1410,ction
+yaoxuetao's raspi still in connection
+yaoxuetao's raspi still in connection
+yaoxuetao's raspi 
+debug:1413,after tick recv
+debug:1359,
+tick debug:debug:1364,yaoxuetao's raspi
+debug:fd_tick:17
+debug:1366,before tick recv
+debug:1410,still in connection
+yaoxuetao's raspi still in connection
+yaoxuetao's raspi still in connection
+yaox
+debug:1413,after tick recv
+debug:1359,
+tick debug:debug:1364,yaoxuetao's raspi
+debug:fd_tick:17
+debug:1366,before tick recv
+debug:1410,uetao's raspi still in connection
+yaoxuetao's raspi still in connection
+yaoxuetao's raspi still in c
+debug:1413,after tick recv
+debug:1359,
+tick debug:debug:1364,yaoxuetao's raspi
+debug:fd_tick:17
+debug:1366,before tick recv
+debug:1410,onnection
+yaoxuetao's raspi still in connection
+yaoxuetao's raspi still in connection
+yaoxuetao's ra
+debug:1413,after tick recv
+debug:1359,
+tick debug:debug:1364,yaoxuetao's raspi
+debug:fd_tick:17
+debug:1366,before tick recv
+debug:1410,spi still in connection
+yaoxuetao's raspi still in connection
+yaoxuetao's raspi still in connection
+
+debug:1413,after tick recv
+debug:1359,
+tick debug:debug:1364,yaoxuetao's raspi
+debug:fd_tick:17
+debug:1366,before tick recv
+debug:1410,yaoxuetao's raspi still in connection
+yaoxuetao's raspi still in connection
+yaoxuetao's raspi still 
+debug:1413,after tick recv
+debug:1359,
+tick debug:debug:1364,yaoxuetao's raspi
+debug:fd_tick:17
+debug:1366,before tick recv
+debug:1410,in connection
+yaoxuetao's raspi still in connection
+yaoxuetao's raspi still in connection
+yaoxuetao'
+debug:1413,after tick recv
+debug:1359,
+tick debug:debug:1364,yaoxuetao's raspi
+debug:fd_tick:17
+debug:1366,before tick recv
+debug:1410,s raspi still in connection
+yaoxuetao's raspi still in connection
+yaoxuetao's raspi still in connect
+debug:1413,after tick recv
+debug:1359,
+tick debug:debug:1364,yaoxuetao's raspi
+debug:fd_tick:17
+debug:1366,before tick recv
+debug:1410,ion
+spi still in connection
+yaoxuetao's raspi still in connection
+yaoxuetao's raspi still in connect
+debug:1413,after tick recv
+debug:1359,
+tick debug:debug:1364,yaoxuetao's raspi
+debug:fd_tick:17
+debug:1366,before tick recv

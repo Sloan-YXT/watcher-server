@@ -54,3 +54,9 @@ void rmAll(const char *path)
     sprintf(all, "rm %s/*", path);
     system(all);
 }
+void rm(const char *path)
+{
+    char all[1000] = {0};
+    sprintf(all, "rm %s", path);
+    system(all);
+}

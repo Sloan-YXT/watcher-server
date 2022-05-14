@@ -1,0 +1,131 @@
+==31332== Memcheck, a memory error detector
+==31332== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==31332== Using Valgrind-3.19.0 and LibVEX; rerun with -h for copyright info
+==31332== Command: ./server - --log-file=nonsense.log --tool=drd --exclusive-threshold=1000 --shared-threshold=1000
+==31332== 
+==31332== Thread 2:
+==31332== Conditional jump or move depends on uninitialised value(s)
+==31332==    at 0x4C38E88: strlen (vg_replace_strmem.c:494)
+==31332==    by 0x9197981: puts (ioputs.c:35)
+==31332==    by 0x118693: AThread(void*) (server.cpp:2241)
+==31332==    by 0x50DB6DA: start_thread (pthread_create.c:463)
+==31332==    by 0x923861E: clone (clone.S:95)
+==31332== 
+==31332== Warning: noted but unhandled ioctl 0x30000001 with no size/direction hints.
+==31332==    This could cause spurious value errors to appear.
+==31332==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==31332== Warning: noted but unhandled ioctl 0x27 with no size/direction hints.
+==31332==    This could cause spurious value errors to appear.
+==31332==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==31332== Warning: noted but unhandled ioctl 0x25 with no size/direction hints.
+==31332==    This could cause spurious value errors to appear.
+==31332==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==31332== Warning: noted but unhandled ioctl 0x17 with no size/direction hints.
+==31332==    This could cause spurious value errors to appear.
+==31332==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==31332== Warning: set address range perms: large range [0x200000000, 0x300200000) (noaccess)
+==31332== Warning: set address range perms: large range [0x13ad3000, 0x33ad2000) (noaccess)
+==31332== Warning: noted but unhandled ioctl 0x19 with no size/direction hints.
+==31332==    This could cause spurious value errors to appear.
+==31332==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==31332== Warning: noted but unhandled ioctl 0x49 with no size/direction hints.
+==31332==    This could cause spurious value errors to appear.
+==31332==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==31332== Warning: noted but unhandled ioctl 0x21 with no size/direction hints.
+==31332==    This could cause spurious value errors to appear.
+==31332==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==31332== Warning: noted but unhandled ioctl 0x1b with no size/direction hints.
+==31332==    This could cause spurious value errors to appear.
+==31332==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==31332== Warning: noted but unhandled ioctl 0x44 with no size/direction hints.
+==31332==    This could cause spurious value errors to appear.
+==31332==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==31332== Warning: noted but unhandled ioctl 0x48 with no size/direction hints.
+==31332==    This could cause spurious value errors to appear.
+==31332==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==31332== Thread 4:
+==31332== Conditional jump or move depends on uninitialised value(s)
+==31332==    at 0x4C38E88: strlen (vg_replace_strmem.c:494)
+==31332==    by 0x9197981: puts (ioputs.c:35)
+==31332==    by 0x116292: Bconnect(void*) (server.cpp:1726)
+==31332==    by 0x50DB6DA: start_thread (pthread_create.c:463)
+==31332==    by 0x923861E: clone (clone.S:95)
+==31332== 
+==31332== Conditional jump or move depends on uninitialised value(s)
+==31332==    at 0x13EC4F: nlohmann::detail::lexer<nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >, nlohmann::detail::iterator_input_adapter<char*> >::get() (json.hpp:7806)
+==31332==    by 0x13A127: nlohmann::detail::lexer<nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >, nlohmann::detail::iterator_input_adapter<char*> >::skip_whitespace() (json.hpp:7953)
+==31332==    by 0x132854: nlohmann::detail::lexer<nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >, nlohmann::detail::iterator_input_adapter<char*> >::scan() (json.hpp:7968)
+==31332==    by 0x12B25B: nlohmann::detail::parser<nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >, nlohmann::detail::iterator_input_adapter<char*> >::get_token() (json.hpp:11141)
+==31332==    by 0x12448A: nlohmann::detail::parser<nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >, nlohmann::detail::iterator_input_adapter<char*> >::parse(bool, nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >&) (json.hpp:10814)
+==31332==    by 0x1203E3: nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > > nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >::parse<char (&) [1000]>(char (&) [1000], std::function<bool (int, nlohmann::detail::parse_event_t, nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >&)>, bool, bool) (json.hpp:23872)
+==31332==    by 0x1165E4: Bconnect(void*) (server.cpp:1767)
+==31332==    by 0x50DB6DA: start_thread (pthread_create.c:463)
+==31332==    by 0x923861E: clone (clone.S:95)
+==31332== 
+==31332== Conditional jump or move depends on uninitialised value(s)
+==31332==    at 0x13A132: nlohmann::detail::lexer<nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >, nlohmann::detail::iterator_input_adapter<char*> >::skip_whitespace() (json.hpp:7955)
+==31332==    by 0x132854: nlohmann::detail::lexer<nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >, nlohmann::detail::iterator_input_adapter<char*> >::scan() (json.hpp:7968)
+==31332==    by 0x12B25B: nlohmann::detail::parser<nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >, nlohmann::detail::iterator_input_adapter<char*> >::get_token() (json.hpp:11141)
+==31332==    by 0x12448A: nlohmann::detail::parser<nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >, nlohmann::detail::iterator_input_adapter<char*> >::parse(bool, nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >&) (json.hpp:10814)
+==31332==    by 0x1203E3: nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > > nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >::parse<char (&) [1000]>(char (&) [1000], std::function<bool (int, nlohmann::detail::parse_event_t, nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >&)>, bool, bool) (json.hpp:23872)
+==31332==    by 0x1165E4: Bconnect(void*) (server.cpp:1767)
+==31332==    by 0x50DB6DA: start_thread (pthread_create.c:463)
+==31332==    by 0x923861E: clone (clone.S:95)
+==31332== 
+==31332== Conditional jump or move depends on uninitialised value(s)
+==31332==    at 0x13A13E: nlohmann::detail::lexer<nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >, nlohmann::detail::iterator_input_adapter<char*> >::skip_whitespace() (json.hpp:7955)
+==31332==    by 0x132854: nlohmann::detail::lexer<nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >, nlohmann::detail::iterator_input_adapter<char*> >::scan() (json.hpp:7968)
+==31332==    by 0x12B25B: nlohmann::detail::parser<nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >, nlohmann::detail::iterator_input_adapter<char*> >::get_token() (json.hpp:11141)
+==31332==    by 0x12448A: nlohmann::detail::parser<nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >, nlohmann::detail::iterator_input_adapter<char*> >::parse(bool, nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >&) (json.hpp:10814)
+==31332==    by 0x1203E3: nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > > nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >::parse<char (&) [1000]>(char (&) [1000], std::function<bool (int, nlohmann::detail::parse_event_t, nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >&)>, bool, bool) (json.hpp:23872)
+==31332==    by 0x1165E4: Bconnect(void*) (server.cpp:1767)
+==31332==    by 0x50DB6DA: start_thread (pthread_create.c:463)
+==31332==    by 0x923861E: clone (clone.S:95)
+==31332== 
+==31332== Conditional jump or move depends on uninitialised value(s)
+==31332==    at 0x13A14A: nlohmann::detail::lexer<nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >, nlohmann::detail::iterator_input_adapter<char*> >::skip_whitespace() (json.hpp:7955)
+==31332==    by 0x132854: nlohmann::detail::lexer<nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >, nlohmann::detail::iterator_input_adapter<char*> >::scan() (json.hpp:7968)
+==31332==    by 0x12B25B: nlohmann::detail::parser<nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >, nlohmann::detail::iterator_input_adapter<char*> >::get_token() (json.hpp:11141)
+==31332==    by 0x12448A: nlohmann::detail::parser<nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >, nlohmann::detail::iterator_input_adapter<char*> >::parse(bool, nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >&) (json.hpp:10814)
+==31332==    by 0x1203E3: nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > > nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >::parse<char (&) [1000]>(char (&) [1000], std::function<bool (int, nlohmann::detail::parse_event_t, nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >&)>, bool, bool) (json.hpp:23872)
+==31332==    by 0x1165E4: Bconnect(void*) (server.cpp:1767)
+==31332==    by 0x50DB6DA: start_thread (pthread_create.c:463)
+==31332==    by 0x923861E: clone (clone.S:95)
+==31332== 
+==31332== Conditional jump or move depends on uninitialised value(s)
+==31332==    at 0x13A156: nlohmann::detail::lexer<nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >, nlohmann::detail::iterator_input_adapter<char*> >::skip_whitespace() (json.hpp:7955)
+==31332==    by 0x132854: nlohmann::detail::lexer<nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >, nlohmann::detail::iterator_input_adapter<char*> >::scan() (json.hpp:7968)
+==31332==    by 0x12B25B: nlohmann::detail::parser<nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >, nlohmann::detail::iterator_input_adapter<char*> >::get_token() (json.hpp:11141)
+==31332==    by 0x12448A: nlohmann::detail::parser<nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >, nlohmann::detail::iterator_input_adapter<char*> >::parse(bool, nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >&) (json.hpp:10814)
+==31332==    by 0x1203E3: nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > > nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >::parse<char (&) [1000]>(char (&) [1000], std::function<bool (int, nlohmann::detail::parse_event_t, nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >&)>, bool, bool) (json.hpp:23872)
+==31332==    by 0x1165E4: Bconnect(void*) (server.cpp:1767)
+==31332==    by 0x50DB6DA: start_thread (pthread_create.c:463)
+==31332==    by 0x923861E: clone (clone.S:95)
+==31332== 
+==31332== Conditional jump or move depends on uninitialised value(s)
+==31332==    at 0x1328A8: nlohmann::detail::lexer<nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >, nlohmann::detail::iterator_input_adapter<char*> >::scan() (json.hpp:7982)
+==31332==    by 0x12B25B: nlohmann::detail::parser<nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >, nlohmann::detail::iterator_input_adapter<char*> >::get_token() (json.hpp:11141)
+==31332==    by 0x12448A: nlohmann::detail::parser<nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >, nlohmann::detail::iterator_input_adapter<char*> >::parse(bool, nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >&) (json.hpp:10814)
+==31332==    by 0x1203E3: nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > > nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >::parse<char (&) [1000]>(char (&) [1000], std::function<bool (int, nlohmann::detail::parse_event_t, nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >&)>, bool, bool) (json.hpp:23872)
+==31332==    by 0x1165E4: Bconnect(void*) (server.cpp:1767)
+==31332==    by 0x50DB6DA: start_thread (pthread_create.c:463)
+==31332==    by 0x923861E: clone (clone.S:95)
+==31332== 
+==31332== Use of uninitialised value of size 8
+==31332==    at 0x1328BF: nlohmann::detail::lexer<nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >, nlohmann::detail::iterator_input_adapter<char*> >::scan() (json.hpp:7982)
+==31332==    by 0x12B25B: nlohmann::detail::parser<nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >, nlohmann::detail::iterator_input_adapter<char*> >::get_token() (json.hpp:11141)
+==31332==    by 0x12448A: nlohmann::detail::parser<nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >, nlohmann::detail::iterator_input_adapter<char*> >::parse(bool, nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >&) (json.hpp:10814)
+==31332==    by 0x1203E3: nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > > nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >::parse<char (&) [1000]>(char (&) [1000], std::function<bool (int, nlohmann::detail::parse_event_t, nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >&)>, bool, bool) (json.hpp:23872)
+==31332==    by 0x1165E4: Bconnect(void*) (server.cpp:1767)
+==31332==    by 0x50DB6DA: start_thread (pthread_create.c:463)
+==31332==    by 0x923861E: clone (clone.S:95)
+==31332== 
+==31332== Thread 5:
+==31332== Conditional jump or move depends on uninitialised value(s)
+==31332==    at 0x4C38E88: strlen (vg_replace_strmem.c:494)
+==31332==    by 0x9197981: puts (ioputs.c:35)
+==31332==    by 0x115443: Bdata(void*) (server.cpp:1557)
+==31332==    by 0x50DB6DA: start_thread (pthread_create.c:463)
+==31332==    by 0x923861E: clone (clone.S:95)
+==31332== 
+Premature end of JPEG file
