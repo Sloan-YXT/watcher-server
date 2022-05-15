@@ -532,6 +532,7 @@ void *Adata(void *arg)
                                 {
                                     errno = 0;
                                     printf("send breset failed in %d:%s\n", __LINE__, strerror(errno));
+                                    nodesA.unlock();
                                     // exit_database();
                                     // exit(1);
                                     continue;
@@ -541,6 +542,7 @@ void *Adata(void *arg)
                                 {
                                     errno = 0;
                                     printf("send breset failed in %d:%s\n", __LINE__, strerror(errno));
+                                    nodesA.unlock();
                                     // exit_database();
                                     // exit(1);
                                     continue;
@@ -612,6 +614,7 @@ void *Adata(void *arg)
                                 {
                                     errno = 0;
                                     printf("send breset failed in %d:%s\n", __LINE__, strerror(errno));
+                                    nodesA.unlock();
                                     // exit_database();
                                     // exit(1);
                                     continue;
@@ -621,6 +624,7 @@ void *Adata(void *arg)
                                 {
                                     errno = 0;
                                     printf("send breset failed in %d:%s\n", __LINE__, strerror(errno));
+                                    nodesA.unlock();
                                     // exit_database();
                                     // exit(1);
                                     continue;
@@ -733,6 +737,7 @@ void *Adata(void *arg)
                                     {
                                         errno = 0;
                                         DEBUG("EPIPE");
+                                        nodesA.unlock();
                                         // close((*m)->fd_data);
                                         // p->second->connection.remove(*m);
                                         continue;
@@ -740,6 +745,7 @@ void *Adata(void *arg)
                                     else if (n <= 0)
                                     {
                                         perror("send len to client failed");
+                                        nodesA.unlock();
                                         // exit_database();
                                         // exit(1);
                                         continue;
@@ -749,6 +755,7 @@ void *Adata(void *arg)
                                     {
                                         errno = 0;
                                         DEBUG("EPIPE");
+                                        nodesA.unlock();
                                         // close((*m)->fd_data);
                                         // p->second->connection.remove(*m);
                                         continue;
@@ -756,6 +763,7 @@ void *Adata(void *arg)
                                     else if (n <= 0)
                                     {
                                         perror("send data to client failed");
+                                        nodesA.unlock();
                                         // exit_database();
                                         // exit(1);
                                         continue;
@@ -799,6 +807,7 @@ void *Adata(void *arg)
                                     {
                                         errno = 0;
                                         printf("send breset failed in %d:%s\n", __LINE__, strerror(errno));
+                                        nodesA.unlock();
                                         // exit_database();
                                         // exit(1);
                                         continue;
@@ -808,6 +817,7 @@ void *Adata(void *arg)
                                     {
                                         errno = 0;
                                         printf("send breset failed in %d:%s\n", __LINE__, strerror(errno));
+                                        nodesA.unlock();
                                         // exit_database();
                                         // exit(1);
                                         continue;
@@ -1804,6 +1814,7 @@ void *Bconnect(void *arg)
                                 string high_humi = to_string(c->second->high_humi);
                                 string wrong_light = to_string(c->second->wrong_light);
                                 string wrong_smoke = to_string(c->second->wrong_smoke);
+                                string board_type = c->second->type;
                                 int len = high_temp.length();
                                 int rlen = htonl(len);
                                 printf("high_temp=%s,len=%d\n", high_temp.c_str(), rlen);
@@ -2394,6 +2405,10 @@ void *AThread(void *arg)
                 close(connfdData);
                 continue;
             }
+        }
+        else
+        {
+            code = -1;
         }
         // TO DO 这样的逻辑可能导致卡死，需要设置超时
 
