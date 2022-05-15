@@ -1,2 +1,45 @@
-Premature end of JPEG file
-Premature end of JPEG file
+==9171== Memcheck, a memory error detector
+==9171== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==9171== Using Valgrind-3.19.0 and LibVEX; rerun with -h for copyright info
+==9171== Command: ./server - --log-file=nonsense.log --tool=drd --exclusive-threshold=1000 --shared-threshold=1000
+==9171== 
+==9171== Thread 2:
+==9171== Conditional jump or move depends on uninitialised value(s)
+==9171==    at 0x4C38E88: strlen (vg_replace_strmem.c:494)
+==9171==    by 0x9197981: puts (ioputs.c:35)
+==9171==    by 0x1186EE: AThread(void*) (server.cpp:2198)
+==9171==    by 0x50DB6DA: start_thread (pthread_create.c:463)
+==9171==    by 0x923861E: clone (clone.S:95)
+==9171== 
+==9171== Warning: noted but unhandled ioctl 0x30000001 with no size/direction hints.
+==9171==    This could cause spurious value errors to appear.
+==9171==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==9171== Warning: noted but unhandled ioctl 0x27 with no size/direction hints.
+==9171==    This could cause spurious value errors to appear.
+==9171==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==9171== Warning: noted but unhandled ioctl 0x25 with no size/direction hints.
+==9171==    This could cause spurious value errors to appear.
+==9171==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==9171== Warning: noted but unhandled ioctl 0x17 with no size/direction hints.
+==9171==    This could cause spurious value errors to appear.
+==9171==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==9171== Warning: set address range perms: large range [0x200000000, 0x300200000) (noaccess)
+==9171== Warning: set address range perms: large range [0x13ad3000, 0x33ad2000) (noaccess)
+==9171== Warning: noted but unhandled ioctl 0x19 with no size/direction hints.
+==9171==    This could cause spurious value errors to appear.
+==9171==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==9171== Warning: noted but unhandled ioctl 0x49 with no size/direction hints.
+==9171==    This could cause spurious value errors to appear.
+==9171==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==9171== Warning: noted but unhandled ioctl 0x21 with no size/direction hints.
+==9171==    This could cause spurious value errors to appear.
+==9171==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==9171== Warning: noted but unhandled ioctl 0x1b with no size/direction hints.
+==9171==    This could cause spurious value errors to appear.
+==9171==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==9171== Warning: noted but unhandled ioctl 0x44 with no size/direction hints.
+==9171==    This could cause spurious value errors to appear.
+==9171==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.
+==9171== Warning: noted but unhandled ioctl 0x48 with no size/direction hints.
+==9171==    This could cause spurious value errors to appear.
+==9171==    See README_MISSING_SYSCALL_OR_IOCTL for guidance on writing a proper wrapper.

@@ -532,7 +532,7 @@ void *Adata(void *arg)
                                 {
                                     errno = 0;
                                     printf("send breset failed in %d:%s\n", __LINE__, strerror(errno));
-                                    nodesA.unlock();
+
                                     // exit_database();
                                     // exit(1);
                                     continue;
@@ -542,7 +542,7 @@ void *Adata(void *arg)
                                 {
                                     errno = 0;
                                     printf("send breset failed in %d:%s\n", __LINE__, strerror(errno));
-                                    nodesA.unlock();
+
                                     // exit_database();
                                     // exit(1);
                                     continue;
@@ -614,7 +614,7 @@ void *Adata(void *arg)
                                 {
                                     errno = 0;
                                     printf("send breset failed in %d:%s\n", __LINE__, strerror(errno));
-                                    nodesA.unlock();
+
                                     // exit_database();
                                     // exit(1);
                                     continue;
@@ -624,7 +624,7 @@ void *Adata(void *arg)
                                 {
                                     errno = 0;
                                     printf("send breset failed in %d:%s\n", __LINE__, strerror(errno));
-                                    nodesA.unlock();
+
                                     // exit_database();
                                     // exit(1);
                                     continue;
@@ -737,7 +737,7 @@ void *Adata(void *arg)
                                     {
                                         errno = 0;
                                         DEBUG("EPIPE");
-                                        nodesA.unlock();
+
                                         // close((*m)->fd_data);
                                         // p->second->connection.remove(*m);
                                         continue;
@@ -745,7 +745,7 @@ void *Adata(void *arg)
                                     else if (n <= 0)
                                     {
                                         perror("send len to client failed");
-                                        nodesA.unlock();
+
                                         // exit_database();
                                         // exit(1);
                                         continue;
@@ -755,7 +755,7 @@ void *Adata(void *arg)
                                     {
                                         errno = 0;
                                         DEBUG("EPIPE");
-                                        nodesA.unlock();
+
                                         // close((*m)->fd_data);
                                         // p->second->connection.remove(*m);
                                         continue;
@@ -763,7 +763,7 @@ void *Adata(void *arg)
                                     else if (n <= 0)
                                     {
                                         perror("send data to client failed");
-                                        nodesA.unlock();
+
                                         // exit_database();
                                         // exit(1);
                                         continue;
@@ -807,7 +807,7 @@ void *Adata(void *arg)
                                     {
                                         errno = 0;
                                         printf("send breset failed in %d:%s\n", __LINE__, strerror(errno));
-                                        nodesA.unlock();
+
                                         // exit_database();
                                         // exit(1);
                                         continue;
@@ -817,7 +817,7 @@ void *Adata(void *arg)
                                     {
                                         errno = 0;
                                         printf("send breset failed in %d:%s\n", __LINE__, strerror(errno));
-                                        nodesA.unlock();
+
                                         // exit_database();
                                         // exit(1);
                                         continue;
@@ -1581,6 +1581,8 @@ void *Bdata(void *arg)
                     if (p == nodesA.end())
                     {
                         DEBUG("did not find!");
+                        // forget this is vicious
+                        nodesA.unlock();
                         continue;
                     }
                     nodesA.unlock();
@@ -1941,63 +1943,7 @@ void *Bconnect(void *arg)
                             }
                             else if (type == "face")
                             {
-                                // n = recv(fd, &len, sizeof(len), MSG_WAITALL);
-                                // if (n == 0 | errno == ECONNRESET)
-                                // {
-                                //     if (info->board_name != BBBEFORE)
-                                //     {
-                                //         nodesA.lock();
-                                //         auto c = nodesA.find(info->board_name);
-                                //         nodesA.unlock();
-                                //         if (c != nodesA.end())
-                                //         {
-                                //             c->second->connection.lock();
-                                //             c->second->connection.remove(info);
-                                //             c->second->connection.unlock();
-                                //             // c->second->gdata_node->connection.remove(info);
-                                //         }
-                                //     }
-                                //     DEBUG("android disconnect;");
-                                //     close(fd);
-                                //     close(info->fd_warn);
-                                //     delete info;
-                                //     numer.decreaseB();
-                                // }
-                                // else if (n < 0)
-                                // {
-                                //     DEBUG("recv err");
-                                //     exit(1);
-                                // }
-                                // len = ntohl(len);
-                                // n = recv(fd, message_box, len, MSG_WAITALL);
-                                // if (n == 0 | errno == ECONNRESET)
-                                // {
-                                //     if (info->board_name != BBBEFORE)
-                                //     {
-                                //         nodesA.lock();
-                                //         auto c = nodesA.find(info->board_name);
-                                //         nodesA.unlock();
-                                //         if (c != nodesA.end())
-                                //         {
-                                //             c->second->connection.lock();
-                                //             c->second->connection.remove(info);
-                                //             c->second->connection.unlock();
-                                //             // c->second->gdata_node->connection.remove(info);
-                                //         }
-                                //     }
-                                //     DEBUG("android disconnect;");
-                                //     close(fd);
-                                //     close(info->fd_warn);
-                                //     delete info;
-                                //     numer.decreaseB();
-                                // }
-                                // else if (n < 0)
-                                // {
-                                //     DEBUG("recv err");
-                                //     exit(1);
-                                // }
-                                // message_box[len] = '\0';
-                                // string fileName = info->faces + "/" + message_box;
+                                // nodesA相关的清理在data做
                                 string time = j["time"];
                                 string fileName = info->faces + "/" + time;
                                 DEBUG("file name: " + fileName);

@@ -1,2 +1,2 @@
 valgrind ./server --tool=memcheck --leak-check=full - --log-file=nonsense.log 2>2.log |tee 1.log 
-valgrind ./server  - --log-file=nonsense.log --tool=drd --exclusive-threshold=1000  --shared-threshold=1000 2>2.log |tee 1.log 
+valgrind ./server  - --log-file=nonsense.log --tool=drd --exclusive-threshold=1000  --shared-threshold=1000   --trace-mutex=yes  --check-stack-var=yes   2>2.log |tee 1.log 
