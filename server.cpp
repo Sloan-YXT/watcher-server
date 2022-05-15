@@ -298,25 +298,26 @@ public:
     // unordered_map<string, pthread_mutex_t> face_locks;
     unique_ptr<pthread_t> threadVal = unique_ptr<pthread_t>(new pthread_t());
     pthread_rwlock_t rw_lock;
+
     ANodeInfo()
     {
-        pthread_rwlock_init(&rw_lock, NULL);
+        // pthread_rwlock_init(&rw_lock, NULL);
     }
     ~ANodeInfo()
     {
-        pthread_rwlock_destroy(&rw_lock);
+        // pthread_rwlock_destroy(&rw_lock);
     }
     void writeVal()
     {
-        pthread_rwlock_wrlock(&rw_lock);
+        // pthread_rwlock_wrlock(&rw_lock);
     }
     void readVal()
     {
-        pthread_rwlock_rdlock(&rw_lock);
+        // pthread_rwlock_rdlock(&rw_lock);
     }
     void freeLock()
     {
-        pthread_rwlock_unlock(&rw_lock);
+        // pthread_rwlock_unlock(&rw_lock);
     }
 };
 bool operator==(const ANodeInfo &a, const ANodeInfo &b)
@@ -555,12 +556,12 @@ void *Adata(void *arg)
                             nodesA.erase(a_info->name);
                             // nodesA.unlock();
                         }
+                        delete a_info;
                         nodesA.unlock();
                         close(a_info->fd_data);
                         freeV.lock();
                         freeV.push(a_info->vcode);
                         freeV.unlock();
-                        delete a_info;
                         numer.decreaseA();
                         DEBUG("");
                         continue;
@@ -635,6 +636,7 @@ void *Adata(void *arg)
                             nodesA.erase(a_info->name);
                             // nodesA.unlock();
                         }
+                        delete a_info;
                         nodesA.unlock();
                         DEBUG("after erase");
                         close(a_info->fd_data);
@@ -644,7 +646,6 @@ void *Adata(void *arg)
                         freeV.push(a_info->vcode);
                         freeV.unlock();
                         numer.decreaseA();
-                        delete a_info;
                     }
                 }
                 else
@@ -683,14 +684,16 @@ void *Adata(void *arg)
                             a_info->wood_time = clock_after;
                         }
                         DEBUG("");
-                        a_info->writeVal();
+                        // a_info->writeVal();
+                        nodesA.lock();
                         a_info->name = data["name"];
                         a_info->position = data["position"];
                         a_info->humi = data["humi"];
                         a_info->temp = data["temp"];
                         a_info->light = data["light"];
                         a_info->smoke = data["smoke"];
-                        a_info->freeLock();
+                        nodesA.unlock();
+                        // a_info->freeLock();
                         DEBUG("");
 
                         double temp = stod(a_info->temp);
@@ -832,11 +835,11 @@ void *Adata(void *arg)
                                 freeV.push(vcode);
                                 freeV.unlock();
                             }
+                            delete a_info;
                             nodesA.unlock();
                             close(a_info->fd_data);
                             // close(a_info->fd_graph);
                             // close(a_info->fd_tick);
-                            delete a_info;
                             numer.decreaseA();
                         }
                     }
@@ -911,7 +914,9 @@ void *Agraph(void *arg)
                     if (n == 0 | errno == ECONNRESET)
                     {
                         errno = 0;
-                        DEBUG("N==0");
+                        // TODO
+                        //这里存在一直断板子连接的问题，看log应该是这里，不明原因
+                        printf("in line%d,n=%d,errno=%d\n", __LINE__, n, errno);
                         if (epoll_ctl(epfd, EPOLL_CTL_DEL, connfd, NULL) == -1)
                         {
                             printf("A read epoll del failed %d:%s", __LINE__, strerror(errno));
@@ -1162,12 +1167,14 @@ void *stm32DataThread(void *args)
         trim(temp);
         trim(humi);
         printf("recv temp = %s;humi = %s\n", temp, humi);
-        data->writeVal();
+        // data->writeVal();
+        nodesA.lock();
         data->temp = temp;
         data->humi = humi;
         data->light = light;
         data->smoke = smoke;
-        data->freeLock();
+        nodesA.unlock();
+        // data->freeLock();
         unsigned int wood_time = data->wood_time;
 
         if (wood_time == 0)
@@ -1585,15 +1592,17 @@ void *Bdata(void *arg)
                         nodesA.unlock();
                         continue;
                     }
-                    nodesA.unlock();
-                    p->second->readVal();
+
+                    // p->second->readVal();
                     j["name"] = p->second->name;
                     j["position"] = p->second->position;
                     j["temp"] = p->second->temp;
                     j["humi"] = p->second->humi;
                     j["light"] = p->second->light;
                     j["smoke"] = p->second->smoke;
-                    p->second->freeLock();
+                    string tmp = p->second->name;
+                    nodesA.unlock();
+                    // p->second->freeLock();
                     string msg = j.dump();
                     len = msg.length();
                     len = htonl(len);
@@ -1608,7 +1617,7 @@ void *Bdata(void *arg)
                     }
                     else if (n < 0)
                     {
-                        cout << "send data failed " << p->second->name << " in line " << __LINE__ << endl;
+                        cout << "send data failed " << tmp << " in line " << __LINE__ << endl;
                         exit(1);
                     }
                     n = send(fd, msg.c_str(), msg.length(), 0);
@@ -1622,7 +1631,7 @@ void *Bdata(void *arg)
                     }
                     else if (n < 0)
                     {
-                        cout << "send data failed " << p->second->name << " in line " << __LINE__ << endl;
+                        cout << "send data failed " << tmp << " in line " << __LINE__ << endl;
                         exit(1);
                     }
                 }
@@ -1789,17 +1798,33 @@ void *Bconnect(void *arg)
                                 info->pair->client_name = clientName;
                                 nodesA.lock();
                                 auto c = nodesA.find(boardName);
+
                                 // nodesA.unlock();
                                 if (c != nodesA.end())
                                 {
-                                    // c->second->connection.lock();
+                                    // nodesA unlock down after ask for c datax
+                                    //  c->second->connection.lock();
                                     c->second->connection.push_back(info);
+
                                     // c->second->gdata_node->connection.push_back(info);
                                     // c->second->connection.unlock();
                                 }
-                                nodesA.unlock();
+                                else
+                                {
+                                    nodesA.unlock();
+                                    ERROR_ACTION(epoll_ctl(epfd, EPOLL_CTL_DEL, fd, NULL));
+                                    close(fd);
+                                    continue;
+                                }
+
                                 info->faces = c->second->faces;
                                 int vcode = c->second->vcode;
+                                string high_temp = to_string(c->second->high_temp);
+                                string high_humi = to_string(c->second->high_humi);
+                                string wrong_light = to_string(c->second->wrong_light);
+                                string wrong_smoke = to_string(c->second->wrong_smoke);
+                                string board_type = c->second->type;
+                                nodesA.unlock();
                                 vcode = htonl(vcode);
                                 n = send(fd, &vcode, 4, 0);
                                 if (n < 0 && (errno == EPIPE | errno == ECONNRESET))
@@ -1812,11 +1837,7 @@ void *Bconnect(void *arg)
                                     exit_database();
                                     exit(1);
                                 }
-                                string high_temp = to_string(c->second->high_temp);
-                                string high_humi = to_string(c->second->high_humi);
-                                string wrong_light = to_string(c->second->wrong_light);
-                                string wrong_smoke = to_string(c->second->wrong_smoke);
-                                string board_type = c->second->type;
+
                                 int len = high_temp.length();
                                 int rlen = htonl(len);
                                 printf("high_temp=%s,len=%d\n", high_temp.c_str(), rlen);
@@ -1905,6 +1926,30 @@ void *Bconnect(void *arg)
                                     exit(1);
                                 }
                                 n = send(fd, wrong_smoke.c_str(), len, 0);
+                                if (n < 0 && (errno == EPIPE | errno == ECONNRESET))
+                                {
+                                    errno = 0;
+                                }
+                                else if (n <= 0)
+                                {
+                                    printf("send failed in %d:%s\n", __LINE__, strerror(errno));
+                                    exit_database();
+                                    exit(1);
+                                }
+                                len = board_type.length();
+                                rlen = htonl(len);
+                                n = send(fd, &rlen, sizeof(rlen), 0);
+                                if (n < 0 && (errno == EPIPE | errno == ECONNRESET))
+                                {
+                                    errno = 0;
+                                }
+                                else if (n <= 0)
+                                {
+                                    printf("send failed in %d:%s\n", __LINE__, strerror(errno));
+                                    exit_database();
+                                    exit(1);
+                                }
+                                n = send(fd, board_type.c_str(), len, 0);
                                 if (n < 0 && (errno == EPIPE | errno == ECONNRESET))
                                 {
                                     errno = 0;
@@ -2198,6 +2243,7 @@ void *AThread(void *arg)
             puts(message_buffer);
             if (n < 0 && errno != ECONNRESET)
             {
+                perror("recv failed in AThread:");
                 exit(1);
             }
             if (n == 0 | errno == ECONNRESET)
@@ -2248,6 +2294,7 @@ void *AThread(void *arg)
             n = recv(connfdData, type_buffer, len_tmp, MSG_WAITALL);
             if (n < 0 && errno != ECONNRESET)
             {
+                perror("recv failed in AThread:");
                 exit(1);
             }
             if (n == 0 | errno == ECONNRESET)
@@ -2691,6 +2738,8 @@ void *BThread(void *arg)
         }
         else if (n <= 0)
         {
+            perror("faile in Bconn:");
+            printf("errno=%d\n", errno);
             exit_database();
             exit(1);
         }
@@ -2706,6 +2755,8 @@ void *BThread(void *arg)
         }
         else if (n <= 0)
         {
+            perror("faile in Bconn:");
+            printf("errno=%d\n", errno);
             exit_database();
             exit(1);
         }

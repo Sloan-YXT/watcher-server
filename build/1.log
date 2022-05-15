@@ -1,72 +1,455 @@
-main:9171
+main:28411
 delete from board_data where month !=5 and id > 0
-BThread:9184debug:2612,BTH working
-Bconnect:9185
-debug:1661,Bconn working
-Bdata:9186
-debug:1512,Bconn working
-AThread:9183
-debug:2149,ATH working
-Agraph:9188
-Adata:9187
+AThread:28413
+BThread:28414Bconnect:28416
+debug:1663,Bconn working
+debug:2158,ATH working
+debug:2623,BTH working
+Adata:28415
 debug:458,Adata start
 debug:461,Adata working
-debug:2157,
-debug:2176,
+Bdata:28418
+debug:1514,Bconn working
+Agraph:28417
+debug:2166,
+debug:2185,
 yaoxuetao's raspi
-debug:2225,
+debug:2235,
 raspi
-debug:2280,yaoxuetao's raspi
+debug:2291,yaoxuetao's raspi
 stackV lock
-debug:2290,
-stackV unlock
-debug:2298,
 debug:2301,
-debug:2391,let me know
-debug:2398,let me know
-debug:2421,yaoxuetao's raspi
+stackV unlock
+debug:2309,
+debug:2312,
+debug:2402,let me know
+debug:2409,let me know
+debug:2432,yaoxuetao's raspi
 yaoxuetao's raspi
-debug:2426,
-debug:2428,
-debug:2430,
-debug:2432,
-debug:2434,
-debug:2436,
-debug:2438,
-debug:2440,
-debug:2504,before add element
-debug:2521,after add element
-debug:2522,before create dir
-debug:2523,after create workdir
-debug:2149,ATH working
+debug:2437,
+debug:2439,
+debug:2441,
+debug:2443,
+debug:2445,
+debug:2447,
+debug:2449,
+debug:2451,
+debug:2515,before add element
+debug:2532,after add element
+debug:2533,before create dir
+debug:2534,after create workdir
+debug:2158,ATH working
+ticktock:28447
+debug:1442,
+tick debug:debug:1447,yaoxuetao's raspi
+debug:fd_tick:17
+debug:1449,before tick recv
 debug:/home/yaoxuetao/yaoxuetao's raspi/photos
 debug:904,in Agraph
-debug:926,in Agraph
-ticktock:9189
-debug:1440,
-tick debug:debug:1445,yaoxuetao's raspi
-debug:fd_tick:17
-debug:1447,before tick recv
-debug:1492,yaoxuetao's raspi still in connection
+debug:928,in Agraph
+debug:1494,yaoxuetao's raspi still in connection
 
-debug:1495,after tick recv
-debug:1440,
-tick debug:debug:1445,yaoxuetao's raspi
+debug:1497,after tick recv
+debug:1442,
+tick debug:debug:1447,yaoxuetao's raspi
 debug:fd_tick:17
-debug:1447,before tick recv
-debug:975,
-debug:1017,
+debug:1449,before tick recv
+debug:977,
+debug:1019,
 debug:24,/home/yaoxuetao/yaoxuetao's raspi/data.xml
 debug:26,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Sun May 15 10:32:16 2022
+/home/yaoxuetao/yaoxuetao's raspi/photos/Sun May 15 13:19:41 2022
 debug:29,
 debug:31,
-debug:1097,
+debug:1099,
+debug:1494,yaoxuetao's raspi still in connection
+
+debug:1497,after tick recv
+debug:1442,
+tick debug:debug:1447,yaoxuetao's raspi
+debug:fd_tick:17
+debug:1449,before tick recv
 debug:/home/yaoxuetao/yaoxuetao's raspi/photos
 debug:904,in Agraph
-debug:926,in Agraph
-debug:975,
-debug:1017,
+debug:928,in Agraph
+debug:977,
+debug:1019,
 debug:24,/home/yaoxuetao/yaoxuetao's raspi/data.xml
 debug:26,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Sun May 15 10:32:21 2022
+/home/yaoxuetao/yaoxuetao's raspi/photos/Sun May 15 13:19:47 2022
+debug:29,
+debug:31,
+debug:1099,
+debug:/home/yaoxuetao/yaoxuetao's raspi/photos
+debug:904,in Agraph
+debug:928,in Agraph
+name=yaoxuetao's raspi
+pos=
+type=raspi
+---B(id)---1
+ptr info con = aa8
+---B(id)---2
+ptr info data = ab3
+debug:2623,BTH working
+debug:977,
+debug:1019,
+debug:24,/home/yaoxuetao/yaoxuetao's raspi/data.xml
+debug:26,
+/home/yaoxuetao/yaoxuetao's raspi/photos/Sun May 15 13:19:50 2022
+debug:29,
+debug:31,
+debug:1099,
+debug:1665,Bconn epoll shit
+in Bcon:1687,ptr:200018a0
+debug:1518,Bconn epoll shit
+in Bdata:1539,ptr:20001930
+not verified yet:socket error:connection with board [192.168.1.108:48476]:Success
+
+
+
+BData Del addr =  0x7fc220001930
+
+
+
+---~B(id)---()1 not connect yet
+debug:1514,Bconn working
+---~B(id)---()0 not connect yet
+
+
+
+BCon Del addr =  0x7fc2200018a0
+
+
+
+debug:1663,Bconn working
+name=yaoxuetao's raspi
+pos=
+type=raspi
+---B(id)---1
+ptr info con = aa8
+---B(id)---2
+ptr info data = ab3
+debug:2623,BTH working
+debug:1494,yaoxuetao's raspi still in connection
+
+debug:1497,after tick recv
+debug:1442,
+tick debug:debug:1447,yaoxuetao's raspi
+debug:fd_tick:17
+debug:1449,before tick recv
+debug:1665,Bconn epoll shit
+in Bcon:1687,ptr:20001a40
+debug:1518,Bconn epoll shit
+in Bdata:1539,ptr:20001ad0
+not verified yet:socket error:connection with board [192.168.1.108:48482]:Success
+
+
+
+BData Del addr =  0x7fc220001ad0
+
+
+
+---~B(id)---()1 not connect yet
+debug:1514,Bconn working
+---~B(id)---()0 not connect yet
+
+
+
+BCon Del addr =  0x7fc220001a40
+
+
+
+debug:1663,Bconn working
+name=yaoxuetao's raspi
+pos=
+type=raspi
+---B(id)---1
+ptr info con = aa8
+---B(id)---2
+ptr info data = ab3
+debug:2623,BTH working
+debug:1518,Bconn epoll shit
+in Bdata:1539,ptr:20001c50
+
+
+
+BData Del addr =  0x7fc220001c50
+
+
+
+---~B(id)---()1 not connect yet
+debug:1514,Bconn working
+debug:1665,Bconn epoll shit
+in Bcon:1687,ptr:20001bc0
+not verified yet:socket error:connection with board [192.168.1.108:48488]:Success
+---~B(id)---()0 not connect yet
+
+
+
+BCon Del addr =  0x7fc220001bc0
+
+
+
+debug:1663,Bconn working
+name=yaoxuetao's raspi
+pos=
+type=raspi
+---B(id)---1
+ptr info con = aa8
+---B(id)---2
+ptr info data = ab3
+debug:2623,BTH working
+debug:1665,Bconn epoll shit
+in Bcon:1687,ptr:20001d40
+debug:1518,Bconn epoll shit
+not verified yet:socket error:connection with board [192.168.1.108:48494]:Success
+in Bdata:1539,ptr:20001dd0
+
+
+
+BData Del addr =  0x7fc220001dd0
+
+
+
+---~B(id)---()1 not connect yet
+
+
+
+BCon Del addr =  0x7fc220001d40
+
+
+
+debug:1663,Bconn working
+---~B(id)---()0 not connect yet
+debug:1514,Bconn working
+name=yaoxuetao's raspi
+pos=
+type=raspi
+---B(id)---1
+ptr info con = aa8
+---B(id)---2
+ptr info data = ab3
+debug:2623,BTH working
+debug:1665,Bconn epoll shit
+in Bcon:1687,ptr:20001ec0
+debug:1518,Bconn epoll shit
+in Bdata:1539,ptr:20001f50
+not verified yet:socket error:connection with board [192.168.1.108:48500]:Success
+
+
+
+BData Del addr =  0x7fc220001f50
+
+
+
+---~B(id)---()1 not connect yet
+debug:1514,Bconn working
+---~B(id)---()0 not connect yet
+
+
+
+BCon Del addr =  0x7fc220001ec0
+
+
+
+debug:1663,Bconn working
+name=yaoxuetao's raspi
+pos=
+type=raspi
+---B(id)---1
+ptr info con = aa8
+---B(id)---2
+ptr info data = ab3
+debug:2623,BTH working
+debug:1665,Bconn epoll shit
+debug:1518,Bconn epoll shit
+in Bdata:1539,ptr:200020d0
+in Bcon:1687,ptr:20002040
+not verified yet:socket error:connection with board [192.168.1.108:48528]:Success
+
+
+
+BData Del addr =  0x7fc2200020d0
+
+
+
+---~B(id)---()1 not connect yet
+debug:1514,Bconn working
+---~B(id)---()0 not connect yet
+
+
+
+BCon Del addr =  0x7fc220002040
+
+
+
+debug:1663,Bconn working
+name=yaoxuetao's raspi
+pos=
+type=raspi
+---B(id)---1
+ptr info con = aa8
+---B(id)---2
+ptr info data = ab3
+debug:2623,BTH working
+debug:1665,Bconn epoll shit
+in Bcon:1687,ptr:200021c0
+debug:1518,Bconn epoll shit
+in Bdata:1539,ptr:20002250
+not verified yet:socket error:connection with board [192.168.1.108:48542]:Success
+
+
+
+BData Del addr =  0x7fc220002250
+
+
+
+---~B(id)---()1 not connect yet
+
+
+
+BCon Del addr =  0x7fc2200021c0
+
+
+
+debug:1663,Bconn working
+---~B(id)---()0 not connect yet
+debug:1514,Bconn working
+name=yaoxuetao's raspi
+pos=
+type=raspi
+---B(id)---1
+ptr info con = aa8
+---B(id)---2
+ptr info data = ab3
+debug:2623,BTH working
+debug:463,Adata epoll shit
+debug:475,Adata epoll wait success
+debug:487,before recv len
+debug:652,recv message
+debug:654,{"humi":"57.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+{"humi":"57.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+
+
+
+just for one time should it be
+
+
+debug:685,
+debug:694,
+debug:708,
+debug:710,
+debug:713,
+debug:715,
+debug:726,before send data to B
+debug:461,Adata working
+debug:1665,Bconn epoll shit
+in Bcon:1687,ptr:20002310
+debug:1518,Bconn epoll shit
+in Bdata:1539,ptr:200023a0
+not verified yet:socket error:connection with board [192.168.1.108:48548]:Success
+
+
+
+BData Del addr =  0x7fc2200023a0
+
+
+
+---~B(id)---()1 not connect yet
+debug:1514,Bconn working
+---~B(id)---()0 not connect yet
+
+
+
+BCon Del addr =  0x7fc220002310
+
+
+
+debug:1663,Bconn working
+name=yaoxuetao's raspi
+pos=yaoxuetao's personal office
+type=raspi
+---B(id)---1
+ptr info con = aa8
+---B(id)---2
+ptr info data = ab3
+debug:2623,BTH working
+debug:1665,Bconn epoll shit
+in Bcon:1687,ptr:20002370
+debug:1518,Bconn epoll shit
+in Bdata:1539,ptr:20002400
+not verified yet:socket error:connection with board [192.168.1.108:48554]:Success
+
+
+
+BData Del addr =  0x7fc220002400
+
+
+
+---~B(id)---()1 not connect yet
+debug:1514,Bconn working
+---~B(id)---()0 not connect yet
+
+
+
+BCon Del addr =  0x7fc220002370
+
+
+
+debug:1663,Bconn working
+name=yaoxuetao's raspi
+pos=yaoxuetao's personal office
+type=raspi
+---B(id)---1
+ptr info con = aa8
+---B(id)---2
+ptr info data = ab3
+debug:2623,BTH working
+debug:1494,yaoxuetao's raspi still in connection
+
+debug:1497,after tick recv
+debug:1442,
+tick debug:debug:1447,yaoxuetao's raspi
+debug:fd_tick:17
+debug:1449,before tick recv
+debug:/home/yaoxuetao/yaoxuetao's raspi/photos
+debug:904,in Agraph
+debug:928,in Agraph
+debug:977,
+debug:1019,
+debug:24,/home/yaoxuetao/yaoxuetao's raspi/data.xml
+debug:26,
+/home/yaoxuetao/yaoxuetao's raspi/photos/Sun May 15 13:19:57 2022
+debug:29,
+debug:31,
+debug:1099,
+debug:463,Adata epoll shit
+debug:475,Adata epoll wait success
+debug:487,before recv len
+debug:652,recv message
+debug:654,{"humi":"57.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+{"humi":"57.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+debug:685,
+debug:694,
+debug:708,
+debug:710,
+debug:713,
+debug:715,
+debug:726,before send data to B
+debug:461,Adata working
+debug:1477,
+debug:1480,
+debug:1483,
+debug:463,Adata epoll shit
+debug:475,Adata epoll wait success
+debug:487,before recv len
+debug:/home/yaoxuetao/yaoxuetao's raspi/photos
+debug:904,in Agraph
+in line916,n=0,errno=0
+505:board[192.168.1.222:33344] has disconnected:Success
+yaoxuetao's raspi
+debug:925,after delete
+debug:1099,
+debug:552,
+stackV lock
+stackV unlock

@@ -1,0 +1,975 @@
+main:25483
+delete from board_data where month !=5 and id > 0
+AThread:25485
+BThread:25486Adata:25487
+debug:458,Adata start
+debug:461,Adata working
+debug:2149,ATH working
+Bconnect:25488
+debug:1661,Bconn working
+Agraph:25489
+debug:2612,BTH working
+Bdata:25490
+debug:1512,Bconn working
+debug:2157,
+debug:2176,
+yaoxuetao's raspi
+debug:2225,
+raspi
+debug:2280,yaoxuetao's raspi
+stackV lock
+debug:2290,
+stackV unlock
+debug:2298,
+debug:2301,
+debug:2391,let me know
+debug:2398,let me know
+debug:2421,yaoxuetao's raspi
+yaoxuetao's raspi
+debug:2426,
+debug:2428,
+debug:2430,
+debug:2432,
+debug:2434,
+debug:2436,
+debug:2438,
+debug:2440,
+debug:2504,before add element
+debug:/home/yaoxuetao/yaoxuetao's raspi/photos
+debug:904,in Agraph
+debug:926,in Agraph
+debug:2521,after add element
+debug:2522,before create dir
+debug:2523,after create workdir
+debug:2149,ATH working
+ticktock:25518
+debug:1440,
+tick debug:debug:1445,yaoxuetao's raspi
+debug:fd_tick:17
+debug:1447,before tick recv
+debug:1492,yaoxuetao's raspi still in connection
+
+debug:1495,after tick recv
+debug:1440,
+tick debug:debug:1445,yaoxuetao's raspi
+debug:fd_tick:17
+debug:1447,before tick recv
+debug:975,
+debug:1017,
+debug:24,/home/yaoxuetao/yaoxuetao's raspi/data.xml
+debug:26,
+/home/yaoxuetao/yaoxuetao's raspi/photos/Sun May 15 12:21:07 2022
+debug:29,
+debug:31,
+debug:1097,
+debug:1492,yaoxuetao's raspi still in connection
+
+debug:1495,after tick recv
+debug:1440,
+tick debug:debug:1445,yaoxuetao's raspi
+debug:fd_tick:17
+debug:1447,before tick recv
+debug:463,Adata epoll shit
+debug:475,Adata epoll wait success
+debug:487,before recv len
+debug:652,recv message
+debug:654,{"humi":"57.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+{"humi":"57.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+
+
+
+just for one time should it be
+
+
+debug:685,
+debug:694,
+debug:708,
+debug:710,
+debug:713,
+debug:715,
+debug:726,before send data to B
+debug:461,Adata working
+debug:463,Adata epoll shit
+debug:475,Adata epoll wait success
+debug:487,before recv len
+debug:652,recv message
+debug:654,{"humi":"60.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+{"humi":"60.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+debug:685,
+debug:694,
+debug:708,
+debug:710,
+debug:713,
+debug:715,
+debug:726,before send data to B
+debug:461,Adata working
+debug:1492,yaoxuetao's raspi still in connection
+
+debug:1495,after tick recv
+debug:1440,
+tick debug:debug:1445,yaoxuetao's raspi
+debug:fd_tick:17
+debug:1447,before tick recv
+debug:/home/yaoxuetao/yaoxuetao's raspi/photos
+debug:904,in Agraph
+debug:926,in Agraph
+debug:975,
+debug:1017,
+debug:24,/home/yaoxuetao/yaoxuetao's raspi/data.xml
+debug:26,
+/home/yaoxuetao/yaoxuetao's raspi/photos/Sun May 15 12:21:17 2022
+debug:29,
+debug:31,
+debug:1097,
+debug:463,Adata epoll shit
+debug:475,Adata epoll wait success
+debug:487,before recv len
+debug:652,recv message
+debug:654,{"humi":"60.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+{"humi":"60.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+debug:685,
+debug:694,
+debug:708,
+debug:710,
+debug:713,
+debug:715,
+debug:726,before send data to B
+debug:461,Adata working
+debug:463,Adata epoll shit
+debug:475,Adata epoll wait success
+debug:487,before recv len
+debug:652,recv message
+debug:654,{"humi":"60.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+{"humi":"60.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+debug:685,
+debug:694,
+debug:708,
+debug:710,
+debug:713,
+debug:715,
+debug:726,before send data to B
+debug:461,Adata working
+debug:1492,yaoxuetao's raspi still in connection
+
+debug:1495,after tick recv
+debug:1440,
+tick debug:debug:1445,yaoxuetao's raspi
+debug:fd_tick:17
+debug:1447,before tick recv
+debug:463,Adata epoll shit
+debug:475,Adata epoll wait success
+debug:487,before recv len
+debug:652,recv message
+debug:654,{"humi":"60.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+{"humi":"60.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+debug:685,
+debug:694,
+debug:708,
+debug:710,
+debug:713,
+debug:715,
+debug:726,before send data to B
+debug:461,Adata working
+debug:463,Adata epoll shit
+debug:475,Adata epoll wait success
+debug:487,before recv len
+debug:652,recv message
+debug:654,{"humi":"60.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+{"humi":"60.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+debug:685,
+debug:694,
+debug:708,
+debug:710,
+debug:713,
+debug:715,
+debug:726,before send data to B
+debug:461,Adata working
+debug:/home/yaoxuetao/yaoxuetao's raspi/photos
+debug:904,in Agraph
+debug:926,in Agraph
+debug:975,
+debug:1017,
+debug:24,/home/yaoxuetao/yaoxuetao's raspi/data.xml
+debug:26,
+/home/yaoxuetao/yaoxuetao's raspi/photos/Sun May 15 12:21:25 2022
+debug:29,
+debug:31,
+debug:1097,
+debug:/home/yaoxuetao/yaoxuetao's raspi/photos
+debug:904,in Agraph
+debug:926,in Agraph
+debug:1492,yaoxuetao's raspi still in connection
+
+debug:1495,after tick recv
+debug:1440,
+tick debug:debug:1445,yaoxuetao's raspi
+debug:fd_tick:17
+debug:1447,before tick recv
+debug:975,
+debug:1017,
+debug:24,/home/yaoxuetao/yaoxuetao's raspi/data.xml
+debug:26,
+/home/yaoxuetao/yaoxuetao's raspi/photos/Sun May 15 12:21:27 2022
+debug:29,
+debug:31,
+debug:1097,
+name=yaoxuetao's raspi
+pos=yaoxuetao's personal office
+type=raspi
+---B(id)---1
+ptr info con = a99
+---B(id)---2
+ptr info data = aa4
+debug:2612,BTH working
+debug:1663,Bconn epoll shit
+in Bcon:1685,ptr:ec001930
+{"type":"connect","board name":"yaoxuetao's raspi","client name":"Anymous"}
+debug:1778,before B json parse
+high_temp=30.000000,len=150994944
+debug:1661,Bconn working
+debug:1516,Bconn epoll shit
+in Bdata:1537,ptr:ec0019c0
+{"type":"month data","board name":"yaoxuetao's raspi"}
+debug:1512,Bconn working
+debug:1516,Bconn epoll shit
+in Bdata:1537,ptr:ec0019c0
+{"type":"month data","board name":"yaoxuetao's raspi"}
+debug:1512,Bconn working
+debug:1516,Bconn epoll shit
+in Bdata:1537,ptr:ec0019c0
+{"type":"month data","board name":"yaoxuetao's raspi"}
+debug:1512,Bconn working
+debug:1492,yaoxuetao's raspi still in connection
+
+debug:1495,after tick recv
+debug:1440,
+tick debug:debug:1445,yaoxuetao's raspi
+debug:fd_tick:17
+debug:1447,before tick recv
+debug:1516,Bconn epoll shit
+in Bdata:1537,ptr:ec0019c0
+{"type":"month data","board name":"yaoxuetao's raspi"}
+debug:1512,Bconn working
+debug:1663,Bconn epoll shit
+debug:1516,Bconn epoll shit
+in Bdata:1537,ptr:ec0019c0
+in Bcon:1685,ptr:ec001930
+Anymous:socket error:connection with board [192.168.1.108:45240]:Success
+nodesA locked
+nodesA unlocked
+
+
+
+BData Del addr =  0x7f60ec0019c0
+
+
+
+---~B(id)---()1 yaoxuetao's raspi
+debug:1512,Bconn working
+---~B(id)---()0 yaoxuetao's raspi
+
+
+
+BCon Del addr =  0x7f60ec001930
+
+
+
+debug:1661,Bconn working
+name=yaoxuetao's raspi
+pos=yaoxuetao's personal office
+type=raspi
+---B(id)---1
+ptr info con = a99
+---B(id)---2
+ptr info data = aa4
+debug:2612,BTH working
+debug:1663,Bconn epoll shit
+in Bcon:1685,ptr:ec001aa0
+debug:1516,Bconn epoll shit
+in Bdata:1537,ptr:ec001b30
+not verified yet:socket error:connection with board [192.168.1.108:45258]:Success
+
+
+
+BData Del addr =  0x7f60ec001b30
+
+
+
+---~B(id)---()1 not connect yet
+debug:1512,Bconn working
+---~B(id)---()0 not connect yet
+
+
+
+BCon Del addr =  0x7f60ec001aa0
+
+
+
+debug:1661,Bconn working
+name=yaoxuetao's raspi
+pos=yaoxuetao's personal office
+type=raspi
+---B(id)---1
+ptr info con = a99
+---B(id)---2
+ptr info data = aa4
+debug:2612,BTH working
+debug:1663,Bconn epoll shit
+in Bcon:1685,ptr:ec001bf0
+{"type":"connect","board name":"yaoxuetao's raspi","client name":"Anymous"}
+debug:1778,before B json parse
+high_temp=30.000000,len=150994944
+debug:1661,Bconn working
+debug:1516,Bconn epoll shit
+in Bdata:1537,ptr:ec001c80
+{"type":"month data","board name":"yaoxuetao's raspi"}
+debug:1512,Bconn working
+debug:1516,Bconn epoll shit
+in Bdata:1537,ptr:ec001c80
+{"type":"month data","board name":"yaoxuetao's raspi"}
+debug:1512,Bconn working
+debug:/home/yaoxuetao/yaoxuetao's raspi/photos
+debug:904,in Agraph
+debug:926,in Agraph
+debug:975,
+debug:1017,
+debug:24,/home/yaoxuetao/yaoxuetao's raspi/data.xml
+debug:26,
+/home/yaoxuetao/yaoxuetao's raspi/photos/Sun May 15 12:21:36 2022
+debug:29,
+debug:31,
+debug:1097,
+debug:1492,yaoxuetao's raspi still in connection
+
+debug:1495,after tick recv
+debug:1440,
+tick debug:debug:1445,yaoxuetao's raspi
+debug:fd_tick:17
+debug:1447,before tick recv
+debug:1516,Bconn epoll shit
+in Bdata:1537,ptr:ec001c80
+{"type":"month data","board name":"yaoxuetao's raspi"}
+debug:1512,Bconn working
+debug:463,Adata epoll shit
+debug:475,Adata epoll wait success
+debug:487,before recv len
+debug:652,recv message
+debug:654,{"humi":"60.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+{"humi":"60.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+debug:685,
+debug:694,
+debug:708,
+debug:710,
+debug:713,
+debug:715,
+debug:726,before send data to B
+debug:734,n=
+4
+debug:772,{"boardName":"yaoxuetao's raspi","humi":"60.0","light":"1","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","time":"Sun May 15 12:21:38 2022","type":"data"}
+debug:461,Adata working
+debug:1516,Bconn epoll shit
+in Bdata:1537,ptr:ec001c80
+{"type":"month data","board name":"yaoxuetao's raspi"}
+debug:1512,Bconn working
+debug:1516,Bconn epoll shit
+in Bdata:1537,ptr:ec001c80
+{"type":"month data","board name":"yaoxuetao's raspi"}
+debug:1512,Bconn working
+debug:463,Adata epoll shit
+debug:475,Adata epoll wait success
+debug:487,before recv len
+debug:652,recv message
+debug:654,{"humi":"56.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+{"humi":"56.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+debug:685,
+debug:694,
+debug:708,
+debug:710,
+debug:713,
+debug:715,
+debug:726,before send data to B
+debug:734,n=
+4
+debug:772,{"boardName":"yaoxuetao's raspi","humi":"56.0","light":"1","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","time":"Sun May 15 12:21:40 2022","type":"data"}
+debug:461,Adata working
+debug:1516,Bconn epoll shit
+in Bdata:1537,ptr:ec001c80
+{"type":"month data","board name":"yaoxuetao's raspi"}
+debug:1512,Bconn working
+debug:1516,Bconn epoll shit
+in Bdata:1537,ptr:ec001c80
+debug:463,Adata epoll shit
+debug:475,Adata epoll wait success
+debug:487,before recv len
+{"type":"month data","board name":"yaoxuetao's raspi"}
+debug:1512,Bconn working
+debug:652,recv message
+debug:654,{"humi":"59.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+{"humi":"59.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+debug:685,
+debug:694,
+debug:708,
+debug:710,
+debug:713,
+debug:715,
+debug:726,before send data to B
+debug:734,n=
+4
+debug:772,{"boardName":"yaoxuetao's raspi","humi":"59.0","light":"1","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","time":"Sun May 15 12:21:42 2022","type":"data"}
+debug:461,Adata working
+debug:1475,
+debug:1478,
+debug:1481,
+debug:463,Adata epoll shit
+debug:475,Adata epoll wait success
+debug:487,before recv len
+debug:/home/yaoxuetao/yaoxuetao's raspi/photos505:board[192.168.1.222:60824] has disconnected:Success
+
+debug:904,in Agraph
+yaoxuetao's raspidebug:914,N==0
+
+debug:523,in Adata sending
+debug:923,after delete
+debug:1097,
+debug:550,{"content":"breset","type":"cmd"}
+debug:552,
+stackV lock
+stackV unlock
+debug:565,
+debug:461,Adata working
+debug:1663,Bconn epoll shit
+in Bcon:1685,ptr:ec001bf0
+Anymous:socket error:connection with board [192.168.1.108:45266]:Success
+---~B(id)---()1 yaoxuetao's raspi
+
+
+
+BCon Del addr =  0x7f60ec001bf0
+
+
+
+debug:1661,Bconn working
+debug:1516,Bconn epoll shit
+in Bdata:1537,ptr:ec001c80
+
+
+
+BData Del addr =  0x7f60ec001c80
+
+
+
+---~B(id)---()0 yaoxuetao's raspi
+debug:1512,Bconn working
+---B(id)---1
+ptr info con = a99
+---B(id)---2
+ptr info data = aa4
+debug:2612,BTH working
+debug:1516,Bconn epoll shit
+in Bdata:1537,ptr:ec001d10
+{"type":"month data","board name":"yaoxuetao's raspi"}
+debug:1583,did not find!
+debug:1512,Bconn working
+debug:1663,Bconn epoll shit
+in Bcon:1685,ptr:ec0018a0
+debug:1516,Bconn epoll shit
+in Bdata:1537,ptr:ec001d10
+not verified yet:socket error:connection with board [192.168.1.108:45276]:Success
+
+
+
+BData Del addr =  0x7f60ec001d10
+
+
+
+---~B(id)---()1 not connect yet
+debug:1512,Bconn working
+---~B(id)---()0 not connect yet
+
+
+
+BCon Del addr =  0x7f60ec0018a0
+
+
+
+debug:1661,Bconn working
+---B(id)---1
+ptr info con = a99
+---B(id)---2
+ptr info data = aa4
+debug:2612,BTH working
+debug:1663,Bconn epoll shit
+in Bcon:1685,ptr:ec001da0
+debug:1516,Bconn epoll shit
+in Bdata:1537,ptr:ec001e30
+not verified yet:socket error:connection with board [192.168.1.108:45288]:Success
+
+
+
+BData Del addr =  0x7f60ec001e30
+
+
+
+---~B(id)---()1 not connect yet
+debug:1512,Bconn working
+---~B(id)---()0 not connect yet
+
+
+
+BCon Del addr =  0x7f60ec001da0
+
+
+
+debug:1661,Bconn working
+---B(id)---1
+ptr info con = a99
+---B(id)---2
+ptr info data = aa4
+debug:2612,BTH working
+debug:2157,
+debug:2176,
+yaoxuetao's raspi
+debug:2225,
+raspi
+debug:2280,yaoxuetao's raspi
+stackV lock
+debug:2290,
+stackV unlock
+debug:2298,
+debug:2301,
+debug:2391,let me know
+debug:2398,let me know
+debug:2421,yaoxuetao's raspi
+yaoxuetao's raspi
+debug:2426,
+debug:2428,
+debug:2430,
+debug:2432,
+debug:2434,
+debug:2436,
+debug:2438,
+debug:2440,
+debug:2504,before add element
+debug:2521,after add element
+debug:2522,before create dir
+debug:2523,after create workdir
+debug:2149,ATH working
+ticktock:25739
+debug:1440,
+tick debug:debug:1445,yaoxuetao's raspi
+debug:fd_tick:57
+debug:1447,before tick recv
+debug:/home/yaoxuetao/yaoxuetao's raspi/photos
+debug:904,in Agraph
+debug:926,in Agraph
+debug:1492,yaoxuetao's raspi still in connection
+
+debug:1495,after tick recv
+debug:1440,
+tick debug:debug:1445,yaoxuetao's raspi
+debug:fd_tick:57
+debug:1447,before tick recv
+debug:975,
+debug:1017,
+debug:24,/home/yaoxuetao/yaoxuetao's raspi/data.xml
+debug:26,
+/home/yaoxuetao/yaoxuetao's raspi/photos/Sun May 15 12:21:47 2022
+debug:29,
+debug:31,
+debug:1097,
+debug:463,Adata epoll shit
+debug:475,Adata epoll wait success
+debug:487,before recv len
+debug:652,recv message
+debug:654,{"humi":"59.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+{"humi":"59.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+
+
+
+just for one time should it be
+
+
+debug:685,
+debug:694,
+debug:708,
+debug:710,
+debug:713,
+debug:715,
+debug:726,before send data to B
+debug:461,Adata working
+debug:1663,Bconn epoll shit
+in Bcon:1685,ptr:ec001ec0
+debug:1516,Bconn epoll shit
+in Bdata:1537,ptr:ec001f50
+not verified yet:socket error:connection with board [192.168.1.108:45294]:Success
+
+
+
+BData Del addr =  0x7f60ec001f50
+
+
+
+---~B(id)---()1 not connect yet
+debug:1512,Bconn working
+---~B(id)---()0 not connect yet
+
+
+
+BCon Del addr =  0x7f60ec001ec0
+
+
+
+debug:1661,Bconn working
+name=yaoxuetao's raspi
+pos=yaoxuetao's personal office
+type=raspi
+---B(id)---1
+ptr info con = a99
+---B(id)---2
+ptr info data = aa4
+debug:2612,BTH working
+debug:1492,yaoxuetao's raspi still in connection
+
+debug:1495,after tick recv
+debug:1440,
+tick debug:debug:1445,yaoxuetao's raspi
+debug:fd_tick:57
+debug:1447,before tick recv
+debug:463,Adata epoll shit
+debug:475,Adata epoll wait success
+debug:487,before recv len
+debug:652,recv message
+debug:654,{"humi":"56.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+{"humi":"56.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+debug:685,
+debug:694,
+debug:708,
+debug:710,
+debug:713,
+debug:715,
+debug:726,before send data to B
+debug:461,Adata working
+debug:1663,Bconn epoll shit
+in Bcon:1685,ptr:ec002070
+{"type":"connect","board name":"yaoxuetao's raspi","client name":"Anymous"}
+debug:1778,before B json parse
+high_temp=30.000000,len=150994944
+debug:1661,Bconn working
+debug:1516,Bconn epoll shit
+in Bdata:1537,ptr:ec002100
+{"type":"month data","board name":"yaoxuetao's raspi"}
+debug:1512,Bconn working
+debug:1516,Bconn epoll shit
+in Bdata:1537,ptr:ec002100
+{"type":"month data","board name":"yaoxuetao's raspi"}
+debug:1512,Bconn working
+debug:463,Adata epoll shit
+debug:475,Adata epoll wait success
+debug:487,before recv len
+debug:652,recv message
+debug:654,{"humi":"59.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+{"humi":"59.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+debug:685,
+debug:694,
+debug:708,
+debug:710,
+debug:713,
+debug:715,
+debug:726,before send data to B
+debug:734,n=
+4
+debug:772,{"boardName":"yaoxuetao's raspi","humi":"59.0","light":"1","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","time":"Sun May 15 12:21:54 2022","type":"data"}
+debug:461,Adata working
+debug:1516,Bconn epoll shit
+in Bdata:1537,ptr:ec002100
+{"type":"month data","board name":"yaoxuetao's raspi"}
+debug:1512,Bconn working
+debug:/home/yaoxuetao/yaoxuetao's raspi/photos
+debug:904,in Agraph
+debug:926,in Agraph
+debug:975,
+debug:1017,
+debug:24,/home/yaoxuetao/yaoxuetao's raspi/data.xml
+debug:26,
+/home/yaoxuetao/yaoxuetao's raspi/photos/Sun May 15 12:21:55 2022
+debug:29,
+debug:31,
+debug:1097,
+debug:1475,
+debug:463,Adata epoll shit
+debug:475,Adata epoll wait success
+debug:487,before recv len
+debug:/home/yaoxuetao/yaoxuetao's raspi/photosdebug:1478,
+
+debug:1481,
+debug:904,in Agraph
+debug:914,N==0
+505:board[192.168.1.222:60832] has disconnected:Success
+yaoxuetao's raspi
+debug:523,in Adata sending
+debug:923,after delete
+debug:1097,
+debug:550,{"content":"breset","type":"cmd"}
+debug:552,
+stackV lock
+stackV unlock
+debug:565,
+debug:461,Adata working
+debug:1516,Bconn epoll shit
+in Bdata:1537,ptr:ec002100
+debug:1663,Bconn epoll shit
+in Bcon:1685,ptr:ec002070
+Anymous:socket error:connection with board [192.168.1.108:45300]:Success
+---~B(id)---()1 yaoxuetao's raspi
+
+
+
+BCon Del addr =  0x7f60ec002070
+
+
+
+debug:1661,Bconn working
+{"type":"month data","board name":"yaoxuetao's raspi"}
+debug:1583,did not find!
+debug:1512,Bconn working
+debug:1516,Bconn epoll shit
+in Bdata:1537,ptr:ec002100
+
+
+
+BData Del addr =  0x7f60ec002100
+
+
+
+---~B(id)---()0 yaoxuetao's raspi
+debug:1512,Bconn working
+---B(id)---1
+ptr info con = a99
+---B(id)---2
+ptr info data = aa4
+debug:2612,BTH working
+debug:1663,Bconn epoll shit
+in Bcon:1685,ptr:ec001fe0
+debug:1516,Bconn epoll shit
+in Bdata:1537,ptr:ec002100
+not verified yet:socket error:connection with board [192.168.1.108:45306]:Success
+
+
+
+BData Del addr =  0x7f60ec002100
+
+
+
+---~B(id)---()1 not connect yet
+
+
+
+BCon Del addr =  0x7f60ec001fe0
+
+
+
+debug:1661,Bconn working
+---~B(id)---()0 not connect yet
+debug:1512,Bconn working
+---B(id)---1
+ptr info con = a99
+---B(id)---2
+ptr info data = aa4
+debug:2612,BTH working
+debug:1516,Bconn epoll shit
+debug:1663,Bconn epoll shit
+in Bcon:1685,ptr:ec002100
+in Bdata:1537,ptr:ec001fe0
+not verified yet:socket error:connection with board [192.168.1.108:45312]:Success
+
+
+
+BData Del addr =  0x7f60ec001fe0
+
+
+
+---~B(id)---()1 not connect yet
+
+
+
+BCon Del addr =  0x7f60ec002100
+
+
+
+debug:1661,Bconn working
+---~B(id)---()0 not connect yet
+debug:1512,Bconn working
+---B(id)---1
+ptr info con = a99
+---B(id)---2
+ptr info data = aa4
+debug:2612,BTH working
+debug:2157,
+debug:2176,
+yaoxuetao's raspi
+debug:2225,
+raspi
+debug:2280,yaoxuetao's raspi
+stackV lock
+debug:2290,
+stackV unlock
+debug:2298,
+debug:2301,
+debug:2391,let me know
+debug:2398,let me know
+debug:2421,yaoxuetao's raspi
+yaoxuetao's raspi
+debug:2426,
+debug:2428,
+debug:2430,
+debug:2432,
+debug:2434,
+debug:2436,
+debug:2438,
+debug:2440,
+debug:2504,before add element
+debug:2521,after add element
+debug:2522,before create dir
+debug:2523,after create workdir
+debug:2149,ATH working
+ticktock:25799
+debug:1440,
+tick debug:debug:1445,yaoxuetao's raspi
+debug:fd_tick:56
+debug:1447,before tick recv
+debug:1492,yaoxuetao's raspi still in connection
+
+debug:1495,after tick recv
+debug:1440,
+tick debug:debug:1445,yaoxuetao's raspi
+debug:fd_tick:56
+debug:1447,before tick recv
+debug:/home/yaoxuetao/yaoxuetao's raspi/photos
+debug:904,in Agraph
+debug:926,in Agraph
+debug:975,
+debug:1017,
+debug:24,/home/yaoxuetao/yaoxuetao's raspi/data.xml
+debug:26,
+/home/yaoxuetao/yaoxuetao's raspi/photos/Sun May 15 12:22:02 2022
+debug:29,
+debug:31,
+debug:1097,
+debug:1663,Bconn epoll shit
+debug:1516,Bconn epoll shit
+in Bdata:1537,ptr:ec002100
+in Bcon:1685,ptr:ec001fe0
+not verified yet:socket error:connection with board [192.168.1.108:45318]:Success
+
+
+
+BData Del addr =  0x7f60ec002100
+
+
+
+---~B(id)---()1 not connect yet
+debug:1512,Bconn working
+---~B(id)---()0 not connect yet
+
+
+
+BCon Del addr =  0x7f60ec001fe0
+
+
+
+debug:1661,Bconn working
+name=yaoxuetao's raspi
+pos=
+type=raspi
+---B(id)---1
+ptr info con = a99
+---B(id)---2
+ptr info data = aa4
+debug:2612,BTH working
+debug:463,Adata epoll shit
+debug:475,Adata epoll wait success
+debug:487,before recv len
+debug:652,recv message
+debug:654,{"humi":"59.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+{"humi":"59.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+
+
+
+just for one time should it be
+
+
+debug:685,
+debug:694,
+debug:708,
+debug:710,
+debug:713,
+debug:715,
+debug:726,before send data to B
+debug:461,Adata working
+debug:1663,Bconn epoll shit
+debug:1516,Bconn epoll shit
+in Bdata:1537,ptr:ec0021c0
+in Bcon:1685,ptr:ec002100
+not verified yet:socket error:connection with board [192.168.1.108:45324]:Success
+
+
+
+BData Del addr =  0x7f60ec0021c0
+
+
+
+---~B(id)---()1 not connect yet
+debug:1512,Bconn working
+---~B(id)---()0 not connect yet
+
+
+
+BCon Del addr =  0x7f60ec002100
+
+
+
+debug:1661,Bconn working
+name=yaoxuetao's raspi
+pos=yaoxuetao's personal office
+type=raspi
+---B(id)---1
+ptr info con = a99
+---B(id)---2
+ptr info data = aa4
+debug:2612,BTH working
+debug:1492,yaoxuetao's raspi still in connection
+
+debug:1495,after tick recv
+debug:1440,
+tick debug:debug:1445,yaoxuetao's raspi
+debug:fd_tick:56
+debug:1447,before tick recv
+debug:463,Adata epoll shit
+debug:475,Adata epoll wait success
+debug:487,before recv len
+debug:652,recv message
+debug:654,{"humi":"56.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+{"humi":"56.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+debug:685,
+debug:694,
+debug:708,
+debug:710,
+debug:713,
+debug:715,
+debug:726,before send data to B
+debug:461,Adata working
+debug:1475,
+debug:463,Adata epoll shit
+debug:debug:475,Adata epoll wait success
+debug:487,before recv len
+/home/yaoxuetao/yaoxuetao's raspi/photos
+debug:904,in Agraph
+debug:1478,
+debug:914,N==0
+debug:923,after delete
+debug:1097,
+505:board[192.168.1.222:60840] has disconnected:Success
+yaoxuetao's raspi
+debug:552,
+stackV lock
+stackV unlock
