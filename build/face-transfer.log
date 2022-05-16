@@ -317,3 +317,10 @@ in line 1997file name:/home/yaoxuetao/yaoxuetao's stm32f103/faces/Mon May 16 22:
 in line 2003len=18948
 in line 1776send err:{"type":"connect","board name":"yaoxuetao's raspi","client name":"Anymous"}
 in line 1776send err:{"type":"connect","board name":"yaoxuetao's stm32f103","client name":"Anymous"}
+in line 1777send err:{"type":"connect","board name":"yaoxuetao's raspi","client name":"Anymous"}
+in line 1777send err:{"type":"connect","board name":"yaoxuetao's stm32f103","client name":"Anymous"}
+in line 1777send err:{"type":"month data","board name":"yaoxuetao's stm32f103"}
+in line 1777send err:{"type":"connect","board name":"yaoxuetao's stm32f103","client name":"Anymous"}
+in line 1777send err:{"type":"connect","board name":"yaoxuetao's raspi","client name":"Anymous"}
+in line 1777send err:{"type":"connect","board name":"yaoxuetao's raspi","client name":"Anymous"}
+in line 1780send err:{"type":"connect","board name":"yaoxuetao's stm32f103","client name":"Anymous"}

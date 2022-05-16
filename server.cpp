@@ -544,11 +544,23 @@ void *Adata(void *arg)
                             nodesA.erase(a_info->name);
                             // nodesA.unlock();
                         }
+                        /* ???
                         delete a_info;
                         nodesA.unlock();
                         close(a_info->fd_data);
                         freeV.lock();
+                        FDEBUG("vode.log", "vode=%d", a_info->vcode);
                         freeV.push(a_info->vcode);
+                        freeV.unlock();
+                        numer.decreaseA();
+                        */
+                        int code = a_info->vcode;
+                        close(a_info->fd_data);
+                        delete a_info;
+                        nodesA.unlock();
+                        freeV.lock();
+                        FDEBUG("vode.log", "vode=%d", code);
+                        freeV.push(code);
                         freeV.unlock();
                         numer.decreaseA();
                         DEBUG("");
@@ -624,6 +636,7 @@ void *Adata(void *arg)
                             nodesA.erase(a_info->name);
                             // nodesA.unlock();
                         }
+                        /*
                         delete a_info;
                         nodesA.unlock();
                         DEBUG("after erase");
@@ -631,7 +644,19 @@ void *Adata(void *arg)
                         // close(a_info->fd_graph);
                         // close(a_info->fd_tick);
                         freeV.lock();
+                        FDEBUG("vode.log", "vode=%d", a_info->vcode);
                         freeV.push(a_info->vcode);
+                        freeV.unlock();
+                        numer.decreaseA();
+                        */
+                        int code = a_info->vcode;
+                        close(a_info->fd_data);
+                        delete a_info;
+                        nodesA.unlock();
+                        DEBUG("after erase");
+                        freeV.lock();
+                        FDEBUG("vode.log", "vode=%d", code);
+                        freeV.push(code);
                         freeV.unlock();
                         numer.decreaseA();
                     }
@@ -820,12 +845,13 @@ void *Adata(void *arg)
                                 // nodesA.unlock();
                                 int vcode = a_info->vcode;
                                 freeV.lock();
+                                FDEBUG("vode.log", "vode=%d", vcode);
                                 freeV.push(vcode);
                                 freeV.unlock();
                             }
+                            close(a_info->fd_data);
                             delete a_info;
                             nodesA.unlock();
-                            close(a_info->fd_data);
                             // close(a_info->fd_graph);
                             // close(a_info->fd_tick);
                             numer.decreaseA();
@@ -1372,7 +1398,8 @@ void *stm32DataThread(void *args)
         nodesA.unlock();
     }
 clean_end:
-    data->connection.lock();
+    nodesA.lock();
+    // data->connection.lock();
     for (auto b = data->connection.begin(); b != data->connection.end(); b++)
     {
         DEBUG("in Adata sending");
@@ -1402,16 +1429,16 @@ clean_end:
         }
         DEBUG(a.c_str());
     }
-    data->connection.unlock();
-    nodesA.lock();
+    // data->connection.unlock();
     nodesA.erase(data->name);
     DEBUG("after erase");
     nodesA.unlock();
     close(data->fd_data);
     close(data->fd_graph);
-    freeV.lock();
-    freeV.push(data->vcode);
-    freeV.unlock();
+    //下面这个会推进去乱码vcode打乱流控，虽然不影响正常传！32本来就没给vcode！
+    // freeV.lock();
+    // freeV.push(data->vcode);
+    // freeV.unlock();
     delete data;
     numer.decreaseA();
     DEBUG("");
@@ -2814,6 +2841,7 @@ int main(void)
     printf("main:%d\n", syscall(__NR_gettid));
     for (int i = 0; i < ANUM; i++)
     {
+        FTDEBUG("vode.log", "intilialize", "vode=%d", i);
         freeV.push(i);
     }
     struct passwd *cur_user = getpwuid(getuid());
