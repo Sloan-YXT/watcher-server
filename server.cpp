@@ -52,18 +52,6 @@
 #define BBBEFORE "not connect yet"
 #define STORE_HOUR 3
 #define GLEN_32 153666
-#define DEBUG
-#ifdef DEBUG
-
-#define DEBUG(X)                              \
-    do                                        \
-    {                                         \
-                                              \
-        printf("debug:%d,%s\n", __LINE__, X); \
-    } while (0)
-#else
-#define DEBUG(X)
-#endif
 
 #define ERROR_ACTION(X)                                   \
     if ((X) == -1)                                        \
@@ -297,7 +285,7 @@ public:
     double high_temp, high_humi, wrong_light, wrong_smoke;
     // unordered_map<string, pthread_mutex_t> face_locks;
     unique_ptr<pthread_t> threadVal = unique_ptr<pthread_t>(new pthread_t());
-    pthread_rwlock_t rw_lock;
+    // pthread_rwlock_t rw_lock;
 
     ANodeInfo()
     {
@@ -1030,10 +1018,10 @@ void *Agraph(void *arg)
                         j["type"] = "face";
                         j["time"] = time_buffer;
                         string warning = j.dump();
-                        len = htonl(warning.length());
+                        len = warning.length();
                         DEBUG("");
-                        info->connection.lock();
-                        for (auto m = info->connection.begin(); m != info->connection.end(); m++)
+                        nodesA.lock();
+                        for (auto m = info->pair_node->connection.begin(); m != info->pair_node->connection.end(); m++)
                         {
                             int rlen = htonl(len);
                             n = send((*m)->fd_warn, &rlen, sizeof(rlen), 0);
@@ -1041,6 +1029,7 @@ void *Agraph(void *arg)
                             {
                                 errno = 0;
                                 DEBUG("EPIPE");
+                                fprintf(stderr, "face detect dump1\n");
                                 // close((*m)->fd_graph);
                                 // info->connection.remove(*m);
                                 continue;
@@ -1052,7 +1041,7 @@ void *Agraph(void *arg)
                                 // exit(1);
                                 continue;
                             }
-                            printf("debug:graph len=%d\n", len);
+                            fprintf(stderr, "debug:graph len=%d\n", len);
                             n = send((*m)->fd_warn, warning.c_str(), len, 0);
                             if (n < 0 && (errno == EPIPE | errno == ECONNRESET))
                             {
@@ -1072,7 +1061,7 @@ void *Agraph(void *arg)
                             DEBUG("send graph to client:");
                             DEBUG((*m)->client_name.c_str());
                         }
-                        info->connection.unlock();
+                        nodesA.unlock();
                     }
 
                     // close(gfd);
@@ -1239,7 +1228,7 @@ void *stm32DataThread(void *args)
             reply["time"] = time_in;
             string reply_string = reply.dump();
             DEBUG("before send data to B");
-            data->connection.lock();
+            nodesA.lock();
             for (auto m = data->connection.begin(); m != data->connection.end(); m++)
             {
                 int fd_tmp = (*m)->fd_warn;
@@ -1280,8 +1269,8 @@ void *stm32DataThread(void *args)
                     continue;
                 }
             }
+            nodesA.unlock();
             DEBUG(reply_string.c_str());
-            data->connection.unlock();
         }
         n = recv(fd_graph, &rlen, sizeof(rlen), MSG_WAITALL);
         if (n <= 0)
@@ -1338,8 +1327,8 @@ void *stm32DataThread(void *args)
         j["type"] = "face";
         j["time"] = time_pic;
         string warning = j.dump();
-        len = htonl(warning.length());
-        data->connection.lock();
+        len = warning.length();
+        nodesA.lock();
         DEBUG("");
         for (auto m = data->connection.begin(); m != data->connection.end(); m++)
         {
@@ -1380,7 +1369,7 @@ void *stm32DataThread(void *args)
             DEBUG("send graph to client:");
             DEBUG((*m)->client_name.c_str());
         }
-        data->connection.unlock();
+        nodesA.unlock();
     }
 clean_end:
     data->connection.lock();
@@ -1744,7 +1733,7 @@ void *Bconnect(void *arg)
                     {
                         len = ntohl(len);
                         n = recv(fd, request, len, MSG_WAITALL);
-                        puts(request);
+                        request[len] = '\0';
                         if (n == 0 | errno == ECONNRESET)
                         {
                             errno = 0;
@@ -1784,8 +1773,9 @@ void *Bconnect(void *arg)
                         }
                         else
                         {
-                            DEBUG("before B json parse");
+                            FDEBUG("face-transfer.log", "send err:%s", request);
                             json j = json::parse(request);
+                            FDEBUG("bconnect.log", "<request>\n\n%s\n\n<\\request>", request);
                             string type = j["type"];
                             if (type == "connect")
                             {
@@ -1967,6 +1957,19 @@ void *Bconnect(void *arg)
                                 time_t time_now = time(NULL);
                                 struct tm *now = localtime(&time_now);
                                 string month_data = get_month_data(now->tm_mon + 1, name);
+                                int len = month_data.size();
+                                len = htonl(len);
+                                n = send(fd, &len, sizeof(len), 0);
+                                if (n < 0 && (errno == EPIPE | errno == ECONNRESET))
+                                {
+                                    errno = 0;
+                                }
+                                else if (n <= 0)
+                                {
+                                    printf("send failed in %d:%s\n", __LINE__, strerror(errno));
+                                    exit_database();
+                                    exit(1);
+                                }
                                 n = send(fd, month_data.c_str(), month_data.size(), 0);
                                 if (n < 0 && (errno == EPIPE | errno == ECONNRESET))
                                 {
@@ -1990,24 +1993,25 @@ void *Bconnect(void *arg)
                             {
                                 // nodesA相关的清理在data做
                                 string time = j["time"];
-                                string fileName = info->faces + "/" + time;
-                                DEBUG("file name: " + fileName);
+                                string fileName = info->faces + "/" + time + ".jpg";
+                                FDEBUG("face-transfer.log", "file name:%s", fileName.c_str());
                                 int fd_tmp = open(fileName.c_str(), O_RDONLY);
                                 if (fd >= 0)
                                 {
                                     len = lseek(fd_tmp, 0, SEEK_END);
                                     rlen = htonl(len);
+                                    FDEBUG("face-transfer.log", "len=%d", len);
                                     n = send(fd, &rlen, sizeof(rlen), 0);
                                     if (n <= 0 && errno != EPIPE && errno != ECONNRESET)
                                     {
-                                        DEBUG("send err");
+                                        FDEBUG("face-transfer.log", "send err:%s", fileName.c_str());
                                         exit(1);
                                     }
                                     lseek(fd_tmp, 0, SEEK_SET);
                                     n = sendfile(fd, fd_tmp, 0, len);
                                     if (n <= 0 && errno != EPIPE && errno != ECONNRESET)
                                     {
-                                        DEBUG("send err");
+                                        FDEBUG("face-transfer.log", "send err:%s", fileName.c_str());
                                         exit(1);
                                     }
                                     close(fd_tmp);
@@ -2020,13 +2024,13 @@ void *Bconnect(void *arg)
                                     n = send(fd, &rlen, sizeof(rlen), 0);
                                     if (n <= 0 && errno != EPIPE && errno != ECONNRESET)
                                     {
-                                        DEBUG("send err");
+                                        FDEBUG("face-transfer.log", "send err:%s", fileName.c_str());
                                         exit(1);
                                     }
                                     n = send(fd, note, len, 0);
                                     if (n <= 0 && errno != EPIPE && errno != ECONNRESET)
                                     {
-                                        DEBUG("send err");
+                                        FDEBUG("face-transfer.log", "send err:%s", fileName.c_str());
                                         exit(1);
                                     }
                                 }
@@ -2042,6 +2046,11 @@ void *Bconnect(void *arg)
                                     if (face_d == NULL)
                                         break;
                                     string tmp = face_d->d_name;
+                                    if (tmp == "." || tmp == "..")
+                                    {
+                                        continue;
+                                    }
+                                    tmp = tmp.substr(0, tmp.find_last_of("."));
                                     files.push_back(tmp);
                                 }
                                 closedir(face_dir);
@@ -2057,6 +2066,7 @@ void *Bconnect(void *arg)
                                     DEBUG("send err");
                                     exit(1);
                                 }
+                                FDEBUG("face-all.log", "\n\n\n%s\n\n\n", faces_data.c_str());
                                 n = send(fd, faces_data.c_str(), len, 0);
                                 if (n <= 0 && errno != EPIPE && errno != EPIPE)
                                 {
@@ -2066,12 +2076,15 @@ void *Bconnect(void *arg)
                             }
                             else if (type == "delete faces")
                             {
+                                FTDEBUG("face-delete.log", "delete", "%s", "in delete all");
                                 rmAll(info->faces.c_str());
                             }
                             else if (type == "delete face")
                             {
+                                FTDEBUG("face-delete.log", "delete", "%s", "in delete");
                                 string time = j["time"];
-                                string fileName = info->faces + "/" + time;
+                                //注意下面这句由于要给system函数在终端执行，少一个字母也不行
+                                string fileName = info->faces + "/" + time + ".jpg";
                                 DEBUG("rm file name: " + fileName);
                                 rm(fileName.c_str());
                             }

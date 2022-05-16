@@ -21,6 +21,8 @@ wait.h
 -
 dirent.h
 -
+cutil.h
+/home/yaoxuetao/CMPW-server/cutil.h
 
 /home/yaoxuetao/CMPW-server/cutil.h
 
@@ -65,6 +67,8 @@ cstdio
 -
 faceDetect.h
 /home/yaoxuetao/CMPW-server/faceDetect.h
+cutil.h
+/home/yaoxuetao/CMPW-server/cutil.h
 
 /home/yaoxuetao/CMPW-server/faceDetect.h
 string

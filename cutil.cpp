@@ -5,6 +5,7 @@
 #include <unistd.h>
 #include <wait.h>
 #include <dirent.h>
+#include "cutil.h"
 char *rtrim(char *str)
 {
     if (str == NULL || *str == '\0')
@@ -51,12 +52,15 @@ char *trim(char *str)
 void rmAll(const char *path)
 {
     char all[1000] = {0};
-    sprintf(all, "rm %s/*", path);
+    //注意这一串不是给rm,是给终端调用rm,有空格必须用""不然终端会识别成2个词；通配符不能在""内
+    sprintf(all, "rm \"%s\"/*", path);
+    FTDEBUG("face-delete.log", "rm", "%s", all);
     system(all);
 }
 void rm(const char *path)
 {
     char all[1000] = {0};
-    sprintf(all, "rm %s", path);
+    sprintf(all, "rm \"%s\"", path);
+    FTDEBUG("face-delete.log", "rm", "%s", all);
     system(all);
 }

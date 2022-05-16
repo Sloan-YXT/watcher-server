@@ -1,22 +1,22 @@
 [
 {
   "directory": "/home/yaoxuetao/CMPW-server/build",
-  "command": "/usr/bin/g++   -isystem /usr/local/include/opencv4     -w -g   -std=gnu++14 -o CMakeFiles/server.dir/server.cpp.o -c /home/yaoxuetao/CMPW-server/server.cpp",
+  "command": "/usr/bin/g++  -DDEBUG -isystem /usr/local/include/opencv4     -w -g   -std=gnu++14 -o CMakeFiles/server.dir/server.cpp.o -c /home/yaoxuetao/CMPW-server/server.cpp",
   "file": "/home/yaoxuetao/CMPW-server/server.cpp"
 },
 {
   "directory": "/home/yaoxuetao/CMPW-server/build",
-  "command": "/usr/bin/g++   -isystem /usr/local/include/opencv4     -w -g   -std=gnu++14 -o CMakeFiles/server.dir/database.cpp.o -c /home/yaoxuetao/CMPW-server/database.cpp",
+  "command": "/usr/bin/g++  -DDEBUG -isystem /usr/local/include/opencv4     -w -g   -std=gnu++14 -o CMakeFiles/server.dir/database.cpp.o -c /home/yaoxuetao/CMPW-server/database.cpp",
   "file": "/home/yaoxuetao/CMPW-server/database.cpp"
 },
 {
   "directory": "/home/yaoxuetao/CMPW-server/build",
-  "command": "/usr/bin/g++   -isystem /usr/local/include/opencv4     -w -g   -std=gnu++14 -o CMakeFiles/server.dir/cutil.cpp.o -c /home/yaoxuetao/CMPW-server/cutil.cpp",
+  "command": "/usr/bin/g++  -DDEBUG -isystem /usr/local/include/opencv4     -w -g   -std=gnu++14 -o CMakeFiles/server.dir/cutil.cpp.o -c /home/yaoxuetao/CMPW-server/cutil.cpp",
   "file": "/home/yaoxuetao/CMPW-server/cutil.cpp"
 },
 {
   "directory": "/home/yaoxuetao/CMPW-server/build",
-  "command": "/usr/bin/g++   -isystem /usr/local/include/opencv4     -w -g   -std=gnu++14 -o CMakeFiles/server.dir/faceDetect.cpp.o -c /home/yaoxuetao/CMPW-server/faceDetect.cpp",
+  "command": "/usr/bin/g++  -DDEBUG -isystem /usr/local/include/opencv4     -w -g   -std=gnu++14 -o CMakeFiles/server.dir/faceDetect.cpp.o -c /home/yaoxuetao/CMPW-server/faceDetect.cpp",
   "file": "/home/yaoxuetao/CMPW-server/faceDetect.cpp"
 }
 ]

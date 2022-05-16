@@ -5,6 +5,7 @@
 #include <vector>
 #include <cstdio>
 #include "faceDetect.h"
+#include "cutil.h"
 using namespace std;
 using namespace cv;
 #define DEBUG
@@ -15,20 +16,28 @@ using namespace cv;
     {                                         \
         printf("debug:%d,%s\n", __LINE__, X); \
     } while (0)
+#define DEBUG_MODE 1
 #else
 #define DEBUG(X)
 #endif
+
 int faceDetect(string data, string src, string dest)
 {
+
     CascadeClassifier cascade;
-    DEBUG(data.c_str());
+// DEBUG(data.c_str());
+#ifdef DEBUG
+    fclose(stderr);
+    stderr = fopen("opencv.log", "a");
+    setbuf(stderr, NULL);
+#endif
     cascade.load(data);
-    DEBUG("");
+    FTDEBUG("opencv.log", "normal", "src = %s,dest=%s", src.c_str(), dest.c_str());
     Mat srcImage, grayImage, dstImage;
     cout << src << endl;
-    DEBUG("");
+    FDEBUG("opencv.log", "in opencv");
     srcImage = imread(src);
-    DEBUG("");
+    FDEBUG("opencv.log", "in opencv ");
     dstImage = srcImage.clone();
     grayImage.create(srcImage.size(), srcImage.type());
     cvtColor(srcImage, grayImage, COLOR_BGR2GRAY);
@@ -56,7 +65,16 @@ int faceDetect(string data, string src, string dest)
     }
     if (rect.size() != 0)
     {
+        FDEBUG("opencv.log", "in opencv:face detected");
         imwrite(dest, dstImage);
     }
+#ifdef DEBUG_MODE
+    // debug模式不管花里胡哨监测不到
+    if (rect.size() == 0)
+    {
+        imwrite(dest, dstImage);
+        return 1;
+    }
+#endif
     return rect.size();
 }
