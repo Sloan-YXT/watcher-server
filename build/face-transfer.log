@@ -14,3 +14,75 @@ in line 2033file name:/home/yaoxuetao/yaoxuetao's raspi/faces/Tue May 17 18:25:1
 in line 2039len=10335
 in line 1812send err:{"type":"all faces"}
 in line 1812send err:{"type":"month data","board name":"yaoxuetao's raspi"}
+in line 1858send err:{"type":"connect","board name":"yaoxuetao's raspi","client name":"Anymous"}
+in line 1858send err:{"type":"face","time":"Tue May 17 21:44:23 2022"}
+in line 2079file name:/home/yaoxuetao/yaoxuetao's raspi/faces/Tue May 17 21:44:23 2022.jpg
+in line 2085len=15888
+in line 1858send err:{"type":"face","time":"Tue May 17 21:44:25 2022"}
+in line 2079file name:/home/yaoxuetao/yaoxuetao's raspi/faces/Tue May 17 21:44:25 2022.jpg
+in line 2085len=15886
+in line 1858send err:{"type":"connect","board name":"yaoxuetao's raspi","client name":"Anymous"}
+in line 1858send err:{"type":"all faces"}
+in line 1858send err:{"type":"all faces"}
+in line 1858send err:{"type":"face","time":"Tue May 17 21:39:42 2022"}
+in line 2079file name:/home/yaoxuetao/yaoxuetao's raspi/faces/Tue May 17 21:39:42 2022.jpg
+in line 2085len=23951
+in line 1858send err:{"type":"all faces"}
+in line 1858send err:{"type":"connect","board name":"yaoxuetao's raspi","client name":"Anymous"}
+in line 1858send err:{"type":"connect","board name":"yaoxuetao's raspi","client name":"Anymous"}
+in line 1858send err:{"type":"connect","board name":"yaoxuetao's raspi","client name":"Anymous"}
+in line 1858send err:{"type":"connect","board name":"yaoxuetao's raspi","client name":"Anymous"}
+in line 1858send err:{"type":"connect","board name":"yaoxuetao's raspi","client name":"Anymous"}
+in line 1858send err:{"type":"connect","board name":"yaoxuetao's raspi","client name":"Anymous"}
+in line 1858send err:{"type":"connect","board name":"yaoxuetao's raspi","client name":"Anymous"}
+in line 1858send err:{"type":"month data","board name":"yaoxuetao's raspi"}
+in line 1858send err:{"type":"all faces"}
+in line 1858send err:{"type":"all faces"}
+in line 1858send err:{"type":"connect","board name":"yaoxuetao's raspi","client name":"Anymous"}
+in line 1858send err:{"type":"connect","board name":"yaoxuetao's raspi","client name":"Anymous"}
+in line 1858send err:{"type":"connect","board name":"yaoxuetao's raspi","client name":"Anymous"}
+in line 1858send err:{"type":"month data","board name":"yaoxuetao's raspi"}
+in line 1858send err:{"type":"connect","board name":"yaoxuetao's raspi","client name":"Anymous"}
+in line 1858send err:{"type":"connect","board name":"yaoxuetao's raspi","client name":"Anymous"}
+in line 1858send err:{"type":"month data","board name":"yaoxuetao's raspi"}
+in line 1858send err:{"type":"connect","board name":"yaoxuetao's raspi","client name":"Anymous"}
+in line 1858send err:{"type":"all faces"}
+in line 1858send err:{"type":"all faces"}
+in line 1858send err:{"type":"face","time":"Tue May 17 22:33:22 2022"}
+in line 2079file name:/home/yaoxuetao/yaoxuetao's raspi/faces/Tue May 17 22:33:22 2022.jpg
+in line 2085len=23441
+in line 1858send err:{"type":"all faces"}
+in line 1858send err:{"type":"delete faces"}
+in line 1858send err:{"type":"connect","board name":"yaoxuetao's raspi","client name":"Anymous"}
+in line 1858send err:{"type":"connect","board name":"yaoxuetao's raspi","client name":"Anymous"}
+in line 1858send err:{"type":"connect","board name":"yaoxuetao's raspi","client name":"Anymous"}
+in line 1858send err:{"type":"connect","board name":"yaoxuetao's raspi","client name":"Anymous"}
+in line 1858send err:{"type":"connect","board name":"yaoxuetao's raspi","client name":"Anymous"}
+in line 1858send err:{"type":"connect","board name":"yaoxuetao's raspi","client name":"Anymous"}
+in line 1858send err:{"type":"connect","board name":"yaoxuetao's raspi","client name":"Anymous"}
+in line 1858send err:{"type":"connect","board name":"yaoxuetao's raspi","client name":"Anymous"}
+in line 1858send err:{"type":"connect","board name":"yaoxuetao's raspi","client name":"Anymous"}
+in line 1858send err:{"type":"connect","board name":"yaoxuetao's raspi","client name":"Anymous"}
+in line 1858send err:{"type":"connect","board name":"yaoxuetao's raspi","client name":"Anymous"}
+in line 1858send err:{"type":"connect","board name":"yaoxuetao's raspi","client name":"Anymous"}
+in line 1858send err:{"type":"connect","board name":"yaoxuetao's raspi","client name":"Anymous"}
+in line 1858send err:{"type":"connect","board name":"yaoxuetao's raspi","client name":"Anymous"}
+in line 1858send err:{"type":"connect","board name":"yaoxuetao's raspi","client name":"Anymous"}
+in line 1858send err:{"type":"connect","board name":"yaoxuetao's raspi","client name":"Anymous"}
+in line 1858send err:{"type":"connect","board name":"yaoxuetao's raspi","client name":"Anymous"}
+in line 1858send err:{"type":"connect","board name":"yaoxuetao's raspi","client name":"Anymous"}
+in line 1858send err:{"type":"connect","board name":"yaoxuetao's raspi","client name":"Anymous"}
+in line 1859send err:{"type":"connect","board name":"yaoxuetao's stm32f103","client name":"Anymous"}
+in line 1859send err:{"type":"month data","board name":"yaoxuetao's stm32f103"}
+in line 1859send err:{"type":"all faces"}
+in line 1859send err:{"type":"all faces"}
+in line 1859send err:{"type":"face","time":"Mon May 16 04:08:03 2022"}
+in line 2080file name:/home/yaoxuetao/yaoxuetao's stm32f103/faces/Mon May 16 04:08:03 2022.jpg
+in line 2086len=22349
+in line 1859send err:{"type":"all faces"}
+in line 1859send err:{"type":"connect","board name":"yaoxuetao's raspi","client name":"Anymous"}
+in line 1859send err:{"type":"face","time":"Wed May 18 01:23:33 2022"}
+in line 2080file name:/home/yaoxuetao/yaoxuetao's raspi/faces/Wed May 18 01:23:33 2022.jpg
+in line 2086len=12782
+in line 1859send err:{"type":"connect","board name":"yaoxuetao's raspi","client name":"Anymous"}
+in line 1859send err:{"type":"connect","board name":"yaoxuetao's stm32f103","client name":"Anymous"}

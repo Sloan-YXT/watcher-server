@@ -947,10 +947,11 @@ void *Agraph(void *arg)
                     }
                     if (n == 0 | errno == ECONNRESET)
                     {
-                        errno = 0;
+
                         // TODO
                         //这里存在一直断板子连接的问题，看log应该是这里，不明原因
                         printf("in line%d,n=%d,errno=%d\n", __LINE__, n, errno);
+                        errno = 0;
                         if (epoll_ctl(epfd, EPOLL_CTL_DEL, connfd, NULL) == -1)
                         {
                             printf("A read epoll del failed %d:%s", __LINE__, strerror(errno));
@@ -2298,108 +2299,66 @@ void *AThread(void *arg)
         fd_set accept_tout;
         int maxfd, n;
         timeval tout = {1, 0};
-        FD_ZERO(&accept_tout);
-        FD_SET(connfdData, &accept_tout);
-        maxfd = connfdData + 1;
-        // recv name
-        n = select(maxfd, &accept_tout, NULL, NULL, &tout);
-        ERROR_ACTION(n)
-        if (n == 0)
+        n = recv(connfdData, &len_tmp, sizeof(len_tmp), MSG_WAITALL);
+
+        if (n == 0 | errno == ECONNRESET)
         {
+            errno = 0;
             close(connfdData);
             continue;
         }
-        else
+        else if (n < 0 && errno != ECONNRESET)
         {
-            n = recv(connfdData, &len_tmp, sizeof(len_tmp), MSG_WAITALL);
-
-            DEBUG("");
-            ERROR_ACTION(n)
-            if (n == 0)
-            {
-                close(connfdData);
-                continue;
-            }
+            printf("recv failed in %d:%s\n", __LINE__, strerror(errno));
+            exit(1);
         }
         len_tmp = ntohl(len_tmp);
-        FD_ZERO(&accept_tout);
-        FD_SET(connfdData, &accept_tout);
-        maxfd = connfdData + 1;
-        n = select(maxfd, &accept_tout, NULL, NULL, &tout);
-        ERROR_ACTION(n)
-        if (n == 0)
+
+        n = recv(connfdData, message_buffer, len_tmp, MSG_WAITALL);
+        puts(message_buffer);
+        if (n < 0 && errno != ECONNRESET)
         {
+            perror("recv failed in AThread:");
+            exit(1);
+        }
+        if (n == 0 | errno == ECONNRESET)
+        {
+            errno = 0;
             close(connfdData);
             continue;
-        }
-        else
-        {
-            n = recv(connfdData, message_buffer, len_tmp, MSG_WAITALL);
-            puts(message_buffer);
-            if (n < 0 && errno != ECONNRESET)
-            {
-                perror("recv failed in AThread:");
-                exit(1);
-            }
-            if (n == 0 | errno == ECONNRESET)
-            {
-                errno = 0;
-                close(connfdData);
-                continue;
-            }
         }
         message_buffer[n] = 0;
         string s = message_buffer;
         // recv type
-        n = select(maxfd, &accept_tout, NULL, NULL, &tout);
-        ERROR_ACTION(n)
-        if (n == 0)
+
+        n = recv(connfdData, &len_tmp, sizeof(len_tmp), MSG_WAITALL);
+        if (n == 0 | errno == ECONNRESET)
         {
-            DEBUG("select return 0;");
+            DEBUG("recv return 0;");
             close(connfdData);
             continue;
         }
-        else
+        else if (n < 0 && errno != ECONNRESET)
         {
-            n = recv(connfdData, &len_tmp, sizeof(len_tmp), MSG_WAITALL);
-
-            DEBUG("");
-            ERROR_ACTION(n)
-            if (n == 0)
-            {
-                DEBUG("select return 0;");
-                close(connfdData);
-                continue;
-            }
+            perror("recv failed in AThread:");
+            exit(1);
         }
         len_tmp = ntohl(len_tmp);
-        FD_ZERO(&accept_tout);
-        FD_SET(connfdData, &accept_tout);
-        maxfd = connfdData + 1;
-        n = select(maxfd, &accept_tout, NULL, NULL, &tout);
-        ERROR_ACTION(n)
-        if (n == 0)
+
+        n = recv(connfdData, type_buffer, len_tmp, MSG_WAITALL);
+        if (n < 0 && errno != ECONNRESET)
         {
-            DEBUG("select return 0;");
+            perror("recv failed in AThread:");
+            exit(1);
+        }
+        if (n == 0 | errno == ECONNRESET)
+        {
+            errno = 0;
+            DEBUG("let me know");
             close(connfdData);
             continue;
         }
-        else
-        {
-            n = recv(connfdData, type_buffer, len_tmp, MSG_WAITALL);
-            if (n < 0 && errno != ECONNRESET)
-            {
-                perror("recv failed in AThread:");
-                exit(1);
-            }
-            if (n == 0 | errno == ECONNRESET)
-            {
-                errno = 0;
-                DEBUG("let me know");
-                close(connfdData);
-                continue;
-            }
-        }
+
         type_buffer[n] = 0;
         puts(type_buffer);
         string t = type_buffer;
@@ -2451,6 +2410,8 @@ void *AThread(void *arg)
                 }
                 else
                 {
+                    DEBUG("what happened in AThread");
+                    perror("what happened?");
                     exit_database();
                     exit(1);
                 }
@@ -2468,6 +2429,8 @@ void *AThread(void *arg)
                 }
                 else
                 {
+                    DEBUG("what happened in AThread");
+                    perror("what happened?");
                     exit_database();
                     exit(1);
                 }
@@ -2483,6 +2446,8 @@ void *AThread(void *arg)
                 }
                 else
                 {
+                    DEBUG("what happened in AThread");
+                    perror("what happened");
                     exit_database();
                     exit(1);
                 }
@@ -2504,35 +2469,21 @@ void *AThread(void *arg)
         FD_SET(listenAgraph, &accept_tout);
         maxfd = listenAgraph + 1;
         n = select(maxfd, &accept_tout, NULL, NULL, &tout);
-        if (n < 0)
-        {
-            printf("select failed in %d:%s\n", __LINE__, strerror(errno));
-            exit(1);
-        }
-        else if (n == 0)
+        if (n == 0)
         {
             DEBUG("select return 0;");
             close(connfdData);
             continue;
         }
-        FD_ZERO(&accept_tout);
-        FD_SET(listenAgraph, &accept_tout);
-        maxfd = listenAgraph + 1;
-        n = select(maxfd, &accept_tout, NULL, NULL, &tout);
-        if (n < 0)
+        else if (n < 0)
         {
             printf("select failed in %d:%s\n", __LINE__, strerror(errno));
-            exit(1);
-        }
-        else if (n == 0)
-        {
-            DEBUG("select return 0;");
             close(connfdData);
             continue;
         }
         DEBUG("let me know");
         connfdGraph = accept(listenAgraph, (struct sockaddr *)&client_graph, &client_graph_addr_len);
-        if (connfdData < 0)
+        if (connfdGraph < 0)
         {
             perror("error accepting from board(graph)");
             exit(1);
@@ -2544,8 +2495,11 @@ void *AThread(void *arg)
         n = select(maxfd, &accept_tout, NULL, NULL, &tout);
         if (n < 0)
         {
+            //网络波动select可能返回ibad file descriptor,已实验证实
             printf("select failed in %d:%s\n", __LINE__, strerror(errno));
-            exit(1);
+            close(connfdData);
+            close(connfdGraph);
+            continue;
         }
         else if (n == 0)
         {
@@ -2555,7 +2509,7 @@ void *AThread(void *arg)
             continue;
         }
         connfdTick = accept(listenAtick, (struct sockaddr *)&client_tick, &client_tick_addr_len);
-        if (connfdData < 0)
+        if (connfdTick < 0)
         {
             perror("error accepting from board(tick)");
             exit(1);
@@ -2752,6 +2706,7 @@ void *BThread(void *arg)
     while (1)
     {
         DEBUG("BTH working");
+        //曾经在这里卡死很久，网络波动时服务器可能给客户端返回RST
         connfdData = accept(listenBdata, (struct sockaddr *)&clientData, &client_addr_data_len);
         // printf("%s","beta of sigint!\n");
         if (connfdData < 0)
@@ -2767,9 +2722,14 @@ void *BThread(void *arg)
         maxfd = listenBwarn + 1;
         // recv name
         n = select(maxfd, &accept_tout, NULL, NULL, &tout);
-        ERROR_ACTION(n)
         if (n == 0)
         {
+            close(connfdData);
+            continue;
+        }
+        else if (n < 0)
+        {
+            printf("select failed in %d:%s\n", __LINE__, strerror(errno));
             close(connfdData);
             continue;
         }
@@ -2784,9 +2744,15 @@ void *BThread(void *arg)
         maxfd = listenBother + 1;
         // recv name
         n = select(maxfd, &accept_tout, NULL, NULL, &tout);
-        ERROR_ACTION(n)
+        // ERROR_ACTION(n)
         if (n == 0)
         {
+            close(connfdData);
+            continue;
+        }
+        else if (n < 0)
+        {
+            printf("select failed in %d:%s\n", __LINE__, strerror(errno));
             close(connfdData);
             continue;
         }
@@ -2902,24 +2868,6 @@ int main(void)
     struct passwd *cur_user = getpwuid(getuid());
     user_dir = cur_user->pw_dir;
     struct sigaction sigpipe, sigalarm;
-    // sigemptyset(&sigalarm.sa_mask);
-    // sigalarm.sa_flags = 0;
-    // sigalarm.sa_flags |= SA_RESTART;
-    // sigalarm.sa_handler = timeOut;
-    // if (sigaction(SIGALRM, &sigalarm, NULL) == -1)
-    // {
-    //     perror("sigaction error:");
-    //     exit(1);
-    // }
-    // sigemptyset(&sigpipe.sa_mask);
-    // sigpipe.sa_flags = 0;
-    // sigpipe.sa_flags |= SA_RESTART;
-    // sigpipe.sa_handler = sigPipeHandler;
-    // if (sigaction(SIGPIPE, &sigpipe, NULL) == -1)
-    // {
-    //     perror("sigaction error:");
-    //     exit(1);
-    // }
     database_init();
     atexit(clean_sock);
     pthread_t pA, pB;
