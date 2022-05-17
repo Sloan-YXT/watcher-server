@@ -1,786 +1,2213 @@
-main:30404
+debug:94,wrapStack inited!
+debug:326,WrapMap inited!
+main:30154
 delete from board_data where month !=5 and id > 0
-AThread:30405
-BThread:30406Adata:30407
-debug:467,Adata start
-debug:470,Adata working
-debug:2203,ATH working
-debug:2668,BTH working
-Bdata:30410
-debug:1528,Bconn working
-Agraph:30409
-Bconnect:30408
-debug:1679,Bconn working
-debug:2211,
-debug:2230,
-yaoxuetao's raspi
-debug:2280,
+AThread:30164
+debug:2289,ATH working
+Agraph:30167
+Adata:30166
+debug:448,Adata start
+debug:451,Adata working
+BThread:30165debug:2754,BTH working
+Bconnect:30168
+debug:1741,Bconn working
+debug:2297,
+debug:2316,
+yaoxuetao's raspi§`Á(ßF…­|n¹™å <?LAÒFêR+48A&Ÿ¿ 
+debug:2366,
+Bdata:30169
+debug:1590,Bconn working
 raspi
-debug:2336,yaoxuetao's raspi
+debug:2422,yaoxuetao's raspi
 stackV lock
-debug:2346,
+debug:2432,
 stackV unlock
-debug:2354,
-debug:2357,
-debug:2447,let me know
-debug:2454,let me know
-debug:2477,yaoxuetao's raspi
+debug:2440,
+debug:2443,
+debug:2533,let me know
+debug:2540,let me know
+debug:2563,yaoxuetao's raspi
 yaoxuetao's raspi
-debug:2482,
-debug:2484,
-debug:2486,
-debug:2488,
-debug:2490,
-debug:2492,
-debug:2494,
-debug:2496,
-debug:2560,before add element
-debug:2577,after add element
-debug:2578,before create dir
-debug:2579,after create workdir
-debug:2203,ATH working
-ticktock:30437
-debug:1456,
-tick debug:debug:1461,yaoxuetao's raspi
-debug:fd_tick:17
-debug:1463,before tick recv
-debug:1508,yaoxuetao's raspi still in connection
-
-debug:1511,after tick recv
-debug:1456,
-tick debug:debug:1461,yaoxuetao's raspi
-debug:fd_tick:17
-debug:1463,before tick recv
+debug:2568,
+debug:2570,
+debug:2572,
+debug:2574,
+debug:2576,
+debug:2578,
+debug:2580,
+debug:2582,
+debug:2646,before add element
+debug:2663,after add element
+debug:2664,before create dir
+debug:2665,after create workdir
+debug:2289,ATH working
 debug:/home/yaoxuetao/yaoxuetao's raspi/photos
-debug:915,in Agraph
-debug:939,in Agraph
-debug:988,
-debug:1030,
-debug:28,in opencv
-/home/yaoxuetao/yaoxuetao's raspi/photos/Sun May 15 21:55:52 2022
-debug:31,in opencv
-debug:33,in opencv
-debug:1042,
-debug:1111,
-debug:472,Adata epoll shit
-debug:484,Adata epoll wait success
-debug:496,before recv len
-debug:661,recv message
-debug:663,{"humi":"59.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.8","type":"data"}
-{"humi":"59.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.8","type":"data"}
+debug:941,in Agraph
+debug:971,in Agraph
+ticktock:30170
+debug:1518,
+tick debug:debug:1523,yaoxuetao's raspi
+debug:fd_tick:17
+debug:1525,before tick recv
+debug:1570,yaoxuetao's raspi still in connection
+
+debug:1573,after tick recv
+debug:1518,
+tick debug:debug:1523,yaoxuetao's raspi
+debug:fd_tick:17
+debug:1525,before tick recv
+debug:1032,
+debug:1080,
+/home/yaoxuetao/yaoxuetao's raspi/photos/Tue May 17 21:38:22 2022
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:1092,
+debug:1172,
+debug:/home/yaoxuetao/yaoxuetao's raspi/photos
+debug:941,in Agraph
+debug:971,in Agraph
+debug:675,recv message
+debug:677,{"humi":"68.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+{"humi":"68.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
 
 
 
 just for one time should it be
 
 
-debug:694,
-debug:705,
+debug:1032,
+debug:1080,
+debug:708,
 debug:719,
-debug:721,
-debug:724,
-debug:726,
-debug:737,before send data to B
-debug:470,Adata working
-debug:1508,yaoxuetao's raspi still in connection
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+/home/yaoxuetao/yaoxuetao's raspi/photos/Tue May 17 21:38:23 2022
+debug:1092,
+debug:1172,
+debug:1570,yaoxuetao's raspi still in connection
 
-debug:1511,after tick recv
-debug:1456,
-tick debug:debug:1461,yaoxuetao's raspi
+debug:1573,after tick recv
+debug:1518,
+tick debug:debug:1523,yaoxuetao's raspi
 debug:fd_tick:17
-debug:1463,before tick recv
-debug:472,Adata epoll shit
-debug:484,Adata epoll wait success
-debug:496,before recv len
-debug:661,recv message
-debug:663,{"humi":"55.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
-{"humi":"55.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
-debug:694,
-debug:705,
+debug:1525,before tick recv
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"65.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+{"humi":"65.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+debug:708,
 debug:719,
-debug:721,
-debug:724,
-debug:726,
-debug:737,before send data to B
-debug:470,Adata working
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"68.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+{"humi":"68.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"68.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+{"humi":"68.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
 debug:/home/yaoxuetao/yaoxuetao's raspi/photos
-debug:915,in Agraph
-debug:939,in Agraph
-debug:988,
-debug:1030,
-debug:28,in opencv
-/home/yaoxuetao/yaoxuetao's raspi/photos/Sun May 15 21:55:59 2022
-debug:31,in opencv
-debug:33,in opencv
-debug:1042,
-debug:1111,
-debug:1508,yaoxuetao's raspi still in connection
+debug:941,in Agraph
+debug:971,in Agraph
+debug:1032,
+debug:1080,
+/home/yaoxuetao/yaoxuetao's raspi/photos/Tue May 17 21:38:31 2022
+debug:1570,yaoxuetao's raspi still in connection
 
-debug:1511,after tick recv
-debug:1456,
-tick debug:debug:1461,yaoxuetao's raspi
+debug:1573,after tick recv
+debug:1518,
+tick debug:debug:1523,yaoxuetao's raspi
 debug:fd_tick:17
-debug:1463,before tick recv
+debug:1525,before tick recv
+debug:1092,
+debug:1172,
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"68.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+{"humi":"68.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
 debug:/home/yaoxuetao/yaoxuetao's raspi/photos
-debug:915,in Agraph
-debug:939,in Agraph
-debug:988,
-debug:1030,
-debug:28,in opencv
-/home/yaoxuetao/yaoxuetao's raspi/photos/Sun May 15 21:56:04 2022
-debug:31,in opencv
-debug:33,in opencv
-debug:1042,
-debug:1111,
-debug:1508,yaoxuetao's raspi still in connection
+debug:941,in Agraph
+debug:971,in Agraph
+debug:1032,
+debug:1570,yaoxuetao's raspi still in connection
 
-debug:1511,after tick recv
-debug:1456,
-tick debug:debug:1461,yaoxuetao's raspi
+debug:1573,after tick recv
+debug:1518,
+tick debug:debug:1523,yaoxuetao's raspi
 debug:fd_tick:17
-debug:1463,before tick recv
-debug:472,Adata epoll shit
-debug:484,Adata epoll wait success
-debug:496,before recv len
-debug:661,recv message
-debug:663,{"humi":"58.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
-{"humi":"58.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
-debug:694,
-debug:705,
-debug:719,
-debug:721,
-debug:724,
-debug:726,
-debug:737,before send data to B
-debug:470,Adata working
-debug:1508,yaoxuetao's raspi still in connection
+debug:1525,before tick recv
+debug:1080,
+/home/yaoxuetao/yaoxuetao's raspi/photos/Tue May 17 21:38:36 2022
+debug:1092,
+debug:1172,
+debug:1570,yaoxuetao's raspi still in connection
 
-debug:1511,after tick recv
-debug:1456,
-tick debug:debug:1461,yaoxuetao's raspi
+debug:1573,after tick recv
+debug:1518,
+tick debug:debug:1523,yaoxuetao's raspi
 debug:fd_tick:17
-debug:1463,before tick recv
-debug:472,Adata epoll shit
-debug:484,Adata epoll wait success
-debug:496,before recv len
-debug:661,recv message
-debug:663,{"humi":"56.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
-{"humi":"56.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
-debug:694,
-debug:705,
-debug:719,
-debug:721,
-debug:724,
-debug:726,
-debug:737,before send data to B
-debug:470,Adata working
-debug:472,Adata epoll shit
-debug:484,Adata epoll wait success
-debug:496,before recv len
-debug:661,recv message
-debug:663,{"humi":"59.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.7","type":"data"}
-{"humi":"59.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.7","type":"data"}
-debug:694,
-debug:705,
-debug:719,
-debug:721,
-debug:724,
-debug:726,
-debug:737,before send data to B
-debug:470,Adata working
+debug:1525,before tick recv
 debug:/home/yaoxuetao/yaoxuetao's raspi/photos
-debug:915,in Agraph
-debug:939,in Agraph
-debug:988,
-debug:1030,
-debug:28,in opencv
-/home/yaoxuetao/yaoxuetao's raspi/photos/Sun May 15 21:56:15 2022
-debug:31,in opencv
-debug:33,in opencv
-debug:1042,
-debug:1111,
-debug:472,Adata epoll shit
-debug:484,Adata epoll wait success
-debug:496,before recv len
-debug:661,recv message
-debug:663,{"humi":"59.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.7","type":"data"}
-{"humi":"59.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.7","type":"data"}
-debug:694,
-debug:705,
+debug:941,in Agraph
+debug:971,in Agraph
+debug:1032,
+debug:1080,
+/home/yaoxuetao/yaoxuetao's raspi/photos/Tue May 17 21:38:43 2022
+debug:1092,
+debug:1172,
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"68.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+{"humi":"68.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+debug:708,
 debug:719,
-debug:721,
-debug:724,
-debug:726,
-debug:737,before send data to B
-debug:470,Adata working
-debug:1508,yaoxuetao's raspi still in connection
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:1570,yaoxuetao's raspi still in connection
 
-debug:1511,after tick recv
-debug:1456,
-tick debug:debug:1461,yaoxuetao's raspi
+debug:1573,after tick recv
+debug:1518,
+tick debug:debug:1523,yaoxuetao's raspi
 debug:fd_tick:17
-debug:1463,before tick recv
+debug:1525,before tick recv
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"65.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+{"humi":"65.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"68.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+{"humi":"68.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
 debug:/home/yaoxuetao/yaoxuetao's raspi/photos
-debug:915,in Agraph
-debug:939,in Agraph
-debug:988,
-debug:1030,
-debug:28,in opencv
-/home/yaoxuetao/yaoxuetao's raspi/photos/Sun May 15 21:56:17 2022
-debug:31,in opencv
-debug:33,in opencv
-debug:1042,
-debug:1111,
-debug:472,Adata epoll shit
-debug:484,Adata epoll wait success
-debug:496,before recv len
-debug:661,recv message
-debug:663,{"humi":"59.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.7","type":"data"}
-{"humi":"59.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.7","type":"data"}
-debug:694,
-debug:705,
+debug:941,in Agraph
+debug:971,in Agraph
+debug:1032,
+debug:1080,
+/home/yaoxuetao/yaoxuetao's raspi/photos/Tue May 17 21:38:51 2022
+debug:1570,yaoxuetao's raspi still in connection
+
+debug:1573,after tick recv
+debug:1518,
+tick debug:debug:1523,yaoxuetao's raspi
+debug:fd_tick:17
+debug:1525,before tick recv
+debug:1092,
+debug:1172,
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"68.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+{"humi":"68.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+debug:708,
 debug:719,
-debug:721,
-debug:724,
-debug:726,
-debug:737,before send data to B
-debug:470,Adata working
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"68.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+{"humi":"68.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"68.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+{"humi":"68.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:1570,yaoxuetao's raspi still in connection
+
+debug:1573,after tick recv
+debug:1518,
+tick debug:debug:1523,yaoxuetao's raspi
+debug:fd_tick:17
+debug:1525,before tick recv
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"68.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+{"humi":"68.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"68.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+{"humi":"68.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
 debug:/home/yaoxuetao/yaoxuetao's raspi/photos
-debug:915,in Agraph
-debug:939,in Agraph
-debug:988,
-debug:1030,
-debug:28,in opencv
-/home/yaoxuetao/yaoxuetao's raspi/photos/Sun May 15 21:56:19 2022
-debug:31,in opencv
-debug:33,in opencv
-debug:1042,
-debug:1111,
-debug:472,Adata epoll shit
-debug:484,Adata epoll wait success
-debug:496,before recv len
-debug:661,recv message
-debug:663,{"humi":"59.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.7","type":"data"}
-{"humi":"59.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.7","type":"data"}
-debug:694,
-debug:705,
-debug:719,
-debug:721,
-debug:724,
-debug:726,
-debug:737,before send data to B
-debug:470,Adata working
-debug:1508,yaoxuetao's raspi still in connection
+debug:941,in Agraph
+debug:971,in Agraph
+debug:1032,
+debug:1570,yaoxuetao's raspi still in connection
 
-debug:1511,after tick recv
-debug:1456,
-tick debug:debug:1461,yaoxuetao's raspi
+debug:1573,after tick recv
+debug:1518,
+tick debug:debug:1523,yaoxuetao's raspi
 debug:fd_tick:17
-debug:1463,before tick recv
-debug:472,Adata epoll shit
-debug:484,Adata epoll wait success
-debug:496,before recv len
-debug:661,recv message
-debug:663,{"humi":"59.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.7","type":"data"}
-{"humi":"59.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.7","type":"data"}
-debug:694,
-debug:705,
+debug:1525,before tick recv
+debug:1080,
+/home/yaoxuetao/yaoxuetao's raspi/photos/Tue May 17 21:39:01 2022
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"68.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+{"humi":"68.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+debug:708,
 debug:719,
-debug:721,
-debug:724,
-debug:726,
-debug:737,before send data to B
-debug:470,Adata working
-debug:472,Adata epoll shit
-debug:484,Adata epoll wait success
-debug:496,before recv len
-debug:661,recv message
-debug:663,{"humi":"59.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.8","type":"data"}
-{"humi":"59.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.8","type":"data"}
-debug:694,
-debug:705,
-debug:719,
-debug:721,
-debug:724,
-debug:726,
-debug:737,before send data to B
-debug:470,Adata working
-debug:472,Adata epoll shit
-debug:484,Adata epoll wait success
-debug:496,before recv len
-debug:661,recv message
-debug:663,{"humi":"59.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.8","type":"data"}
-{"humi":"59.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.8","type":"data"}
-debug:694,
-debug:705,
-debug:719,
-debug:721,
-debug:724,
-debug:726,
-debug:737,before send data to B
-debug:470,Adata working
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:1092,
+debug:1172,
 debug:/home/yaoxuetao/yaoxuetao's raspi/photos
-debug:915,in Agraph
-debug:939,in Agraph
-debug:1508,yaoxuetao's raspi still in connection
+debug:941,in Agraph
+debug:971,in Agraph
+debug:1032,
+debug:1080,
+/home/yaoxuetao/yaoxuetao's raspi/photos/Tue May 17 21:39:04 2022
+debug:1092,
+debug:1172,
+debug:1570,yaoxuetao's raspi still in connection
 
-debug:1511,after tick recv
-debug:1456,
-tick debug:debug:1461,yaoxuetao's raspi
+debug:1573,after tick recv
+debug:1518,
+tick debug:debug:1523,yaoxuetao's raspi
 debug:fd_tick:17
-debug:1463,before tick recv
-debug:988,
-debug:1030,
-debug:28,in opencv
-/home/yaoxuetao/yaoxuetao's raspi/photos/Sun May 15 21:56:27 2022
-debug:31,in opencv
-debug:33,in opencv
-debug:1042,
-debug:1111,
-debug:472,Adata epoll shit
-debug:484,Adata epoll wait success
-debug:496,before recv len
-debug:661,recv message
-debug:663,{"humi":"59.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.8","type":"data"}
-{"humi":"59.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.8","type":"data"}
-debug:694,
-debug:705,
-debug:719,
-debug:721,
-debug:724,
-debug:726,
-debug:737,before send data to B
-debug:470,Adata working
-debug:472,Adata epoll shit
-debug:484,Adata epoll wait success
-debug:496,before recv len
-debug:661,recv message
-debug:663,{"humi":"59.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.8","type":"data"}
-{"humi":"59.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.8","type":"data"}
-debug:694,
-debug:705,
-debug:719,
-debug:721,
-debug:724,
-debug:726,
-debug:737,before send data to B
-debug:470,Adata working
-debug:1508,yaoxuetao's raspi still in connection
-
-debug:1511,after tick recv
-debug:1456,
-tick debug:debug:1461,yaoxuetao's raspi
-debug:fd_tick:17
-debug:1463,before tick recv
+debug:1525,before tick recv
 debug:/home/yaoxuetao/yaoxuetao's raspi/photos
-debug:915,in Agraph
-debug:939,in Agraph
-debug:988,
-debug:1030,
-debug:28,in opencv
-/home/yaoxuetao/yaoxuetao's raspi/photos/Sun May 15 21:56:32 2022
-debug:31,in opencv
-debug:33,in opencv
-debug:1042,
-debug:1111,
-debug:472,Adata epoll shit
-debug:484,Adata epoll wait success
-debug:496,before recv len
-debug:661,recv message
-debug:663,{"humi":"59.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.8","type":"data"}
-{"humi":"59.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.8","type":"data"}
-debug:694,
-debug:705,
-debug:719,
-debug:721,
-debug:724,
-debug:726,
-debug:737,before send data to B
-debug:470,Adata working
-debug:472,Adata epoll shit
-debug:484,Adata epoll wait success
-debug:496,before recv len
-debug:661,recv message
-debug:663,{"humi":"59.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.8","type":"data"}
-{"humi":"59.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.8","type":"data"}
-debug:694,
-debug:705,
-debug:719,
-debug:721,
-debug:724,
-debug:726,
-debug:737,before send data to B
-debug:470,Adata working
-debug:472,Adata epoll shit
-debug:484,Adata epoll wait success
-debug:496,before recv len
-debug:661,recv message
-debug:663,{"humi":"58.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.8","type":"data"}
-{"humi":"58.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.8","type":"data"}
-debug:694,
-debug:705,
-debug:719,
-debug:721,
-debug:724,
-debug:726,
-debug:737,before send data to B
-debug:470,Adata working
-debug:1508,yaoxuetao's raspi still in connection
+debug:941,in Agraph
+debug:971,in Agraph
+debug:1032,
+debug:1080,
+/home/yaoxuetao/yaoxuetao's raspi/photos/Tue May 17 21:39:08 2022
+debug:1092,
+debug:1172,
+debug:1570,yaoxuetao's raspi still in connection
 
-debug:1511,after tick recv
-debug:1456,
-tick debug:debug:1461,yaoxuetao's raspi
+debug:1573,after tick recv
+debug:1518,
+tick debug:debug:1523,yaoxuetao's raspi
 debug:fd_tick:17
-debug:1463,before tick recv
-debug:1508,yaoxuetao's raspi still in connection
-
-debug:1511,after tick recv
-debug:1456,
-tick debug:debug:1461,yaoxuetao's raspi
-debug:fd_tick:17
-debug:1463,before tick recv
+debug:1525,before tick recv
 debug:/home/yaoxuetao/yaoxuetao's raspi/photos
-debug:915,in Agraph
-debug:939,in Agraph
-debug:988,
-debug:1030,
-debug:28,in opencv
-/home/yaoxuetao/yaoxuetao's raspi/photos/Sun May 15 21:56:42 2022
-debug:31,in opencv
-debug:33,in opencv
-debug:1042,
-debug:1111,
-debug:1508,yaoxuetao's raspi still in connection
-
-debug:1511,after tick recv
-debug:1456,
-tick debug:debug:1461,yaoxuetao's raspi
-debug:fd_tick:17
-debug:1463,before tick recv
+debug:941,in Agraph
+debug:971,in Agraph
+debug:1032,
+debug:1080,
+/home/yaoxuetao/yaoxuetao's raspi/photos/Tue May 17 21:39:12 2022
+debug:1092,
+debug:1172,
 debug:/home/yaoxuetao/yaoxuetao's raspi/photos
-debug:915,in Agraph
-debug:939,in Agraph
-debug:988,
-debug:1030,
-debug:28,in opencv
-/home/yaoxuetao/yaoxuetao's raspi/photos/Sun May 15 21:56:48 2022
-debug:31,in opencv
-debug:33,in opencv
-debug:1042,
-debug:1111,
-debug:472,Adata epoll shit
-debug:484,Adata epoll wait success
-debug:496,before recv len
-debug:661,recv message
-debug:663,{"humi":"58.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.8","type":"data"}
-{"humi":"58.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.8","type":"data"}
-debug:694,
-debug:705,
+debug:941,in Agraph
+debug:971,in Agraph
+debug:1032,
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"68.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+{"humi":"68.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+debug:708,
 debug:719,
-debug:721,
-debug:724,
-debug:726,
-debug:737,before send data to B
-debug:470,Adata working
-debug:1508,yaoxuetao's raspi still in connection
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:1080,
+/home/yaoxuetao/yaoxuetao's raspi/photos/Tue May 17 21:39:15 2022
+debug:1092,
+debug:1172,
+debug:1570,yaoxuetao's raspi still in connection
 
-debug:1511,after tick recv
-debug:1456,
-tick debug:debug:1461,yaoxuetao's raspi
+debug:1573,after tick recv
+debug:1518,
+tick debug:debug:1523,yaoxuetao's raspi
 debug:fd_tick:17
-debug:1463,before tick recv
-debug:472,Adata epoll shit
-debug:484,Adata epoll wait success
-debug:496,before recv len
-debug:661,recv message
-debug:663,{"humi":"55.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.8","type":"data"}
-{"humi":"55.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.8","type":"data"}
-debug:694,
-debug:705,
+debug:1525,before tick recv
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"65.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+{"humi":"65.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+debug:708,
 debug:719,
-debug:721,
-debug:724,
-debug:726,
-debug:737,before send data to B
-debug:470,Adata working
-debug:472,Adata epoll shit
-debug:484,Adata epoll wait success
-debug:496,before recv len
-debug:661,recv message
-debug:663,{"humi":"58.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.8","type":"data"}
-{"humi":"58.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.8","type":"data"}
-debug:694,
-debug:705,
-debug:719,
-debug:721,
-debug:724,
-debug:726,
-debug:737,before send data to B
-debug:470,Adata working
-debug:472,Adata epoll shit
-debug:484,Adata epoll wait success
-debug:496,before recv len
-debug:661,recv message
-debug:663,{"humi":"58.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.8","type":"data"}
-{"humi":"58.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.8","type":"data"}
-debug:694,
-debug:705,
-debug:719,
-debug:721,
-debug:724,
-debug:726,
-debug:737,before send data to B
-debug:470,Adata working
-debug:1508,yaoxuetao's raspi still in connection
-
-debug:1511,after tick recv
-debug:1456,
-tick debug:debug:1461,yaoxuetao's raspi
-debug:fd_tick:17
-debug:1463,before tick recv
-debug:472,Adata epoll shit
-debug:484,Adata epoll wait success
-debug:496,before recv len
-debug:661,recv message
-debug:663,{"humi":"58.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.9","type":"data"}
-{"humi":"58.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.9","type":"data"}
-debug:694,
-debug:705,
-debug:719,
-debug:721,
-debug:724,
-debug:726,
-debug:737,before send data to B
-debug:470,Adata working
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
 debug:/home/yaoxuetao/yaoxuetao's raspi/photos
-debug:915,in Agraph
-debug:939,in Agraph
-debug:988,
-debug:1030,
-debug:28,in opencv
-/home/yaoxuetao/yaoxuetao's raspi/photos/Sun May 15 21:56:59 2022
-debug:31,in opencv
-debug:33,in opencv
-debug:1042,
-debug:1111,
-debug:472,Adata epoll shit
-debug:484,Adata epoll wait success
-debug:496,before recv len
-debug:661,recv message
-debug:663,{"humi":"58.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.9","type":"data"}
-{"humi":"58.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.9","type":"data"}
-debug:694,
-debug:705,
-debug:719,
-debug:721,
-debug:724,
-debug:726,
-debug:737,before send data to B
-debug:470,Adata working
-debug:1508,yaoxuetao's raspi still in connection
-
-debug:1511,after tick recv
-debug:1456,
-tick debug:debug:1461,yaoxuetao's raspi
-debug:fd_tick:17
-debug:1463,before tick recv
-debug:472,Adata epoll shit
-debug:484,Adata epoll wait success
-debug:496,before recv len
-debug:661,recv message
-debug:663,{"humi":"58.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.9","type":"data"}
-{"humi":"58.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.9","type":"data"}
-debug:694,
-debug:705,
-debug:719,
-debug:721,
-debug:724,
-debug:726,
-debug:737,before send data to B
-debug:470,Adata working
+debug:941,in Agraph
+in line953,n=0,errno=0
+debug:968,after delete
+debug:1172,
+debug:1556,
+debug:1559,
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+495:board[192.168.1.222:38342] has disconnected:Success
+yaoxuetao's raspi
+debug:542,
+stackV lock
+stackV unlock
+debug:571,
+debug:451,Adata working
+debug:2297,
+debug:2316,
+yaoxuetao's raspi
+debug:2366,
+raspi
+debug:2422,yaoxuetao's raspi
+stackV lock
+debug:2432,
+stackV unlock
+debug:2440,
+debug:2443,
+debug:2533,let me know
+debug:2540,let me know
+debug:2563,yaoxuetao's raspi
+yaoxuetao's raspi
+debug:2568,
+debug:2570,
+debug:2572,
+debug:2574,
+debug:2576,
+debug:2578,
+debug:2580,
+debug:2582,
+debug:2646,before add element
+debug:2663,after add element
+debug:2664,before create dir
+debug:2665,after create workdir
+debug:2289,ATH working
+ticktock:30391
+debug:1518,
+tick debug:debug:1523,yaoxuetao's raspi
+debug:fd_tick:16
+debug:1525,before tick recv
 debug:/home/yaoxuetao/yaoxuetao's raspi/photos
-debug:915,in Agraph
-debug:939,in Agraph
-debug:988,
-debug:1030,
-debug:28,in opencv
-/home/yaoxuetao/yaoxuetao's raspi/photos/Sun May 15 21:57:02 2022
-debug:31,in opencv
-debug:33,in opencv
-debug:1042,
-debug:1111,
-debug:1508,yaoxuetao's raspi still in connection
+debug:941,in Agraph
+debug:971,in Agraph
+debug:1570,yaoxuetao's raspi still in connection
 
-debug:1511,after tick recv
-debug:1456,
-tick debug:debug:1461,yaoxuetao's raspi
-debug:fd_tick:17
-debug:1463,before tick recv
+debug:1573,after tick recv
+debug:1518,
+tick debug:debug:1523,yaoxuetao's raspi
+debug:fd_tick:16
+debug:1525,before tick recv
+debug:1032,
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+495:board[192.168.1.222:38350] has disconnected:Success
+yaoxuetao's raspi
+debug:542,
+stackV lock
+debug:1556,
+debug:1559,
+debug:1080,
+stackV unlock
+debug:571,
+debug:451,Adata working
+debug:2297,
+/home/yaoxuetao/yaoxuetao's raspi/photos/Tue May 17 21:39:19 2022
+debug:2316,
+yaoxuetao's raspi
+debug:2366,
+raspi
+debug:2422,yaoxuetao's raspi
+stackV lock
+debug:2432,
+stackV unlock
+debug:2440,
+debug:2443,
+debug:1092,
+debug:1172,
 debug:/home/yaoxuetao/yaoxuetao's raspi/photos
-debug:915,in Agraph
-debug:939,in Agraph
-debug:988,
-debug:1030,
-debug:28,in opencv
-/home/yaoxuetao/yaoxuetao's raspi/photos/Sun May 15 21:57:09 2022
-debug:31,in opencv
-debug:33,in opencv
-debug:1042,
-debug:1111,
+debug:941,in Agraph
+in line953,n=-1,errno=0
+debug:968,after delete
+debug:1172,
+debug:2514,select return 0;
+debug:2289,ATH working
+debug:2297,
+debug:2316,
+yaoxuetao's raspi
+debug:2366,
+raspi
+debug:2422,yaoxuetao's raspi
+stackV lock
+debug:2432,
+stackV unlock
+debug:2440,
+debug:2443,
+debug:2514,select return 0;
+debug:2289,ATH working
+debug:2297,
+debug:2316,
+yaoxuetao's raspi
+debug:2366,
+raspi
+debug:2422,yaoxuetao's raspi
+stackV lock
+debug:2432,
+stackV unlock
+debug:2440,
+debug:2443,
+debug:2514,select return 0;
+debug:2289,ATH working
+debug:2297,
+debug:2316,
+yaoxuetao's raspi
+debug:2366,
+raspi
+debug:2422,yaoxuetao's raspi
+stackV lock
+debug:2432,
+stackV unlock
+debug:2440,
+debug:2443,
+debug:2514,select return 0;
+debug:2289,ATH working
+debug:2297,
+debug:2316,
+yaoxuetao's raspi
+debug:2366,
+raspi
+debug:2422,yaoxuetao's raspi
+stackV lock
+debug:2432,
+stackV unlock
+debug:2440,
+debug:2443,
+debug:2514,select return 0;
+debug:2289,ATH working
+debug:2297,
+debug:2316,
+yaoxuetao's raspi
+debug:2366,
+raspi
+debug:2422,yaoxuetao's raspi
+stackV lock
+debug:2432,
+stackV unlock
+debug:2440,
+debug:2443,
+debug:2514,select return 0;
+debug:2289,ATH working
+debug:2297,
+debug:2316,
+yaoxuetao's raspi
+debug:2366,
+raspi
+debug:2422,yaoxuetao's raspi
+stackV lock
+debug:2432,
+stackV unlock
+debug:2440,
+debug:2443,
+debug:2514,select return 0;
+debug:2289,ATH working
+debug:2297,
+debug:2316,
+yaoxuetao's raspi
+debug:2366,
+raspi
+debug:2422,yaoxuetao's raspi
+stackV lock
+debug:2432,
+stackV unlock
+debug:2440,
+debug:2443,
+debug:2514,select return 0;
+debug:2289,ATH working
+debug:2297,
+debug:2316,
+yaoxuetao's raspi
+debug:2366,
+raspi
+debug:2422,yaoxuetao's raspi
+stackV lock
+debug:2432,
+stackV unlock
+debug:2440,
+debug:2443,
+debug:2514,select return 0;
+debug:2289,ATH working
+debug:2297,
+debug:2316,
+yaoxuetao's raspi
+debug:2366,
+raspi
+debug:2422,yaoxuetao's raspi
+stackV lock
+debug:2432,
+stackV unlock
+debug:2440,
+debug:2443,
+debug:2514,select return 0;
+debug:2289,ATH working
+debug:2297,
+debug:2316,
+yaoxuetao's raspi
+debug:2366,
+raspi
+debug:2422,yaoxuetao's raspi
+stackV lock
+debug:2432,
+stackV unlock
+debug:2440,
+debug:2443,
+debug:2514,select return 0;
+debug:2289,ATH working
+debug:2297,
+debug:2316,
+yaoxuetao's raspi
+debug:2366,
+raspi
+debug:2422,yaoxuetao's raspi
+stackV lock
+debug:2432,
+stackV unlock
+debug:2440,
+debug:2443,
+debug:2514,select return 0;
+debug:2289,ATH working
+debug:2297,
+debug:2316,
+yaoxuetao's raspi
+debug:2366,
+raspi
+debug:2422,yaoxuetao's raspi
+stackV lock
+debug:2432,
+stackV unlock
+debug:2440,
+debug:2443,
+debug:2514,select return 0;
+debug:2289,ATH working
+debug:2297,
+debug:2316,
+yaoxuetao's raspi
+debug:2366,
+raspi
+debug:2422,yaoxuetao's raspi
+stackV lock
+debug:2432,
+stackV unlock
+debug:2440,
+debug:2443,
+debug:2514,select return 0;
+debug:2289,ATH working
+debug:2297,
+debug:2316,
+yaoxuetao's raspi
+debug:2366,
+raspi
+debug:2422,yaoxuetao's raspi
+stackV lock
+debug:2432,
+stackV unlock
+debug:2440,
+debug:2443,
+debug:2514,select return 0;
+debug:2289,ATH working
+debug:2297,
+debug:2316,
+yaoxuetao's raspi
+debug:2366,
+raspi
+debug:2422,yaoxuetao's raspi
+stackV lock
+debug:2432,
+stackV unlock
+debug:2440,
+debug:2443,
+debug:2514,select return 0;
+debug:2289,ATH working
+debug:2297,
+debug:2316,
+yaoxuetao's raspi
+debug:2366,
+raspi
+debug:2422,yaoxuetao's raspi
+stackV lock
+debug:2432,
+stackV unlock
+debug:2440,
+debug:2443,
+debug:2514,select return 0;
+debug:2289,ATH working
+debug:2297,
+debug:2316,
+yaoxuetao's raspi
+debug:2366,
+raspi
+debug:2422,yaoxuetao's raspi
+stackV lock
+debug:2432,
+stackV unlock
+debug:2440,
+debug:2443,
+debug:2514,select return 0;
+debug:2289,ATH working
+debug:2297,
+debug:2316,
+yaoxuetao's raspi
+debug:2366,
+raspi
+debug:2422,yaoxuetao's raspi
+stackV lock
+debug:2432,
+stackV unlock
+debug:2440,
+debug:2443,
+debug:2514,select return 0;
+debug:2289,ATH working
+debug:2297,
+debug:2316,
+yaoxuetao's raspi
+debug:2366,
+raspi
+debug:2422,yaoxuetao's raspi
+stackV lock
+debug:2432,
+stackV unlock
+debug:2440,
+debug:2443,
+debug:2514,select return 0;
+debug:2289,ATH working
+debug:2297,
+debug:2316,
+yaoxuetao's raspi
+debug:2366,
+raspi
+debug:2422,yaoxuetao's raspi
+stackV lock
+debug:2432,
+stackV unlock
+debug:2440,
+debug:2443,
+debug:2514,select return 0;
+debug:2289,ATH working
+debug:2297,
+debug:2316,
+yaoxuetao's raspi
+debug:2366,
+raspi
+debug:2422,yaoxuetao's raspi
+stackV lock
+debug:2432,
+stackV unlock
+debug:2440,
+debug:2443,
+debug:2514,select return 0;
+debug:2289,ATH working
+debug:2297,
+debug:2316,
+yaoxuetao's raspi
+debug:2366,
+raspi
+debug:2422,yaoxuetao's raspi
+stackV lock
+debug:2432,
+stackV unlock
+debug:2440,
+debug:2443,
+debug:2533,let me know
+debug:2540,let me know
+debug:2563,yaoxuetao's raspi
+yaoxuetao's raspi
+debug:2568,
+debug:2570,
+debug:2572,
+debug:2574,
+debug:2576,
+debug:2578,
+debug:2580,
+debug:2582,
+debug:2646,before add element
+debug:2663,after add element
+debug:2664,before create dir
+debug:2665,after create workdir
+debug:2289,ATH working
 debug:/home/yaoxuetao/yaoxuetao's raspi/photos
-debug:915,in Agraph
-debug:939,in Agraph
-debug:1508,yaoxuetao's raspi still in connection
+debug:941,in Agraph
+debug:971,in Agraph
+ticktock:30406
+debug:1518,
+tick debug:debug:1523,yaoxuetao's raspi
+debug:fd_tick:55
+debug:1525,before tick recv
+debug:1570,yaoxuetao's raspi still in connection
 
-debug:1511,after tick recv
-debug:1456,
-tick debug:debug:1461,yaoxuetao's raspi
-debug:fd_tick:17
-debug:1463,before tick recv
-debug:988,
-debug:1030,
-debug:28,in opencv
-/home/yaoxuetao/yaoxuetao's raspi/photos/Sun May 15 21:57:12 2022
-debug:31,in opencv
-debug:33,in opencv
-debug:1042,
-debug:1111,
-debug:472,Adata epoll shit
-debug:484,Adata epoll wait success
-debug:496,before recv len
-debug:661,recv message
-debug:663,{"humi":"58.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.9","type":"data"}
-{"humi":"58.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.9","type":"data"}
-debug:694,
-debug:705,
-debug:719,
-debug:721,
-debug:724,
-debug:726,
-debug:737,before send data to B
-debug:470,Adata working
-debug:1508,yaoxuetao's raspi still in connection
-
-debug:1511,after tick recv
-debug:1456,
-tick debug:debug:1461,yaoxuetao's raspi
-debug:fd_tick:17
-debug:1463,before tick recv
-debug:472,Adata epoll shit
-debug:484,Adata epoll wait success
-debug:496,before recv len
-debug:661,recv message
-debug:663,{"humi":"55.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.9","type":"data"}
-{"humi":"55.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.9","type":"data"}
-debug:694,
-debug:705,
-debug:719,
-debug:721,
-debug:724,
-debug:726,
-debug:737,before send data to B
-debug:470,Adata working
-name=yaoxuetao's raspi
-pos=yaoxuetao's personal office
-type=raspi
----B(id)---1
-ptr info con = ad5
----B(id)---2
-ptr info data = ae0
-debug:2668,BTH working
-debug:472,Adata epoll shit
-debug:484,Adata epoll wait success
-debug:496,before recv len
-debug:661,recv message
-debug:663,{"humi":"58.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.9","type":"data"}
-{"humi":"58.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.9","type":"data"}
-debug:694,
-debug:705,
-debug:719,
-debug:721,
-debug:724,
-debug:726,
-debug:737,before send data to B
-debug:470,Adata working
-debug:1681,Bconn epoll shit
-in Bcon:1703,ptr:e8001930
-high_temp=30.000000,len=150994944
-debug:1679,Bconn working
-debug:1532,Bconn epoll shit
-in Bdata:1553,ptr:e80019c0
-{"type":"month data","board name":"yaoxuetao's raspi"}
-debug:1528,Bconn working
-debug:1532,Bconn epoll shit
-in Bdata:1553,ptr:e80019c0
-{"type":"month data","board name":"yaoxuetao's raspi"}
-debug:1528,Bconn working
+debug:1573,after tick recv
+debug:1518,
+tick debug:debug:1523,yaoxuetao's raspi
+debug:fd_tick:55
+debug:1525,before tick recv
+debug:1032,
+debug:1080,
+/home/yaoxuetao/yaoxuetao's raspi/photos/Tue May 17 21:39:42 2022
+debug:1092,
+debug:1172,
 debug:/home/yaoxuetao/yaoxuetao's raspi/photos
-debug:915,in Agraph
-debug:939,in Agraph
-debug:472,Adata epoll shit
-debug:484,Adata epoll wait success
-debug:496,before recv len
-debug:661,recv message
-debug:663,{"humi":"58.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.9","type":"data"}
-{"humi":"58.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.9","type":"data"}
-debug:694,
-debug:705,
-debug:719,
-debug:721,
-debug:724,
-debug:726,
-debug:737,before send data to B
-debug:745,n=
-4
-debug:783,{"boardName":"yaoxuetao's raspi","humi":"58.0","light":"1","position":"yaoxuetao's personal office","smoke":"0","temp":"26.9","time":"Sun May 15 21:57:21 2022","type":"data"}
-debug:470,Adata working
-debug:988,
-debug:1030,
-debug:28,in opencv
-/home/yaoxuetao/yaoxuetao's raspi/photos/Sun May 15 21:57:21 2022
-debug:31,in opencv
-debug:33,in opencv
-debug:1042,
-debug:1081,send graph to client:
-debug:1082,Anymous
-debug:1111,
-debug:1508,yaoxuetao's raspi still in connection
+debug:941,in Agraph
+debug:971,in Agraph
+debug:1032,
+debug:1080,
+/home/yaoxuetao/yaoxuetao's raspi/photos/Tue May 17 21:39:44 2022
+debug:1092,
+debug:1172,
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"68.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+{"humi":"68.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
 
-debug:1511,after tick recv
-debug:1456,
-tick debug:debug:1461,yaoxuetao's raspi
-debug:fd_tick:17
-debug:1463,before tick recv
-debug:1532,Bconn epoll shit
-in Bdata:1553,ptr:e80019c0
-{"type":"month data","board name":"yaoxuetao's raspi"}
-debug:1528,Bconn working
-debug:1532,Bconn epoll shit
-in Bdata:1553,ptr:e80019c0
-{"type":"month data","board name":"yaoxuetao's raspi"}
-debug:1528,Bconn working
-debug:472,Adata epoll shit
-debug:484,Adata epoll wait success
-debug:496,before recv len
-debug:661,recv message
-debug:663,{"humi":"58.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.9","type":"data"}
-{"humi":"58.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.9","type":"data"}
-debug:694,
-debug:705,
+
+
+just for one time should it be
+
+
+debug:708,
 debug:719,
-debug:721,
-debug:724,
-debug:726,
-debug:737,before send data to B
-debug:745,n=
-4
-debug:783,{"boardName":"yaoxuetao's raspi","humi":"58.0","light":"1","position":"yaoxuetao's personal office","smoke":"0","temp":"26.9","time":"Sun May 15 21:57:23 2022","type":"data"}
-debug:470,Adata working
-debug:1532,Bconn epoll shit
-in Bdata:1553,ptr:e80019c0
-{"type":"month data","board name":"yaoxuetao's raspi"}
-debug:1528,Bconn working
-debug:1681,Bconn epoll shit
-in Bcon:1703,ptr:e8001930
-debug:446,in clean
-debug:451,before rm graph dir
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:1570,yaoxuetao's raspi still in connection
+
+debug:1573,after tick recv
+debug:1518,
+tick debug:debug:1523,yaoxuetao's raspi
+debug:fd_tick:55
+debug:1525,before tick recv
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"65.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+{"humi":"65.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"68.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+{"humi":"68.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:/home/yaoxuetao/yaoxuetao's raspi/photos
+debug:941,in Agraph
+debug:971,in Agraph
+debug:1032,
+debug:1080,
+/home/yaoxuetao/yaoxuetao's raspi/photos/Tue May 17 21:39:50 2022
+debug:1092,
+debug:1172,
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"68.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+{"humi":"68.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:1570,yaoxuetao's raspi still in connection
+
+debug:1573,after tick recv
+debug:1518,
+tick debug:debug:1523,yaoxuetao's raspi
+debug:fd_tick:55
+debug:1525,before tick recv
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"68.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+{"humi":"68.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"68.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+{"humi":"68.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:1570,yaoxuetao's raspi still in connection
+
+debug:1573,after tick recv
+debug:1518,
+tick debug:debug:1523,yaoxuetao's raspi
+debug:fd_tick:55
+debug:1525,before tick recv
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"68.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+{"humi":"68.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:/home/yaoxuetao/yaoxuetao's raspi/photos
+debug:941,in Agraph
+debug:971,in Agraph
+debug:1032,
+debug:1080,
+/home/yaoxuetao/yaoxuetao's raspi/photos/Tue May 17 21:39:58 2022
+debug:1092,
+debug:1172,
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"68.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+{"humi":"68.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"68.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+{"humi":"68.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:1570,yaoxuetao's raspi still in connection
+
+debug:1573,after tick recv
+debug:1518,
+tick debug:debug:1523,yaoxuetao's raspi
+debug:fd_tick:55
+debug:1525,before tick recv
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:/home/yaoxuetao/yaoxuetao's raspi/photos
+debug:941,in Agraph
+debug:971,in Agraph
+debug:1032,
+debug:1080,
+/home/yaoxuetao/yaoxuetao's raspi/photos/Tue May 17 21:40:04 2022
+debug:1092,
+debug:1172,
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:1570,yaoxuetao's raspi still in connection
+
+debug:1573,after tick recv
+debug:1518,
+tick debug:debug:1523,yaoxuetao's raspi
+debug:fd_tick:55
+debug:1525,before tick recv
+debug:/home/yaoxuetao/yaoxuetao's raspi/photos
+debug:941,in Agraph
+debug:971,in Agraph
+debug:1032,
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:1080,
+/home/yaoxuetao/yaoxuetao's raspi/photos/Tue May 17 21:40:07 2022
+debug:1092,
+debug:1172,
+debug:/home/yaoxuetao/yaoxuetao's raspi/photos
+debug:941,in Agraph
+debug:971,in Agraph
+debug:1032,
+debug:1080,
+/home/yaoxuetao/yaoxuetao's raspi/photos/Tue May 17 21:40:09 2022
+debug:1092,
+debug:1172,
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"68.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+{"humi":"68.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:1570,yaoxuetao's raspi still in connection
+
+debug:1573,after tick recv
+debug:1518,
+tick debug:debug:1523,yaoxuetao's raspi
+debug:fd_tick:55
+debug:1525,before tick recv
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:1570,yaoxuetao's raspi still in connection
+
+debug:1573,after tick recv
+debug:1518,
+tick debug:debug:1523,yaoxuetao's raspi
+debug:fd_tick:55
+debug:1525,before tick recv
+debug:/home/yaoxuetao/yaoxuetao's raspi/photos
+debug:941,in Agraph
+debug:971,in Agraph
+debug:1032,
+debug:1080,
+/home/yaoxuetao/yaoxuetao's raspi/photos/Tue May 17 21:40:18 2022
+debug:1092,
+debug:1172,
+debug:/home/yaoxuetao/yaoxuetao's raspi/photos
+debug:941,in Agraph
+debug:971,in Agraph
+debug:1032,
+debug:1080,
+/home/yaoxuetao/yaoxuetao's raspi/photos/Tue May 17 21:40:19 2022
+debug:1092,
+debug:1172,
+debug:1570,yaoxuetao's raspi still in connection
+
+debug:1573,after tick recv
+debug:1518,
+tick debug:debug:1523,yaoxuetao's raspi
+debug:fd_tick:55
+debug:1525,before tick recv
+debug:/home/yaoxuetao/yaoxuetao's raspi/photos
+debug:941,in Agraph
+debug:971,in Agraph
+debug:1032,
+debug:1080,
+/home/yaoxuetao/yaoxuetao's raspi/photos/Tue May 17 21:40:24 2022
+debug:1092,
+debug:1172,
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:1570,yaoxuetao's raspi still in connection
+
+debug:1573,after tick recv
+debug:1518,
+tick debug:debug:1523,yaoxuetao's raspi
+debug:fd_tick:55
+debug:1525,before tick recv
+debug:/home/yaoxuetao/yaoxuetao's raspi/photos
+debug:941,in Agraph
+debug:971,in Agraph
+debug:1032,
+debug:1080,
+/home/yaoxuetao/yaoxuetao's raspi/photos/Tue May 17 21:40:31 2022
+debug:1092,
+debug:1172,
+debug:1570,yaoxuetao's raspi still in connection
+
+debug:1573,after tick recv
+debug:1518,
+tick debug:debug:1523,yaoxuetao's raspi
+debug:fd_tick:55
+debug:1525,before tick recv
+debug:/home/yaoxuetao/yaoxuetao's raspi/photos
+debug:941,in Agraph
+debug:971,in Agraph
+debug:1032,
+debug:1080,
+/home/yaoxuetao/yaoxuetao's raspi/photos/Tue May 17 21:40:33 2022
+debug:1092,
+debug:1172,
+debug:1570,yaoxuetao's raspi still in connection
+
+debug:1573,after tick recv
+debug:1518,
+tick debug:debug:1523,yaoxuetao's raspi
+debug:fd_tick:55
+debug:1525,before tick recv
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"68.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+{"humi":"68.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:/home/yaoxuetao/yaoxuetao's raspi/photos
+debug:941,in Agraph
+debug:971,in Agraph
+debug:1032,
+debug:1080,
+/home/yaoxuetao/yaoxuetao's raspi/photos/Tue May 17 21:40:40 2022
+debug:1092,
+debug:1172,
+debug:1570,yaoxuetao's raspi still in connection
+
+debug:1573,after tick recv
+debug:1518,
+tick debug:debug:1523,yaoxuetao's raspi
+debug:fd_tick:55
+debug:1525,before tick recv
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"66.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+{"humi":"66.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:/home/yaoxuetao/yaoxuetao's raspi/photos
+debug:941,in Agraph
+debug:971,in Agraph
+debug:1032,
+debug:1080,
+/home/yaoxuetao/yaoxuetao's raspi/photos/Tue May 17 21:40:44 2022
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:1092,
+debug:1172,
+debug:/home/yaoxuetao/yaoxuetao's raspi/photos
+debug:941,in Agraph
+debug:971,in Agraph
+debug:1032,
+debug:1080,
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+/home/yaoxuetao/yaoxuetao's raspi/photos/Tue May 17 21:40:46 2022
+debug:1092,
+debug:1172,
+debug:1570,yaoxuetao's raspi still in connection
+
+debug:1573,after tick recv
+debug:1518,
+tick debug:debug:1523,yaoxuetao's raspi
+debug:fd_tick:55
+debug:1525,before tick recv
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:/home/yaoxuetao/yaoxuetao's raspi/photos
+debug:941,in Agraph
+debug:971,in Agraph
+debug:1032,
+debug:1080,
+/home/yaoxuetao/yaoxuetao's raspi/photos/Tue May 17 21:40:51 2022
+debug:1092,
+debug:1172,
+debug:1570,yaoxuetao's raspi still in connection
+
+debug:1573,after tick recv
+debug:1518,
+tick debug:debug:1523,yaoxuetao's raspi
+debug:fd_tick:55
+debug:1525,before tick recv
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:/home/yaoxuetao/yaoxuetao's raspi/photos
+debug:941,in Agraph
+debug:971,in Agraph
+debug:1032,
+debug:1080,
+/home/yaoxuetao/yaoxuetao's raspi/photos/Tue May 17 21:40:55 2022
+debug:1092,
+debug:1172,
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:1570,yaoxuetao's raspi still in connection
+
+debug:1573,after tick recv
+debug:1518,
+tick debug:debug:1523,yaoxuetao's raspi
+debug:fd_tick:55
+debug:1525,before tick recv
+debug:/home/yaoxuetao/yaoxuetao's raspi/photos
+debug:941,in Agraph
+debug:971,in Agraph
+debug:1032,
+debug:1080,
+/home/yaoxuetao/yaoxuetao's raspi/photos/Tue May 17 21:40:57 2022
+debug:1092,
+debug:1172,
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:/home/yaoxuetao/yaoxuetao's raspi/photos
+debug:941,in Agraph
+debug:971,in Agraph
+debug:1032,
+debug:1080,
+/home/yaoxuetao/yaoxuetao's raspi/photos/Tue May 17 21:41:01 2022
+debug:1092,
+debug:1172,
+debug:1570,yaoxuetao's raspi still in connection
+
+debug:1573,after tick recv
+debug:1518,
+tick debug:debug:1523,yaoxuetao's raspi
+debug:fd_tick:55
+debug:1525,before tick recv
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:/home/yaoxuetao/yaoxuetao's raspi/photos
+debug:941,in Agraph
+debug:971,in Agraph
+debug:1032,
+debug:1080,
+/home/yaoxuetao/yaoxuetao's raspi/photos/Tue May 17 21:41:06 2022
+debug:1092,
+debug:1172,
+debug:1570,yaoxuetao's raspi still in connection
+
+debug:1573,after tick recv
+debug:1518,
+tick debug:debug:1523,yaoxuetao's raspi
+debug:fd_tick:55
+debug:1525,before tick recv
+debug:1570,yaoxuetao's raspi still in connection
+
+debug:1573,after tick recv
+debug:1518,
+tick debug:debug:1523,yaoxuetao's raspi
+debug:fd_tick:55
+debug:1525,before tick recv
+debug:/home/yaoxuetao/yaoxuetao's raspi/photos
+debug:941,in Agraph
+debug:971,in Agraph
+debug:1032,
+debug:1080,
+/home/yaoxuetao/yaoxuetao's raspi/photos/Tue May 17 21:41:16 2022
+debug:1092,
+debug:1172,
+debug:1570,yaoxuetao's raspi still in connection
+
+debug:1573,after tick recv
+debug:1518,
+tick debug:debug:1523,yaoxuetao's raspi
+debug:fd_tick:55
+debug:1525,before tick recv
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"66.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+{"humi":"66.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:1570,yaoxuetao's raspi still in connection
+
+debug:1573,after tick recv
+debug:1518,
+tick debug:debug:1523,yaoxuetao's raspi
+debug:fd_tick:55
+debug:1525,before tick recv
+debug:/home/yaoxuetao/yaoxuetao's raspi/photos
+debug:941,in Agraph
+debug:971,in Agraph
+debug:1032,
+debug:1080,
+/home/yaoxuetao/yaoxuetao's raspi/photos/Tue May 17 21:41:23 2022
+debug:1092,
+debug:1172,
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:/home/yaoxuetao/yaoxuetao's raspi/photos
+debug:941,in Agraph
+debug:971,in Agraph
+debug:1032,
+debug:1080,
+/home/yaoxuetao/yaoxuetao's raspi/photos/Tue May 17 21:41:25 2022
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:1092,
+debug:1172,
+debug:675,recv message
+debug:677,{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:1570,yaoxuetao's raspi still in connection
+
+debug:1573,after tick recv
+debug:1518,
+tick debug:debug:1523,yaoxuetao's raspi
+debug:fd_tick:55
+debug:1525,before tick recv
+debug:/home/yaoxuetao/yaoxuetao's raspi/photos
+debug:941,in Agraph
+debug:971,in Agraph
+debug:1032,
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:1080,
+debug:675,recv message
+debug:677,{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+/home/yaoxuetao/yaoxuetao's raspi/photos/Tue May 17 21:41:27 2022
+debug:1092,
+debug:1172,
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:1570,yaoxuetao's raspi still in connection
+
+debug:1573,after tick recv
+debug:1518,
+tick debug:debug:1523,yaoxuetao's raspi
+debug:fd_tick:55
+debug:1525,before tick recv
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:/home/yaoxuetao/yaoxuetao's raspi/photos
+debug:941,in Agraph
+debug:971,in Agraph
+debug:1032,
+debug:1080,
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+/home/yaoxuetao/yaoxuetao's raspi/photos/Tue May 17 21:41:36 2022
+debug:675,recv message
+debug:677,{"humi":"68.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+{"humi":"68.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:1092,
+debug:1172,
+debug:1570,yaoxuetao's raspi still in connection
+
+debug:1573,after tick recv
+debug:1518,
+tick debug:debug:1523,yaoxuetao's raspi
+debug:fd_tick:55
+debug:1525,before tick recv
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:/home/yaoxuetao/yaoxuetao's raspi/photos
+debug:941,in Agraph
+debug:971,in Agraph
+debug:1032,
+debug:1080,
+/home/yaoxuetao/yaoxuetao's raspi/photos/Tue May 17 21:41:39 2022
+debug:1092,
+debug:1172,
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.6","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:1570,yaoxuetao's raspi still in connection
+
+debug:1573,after tick recv
+debug:1518,
+tick debug:debug:1523,yaoxuetao's raspi
+debug:fd_tick:55
+debug:1525,before tick recv
+debug:/home/yaoxuetao/yaoxuetao's raspi/photos
+debug:941,in Agraph
+debug:971,in Agraph
+debug:1032,
+debug:1080,
+/home/yaoxuetao/yaoxuetao's raspi/photos/Tue May 17 21:41:43 2022
+debug:1092,
+debug:1172,
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"71.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+{"humi":"71.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:1570,yaoxuetao's raspi still in connection
+
+debug:1573,after tick recv
+debug:1518,
+tick debug:debug:1523,yaoxuetao's raspi
+debug:fd_tick:55
+debug:1525,before tick recv
+debug:/home/yaoxuetao/yaoxuetao's raspi/photos
+debug:941,in Agraph
+debug:971,in Agraph
+debug:1032,
+debug:1080,
+/home/yaoxuetao/yaoxuetao's raspi/photos/Tue May 17 21:41:51 2022
+debug:1570,yaoxuetao's raspi still in connection
+
+debug:1573,after tick recv
+debug:1518,
+tick debug:debug:1523,yaoxuetao's raspi
+debug:fd_tick:55
+debug:1525,before tick recv
+debug:1092,
+debug:1172,
+debug:1570,yaoxuetao's raspi still in connection
+
+debug:1573,after tick recv
+debug:1518,
+tick debug:debug:1523,yaoxuetao's raspi
+debug:fd_tick:55
+debug:1525,before tick recv
+debug:/home/yaoxuetao/yaoxuetao's raspi/photos
+debug:941,in Agraph
+debug:971,in Agraph
+debug:1032,
+debug:1080,
+/home/yaoxuetao/yaoxuetao's raspi/photos/Tue May 17 21:41:58 2022
+debug:1092,
+debug:1172,
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"65.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.3","type":"data"}
+{"humi":"65.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.3","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:1570,yaoxuetao's raspi still in connection
+
+debug:1573,after tick recv
+debug:1518,
+tick debug:debug:1523,yaoxuetao's raspi
+debug:fd_tick:55
+debug:1525,before tick recv
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"68.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.4","type":"data"}
+{"humi":"68.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.4","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"68.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+{"humi":"68.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.5","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:1570,yaoxuetao's raspi still in connection
+
+debug:1573,after tick recv
+debug:1518,
+tick debug:debug:1523,yaoxuetao's raspi
+debug:fd_tick:55
+debug:1525,before tick recv
+debug:/home/yaoxuetao/yaoxuetao's raspi/photos
+debug:941,in Agraph
+debug:971,in Agraph
+debug:1032,
+debug:1080,
+/home/yaoxuetao/yaoxuetao's raspi/photos/Tue May 17 21:42:08 2022
+debug:1092,
+debug:1172,
+debug:1570,yaoxuetao's raspi still in connection
+
+debug:1573,after tick recv
+debug:1518,
+tick debug:debug:1523,yaoxuetao's raspi
+debug:fd_tick:55
+debug:1525,before tick recv
+debug:1570,yaoxuetao's raspi still in connection
+
+debug:1573,after tick recv
+debug:1518,
+tick debug:debug:1523,yaoxuetao's raspi
+debug:fd_tick:55
+debug:1525,before tick recv
+debug:/home/yaoxuetao/yaoxuetao's raspi/photos
+debug:941,in Agraph
+debug:971,in Agraph
+debug:1032,
+debug:1080,
+/home/yaoxuetao/yaoxuetao's raspi/photos/Tue May 17 21:42:18 2022
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.4","type":"data"}
+{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.4","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:1092,
+debug:1172,
+debug:/home/yaoxuetao/yaoxuetao's raspi/photos
+debug:941,in Agraph
+debug:971,in Agraph
+debug:1032,
+debug:1080,
+/home/yaoxuetao/yaoxuetao's raspi/photos/Tue May 17 21:42:19 2022
+debug:1092,
+debug:1172,
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"66.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.3","type":"data"}
+{"humi":"66.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.3","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:1570,yaoxuetao's raspi still in connection
+
+debug:1573,after tick recv
+debug:1518,
+tick debug:debug:1523,yaoxuetao's raspi
+debug:fd_tick:55
+debug:1525,before tick recv
+debug:/home/yaoxuetao/yaoxuetao's raspi/photos
+debug:941,in Agraph
+debug:971,in Agraph
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.3","type":"data"}
+{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.3","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:1032,
+debug:1080,
+/home/yaoxuetao/yaoxuetao's raspi/photos/Tue May 17 21:42:22 2022
+debug:1092,
+debug:1172,
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.4","type":"data"}
+{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.4","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.4","type":"data"}
+{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.4","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:1570,yaoxuetao's raspi still in connection
+
+debug:1573,after tick recv
+debug:1518,
+tick debug:debug:1523,yaoxuetao's raspi
+debug:fd_tick:55
+debug:1525,before tick recv
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.4","type":"data"}
+{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.4","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:/home/yaoxuetao/yaoxuetao's raspi/photos
+debug:941,in Agraph
+debug:971,in Agraph
+debug:1032,
+debug:1080,
+/home/yaoxuetao/yaoxuetao's raspi/photos/Tue May 17 21:42:29 2022
+debug:1092,
+debug:1172,
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.4","type":"data"}
+{"humi":"69.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.4","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:1570,yaoxuetao's raspi still in connection
+
+debug:1573,after tick recv
+debug:1518,
+tick debug:debug:1523,yaoxuetao's raspi
+debug:fd_tick:55
+debug:1525,before tick recv
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"70.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.3","type":"data"}
+{"humi":"70.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.3","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"70.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.4","type":"data"}
+{"humi":"70.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.4","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"70.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.4","type":"data"}
+{"humi":"70.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.4","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:1570,yaoxuetao's raspi still in connection
+
+debug:1573,after tick recv
+debug:1518,
+tick debug:debug:1523,yaoxuetao's raspi
+debug:fd_tick:55
+debug:1525,before tick recv
+debug:453,Adata epoll shit
+debug:465,Adata epoll wait success
+debug:477,before recv len
+debug:675,recv message
+debug:677,{"humi":"70.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.3","type":"data"}
+{"humi":"70.0","light":"1","name":"yaoxuetao's raspi","position":"yaoxuetao's personal office","smoke":"0","temp":"26.3","type":"data"}
+debug:708,
+debug:719,
+debug:733,
+debug:735,
+debug:738,
+debug:740,
+debug:751,before send data to B
+debug:451,Adata working
+debug:/home/yaoxuetao/yaoxuetao's raspi/photos
+debug:941,in Agraph
+debug:971,in Agraph
+debug:1032,
+debug:1080,
+/home/yaoxuetao/yaoxuetao's raspi/photos/Tue May 17 21:42:39 2022

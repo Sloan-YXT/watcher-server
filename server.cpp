@@ -91,6 +91,7 @@ private:
 public:
     WrapStack()
     {
+        DEBUG("wrapStack inited!");
         pthread_mutex_init(&dlock, NULL);
     }
     ~WrapStack()
@@ -322,7 +323,7 @@ private:
 public:
     WrapMap()
     {
-        // cout << "debug:wrap hash_map init" << endl;
+        DEBUG("WrapMap inited!");
         pthread_mutex_init(&dlock, NULL);
     }
     ~WrapMap()
@@ -556,6 +557,10 @@ void *Adata(void *arg)
                         */
                         int code = a_info->vcode;
                         close(a_info->fd_data);
+                        if (a_info->pair_node != NULL)
+                        {
+                            a_info->pair_node->pair_node = NULL;
+                        }
                         delete a_info;
                         nodesA.unlock();
                         freeV.lock();
@@ -651,6 +656,10 @@ void *Adata(void *arg)
                         */
                         int code = a_info->vcode;
                         close(a_info->fd_data);
+                        if (a_info->pair_node != NULL)
+                        {
+                            a_info->pair_node->pair_node = NULL;
+                        }
                         delete a_info;
                         nodesA.unlock();
                         DEBUG("after erase");
@@ -850,6 +859,11 @@ void *Adata(void *arg)
                                 freeV.unlock();
                             }
                             close(a_info->fd_data);
+                            a_info->pair_node->pair_node = NULL;
+                            if (a_info->pair_node != NULL)
+                            {
+                                a_info->pair_node->pair_node = NULL;
+                            }
                             delete a_info;
                             nodesA.unlock();
                             // close(a_info->fd_graph);
@@ -877,6 +891,12 @@ void *Adata(void *arg)
                 printf("line %d:board %s:[%s:%d] has disconnected:%s(net hup!!!)\n", __LINE__, a_info->name.c_str(), inet_ntop(AF_INET, &a_info->client_data.sin_addr, p, 20), ntohs(a_info->client_data.sin_port), strerror(errno));
                 free(p);
                 close(a_info->fd_data);
+                nodesA.lock();
+                if (a_info->pair_node != NULL)
+                {
+                    a_info->pair_node->pair_node = NULL;
+                }
+                nodesA.unlock();
                 delete a_info;
             }
         }
@@ -938,6 +958,12 @@ void *Agraph(void *arg)
                             exit(1);
                         }
                         close(connfd);
+                        nodesA.lock();
+                        if (info->pair_node != NULL)
+                        {
+                            info->pair_node->pair_node = NULL;
+                        }
+                        nodesA.unlock();
                         delete info;
                         DEBUG("after delete");
                         continue;
@@ -960,6 +986,12 @@ void *Agraph(void *arg)
                             exit(1);
                         }
                         close(connfd);
+                        nodesA.lock();
+                        if (info->pair_node != NULL)
+                        {
+                            info->pair_node->pair_node = NULL;
+                        }
+                        nodesA.unlock();
                         delete info;
                         DEBUG("after delete");
                         continue;
@@ -984,6 +1016,12 @@ void *Agraph(void *arg)
                             exit(1);
                         }
                         close(connfd);
+                        nodesA.lock();
+                        if (info->pair_node != NULL)
+                        {
+                            info->pair_node->pair_node = NULL;
+                        }
+                        nodesA.unlock();
                         delete info;
                         DEBUG("after delete");
                         continue;
@@ -1025,6 +1063,12 @@ void *Agraph(void *arg)
                             exit(1);
                         }
                         close(connfd);
+                        nodesA.lock();
+                        if (info->pair_node != NULL)
+                        {
+                            info->pair_node->pair_node = NULL;
+                        }
+                        nodesA.unlock();
                         delete info;
                         ERROR_ACTION(munmap(graph_buffer, len));
                         continue;
@@ -1047,6 +1091,11 @@ void *Agraph(void *arg)
                         len = warning.length();
                         DEBUG("");
                         nodesA.lock();
+                        if (info->pair_node == NULL)
+                        {
+                            nodesA.unlock();
+                            continue;
+                        }
                         for (auto m = info->pair_node->connection.begin(); m != info->pair_node->connection.end(); m++)
                         {
                             int rlen = htonl(len);
@@ -1067,7 +1116,7 @@ void *Agraph(void *arg)
                                 // exit(1);
                                 continue;
                             }
-                            fprintf(stderr, "debug:graph len=%d\n", len);
+                            printf("debug:graph len=%d\n", len);
                             n = send((*m)->fd_warn, warning.c_str(), len, 0);
                             if (n < 0 && (errno == EPIPE | errno == ECONNRESET))
                             {
@@ -1109,6 +1158,12 @@ void *Agraph(void *arg)
                     printf("line %d:board %s:[%s:%d] has disconnected:%s(net hup!!!)\n", __LINE__, info->name.c_str(), inet_ntop(AF_INET, &info->client_data.sin_addr, p, 20), ntohs(info->client_data.sin_port), strerror(errno));
                     free(p);
                     close(info->fd_graph);
+                    nodesA.lock();
+                    if (info->pair_node != NULL)
+                    {
+                        info->pair_node->pair_node = NULL;
+                    }
+                    nodesA.unlock();
                     delete info;
                 }
             }
@@ -1495,7 +1550,7 @@ void *TickTock(void *arg)
             if (n == 0 | errno == ECONNRESET)
             {
                 errno = 0;
-                DEBUG("");
+                FDEBUG("tick.log", "n==%d,errno=%d", n, errno);
                 shutdown(a->fd_data, SHUT_RDWR);
                 // epoll_ctl(gepfd[0], EPOLL_CTL_DEL, a->fd_data, NULL);
                 DEBUG("");

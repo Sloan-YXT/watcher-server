@@ -8,19 +8,6 @@
 #include "cutil.h"
 using namespace std;
 using namespace cv;
-#define DEBUG
-#ifdef DEBUG
-
-#define DEBUG(X)                              \
-    do                                        \
-    {                                         \
-        printf("debug:%d,%s\n", __LINE__, X); \
-    } while (0)
-#define DEBUG_MODE 1
-#else
-#define DEBUG(X)
-#endif
-
 int faceDetect(string data, string src, string dest)
 {
 
