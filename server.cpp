@@ -445,12 +445,9 @@ void *Adata(void *arg)
     int i;
     ANodeInfo *a_info;
     char message_box[MESSAE_LENGTH];
-    DEBUG("Adata start");
     while (1)
     {
-        DEBUG("Adata working");
         nfds = epoll_wait(epfd, a_data_event, ANUM, -1);
-        DEBUG("Adata epoll shit");
         if (nfds < 0)
         {
             if (errno == 4)
@@ -462,9 +459,9 @@ void *Adata(void *arg)
             exit_database();
             exit(1);
         }
-        DEBUG("Adata epoll wait success");
         for (i = 0; i < nfds; i++)
         {
+            errno = 0;
             if (a_data_event[i].events & EPOLLIN)
             {
                 a_info = (ANodeInfo *)(a_data_event[i].data.ptr);
@@ -474,13 +471,12 @@ void *Adata(void *arg)
                     exit(1);
                 }
                 unsigned int len;
-                DEBUG("before recv len");
                 n = recv(a_info->fd_data, &len, sizeof(int), MSG_WAITALL);
                 if (n == 0 | n < 0)
                 {
                     if (n < 0 && errno != ECONNRESET)
                     {
-                        perror("recv failed in A");
+                        FTDEBUG("Adata.log", "recv<0", "errno=%d,%s,n=%d", errno, strerror(errno), n);
                         close(a_info->fd_data);
                         close(a_info->fd_graph);
                         close(a_info->fd_tick);
@@ -490,27 +486,25 @@ void *Adata(void *arg)
                     }
                     else if (n == 0 | errno == ECONNRESET)
                     {
+                        FTDEBUG("Adata.log", "recv==0|errno==ECONNRESET", "errno=%d,%s,n=%d", errno, strerror(errno), n);
+                        FTDEBUG("A.log", "data recv == 0", "(%d,%s)errno=%d,%s,n=%d", ntohs(a_info->client_data.sin_port), a_info->name.c_str(), errno, strerror(errno), n);
                         errno = 0;
                         char *p = (char *)malloc(20);
                         printf("%d:board[%s:%d] has disconnected:%s\n", __LINE__, inet_ntop(AF_INET, &a_info->client_data.sin_addr, p, 20), ntohs(a_info->client_data.sin_port), strerror(errno));
                         free(p);
                         if (epoll_ctl(epfd, EPOLL_CTL_DEL, a_info->fd_data, NULL) == -1)
                         {
-                            printf("A read epoll del failed %d:%s", __LINE__, strerror(errno));
+                            FTDEBUG("Adata.log", "epoll_del", "errno=%d,%s,n=%d", errno, strerror(errno), n);
                             exit_database();
                             exit(1);
                         }
                         numer.decreaseA();
-                        cout << a_info->name << endl;
                         nodesA.lock();
                         auto c = nodesA.find(a_info->name);
-                        // nodesA.unlock();
                         if (c != nodesA.end())
                         {
-                            // c->second->connection.lock();
                             for (auto b = c->second->connection.begin(); b != c->second->connection.end(); b++)
                             {
-                                DEBUG("in Adata sending");
                                 json j;
                                 j["type"] = "cmd";
                                 j["content"] = "breset";
@@ -520,41 +514,21 @@ void *Adata(void *arg)
                                 int m = send((*b)->fd_warn, &len, sizeof(len), 0);
                                 if (m <= 0 && errno != EPIPE)
                                 {
+                                    FTDEBUG("Adata.log", "send failed", "errno=%d,%s,n=%d", errno, strerror(errno), n);
                                     errno = 0;
-                                    printf("send breset failed in %d:%s\n", __LINE__, strerror(errno));
-
-                                    // exit_database();
-                                    // exit(1);
                                     continue;
                                 }
                                 m = send((*b)->fd_warn, a.c_str(), a.size(), 0);
                                 if (m <= 0 && errno != EPIPE)
                                 {
+                                    FTDEBUG("Adata.log", "send failed", "errno=%d,%s,n=%d", errno, strerror(errno), n);
                                     errno = 0;
-                                    printf("send breset failed in %d:%s\n", __LINE__, strerror(errno));
-
-                                    // exit_database();
-                                    // exit(1);
                                     continue;
                                 }
-                                DEBUG(a.c_str());
                             }
-                            DEBUG("");
-                            // c->second->connection.unlock();
-                            // nodesA.lock();
                             nodesA.erase(a_info->name);
-                            // nodesA.unlock();
                         }
-                        /* ???
-                        delete a_info;
-                        nodesA.unlock();
-                        close(a_info->fd_data);
-                        freeV.lock();
-                        FDEBUG("vode.log", "vode=%d", a_info->vcode);
-                        freeV.push(a_info->vcode);
-                        freeV.unlock();
-                        numer.decreaseA();
-                        */
+
                         int code = a_info->vcode;
                         close(a_info->fd_data);
                         if (a_info->pair_node != NULL)
@@ -579,8 +553,8 @@ void *Adata(void *arg)
                 {
                     if (n < 0 && errno != ECONNRESET)
                     {
+                        FTDEBUG("Adata.log", "recv<0", "errno=%d,%s,n=%d", errno, strerror(errno), n);
                         errno = 0;
-                        perror("recv failed in A");
                         close(a_info->fd_data);
                         close(a_info->fd_graph);
                         close(a_info->fd_tick);
@@ -590,23 +564,23 @@ void *Adata(void *arg)
                     }
                     else if (n == 0 | errno == ECONNRESET)
                     {
+                        FTDEBUG("Adata.log", "recv==0|errno==ECONNRESET", "errno=%d,%s,n=%d", errno, strerror(errno), n);
+                        FTDEBUG("A.log", "data recv == 0", "(%d,%s)errno=%d,%s,n=%d", ntohs(a_info->client_data.sin_port), a_info->name.c_str(), errno, strerror(errno), n);
                         errno = 0;
                         char *p = (char *)malloc(20);
                         printf("%d:board %s:[%s:%d] has disconnected:%s\n", __LINE__, a_info->name.c_str(), inet_ntop(AF_INET, &a_info->client_data.sin_addr, p, 20), ntohs(a_info->client_data.sin_port), strerror(errno));
                         free(p);
                         if (epoll_ctl(epfd, EPOLL_CTL_DEL, a_info->fd_data, NULL) == -1)
                         {
-                            printf("A read epoll del failed %d:%s", __LINE__, strerror(errno));
+                            FTDEBUG("Adata.log", "epoll del failed", "errno=%d,%s,n=%d", errno, strerror(errno), n);
                             exit_database();
                             exit(1);
                         }
                         numer.decreaseA();
                         nodesA.lock();
                         auto c = nodesA.find(a_info->name);
-                        // nodesA.unlock();
                         if (c != nodesA.end())
                         {
-                            // c->second->connection.lock();
                             for (auto b = c->second->connection.begin(); b != c->second->connection.end(); b++)
                             {
                                 json j;
@@ -618,42 +592,21 @@ void *Adata(void *arg)
                                 int m = send((*b)->fd_data, &len, sizeof(len), 0);
                                 if (m <= 0 && errno != EPIPE)
                                 {
+                                    FTDEBUG("Adata.log", "send failed", "errno=%d,%s,n=%d", errno, strerror(errno), n);
                                     errno = 0;
-                                    printf("send breset failed in %d:%s\n", __LINE__, strerror(errno));
-
-                                    // exit_database();
-                                    // exit(1);
                                     continue;
                                 }
                                 m = send((*b)->fd_data, a.c_str(), a.size(), 0);
                                 if (m <= 0 && errno != EPIPE)
                                 {
+                                    FTDEBUG("Adata.log", "send failed", "errno=%d,%s,n=%d", errno, strerror(errno), n);
                                     errno = 0;
-                                    printf("send breset failed in %d:%s\n", __LINE__, strerror(errno));
-
-                                    // exit_database();
-                                    // exit(1);
                                     continue;
                                 }
                             }
-                            // c->second->connection.unlock();
-                            // nodesA.lock();
                             nodesA.erase(a_info->name);
-                            // nodesA.unlock();
                         }
-                        /*
-                        delete a_info;
-                        nodesA.unlock();
-                        DEBUG("after erase");
-                        close(a_info->fd_data);
-                        // close(a_info->fd_graph);
-                        // close(a_info->fd_tick);
-                        freeV.lock();
-                        FDEBUG("vode.log", "vode=%d", a_info->vcode);
-                        freeV.push(a_info->vcode);
-                        freeV.unlock();
-                        numer.decreaseA();
-                        */
+
                         int code = a_info->vcode;
                         close(a_info->fd_data);
                         if (a_info->pair_node != NULL)
@@ -662,7 +615,6 @@ void *Adata(void *arg)
                         }
                         delete a_info;
                         nodesA.unlock();
-                        DEBUG("after erase");
                         freeV.lock();
                         FDEBUG("vode.log", "vode=%d", code);
                         freeV.push(code);
@@ -672,11 +624,14 @@ void *Adata(void *arg)
                 }
                 else
                 {
-                    DEBUG("recv message");
                     message_box[n] = 0;
-                    DEBUG(message_box);
+                    FTDEBUG("Adata.log", "message", "(n==%d)%s", n, message_box);
+                    if (message_box[0] == 0)
+                    {
+                        FTDEBUG("Adata.log", "message prefix", " (%d)%d %d %d %d %d %d %d %d %d %d %d %d", ntohs(a_info->client_data.sin_port), message_box[0], message_box[1], message_box[2],
+                                message_box[3], message_box[4], message_box[5], message_box[6], message_box[7], message_box[8], message_box[9], message_box[10], message_box[11]);
+                    }
                     a_info->message = message_box;
-                    puts(message_box);
                     json data;
                     try
                     {
@@ -684,7 +639,7 @@ void *Adata(void *arg)
                     }
                     catch (exception &e)
                     {
-                        cout << "parse error in " + __LINE__ << endl;
+                        FTDEBUG("Adata.log", "parse error", "errno=%d,%s,n=%d", errno, strerror(errno), n);
                         exit(1);
                     }
                     type = data["type"];
@@ -705,8 +660,6 @@ void *Adata(void *arg)
                             save_board_data(message_box);
                             a_info->wood_time = clock_after;
                         }
-                        DEBUG("");
-                        // a_info->writeVal();
                         nodesA.lock();
                         a_info->name = data["name"];
                         a_info->position = data["position"];
@@ -715,9 +668,6 @@ void *Adata(void *arg)
                         a_info->light = data["light"];
                         a_info->smoke = data["smoke"];
                         nodesA.unlock();
-                        // a_info->freeLock();
-                        DEBUG("");
-
                         double temp = stod(a_info->temp);
                         double humi = stod(a_info->humi);
                         double light = stod(a_info->light);
@@ -726,18 +676,13 @@ void *Adata(void *arg)
                         {
                             nodesA.lock();
                             auto p = nodesA.find(a_info->name);
-                            // nodesA.unlock();
                             if (p != nodesA.end())
                             {
                                 json reply;
-                                DEBUG("");
                                 reply["type"] = "data";
-                                DEBUG("");
                                 reply["boardName"] = data["name"];
                                 reply["temp"] = data["temp"];
-                                DEBUG("");
                                 reply["humi"] = data["humi"];
-                                DEBUG("");
                                 reply["position"] = data["position"];
                                 reply["light"] = data["light"];
                                 reply["smoke"] = data["smoke"];
@@ -748,55 +693,38 @@ void *Adata(void *arg)
                                 time_in[len - 1] = '\0';
                                 reply["time"] = time_in;
                                 string reply_string = reply.dump();
-                                DEBUG("before send data to B");
-                                // p->second->connection.lock();
                                 for (auto m = p->second->connection.begin(); m != p->second->connection.end(); m++)
                                 {
                                     int fd_tmp = (*m)->fd_warn;
                                     int len_tmp = reply_string.size();
                                     len_tmp = htonl(len_tmp);
                                     n = send(fd_tmp, &len_tmp, sizeof(len_tmp), 0);
-                                    DEBUG("n=");
-                                    printf("%d\n", n);
                                     if (n <= 0 && (errno == EPIPE | errno == ECONNRESET))
                                     {
+                                        FTDEBUG("Adata.log", "send<0", "errno=%d,%s,n=%d", errno, strerror(errno), n);
                                         errno = 0;
-                                        DEBUG("EPIPE");
-
-                                        // close((*m)->fd_data);
-                                        // p->second->connection.remove(*m);
                                         continue;
                                     }
                                     else if (n <= 0)
                                     {
-                                        perror("send len to client failed");
-
-                                        // exit_database();
-                                        // exit(1);
+                                        FTDEBUG("Adata.log", "send<0", "errno=%d,%s,n=%d", errno, strerror(errno), n);
+                                        errno = 0;
                                         continue;
                                     }
                                     n = send(fd_tmp, reply_string.c_str(), reply_string.size(), 0);
                                     if (n <= 0 && (errno == EPIPE | errno == ECONNRESET))
                                     {
+                                        FTDEBUG("Adata.log", "send<0", "errno=%d,%s,n=%d", errno, strerror(errno), n);
                                         errno = 0;
-                                        DEBUG("EPIPE");
-
-                                        // close((*m)->fd_data);
-                                        // p->second->connection.remove(*m);
                                         continue;
                                     }
                                     else if (n <= 0)
                                     {
-                                        perror("send data to client failed");
-
-                                        // exit_database();
-                                        // exit(1);
+                                        FTDEBUG("Adata.log", "send<0", "errno=%d,%s,n=%d", errno, strerror(errno), n);
+                                        errno = 0;
                                         continue;
-                                        //发送时可能突然断开连接
                                     }
-                                    DEBUG(reply_string.c_str());
                                 }
-                                // p->second->connection.unlock();
                             }
                             nodesA.unlock();
                         }
@@ -812,13 +740,11 @@ void *Adata(void *arg)
                             char *p = (char *)malloc(20);
                             printf("%s:%d logout:%s\n", inet_ntop(AF_INET, &a_info->client_data.sin_addr, p, 20), ntohs(a_info->client_data.sin_port), strerror(errno));
                             free(p);
-                            epoll_ctl(epfd, EPOLL_CTL_DEL, a_info->fd_data, &ev);
+                            epoll_ctl(epfd, EPOLL_CTL_DEL, a_info->fd_data, NULL);
                             nodesA.lock();
                             auto c = nodesA.find(name);
-                            // nodesA.unlock();
                             if (c != nodesA.end())
                             {
-                                // c->second->connection.lock();
                                 for (auto b = c->second->connection.begin(); b != c->second->connection.end(); b++)
                                 {
                                     json j;
@@ -830,28 +756,19 @@ void *Adata(void *arg)
                                     int m = send((*b)->fd_data, &len, sizeof(len), 0);
                                     if (m <= 0 && errno != EPIPE)
                                     {
+                                        FTDEBUG("Adata.log", "send<0", "errno=%d,%s,n=%d", errno, strerror(errno), n);
                                         errno = 0;
-                                        printf("send breset failed in %d:%s\n", __LINE__, strerror(errno));
-
-                                        // exit_database();
-                                        // exit(1);
                                         continue;
                                     }
                                     m = send((*b)->fd_data, a.c_str(), a.size(), 0);
                                     if (m <= 0 && errno != EPIPE)
                                     {
+                                        FTDEBUG("Adata.log", "send<0", "errno=%d,%s,n=%d", errno, strerror(errno), n);
                                         errno = 0;
-                                        printf("send breset failed in %d:%s\n", __LINE__, strerror(errno));
-
-                                        // exit_database();
-                                        // exit(1);
                                         continue;
                                     }
                                 }
-                                // c->second->connection.unlock();
-                                // nodesA.lock();
                                 nodesA.erase(name);
-                                // nodesA.unlock();
                                 int vcode = a_info->vcode;
                                 freeV.lock();
                                 FDEBUG("vode.log", "vode=%d", vcode);
@@ -866,8 +783,6 @@ void *Adata(void *arg)
                             }
                             delete a_info;
                             nodesA.unlock();
-                            // close(a_info->fd_graph);
-                            // close(a_info->fd_tick);
                             numer.decreaseA();
                         }
                     }
@@ -877,8 +792,7 @@ void *Adata(void *arg)
             {
                 // expectation never get here
                 a_info = (ANodeInfo *)a_data_event[i].data.ptr;
-                printf("in %d:fd %d", __LINE__, a_info->fd_data);
-                perror("epoll wait error");
+                FTDEBUG("Adata.log", "epoll err", "errno=%d,%s,n=%d", errno, strerror(errno), n);
                 exit(1);
             }
             else if (a_data_event[i].events & EPOLLHUP)
@@ -887,7 +801,7 @@ void *Adata(void *arg)
                 DEBUG("");
                 a_info = (ANodeInfo *)a_data_event[i].data.ptr;
                 char *p = (char *)malloc(20);
-                cout << "debug:epoll hup" << endl;
+                FTDEBUG("Adata.log", "epoll hup", "errno=%d,%s,n=%d", errno, strerror(errno), n);
                 printf("line %d:board %s:[%s:%d] has disconnected:%s(net hup!!!)\n", __LINE__, a_info->name.c_str(), inet_ntop(AF_INET, &a_info->client_data.sin_addr, p, 20), ntohs(a_info->client_data.sin_port), strerror(errno));
                 free(p);
                 close(a_info->fd_data);
@@ -933,24 +847,24 @@ void *Agraph(void *arg)
         default:
             for (int i = 0; i < nfds; i++)
             {
+                errno = 0;
                 if (a_graph_event[i].events & EPOLLIN)
                 {
                     info = (ANodeInfo *)a_graph_event[i].data.ptr;
-                    cout << "debug:" << info->photos << endl;
                     connfd = info->fd_graph;
-                    DEBUG("in Agraph");
                     n = recv(connfd, &len, sizeof(len), MSG_WAITALL);
                     if (n < 0 && errno != ECONNRESET)
                     {
+                        FTDEBUG("Agraph.log", "recv len < 0", "errno=%d,%s,n=%d", errno, strerror(errno), n);
                         perror("recv err;");
                         exit(1);
                     }
                     if (n == 0 | errno == ECONNRESET)
                     {
-
                         // TODO
                         //这里存在一直断板子连接的问题，看log应该是这里，不明原因
-                        printf("in line%d,n=%d,errno=%d\n", __LINE__, n, errno);
+                        FTDEBUG("Agraph.log", "recv  len == 0|errno== ECONNRESET", "errno=%d,%s,n=%d", errno, strerror(errno), n);
+                        FTDEBUG("A.log", "graph recv == 0", "(%s)errno=%d,%s,n=%d", info->name.c_str(), errno, strerror(errno), n);
                         errno = 0;
                         if (epoll_ctl(epfd, EPOLL_CTL_DEL, connfd, NULL) == -1)
                         {
@@ -966,23 +880,26 @@ void *Agraph(void *arg)
                         }
                         nodesA.unlock();
                         delete info;
-                        DEBUG("after delete");
                         continue;
                     }
-                    DEBUG("in Agraph");
                     len = ntohl(len);
+                    FTDEBUG("Agraph.log", "time buffer len", "len=%d", len);
                     n = recv(connfd, time_buffer, len, MSG_WAITALL);
+                    FTDEBUG("Agraph.log", "timer data", "%s", time_buffer);
                     if (n < 0 && errno != ECONNRESET)
                     {
+                        FTDEBUG("Agraph.log", "recv len < 0", "errno=%d,%s,n=%d,len=%d", errno, strerror(errno), n, len);
                         perror("recv err;");
                         exit(1);
                     }
-                    if (n == 0 | errno == ECONNRESET)
+                    if (n == 0 | errno == ECONNRESET | n < len)
                     {
+                        FTDEBUG("Agraph.log", "recv  len == 0|errno== ECONNRESET", "errno=%d,%s,n=%d", errno, strerror(errno), n);
+                        FTDEBUG("A.log", "graph recv == 0", "(%s)errno=%d,%s,n=%d", info->name.c_str(), errno, strerror(errno), n);
                         errno = 0;
                         if (epoll_ctl(epfd, EPOLL_CTL_DEL, connfd, NULL) == -1)
                         {
-                            printf("A read epoll del failed %d:%s", __LINE__, strerror(errno));
+                            FTDEBUG("Agraph.log", "epoll del failed", "errno=%d,%s,n=%d", errno, strerror(errno), n);
                             exit_database();
                             exit(1);
                         }
@@ -994,7 +911,6 @@ void *Agraph(void *arg)
                         }
                         nodesA.unlock();
                         delete info;
-                        DEBUG("after delete");
                         continue;
                     }
                     // get '\n' fucked
@@ -1004,15 +920,18 @@ void *Agraph(void *arg)
                     n = recv(connfd, &len, sizeof(len), MSG_WAITALL);
                     if (n < 0 && errno != ECONNRESET)
                     {
+                        FTDEBUG("Agraph.log", "recv len < 0", "errno=%d,%s,n=%d", errno, strerror(errno), n);
                         perror("recv err;");
                         exit(1);
                     }
                     if (n == 0 | errno == ECONNRESET)
                     {
+                        FTDEBUG("Agraph.log", "recv  len == 0|errno== ECONNRESET", "errno=%d,%s,n=%d", errno, strerror(errno), n);
+                        FTDEBUG("A.log", "graph recv == 0", "(%s)errno=%d,%s,n=%d", info->name.c_str(), errno, strerror(errno), n);
                         errno = 0;
                         if (epoll_ctl(epfd, EPOLL_CTL_DEL, connfd, NULL) == -1)
                         {
-                            printf("A read epoll del failed %d:%s", __LINE__, strerror(errno));
+                            FTDEBUG("Agraph.log", "epoll del failed", "errno=%d,%s,n=%d", errno, strerror(errno), n);
                             exit_database();
                             exit(1);
                         }
@@ -1024,7 +943,6 @@ void *Agraph(void *arg)
                         }
                         nodesA.unlock();
                         delete info;
-                        DEBUG("after delete");
                         continue;
                     }
                     len = ntohl(len);
@@ -1033,33 +951,39 @@ void *Agraph(void *arg)
                     DEBUG("");
                     if (gfd < 0)
                     {
-                        printf("%s\n", fileName.c_str());
+                        FTDEBUG("Agraph.log", "open tmpGfile failed", "errno=%d,%s,n=%d", errno, strerror(errno), n);
                         perror("");
                         exit(1);
                     }
                     lseek(gfd, len - 1, SEEK_SET);
                     n = write(gfd, "\0", 1);
                     lseek(gfd, 0, SEEK_SET);
-                    ERROR_ACTION(n);
+                    if (n < 0)
+                    {
+                        FTDEBUG("Agraph.log", "leek<0", "errno=%d,%s,n=%d", errno, strerror(errno), n);
+                        exit(1);
+                    }
                     if ((graph_buffer = (char *)mmap(NULL, len, PROT_WRITE | PROT_READ, MAP_SHARED, gfd, 0)) == MAP_FAILED)
                     {
-                        // FAIL:INVALID ARGUMENT
+                        FTDEBUG("Agraph.log", "graph_buffer mmap failed", "errno=%d,%s,n=%d", errno, strerror(errno), n);
                         perror("mhash_map failed in sendfile");
                         exit(1);
                     }
                     n = recv(connfd, graph_buffer, len, MSG_WAITALL);
                     if (n < 0 && errno != ECONNRESET)
                     {
+                        FTDEBUG("Agraph.log", "recv len < 0", "errno=%d,%s,n=%d", errno, strerror(errno), n);
                         perror("recv err;");
                         exit(1);
                     }
-                    if (n == 0 | errno == ECONNRESET)
+                    if (n == 0 | errno == ECONNRESET | n < len)
                     {
+                        FTDEBUG("Agraph.log", "recv  len == 0/errno== ECONNRESET", "errno=%d,%s,n=%d", errno, strerror(errno), n);
+                        FTDEBUG("A.log", "graph recv == 0", "(%s)errno=%d,%s,n=%d", info->name.c_str(), errno, strerror(errno), n);
                         errno = 0;
-                        DEBUG("");
                         if (epoll_ctl(epfd, EPOLL_CTL_DEL, connfd, NULL) == -1)
                         {
-                            printf("A read epoll del failed %d:%s", __LINE__, strerror(errno));
+                            FTDEBUG("Agraph.log", "epoll del failed", "errno=%d,%s,n=%d", errno, strerror(errno), n);
                             exit_database();
                             exit(1);
                         }
@@ -1071,15 +995,23 @@ void *Agraph(void *arg)
                         }
                         nodesA.unlock();
                         delete info;
-                        ERROR_ACTION(munmap(graph_buffer, len));
+                        n = munmap(graph_buffer, len);
+                        if (n < 0)
+                        {
+                            FTDEBUG("Agraph.log", "munmap failed", "errno=%d,%s,n=%d", errno, strerror(errno), n);
+                            exit(1);
+                        }
                         continue;
                     }
                     else
                     {
                         close(gfd);
-                        ERROR_ACTION(munmap(graph_buffer, len));
-                        DEBUG("");
-                        //多线程图像访问不需要加锁，除非mmap
+                        n = munmap(graph_buffer, len);
+                        if (n < 0)
+                        {
+                            FTDEBUG("Agraph.log", "munmap failed", "errno=%d,%s,n=%d", errno, strerror(errno), n);
+                            exit(1);
+                        }
                         int numFaces = faceDetect(info->face_conf, info->photos + "/" + photo_time, info->faces + "/" + photo_time + ".jpg");
                         if (numFaces == 0)
                         {
@@ -1090,7 +1022,6 @@ void *Agraph(void *arg)
                         j["time"] = time_buffer;
                         string warning = j.dump();
                         len = warning.length();
-                        DEBUG("");
                         nodesA.lock();
                         if (info->pair_node == NULL)
                         {
@@ -1103,50 +1034,40 @@ void *Agraph(void *arg)
                             n = send((*m)->fd_warn, &rlen, sizeof(rlen), 0);
                             if (n < 0 && (errno == EPIPE | errno == ECONNRESET))
                             {
+
+                                FTDEBUG("Agraph.log", "send failed", "errno=%d,%s,n=%d", errno, strerror(errno), n);
                                 errno = 0;
-                                DEBUG("EPIPE");
-                                fprintf(stderr, "face detect dump1\n");
-                                // close((*m)->fd_graph);
-                                // info->connection.remove(*m);
                                 continue;
                             }
                             else if (n <= 0)
                             {
-                                perror("send glen to client failed");
-                                // exit_database();
-                                // exit(1);
+
+                                FTDEBUG("Agraph.log", "send failed", "errno=%d,%s,n=%d", errno, strerror(errno), n);
+                                errno = 0;
                                 continue;
                             }
-                            printf("debug:graph len=%d\n", len);
                             n = send((*m)->fd_warn, warning.c_str(), len, 0);
                             if (n < 0 && (errno == EPIPE | errno == ECONNRESET))
                             {
+                                FTDEBUG("Agraph.log", "send failed", "errno=%d,%s,n=%d", errno, strerror(errno), n);
                                 errno = 0;
-                                DEBUG("EPIPE");
-                                // close((*m)->fd_graph);
-                                // info->connection.remove(*m);
                                 continue;
                             }
                             else if (n <= 0)
                             {
-                                perror("send gdata to client failed");
-                                // exit_database();
-                                // exit(1);
+                                FTDEBUG("Agraph.log", "send failed", "errno=%d,%s,n=%d", errno, strerror(errno), n);
+                                errno = 0;
                                 continue;
                             }
-                            DEBUG("send graph to client:");
-                            DEBUG((*m)->client_name.c_str());
                         }
                         nodesA.unlock();
                     }
-
-                    // close(gfd);
                 }
                 else if (a_graph_event[i].events & EPOLLERR)
                 {
                     // expectation never get here
                     info = (ANodeInfo *)a_graph_event[i].data.ptr;
-                    printf("in %d:fd %d", __LINE__, info->fd_data);
+                    FTDEBUG("Agraph.log", "epoll wait error", "errno=%d,%s,n=%d", errno, strerror(errno), n);
                     perror("epoll wait error");
                     exit(1);
                 }
@@ -1155,7 +1076,7 @@ void *Agraph(void *arg)
                     // expectation never get here
                     info = (ANodeInfo *)a_graph_event[i].data.ptr;
                     char *p = (char *)malloc(20);
-                    cout << "debug:epoll hup(g)" << endl;
+                    FTDEBUG("Agraph.log", "epoll hup", "errno=%d,%s,n=%d", errno, strerror(errno), n);
                     printf("line %d:board %s:[%s:%d] has disconnected:%s(net hup!!!)\n", __LINE__, info->name.c_str(), inet_ntop(AF_INET, &info->client_data.sin_addr, p, 20), ntohs(info->client_data.sin_port), strerror(errno));
                     free(p);
                     close(info->fd_graph);
@@ -1170,9 +1091,7 @@ void *Agraph(void *arg)
             }
             break;
         }
-        DEBUG("");
     }
-    DEBUG("");
 }
 sigjmp_buf env;
 void timeOut(int signo)
@@ -1267,6 +1186,7 @@ void *stm32DataThread(void *args)
         double humi;
         double light;
         double smoke;
+        int res;
         if (sec >= 60 * 60 * STORE_HOUR)
         {
             json j;
@@ -1388,7 +1308,12 @@ void *stm32DataThread(void *args)
             exit(1);
         }
         n = recv(data->fd_graph, graph_buffer, len, MSG_WAITALL);
-        ERROR_ACTION(munmap(graph_buffer, len));
+        res = munmap(graph_buffer, len);
+        if (res < 0)
+        {
+            FTDEBUG("stm32.log", "mmunmap failed", "errno=%d,%s", errno, strerror(errno));
+            exit(1);
+        }
         close(gfd);
         if (n < GLEN_32)
         {
@@ -1516,32 +1441,26 @@ void *TickTock(void *arg)
     }
     while (1)
     {
-        DEBUG("");
+        FTDEBUG("ticktock.log", "breath", "in working");
         cout << boolalpha;
         fd_set fds;
         int maxfd;
-        printf("tick debug:");
-        DEBUG(a->name.c_str());
-        printf("debug:fd_tick:%d\n", a->fd_tick);
-        DEBUG("before tick recv");
         FD_ZERO(&fds);
         FD_SET(a->fd_tick, &fds);
         maxfd = a->fd_tick + 1;
         timeval out = {timeout_int + 2, 0};
         int n = select(maxfd, &fds, NULL, NULL, &out);
-        ERROR_ACTION(n);
+        if (n < 0)
+        {
+            FDEBUG("ticktock.log", "select<0", "errno=%d,%s", errno, strerror(errno));
+            exit(1);
+        }
         if (n == 0)
         {
-            DEBUG("");
-            shutdown((*a).fd_data, SHUT_RDWR);
-            // epoll_ctl(gepfd[0], EPOLL_CTL_DEL, a->fd_data, NULL);
-            DEBUG("");
-            shutdown(a->fd_graph, SHUT_RDWR);
-            // epoll_ctl(gepfd[1], EPOLL_CTL_DEL, a->fd_graph, NULL);
-            DEBUG("");
-            printf("debug:delete name:%s\n", a->name.c_str());
+            FTDEBUG("A.log", "tick select == 0", "(%s)errno=%d,%s,n=%d", a->name.c_str(), errno, strerror(errno), n);
             close(a->fd_tick);
-            DEBUG("after tick erase");
+            shutdown((*a).fd_data, SHUT_RDWR);
+            shutdown(a->fd_graph, SHUT_RDWR);
             delete a;
             return NULL;
         }
@@ -1550,28 +1469,24 @@ void *TickTock(void *arg)
             n = recv(a->fd_tick, buffer, 100, 0);
             if (n == 0 | errno == ECONNRESET)
             {
+                FTDEBUG("A.log", "tick recv == 0", "(%s)errno=%d,%s,n=%d", a->name.c_str(), errno, strerror(errno), n);
                 errno = 0;
-                FDEBUG("tick.log", "n==%d,errno=%d", n, errno);
+                close(a->fd_tick);
                 shutdown(a->fd_data, SHUT_RDWR);
-                // epoll_ctl(gepfd[0], EPOLL_CTL_DEL, a->fd_data, NULL);
-                DEBUG("");
                 shutdown(a->fd_graph, SHUT_RDWR);
-                // epoll_ctl(gepfd[1], EPOLL_CTL_DEL, a->fd_graph, NULL);
-                DEBUG("");
                 delete a;
                 return NULL;
             }
             else if (n < 0 && errno != ECONNRESET)
             {
-                perror("recv failed in tick thread");
+                FTDEBUG("ticktock.log", "tick recv <0", "n==%d,errno=%d", n, errno);
                 exit(1);
             }
             else
             {
-                DEBUG(buffer);
+                FTDEBUG("ticktock.log", "data", "%s", buffer);
             }
         }
-        DEBUG("after tick recv");
     }
 }
 void *Bdata(void *arg)
@@ -1588,7 +1503,7 @@ void *Bdata(void *arg)
     char message_box[MESSAE_LENGTH];
     while (1)
     {
-        DEBUG("Bconn working");
+        DEBUG("Bdata working");
         // code below costs shit
         // nfds = epoll_wait(epfd, b_connect_event, BNUM, -1);
         nfds = epoll_wait(epfd, b_data_event, BNUM, -1);
@@ -1624,20 +1539,12 @@ void *Bdata(void *arg)
                         errno = 0;
                         epoll_ctl(epfd, EPOLL_CTL_DEL, fd, NULL);
                         close(fd);
-                        cout << endl
-                             << endl
-                             << endl
-                             << "BData Del addr =  " << (void *)info << endl
-                             << endl
-                             << endl
-                             << endl;
                         delete info;
                         continue;
                     }
                     else if (n < 0)
                     {
-                        DEBUG("recv err;");
-                        printf("(line %d)n=%d", __LINE__, n);
+                        printf("(line %d)n=%d ", __LINE__, n);
                         perror("（recv err)");
                         exit(1);
                     }
@@ -1794,14 +1701,7 @@ void *Bconnect(void *arg)
                         close(fd);
                         epoll_ctl(epfd, EPOLL_CTL_DEL, fd, NULL);
                         close(info->fd_warn);
-                        delete info; // double free
-                        cout << endl
-                             << endl
-                             << endl
-                             << "BCon Del addr =  " << (void *)info << endl
-                             << endl
-                             << endl
-                             << endl;
+                        delete info;
                         numer.decreaseB();
                         continue;
                     }
@@ -1856,7 +1756,6 @@ void *Bconnect(void *arg)
                         }
                         else
                         {
-                            FDEBUG("face-transfer.log", "send err:%s", request);
                             json j = json::parse(request);
                             FDEBUG("bconnect.log", "<request>\n\n%s\n\n<\\request>", request);
                             string type = j["type"];
@@ -2204,7 +2103,7 @@ void *AThread(void *arg)
     epfdGraph = epoll_create(ANUM);
     if (epfdData == -1 | epfdGraph == -1)
     {
-        perror("epfd create failed");
+        perror("AThread epfd create failed");
         exit(1);
     }
     gepfd[0] = epfdData;
@@ -2215,7 +2114,7 @@ void *AThread(void *arg)
     listenAtick = socket(AF_INET, SOCK_STREAM, 0);
     if (listenAgraph == -1 | listenAdata == -1 | listenAtick == -1)
     {
-        perror("error create TCP socket");
+        perror("AThread error create TCP socket");
         exit(1);
     }
     memset(&server_data, 0, sizeof(server_data));
@@ -2298,31 +2197,33 @@ void *AThread(void *arg)
         DEBUG("");
         fd_set accept_tout;
         int maxfd, n;
-        timeval tout = {1, 0};
+        timeval tout = {2, 0};
         n = recv(connfdData, &len_tmp, sizeof(len_tmp), MSG_WAITALL);
 
         if (n == 0 | errno == ECONNRESET)
         {
+            FTDEBUG("AThread.log", "AThread recv==0|errno == ECONNRESET", "errno=%d,%s", errno, strerror(errno));
+            FTDEBUG("A.log", "AThread recv==0|errno == ECONNRESET", "errno=%d,%s", errno, strerror(errno));
             errno = 0;
             close(connfdData);
             continue;
         }
         else if (n < 0 && errno != ECONNRESET)
         {
-            printf("recv failed in %d:%s\n", __LINE__, strerror(errno));
+            FTDEBUG("AThread.log", "AThread recv<0", "errno=%d,%s", errno, strerror(errno));
             exit(1);
         }
         len_tmp = ntohl(len_tmp);
-
         n = recv(connfdData, message_buffer, len_tmp, MSG_WAITALL);
-        puts(message_buffer);
         if (n < 0 && errno != ECONNRESET)
         {
-            perror("recv failed in AThread:");
+            FTDEBUG("AThread.log", "AThread recv<0", "errno=%d,%s", errno, strerror(errno));
             exit(1);
         }
         if (n == 0 | errno == ECONNRESET)
         {
+            FTDEBUG("AThread.log", "AThread recv==0|errno == ECONNRESET", "errno=%d,%s", errno, strerror(errno));
+            FTDEBUG("A.log", "AThread recv==0|errno == ECONNRESET", "errno=%d,%s", errno, strerror(errno));
             errno = 0;
             close(connfdData);
             continue;
@@ -2330,17 +2231,18 @@ void *AThread(void *arg)
         message_buffer[n] = 0;
         string s = message_buffer;
         // recv type
-
+        FTDEBUG("AThread.log", "message_buffer", "%s", message_buffer);
         n = recv(connfdData, &len_tmp, sizeof(len_tmp), MSG_WAITALL);
         if (n == 0 | errno == ECONNRESET)
         {
-            DEBUG("recv return 0;");
+            FTDEBUG("AThread.log", "AThread recv==0|errno == ECONNRESET", "errno=%d,%s", errno, strerror(errno));
+            FTDEBUG("A.log", "(%s)AThread recv==0|errno == ECONNRESET", "errno=%d,%s", message_buffer, errno, strerror(errno));
             close(connfdData);
             continue;
         }
         else if (n < 0 && errno != ECONNRESET)
         {
-            perror("recv failed in AThread:");
+            FTDEBUG("AThread.log", "AThread recv<0", "errno=%d,%s", message_buffer, errno, strerror(errno));
             exit(1);
         }
         len_tmp = ntohl(len_tmp);
@@ -2348,11 +2250,13 @@ void *AThread(void *arg)
         n = recv(connfdData, type_buffer, len_tmp, MSG_WAITALL);
         if (n < 0 && errno != ECONNRESET)
         {
-            perror("recv failed in AThread:");
+            FTDEBUG("AThread.log", "AThread recv<0", "errno=%d,%s", message_buffer, errno, strerror(errno));
             exit(1);
         }
         if (n == 0 | errno == ECONNRESET)
         {
+            FTDEBUG("AThread.log", "AThread recv==0|errno == ECONNRESET", "errno=%d,%s", errno, strerror(errno));
+            FTDEBUG("A.log", "(%s)AThread recv==0|errno == ECONNRESET", "errno=%d,%s", message_buffer, errno, strerror(errno));
             errno = 0;
             DEBUG("let me know");
             close(connfdData);
@@ -2360,7 +2264,7 @@ void *AThread(void *arg)
         }
 
         type_buffer[n] = 0;
-        puts(type_buffer);
+        // puts(type_buffer);
         string t = type_buffer;
         int rcode, code = -1;
         if (t == "raspi")
@@ -2378,7 +2282,6 @@ void *AThread(void *arg)
 
             else
             {
-                DEBUG(message_buffer);
                 freeV.lock();
                 if (freeV.empty())
                 {
@@ -2396,22 +2299,27 @@ void *AThread(void *arg)
                 }
                 freeV.unlock();
             }
-            DEBUG("");
             rcode = htonl(code);
             n = send(connfdData, &rcode, sizeof(rcode), 0);
-            DEBUG("");
             if (n <= 0)
             {
                 if ((errno == EPIPE | errno == ECONNRESET))
                 {
+                    FTDEBUG("AThread.log", "AThread send<0", "errno=%d,%s", errno, strerror(errno));
+                    FTDEBUG("A.log", "(%s)AThread send<0", "errno=%d,%s", message_buffer, errno, strerror(errno));
                     errno = 0;
                     close(connfdData);
+                    if (code != -1)
+                    {
+                        freeV.lock();
+                        freeV.push(code);
+                        freeV.unlock();
+                    }
                     continue;
                 }
                 else
                 {
-                    DEBUG("what happened in AThread");
-                    perror("what happened?");
+                    FTDEBUG("AThread.log", "AThread send<0", "errno=%d,%s", errno, strerror(errno));
                     exit_database();
                     exit(1);
                 }
@@ -2423,14 +2331,21 @@ void *AThread(void *arg)
             {
                 if ((errno == EPIPE | errno == ECONNRESET))
                 {
+                    FTDEBUG("AThread.log", "AThread send<0", "errno=%d,%s", errno, strerror(errno));
+                    FTDEBUG("A.log", "AThread send<0", "(%s)errno=%d", message_buffer, errno);
                     errno = 0;
                     close(connfdData);
+                    if (code != -1)
+                    {
+                        freeV.lock();
+                        freeV.push(code);
+                        freeV.unlock();
+                    }
                     continue;
                 }
                 else
                 {
-                    DEBUG("what happened in AThread");
-                    perror("what happened?");
+                    FTDEBUG("AThread.log", "AThread send<0", "errno=%d,%s", errno, strerror(errno));
                     exit_database();
                     exit(1);
                 }
@@ -2440,21 +2355,29 @@ void *AThread(void *arg)
             {
                 if ((errno == EPIPE | errno == ECONNRESET))
                 {
+                    FTDEBUG("AThread.log", "AThread send<0", "errno=%d,%s", errno, strerror(errno));
+                    FTDEBUG("A.log", "AThread send<0", "(%s)errno=%d", message_buffer, errno);
                     errno = 0;
                     close(connfdData);
+                    if (code != -1)
+                    {
+                        freeV.lock();
+                        freeV.push(code);
+                        freeV.unlock();
+                    }
                     continue;
                 }
                 else
                 {
-                    DEBUG("what happened in AThread");
-                    perror("what happened");
+                    FTDEBUG("AThread.log", "AThread send<0", "errno=%d,%s", errno, strerror(errno));
                     exit_database();
                     exit(1);
                 }
             }
             if (code == -1)
             {
-                recv(connfdData, message_buffer, 100, 0);
+                n = recv(connfdData, message_buffer, 100, 0);
+                FTDEBUG("A.log", "AThread send<0", "(%s)n=%d", message_buffer, n);
                 close(connfdData);
                 continue;
             }
@@ -2471,39 +2394,48 @@ void *AThread(void *arg)
         n = select(maxfd, &accept_tout, NULL, NULL, &tout);
         if (n == 0)
         {
-            DEBUG("select return 0;");
+            FTDEBUG("AThread.log", "AThread select graph==0", "errno=%d,%s", errno, strerror(errno));
+            FTDEBUG("A.log", "AThread select graph==0", "errno=%d,%s", errno, strerror(errno));
+            if (code != -1)
+            {
+                freeV.lock();
+                freeV.push(code);
+                freeV.unlock();
+            }
             close(connfdData);
             continue;
         }
         else if (n < 0)
         {
-            printf("select failed in %d:%s\n", __LINE__, strerror(errno));
-            close(connfdData);
-            continue;
+            FTDEBUG("AThread.log", "AThread select graph<0", "errno=%d,%s", errno, strerror(errno));
+            exit(1);
         }
-        DEBUG("let me know");
         connfdGraph = accept(listenAgraph, (struct sockaddr *)&client_graph, &client_graph_addr_len);
         if (connfdGraph < 0)
         {
+            FTDEBUG("AThread.log", "AThread accept graph<0", "errno=%d,%s", errno, strerror(errno));
             perror("error accepting from board(graph)");
             exit(1);
         }
-        DEBUG("let me know");
         FD_ZERO(&accept_tout);
         FD_SET(listenAtick, &accept_tout);
         maxfd = listenAtick + 1;
         n = select(maxfd, &accept_tout, NULL, NULL, &tout);
         if (n < 0)
         {
-            //网络波动select可能返回ibad file descriptor,已实验证实
-            printf("select failed in %d:%s\n", __LINE__, strerror(errno));
-            close(connfdData);
-            close(connfdGraph);
-            continue;
+            FTDEBUG("AThread.log", "AThread select tick<0", "errno=%d,%s", errno, strerror(errno));
+            exit(1);
         }
         else if (n == 0)
         {
-            DEBUG("select return 0;");
+            FTDEBUG("AThread.log", "AThread select tick==0", "errno=%d,%s", errno, strerror(errno));
+            FTDEBUG("A.log", "AThread select tick==0", "errno=%d,%s", errno, strerror(errno));
+            if (code != -1)
+            {
+                freeV.lock();
+                freeV.push(code);
+                freeV.unlock();
+            }
             close(connfdData);
             close(connfdGraph);
             continue;
@@ -2511,14 +2443,14 @@ void *AThread(void *arg)
         connfdTick = accept(listenAtick, (struct sockaddr *)&client_tick, &client_tick_addr_len);
         if (connfdTick < 0)
         {
-            perror("error accepting from board(tick)");
+            FTDEBUG("AThread.log", "AThread accept tick<0", "errno=%d,%s", errno, strerror(errno));
             exit(1);
         }
         DEBUG(message_buffer);
         a_info_1 = new ANodeInfo;
         a_info_1->vcode = code;
-        cout << s << endl;
-        // a_info_1->name = s;
+        // cout << s << endl;
+        //  a_info_1->name = s;
         DEBUG("");
         a_info_1->client_data = client_data;
         DEBUG("");
@@ -2595,8 +2527,10 @@ void *AThread(void *arg)
             nodesA.lock();
             nodesA.emplace(message_buffer, a_info_1);
             nodesA.unlock();
+            //这之前不能close，否则epoll是监测不到的
             ERROR_ACTION(epoll_ctl(epfdData, EPOLL_CTL_ADD, connfdData, &ev1))
             ERROR_ACTION(epoll_ctl(epfdGraph, EPOLL_CTL_ADD, connfdGraph, &ev2))
+
             DEBUG("before add element");
         }
         else if (t == "stm32")
@@ -2619,7 +2553,7 @@ void *AThread(void *arg)
         DEBUG("after create workdir");
         numer.increaseA();
     }
-    DEBUG("ATH quiting");
+    DEBUG("............................ATH quiting..................................");
 }
 
 void *BThread(void *arg)
@@ -2665,7 +2599,7 @@ void *BThread(void *arg)
         perror("error while trying to bind on portBdata\n");
         exit(1);
     }
-    if (listen(listenBdata, BNUM) == -1)
+    if (listen(listenBdata, 20) == -1)
     {
         printf("%d\n", listenBdata);
         perror("error while trying to listen to Bdata\n");
@@ -2681,7 +2615,7 @@ void *BThread(void *arg)
         perror("error while trying to bind on portA\n");
         exit(1);
     }
-    if (listen(listenBwarn, BNUM) == -1)
+    if (listen(listenBwarn, 20) == -1)
     {
         printf("%d\n", listenBwarn);
         perror("error while trying to listen to B\n");
@@ -2697,7 +2631,7 @@ void *BThread(void *arg)
         perror("error while trying to bind on portA\n");
         exit(1);
     }
-    if (listen(listenBother, BNUM) == -1)
+    if (listen(listenBother, 20) == -1)
     {
         printf("%d\n", listenBother);
         perror("error while trying to listen to B\n");
@@ -2708,9 +2642,9 @@ void *BThread(void *arg)
         DEBUG("BTH working");
         //曾经在这里卡死很久，网络波动时服务器可能给客户端返回RST
         connfdData = accept(listenBdata, (struct sockaddr *)&clientData, &client_addr_data_len);
-        // printf("%s","beta of sigint!\n");
         if (connfdData < 0)
         {
+            FTDEBUG("BThread.log", "accept1<0", "errno=%d,%s", errno, strerror(errno));
             perror("error accepting from android:");
             exit(1);
         }
@@ -2724,11 +2658,13 @@ void *BThread(void *arg)
         n = select(maxfd, &accept_tout, NULL, NULL, &tout);
         if (n == 0)
         {
+            FTDEBUG("BThread.log", "select==0", "n=%d", n);
             close(connfdData);
             continue;
         }
         else if (n < 0)
         {
+            FTDEBUG("BThread.log", "select<0", "n=%d,errno=%d,%s", n, errno, strerror(errno));
             printf("select failed in %d:%s\n", __LINE__, strerror(errno));
             close(connfdData);
             continue;
@@ -2736,6 +2672,7 @@ void *BThread(void *arg)
         connfdWarn = accept(listenBwarn, (struct sockaddr *)&clientWarn, &client_addr_warn_len);
         if (connfdWarn < 0)
         {
+            FTDEBUG("BThread.log", "accept2<0", "n=%d,errno=%d,%s", n, errno, strerror(errno));
             perror("error accepting from android:");
             exit(1);
         }
@@ -2747,18 +2684,20 @@ void *BThread(void *arg)
         // ERROR_ACTION(n)
         if (n == 0)
         {
+            FTDEBUG("BThread.log", "select==0", "n=%d", n);
             close(connfdData);
             continue;
         }
         else if (n < 0)
         {
-            printf("select failed in %d:%s\n", __LINE__, strerror(errno));
+            FTDEBUG("BThread.log", "select<0", "n=%d,errno=%d,%s", n, errno, strerror(errno));
             close(connfdData);
             continue;
         }
         connfdOther = accept(listenBother, (sockaddr *)&clientOther, &client_addr_other_len);
         if (connfdOther < 0)
         {
+            FTDEBUG("BThread.log", "accept3<0", "n=%d,errno=%d,%s", n, errno, strerror(errno));
             perror("error accepting from android:");
             continue;
             // exit(1);
@@ -2790,15 +2729,16 @@ void *BThread(void *arg)
         n = send(connfdOther, &len, sizeof(len), 0);
         if (n < 0 && (errno == EPIPE | errno == ECONNRESET))
         {
+            FTDEBUG("BThread.log", "send<0", "n=%d,errno=%d,%s", n, errno, strerror(errno));
             errno = 0;
             close(connfdData);
             close(connfdWarn);
             close(connfdOther);
-            // delete info_2;
             continue;
         }
         else if (n <= 0)
         {
+            FTDEBUG("BThread.log", "send<=0", "n=%d,errno=%d,%s", n, errno, strerror(errno));
             perror("faile in Bconn:");
             printf("errno=%d\n", errno);
             exit_database();
@@ -2807,6 +2747,7 @@ void *BThread(void *arg)
         n = send(connfdOther, data_string.c_str(), data_string.size(), 0);
         if (n < 0 && (errno == EPIPE | errno == ECONNRESET))
         {
+            FTDEBUG("BThread.log", "send<0", "n=%d,errno=%d,%s", n, errno, strerror(errno));
             errno = 0;
             close(connfdData);
             close(connfdWarn);
@@ -2816,13 +2757,14 @@ void *BThread(void *arg)
         }
         else if (n <= 0)
         {
+            FTDEBUG("BThread.log", "send<=0", "n=%d,errno=%d,%s", n, errno, strerror(errno));
             perror("faile in Bconn:");
             printf("errno=%d\n", errno);
             exit_database();
             exit(1);
         }
         info_2 = new BNodeInfo;
-        printf("ptr info con = %x\n", __LINE__, info_2);
+        // printf("ptr info con = %x\n", __LINE__, info_2);
         ev2.events = EPOLLIN | EPOLLET | EPOLLERR;
         ev2.data.ptr = info_2;
         info_2->clientData = clientData;
@@ -2833,7 +2775,7 @@ void *BThread(void *arg)
         info_2->board_name = BBBEFORE;
 
         info_1 = new BNodeInfo;
-        printf("ptr info data = %x\n", __LINE__, info_1);
+        // printf("ptr info data = %x\n", __LINE__, info_1);
         ev1.events = EPOLLIN | EPOLLET | EPOLLERR;
         ev1.data.ptr = info_1;
         info_1->clientData = clientData;
