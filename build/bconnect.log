@@ -1,35 +1,15 @@
-in line 1760<request>
+in line 1761<request>
 
-{"type":"connect","board name":"yaoxuetao's raspi88","client name":"Anymous"}
-
-<\request>
-in line 1760<request>
-
-{"type":"month data","board name":"yaoxuetao's raspi88"}
+{"type":"connect","board name":"yaoxuetao's raspi46","client name":"Anymous"}
 
 <\request>
-in line 1760<request>
+in line 1761<request>
 
-{"type":"all faces"}
-
-<\request>
-in line 1760<request>
-
-{"type":"all faces"}
+{"type":"connect","board name":"yaoxuetao's raspi33","client name":"Anymous"}
 
 <\request>
-in line 1760<request>
+in line 1761<request>
 
-{"type":"face","time":"Wed May 25 19:41:14 2022"}
-
-<\request>
-in line 1760<request>
-
-{"type":"all faces"}
-
-<\request>
-in line 1760<request>
-
-{"type":"connect","board name":"yaoxuetao's raspi49","client name":"Anymous"}
+{"type":"connect","board name":"yaoxuetao's raspi0","client name":"Anymous"}
 
 <\request>

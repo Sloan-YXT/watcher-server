@@ -403,6 +403,7 @@ struct tickInfo
     int fd_tick;
     string type;
     string name;
+    struct sockaddr_in client_tick;
     unique_ptr<pthread_t> tickThread = unique_ptr<pthread_t>(new pthread_t());
 };
 //不同板子的连接共享一份数据是不行的，在一个进程多个连接时必须想办法把数据和每个连接绑定
@@ -864,7 +865,7 @@ void *Agraph(void *arg)
                         // TODO
                         //这里存在一直断板子连接的问题，看log应该是这里，不明原因
                         FTDEBUG("Agraph.log", "recv  len == 0|errno== ECONNRESET", "errno=%d,%s,n=%d", errno, strerror(errno), n);
-                        FTDEBUG("A.log", "graph recv == 0", "(%s)errno=%d,%s,n=%d", info->name.c_str(), errno, strerror(errno), n);
+                        FTDEBUG("A.log", "graph recv == 0", "(%d,%s)errno=%d,%s,n=%d", ntohs(info->client_graph.sin_port), info->name.c_str(), errno, strerror(errno), n);
                         errno = 0;
                         if (epoll_ctl(epfd, EPOLL_CTL_DEL, connfd, NULL) == -1)
                         {
@@ -895,7 +896,7 @@ void *Agraph(void *arg)
                     if (n == 0 | errno == ECONNRESET | n < len)
                     {
                         FTDEBUG("Agraph.log", "recv  len == 0|errno== ECONNRESET", "errno=%d,%s,n=%d", errno, strerror(errno), n);
-                        FTDEBUG("A.log", "graph recv == 0", "(%s)errno=%d,%s,n=%d", info->name.c_str(), errno, strerror(errno), n);
+                        FTDEBUG("A.log", "graph recv == 0", "(%d,%s)errno=%d,%s,n=%d", ntohs(info->client_graph.sin_port), info->name.c_str(), errno, strerror(errno), n);
                         errno = 0;
                         if (epoll_ctl(epfd, EPOLL_CTL_DEL, connfd, NULL) == -1)
                         {
@@ -927,7 +928,7 @@ void *Agraph(void *arg)
                     if (n == 0 | errno == ECONNRESET)
                     {
                         FTDEBUG("Agraph.log", "recv  len == 0|errno== ECONNRESET", "errno=%d,%s,n=%d", errno, strerror(errno), n);
-                        FTDEBUG("A.log", "graph recv == 0", "(%s)errno=%d,%s,n=%d", info->name.c_str(), errno, strerror(errno), n);
+                        FTDEBUG("A.log", "graph recv == 0", "(%d,%s)errno=%d,%s,n=%d", ntohs(info->client_graph.sin_port), info->name.c_str(), errno, strerror(errno), n);
                         errno = 0;
                         if (epoll_ctl(epfd, EPOLL_CTL_DEL, connfd, NULL) == -1)
                         {
@@ -979,7 +980,7 @@ void *Agraph(void *arg)
                     if (n == 0 | errno == ECONNRESET | n < len)
                     {
                         FTDEBUG("Agraph.log", "recv  len == 0/errno== ECONNRESET", "errno=%d,%s,n=%d", errno, strerror(errno), n);
-                        FTDEBUG("A.log", "graph recv == 0", "(%s)errno=%d,%s,n=%d", info->name.c_str(), errno, strerror(errno), n);
+                        FTDEBUG("A.log", "graph recv == 0", "(%d,%s)errno=%d,%s,n=%d", ntohs(info->client_graph.sin_port), info->name.c_str(), errno, strerror(errno), n);
                         errno = 0;
                         if (epoll_ctl(epfd, EPOLL_CTL_DEL, connfd, NULL) == -1)
                         {
@@ -1469,7 +1470,7 @@ void *TickTock(void *arg)
             n = recv(a->fd_tick, buffer, 100, 0);
             if (n == 0 | errno == ECONNRESET)
             {
-                FTDEBUG("A.log", "tick recv == 0", "(%s)errno=%d,%s,n=%d", a->name.c_str(), errno, strerror(errno), n);
+                FTDEBUG("A.log", "tick recv == 0", "(%d,%s)errno=%d,%s,n=%d", ntohs(a->client_tick.sin_port), a->name.c_str(), errno, strerror(errno), n);
                 errno = 0;
                 close(a->fd_tick);
                 shutdown(a->fd_data, SHUT_RDWR);
@@ -2165,13 +2166,13 @@ void *AThread(void *arg)
         perror("error while trying to listen to Adata");
         exit(1);
     }
-    if (listen(listenAgraph, ANUM * 30) == -1)
+    if (listen(listenAgraph, 1) == -1)
     {
         printf("%d\n", listenAgraph);
         perror("error while trying to listen to Agraph");
         exit(1);
     }
-    if (listen(listenAtick, ANUM * 30) == -1)
+    if (listen(listenAtick, 1) == -1)
     {
         printf("%d\n", listenAgraph);
         perror("error while trying to listen to Agraph");
@@ -2197,7 +2198,7 @@ void *AThread(void *arg)
         DEBUG("");
         fd_set accept_tout;
         int maxfd, n;
-        timeval tout = {2, 0};
+        timeval tout = {1, 200};
         n = recv(connfdData, &len_tmp, sizeof(len_tmp), MSG_WAITALL);
 
         if (n == 0 | errno == ECONNRESET)
@@ -2420,6 +2421,7 @@ void *AThread(void *arg)
         FD_ZERO(&accept_tout);
         FD_SET(listenAtick, &accept_tout);
         maxfd = listenAtick + 1;
+        tout = {1, 200};
         n = select(maxfd, &accept_tout, NULL, NULL, &tout);
         if (n < 0)
         {
@@ -2547,6 +2549,7 @@ void *AThread(void *arg)
         tickData->fd_tick = connfdTick;
         tickData->name = message_buffer;
         tickData->type = type_buffer;
+        tickData->client_tick = client_tick;
         ERROR_ACTION(pthread_create(tickData->tickThread.get(), NULL, TickTock, tickData));
         DEBUG("after add element");
         DEBUG("before create dir");
@@ -2599,7 +2602,7 @@ void *BThread(void *arg)
         perror("error while trying to bind on portBdata\n");
         exit(1);
     }
-    if (listen(listenBdata, 20) == -1)
+    if (listen(listenBdata, BNUM) == -1)
     {
         printf("%d\n", listenBdata);
         perror("error while trying to listen to Bdata\n");
@@ -2615,7 +2618,7 @@ void *BThread(void *arg)
         perror("error while trying to bind on portA\n");
         exit(1);
     }
-    if (listen(listenBwarn, 20) == -1)
+    if (listen(listenBwarn, 1) == -1)
     {
         printf("%d\n", listenBwarn);
         perror("error while trying to listen to B\n");
@@ -2631,7 +2634,7 @@ void *BThread(void *arg)
         perror("error while trying to bind on portA\n");
         exit(1);
     }
-    if (listen(listenBother, 20) == -1)
+    if (listen(listenBother, 1) == -1)
     {
         printf("%d\n", listenBother);
         perror("error while trying to listen to B\n");
