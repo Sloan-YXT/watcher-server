@@ -1,15 +1,5 @@
-in line 1761<request>
+in line 1759<request>
 
-{"type":"connect","board name":"yaoxuetao's raspi46","client name":"Anymous"}
-
-<\request>
-in line 1761<request>
-
-{"type":"connect","board name":"yaoxuetao's raspi33","client name":"Anymous"}
-
-<\request>
-in line 1761<request>
-
-{"type":"connect","board name":"yaoxuetao's raspi0","client name":"Anymous"}
+{"type":"connect","board name":"yaoxuetao's raspi","client name":"Anymous"}
 
 <\request>

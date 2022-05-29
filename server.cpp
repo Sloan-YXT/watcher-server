@@ -499,7 +499,6 @@ void *Adata(void *arg)
                             exit_database();
                             exit(1);
                         }
-                        numer.decreaseA();
                         nodesA.lock();
                         auto c = nodesA.find(a_info->name);
                         if (c != nodesA.end())
@@ -577,7 +576,6 @@ void *Adata(void *arg)
                             exit_database();
                             exit(1);
                         }
-                        numer.decreaseA();
                         nodesA.lock();
                         auto c = nodesA.find(a_info->name);
                         if (c != nodesA.end())
@@ -2195,10 +2193,10 @@ void *AThread(void *arg)
             continue;
             // exit(1);
         }
-        DEBUG("");
+
         fd_set accept_tout;
         int maxfd, n;
-        timeval tout = {1, 200};
+        timeval tout = {2, 200};
         n = recv(connfdData, &len_tmp, sizeof(len_tmp), MSG_WAITALL);
 
         if (n == 0 | errno == ECONNRESET)
@@ -2382,6 +2380,7 @@ void *AThread(void *arg)
                 close(connfdData);
                 continue;
             }
+            FTDEBUG("AThread.log", "accept port", "data=(%s,%d)", message_buffer, ntohs(client_data.sin_port));
         }
         else
         {
@@ -2418,10 +2417,11 @@ void *AThread(void *arg)
             perror("error accepting from board(graph)");
             exit(1);
         }
+        FTDEBUG("AThread.log", "accept port", "graph=(%s,%d)", message_buffer, ntohs(client_graph.sin_port));
         FD_ZERO(&accept_tout);
         FD_SET(listenAtick, &accept_tout);
         maxfd = listenAtick + 1;
-        tout = {1, 200};
+        tout = {2, 200};
         n = select(maxfd, &accept_tout, NULL, NULL, &tout);
         if (n < 0)
         {
@@ -2448,7 +2448,7 @@ void *AThread(void *arg)
             FTDEBUG("AThread.log", "AThread accept tick<0", "errno=%d,%s", errno, strerror(errno));
             exit(1);
         }
-        DEBUG(message_buffer);
+        FTDEBUG("AThread.log", "accept port", "tick=(%s,%d)", message_buffer, ntohs(client_tick.sin_port));
         a_info_1 = new ANodeInfo;
         a_info_1->vcode = code;
         // cout << s << endl;
@@ -2519,9 +2519,10 @@ void *AThread(void *arg)
             a_info_2->fd_tick = connfdTick;
             a_info_2->wood_time = 0;
             ev1.data.ptr = a_info_1;
-            ev1.events = EPOLLIN | EPOLLET | EPOLLERR | EPOLLHUP;
+            // ev1.events = EPOLLIN | EPOLLET | EPOLLERR | EPOLLHUP;
+            ev1.events = EPOLLIN | EPOLLERR | EPOLLHUP;
             ev2.data.ptr = a_info_2;
-            ev2.events = EPOLLIN | EPOLLET | EPOLLERR | EPOLLHUP;
+            ev2.events = EPOLLIN | EPOLLERR | EPOLLHUP;
             a_info_2->work_dir = user_dir + "/" + a_info_2->name;
             a_info_2->face_conf = face_conf;
             a_info_2->faces = user_dir + "/" + s + "/" + FACES;
@@ -2653,7 +2654,7 @@ void *BThread(void *arg)
         }
         fd_set accept_tout;
         int maxfd, n;
-        timeval tout = {1, 0};
+        timeval tout = {2, 0};
         FD_ZERO(&accept_tout);
         FD_SET(listenBwarn, &accept_tout);
         maxfd = listenBwarn + 1;
@@ -2682,6 +2683,7 @@ void *BThread(void *arg)
         FD_ZERO(&accept_tout);
         FD_SET(listenBother, &accept_tout);
         maxfd = listenBother + 1;
+        tout = {2, 0};
         // recv name
         n = select(maxfd, &accept_tout, NULL, NULL, &tout);
         // ERROR_ACTION(n)
@@ -2768,7 +2770,7 @@ void *BThread(void *arg)
         }
         info_2 = new BNodeInfo;
         // printf("ptr info con = %x\n", __LINE__, info_2);
-        ev2.events = EPOLLIN | EPOLLET | EPOLLERR;
+        ev2.events = EPOLLIN | EPOLLERR;
         ev2.data.ptr = info_2;
         info_2->clientData = clientData;
         info_2->fd_data = connfdData;
@@ -2779,7 +2781,7 @@ void *BThread(void *arg)
 
         info_1 = new BNodeInfo;
         // printf("ptr info data = %x\n", __LINE__, info_1);
-        ev1.events = EPOLLIN | EPOLLET | EPOLLERR;
+        ev1.events = EPOLLIN | EPOLLERR;
         ev1.data.ptr = info_1;
         info_1->clientData = clientData;
         info_1->fd_data = connfdData;
