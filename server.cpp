@@ -1111,6 +1111,7 @@ void *stm32DataThread(void *args)
     int gfd;
     string position;
     n = recv(fd_data, &rlen, sizeof(rlen), MSG_WAITALL);
+    FTDEBUG("stm32.log", "para", "high_temp=%f,high_humi=%f", data->high_temp, data->high_humi);
     if (n <= 0)
     {
         FTDEBUG("stm32.log", "n<0", "stm32 recv position len n < 0:m=%d", n);
@@ -1451,7 +1452,7 @@ void *TickTock(void *arg)
     }
     else if (a->type == "stm32")
     {
-        timeout_int = 120;
+        timeout_int = 365;
     }
     while (1)
     {
