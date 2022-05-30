@@ -1,5 +1,65 @@
-in line 1759<request>
+in line 1761<request>
 
-{"type":"connect","board name":"yaoxuetao's raspi","client name":"Anymous"}
+{"type":"connect","board name":"yaoxuetao's stm32f103","client name":"Anymous"}
+
+<\request>
+in line 1761<request>
+
+{"type":"all faces"}
+
+<\request>
+in line 1761<request>
+
+{"type":"all faces"}
+
+<\request>
+in line 1761<request>
+
+{"type":"face","time":"Tue May 31 00:44:02 2022"}
+
+<\request>
+in line 1761<request>
+
+{"type":"all faces"}
+
+<\request>
+in line 1761<request>
+
+{"type":"all faces"}
+
+<\request>
+in line 1761<request>
+
+{"type":"all faces"}
+
+<\request>
+in line 1761<request>
+
+{"type":"all faces"}
+
+<\request>
+in line 1761<request>
+
+{"type":"all faces"}
+
+<\request>
+in line 1761<request>
+
+{"type":"all faces"}
+
+<\request>
+in line 1761<request>
+
+{"type":"connect","board name":"yaoxuetao's stm32f103","client name":"Anymous"}
+
+<\request>
+in line 1761<request>
+
+{"type":"connect","board name":"yaoxuetao's stm32f103","client name":"Anymous"}
+
+<\request>
+in line 1761<request>
+
+{"type":"connect","board name":"yaoxuetao's stm32f103","client name":"Anymous"}
 
 <\request>

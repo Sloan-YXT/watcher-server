@@ -1,0 +1,16 @@
+
+
+<select==0>
+
+in line 2667n=0
+
+<\select==0>
+
+
+
+<send<0>
+
+in line 2739n=-1,errno=104,Connection reset by peer
+
+<\send<0>
+

@@ -1113,49 +1113,64 @@ void *stm32DataThread(void *args)
     n = recv(fd_data, &rlen, sizeof(rlen), MSG_WAITALL);
     if (n <= 0)
     {
-        DEBUG("stm32 recv position len n < 0");
+        FTDEBUG("stm32.log", "n<0", "stm32 recv position len n < 0:m=%d", n);
         goto clean_end;
     }
     len = ntohl(rlen);
     if (len <= 0)
     {
-        DEBUG("stm32 recv position len err");
+        FTDEBUG("stm32.log", "n<0", "stm32 recv position len n < 0:m=%d", n);
         goto clean_end;
     }
     n = recv(fd_data, message_box, len, MSG_WAITALL);
     if (n <= 0)
     {
-        DEBUG("stm32 recv position n < 0");
+        FTDEBUG("stm32.log", "n<0", "stm32 recv position n < 0:n=%d", n);
         goto clean_end;
     }
     position = message_box;
     data->position = message_box;
-    puts(message_box);
     while (1)
     {
         n = recv(fd_data, &rlen, sizeof(rlen), MSG_WAITALL);
         if (n <= 0)
+        {
+            FTDEBUG("stm32.log", "n<0", "stm32 recv data len n <= 0:n=%d", n);
             break;
+        }
         len = ntohl(rlen);
         if (len != 36)
         {
+            FTDEBUG("stm32.log", "len rectify", "stm32 recv data len!=36:len=%d", len);
             break;
         }
         n = recv(fd_data, temp, 17, MSG_WAITALL);
         if (n < 17)
+        {
+            FTDEBUG("stm32.log", "n<0", "stm32 recv data n < 17:n=%d", n);
             break;
+        }
         n = recv(fd_data, humi, 17, MSG_WAITALL);
         if (n < 17)
+        {
+            FTDEBUG("stm32.log", "n<0", "stm32 recv data n < 17:n=%d", n);
             break;
+        }
         n = recv(fd_data, light, 1, MSG_WAITALL);
         if (n < 1)
+        {
+            FTDEBUG("stm32.log", "n<0", "stm32 recv data n < 1:n=%d", n);
             break;
+        }
         n = recv(fd_data, smoke, 1, MSG_WAITALL);
         if (n < 1)
+        {
+            FTDEBUG("stm32.log", "n<0", "stm32 recv data n < 1:n=%d", n);
             break;
+        }
         trim(temp);
         trim(humi);
-        printf("recv temp = %s;humi = %s\n", temp, humi);
+        FTDEBUG("stm32.log", "data", "recv temp = %s;humi = %s\n", temp, humi);
         // data->writeVal();
         nodesA.lock();
         data->temp = temp;
@@ -1275,10 +1290,14 @@ void *stm32DataThread(void *args)
         }
         n = recv(fd_graph, &rlen, sizeof(rlen), MSG_WAITALL);
         if (n <= 0)
+        {
+            FTDEBUG("stm32.log", "n<0", "stm32 recv graph len n <= 0:n=%d", n);
             break;
+        }
         len = ntohl(rlen);
         if (len != GLEN_32)
         {
+            FTDEBUG("stm32.log", "len rectify", "stm32 recv graph len != %d:len=%d", GLEN_32, len);
             break;
         }
         printf("glen=%d\n", len);
@@ -1314,11 +1333,11 @@ void *stm32DataThread(void *args)
             exit(1);
         }
         close(gfd);
-        if (n < GLEN_32)
+        if (n <= 0 || n < len)
         {
+            FTDEBUG("stm32.log", "len rectify", "stm32 recv graph<%d:n=%d", len, n);
             break;
         }
-        DEBUG("");
         string s = data->photos + "/" + time_pic;
         string t = data->faces + "/" + time_pic + ".jpg";
         // printf("filename=%s\n", s.c_str());
@@ -1335,7 +1354,6 @@ void *stm32DataThread(void *args)
         string warning = j.dump();
         len = warning.length();
         nodesA.lock();
-        DEBUG("");
         for (auto m = data->connection.begin(); m != data->connection.end(); m++)
         {
             int rlen = htonl(len);
@@ -1355,7 +1373,6 @@ void *stm32DataThread(void *args)
                 // exit(1);
                 continue;
             }
-            printf("debug:graph len=%d\n", len);
             n = send((*m)->fd_warn, warning.c_str(), len, 0);
             if (n < 0 && (errno == EPIPE | errno == ECONNRESET))
             {
@@ -1411,7 +1428,6 @@ clean_end:
     }
     // data->connection.unlock();
     nodesA.erase(data->name);
-    DEBUG("after erase");
     nodesA.unlock();
     close(data->fd_data);
     close(data->fd_graph);
@@ -1421,7 +1437,6 @@ clean_end:
     // freeV.unlock();
     delete data;
     numer.decreaseA();
-    DEBUG("");
 }
 void *TickTock(void *arg)
 {
