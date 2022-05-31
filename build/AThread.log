@@ -366,3 +366,3467 @@ in line 2407data=(yaoxuetao's raspi1,49954)
 
 <\accept port>
 
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi0
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi0,50250)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi0,48896)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi0,48154)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi3
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi3,50248)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi3,48900)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi3,48158)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi5
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi5,50254)
+
+<\accept port>
+
+
+
+<AThread select graph==0>
+
+in line 2441errno=0,Success
+
+<\AThread select graph==0>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi12
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi12,50256)
+
+<\accept port>
+
+
+
+<AThread select graph==0>
+
+in line 2441errno=0,Success
+
+<\AThread select graph==0>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi11
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi11,50258)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi11,48906)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi11,48164)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi2
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi2,50260)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi2,48910)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi2,48168)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi15
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi15,50262)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi15,48914)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi15,48172)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi10
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi10,50264)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi10,48918)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi10,48176)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi13
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi13,50266)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi13,48922)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi13,48180)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi23
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi23,50268)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi23,48926)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi23,48184)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi14
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi14,50270)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi14,48930)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi14,48190)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi4
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi4,50272)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi4,48932)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi4,48192)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi25
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi25,50274)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi25,48938)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi25,48196)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi60
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi60,50276)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi60,48942)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi60,48200)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi55
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi55,50278)
+
+<\accept port>
+
+
+
+<AThread select graph==0>
+
+in line 2441errno=0,Success
+
+<\AThread select graph==0>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi26
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi26,50280)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi26,48948)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi26,48206)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi33
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi33,50282)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi33,48952)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi33,48210)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi17
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi17,50284)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi17,48956)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi17,48214)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi34
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi34,50286)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi34,48960)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi34,48218)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi61
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi61,50288)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi61,48964)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi61,48222)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi6
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi6,50290)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi6,48968)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi6,48226)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi7
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi7,50292)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi7,48972)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi7,48230)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi31
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi31,50294)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi31,48976)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi31,48236)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi9
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi9,50296)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi9,48978)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi9,48238)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi57
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi57,50298)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi57,48984)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi57,48242)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi40
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi40,50300)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi40,48988)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi40,48246)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi47
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi47,50302)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi47,48992)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi47,48250)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi52
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi52,50304)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi52,48996)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi52,48254)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi38
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi38,50306)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi38,49000)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi38,48258)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi59
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi59,50308)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi59,49004)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi59,48262)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi86
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi86,50310)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi86,49008)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi86,48266)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi36
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi36,50312)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi36,49012)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi36,48270)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi49
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi49,50314)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi49,49016)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi49,48274)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi68
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi68,50318)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi68,49020)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi68,48278)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi32
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi32,50320)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi32,49024)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi32,48282)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi82
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi82,50322)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi82,49028)
+
+<\accept port>
+
+
+
+<AThread select tick==0>
+
+in line 2481errno=0,Success
+
+<\AThread select tick==0>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi73
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi73,50324)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi73,49032)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi73,48286)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi83
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi83,50326)
+
+<\accept port>
+
+
+
+<AThread select graph==0>
+
+in line 2441errno=0,Success
+
+<\AThread select graph==0>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi84
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi84,50328)
+
+<\accept port>
+
+
+
+<AThread select graph==0>
+
+in line 2441errno=0,Success
+
+<\AThread select graph==0>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi80
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi80,50330)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi80,49038)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi80,48300)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi70
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi70,50332)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi70,49040)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi70,48302)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi85
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi85,50348)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi85,49042)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi85,48304)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi44
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi44,50350)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi44,49052)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi44,48312)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi75
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi75,50352)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi75,49054)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi75,48316)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi69
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi69,50316)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi69,49058)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi69,48318)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi41
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi41,50346)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi41,49050)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi41,48324)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi46
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi46,50354)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi46,49064)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi46,48326)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi81
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi81,50356)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi81,49066)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi81,48330)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi22
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi22,50358)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi22,49072)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi22,48332)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi8
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi8,50360)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi8,49078)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi8,48338)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi58
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi58,50364)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi58,49080)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi58,48342)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi67
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi67,50366)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi67,49084)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi67,48344)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi29
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi29,50368)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi29,49090)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi29,48350)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi20
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi20,50370)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi20,49096)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi20,48358)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi56
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi56,50372)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi56,49104)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi56,48362)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi21
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi21,50374)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi21,49108)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi21,48366)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi62
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi62,50376)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi62,49112)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi62,48354)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi19
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi19,50378)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi19,49100)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi19,48370)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi53
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi53,50362)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi53,49092)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi53,48374)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi39
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi39,50380)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi39,49116)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi39,48376)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi18
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi18,50382)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi18,49122)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi18,48382)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi42
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi42,50386)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi42,49124)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi42,48386)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi63
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi63,50384)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi63,49128)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi63,48390)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi37
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi37,50410)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi37,49132)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi37,48392)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi77
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi77,50418)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi77,49138)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi77,48398)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi28
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi28,50406)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi28,49140)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi28,48402)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi65
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi65,50422)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi65,49144)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi65,48404)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi87
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi87,50424)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi87,49150)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi87,48402)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi50
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi50,50426)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi50,49140)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi50,48408)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi51
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi51,50408)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi51,49154)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi51,48414)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi88
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi88,50432)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi88,49156)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi88,48416)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi35
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi35,50394)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi35,49162)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi35,48422)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi72
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi72,50392)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi72,49164)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi72,48426)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi89
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi89,50390)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi89,49168)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi89,48430)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi79
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi79,50388)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi79,49172)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi79,48434)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi76
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi76,50342)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi76,49180)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi76,48440)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi71
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi71,50334)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi71,49182)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi71,48444)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi43
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi43,50338)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi43,49186)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi43,48448)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi64
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi64,50336)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi64,49190)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi64,48450)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi66
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi66,50428)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi66,49176)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi66,48454)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi74
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi74,50404)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi74,49196)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi74,48458)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi16
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi16,50396)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi16,49200)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi16,48462)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi30
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi30,50412)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi30,49204)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi30,48466)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi54
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi54,50416)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi54,49208)
+
+<\accept port>
+
+
+
+<AThread select tick==0>
+
+in line 2481errno=0,Success
+
+<\AThread select tick==0>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi1
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi1,50344)
+
+<\accept port>
+
+
+
+<AThread select graph==0>
+
+in line 2441errno=0,Success
+
+<\AThread select graph==0>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi48
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi48,50340)
+
+<\accept port>
+
+
+
+<AThread select graph==0>
+
+in line 2441errno=0,Success
+
+<\AThread select graph==0>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi27
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi27,50414)
+
+<\accept port>
+
+
+
+<AThread select graph==0>
+
+in line 2441errno=0,Success
+
+<\AThread select graph==0>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi45
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi45,50398)
+
+<\accept port>
+
+
+
+<AThread select graph==0>
+
+in line 2441errno=0,Success
+
+<\AThread select graph==0>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi24
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi24,50400)
+
+<\accept port>
+
+
+
+<AThread select graph==0>
+
+in line 2441errno=0,Success
+
+<\AThread select graph==0>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi78
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi78,50402)
+
+<\accept port>
+
+
+
+<AThread select graph==0>
+
+in line 2441errno=0,Success
+
+<\AThread select graph==0>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi,50754)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi,49220)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi,48478)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi1
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi1,50764)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi1,49266)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi1,48524)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi0
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi0,50766)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi0,49270)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi0,48528)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi9
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi9,50768)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi9,49274)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi9,48532)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi18
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi18,50770)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi18,49278)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi18,48536)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi14
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi14,50772)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi14,49282)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi14,48540)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi15
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi15,50774)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi15,49286)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi15,48544)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi11
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi11,50776)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi11,49290)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi11,48548)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi2
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi2,50778)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi2,49294)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi2,48552)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi8
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi8,50780)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi8,49298)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi8,48556)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi13
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi13,50782)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi13,49302)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi13,48560)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi7
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi7,50784)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi7,49306)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi7,48564)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi10
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi10,50786)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi10,49310)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi10,48568)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi6
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi6,50788)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi6,49314)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi6,48572)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi5
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi5,50790)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi5,49318)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi5,48576)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi12
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi12,50792)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi12,49322)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi12,48580)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi19
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi19,50794)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi19,49326)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi19,48584)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi4
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi4,50796)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi4,49330)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi4,48588)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi3
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi3,50798)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi3,49334)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi3,48592)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi16
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi16,50802)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi16,49338)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi16,48596)
+
+<\accept port>
+
+
+
+<message_buffer>
+
+in line 2260yaoxuetao's raspi17
+
+<\message_buffer>
+
+
+
+<accept port>
+
+in line 2411data=(yaoxuetao's raspi17,50800)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2464graph=(yaoxuetao's raspi17,49342)
+
+<\accept port>
+
+
+
+<accept port>
+
+in line 2499tick=(yaoxuetao's raspi17,48600)
+
+<\accept port>
+

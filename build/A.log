@@ -142,3 +142,1955 @@ in line 1476(yaoxuetao's stm32f103)errno=0,Success,n=0
 
 <\tick select == 0>
 
+
+
+<AThread select graph==0>
+
+in line 2442errno=0,Success
+
+<\AThread select graph==0>
+
+
+
+<AThread select graph==0>
+
+in line 2442errno=0,Success
+
+<\AThread select graph==0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48164,yaoxuetao's raspi11)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50258,yaoxuetao's raspi11)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48168,yaoxuetao's raspi2)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50260,yaoxuetao's raspi2)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48172,yaoxuetao's raspi15)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50262,yaoxuetao's raspi15)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48176,yaoxuetao's raspi10)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50264,yaoxuetao's raspi10)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48180,yaoxuetao's raspi13)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50266,yaoxuetao's raspi13)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48184,yaoxuetao's raspi23)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50268,yaoxuetao's raspi23)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48190,yaoxuetao's raspi14)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50270,yaoxuetao's raspi14)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48192,yaoxuetao's raspi4)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50272,yaoxuetao's raspi4)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(48906,yaoxuetao's raspi11)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 930(48910,yaoxuetao's raspi2)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(48914,yaoxuetao's raspi15)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(48918,yaoxuetao's raspi10)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(48922,yaoxuetao's raspi13)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48196,yaoxuetao's raspi25)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50274,yaoxuetao's raspi25)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48200,yaoxuetao's raspi60)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50276,yaoxuetao's raspi60)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<AThread select graph==0>
+
+in line 2442errno=0,Success
+
+<\AThread select graph==0>
+
+
+
+<graph recv == 0>
+
+in line 898(48926,yaoxuetao's raspi23)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(48930,yaoxuetao's raspi14)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 898(48932,yaoxuetao's raspi4)errno=104,Connection reset by peer,n=-1
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(48938,yaoxuetao's raspi25)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(48942,yaoxuetao's raspi60)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48206,yaoxuetao's raspi26)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(48948,yaoxuetao's raspi26)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50280,yaoxuetao's raspi26)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48210,yaoxuetao's raspi33)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(48952,yaoxuetao's raspi33)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50282,yaoxuetao's raspi33)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48214,yaoxuetao's raspi17)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 898(48956,yaoxuetao's raspi17)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50284,yaoxuetao's raspi17)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48218,yaoxuetao's raspi34)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 898(48960,yaoxuetao's raspi34)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50286,yaoxuetao's raspi34)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(48964,yaoxuetao's raspi61)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48222,yaoxuetao's raspi61)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50288,yaoxuetao's raspi61)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48226,yaoxuetao's raspi6)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50290,yaoxuetao's raspi6)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 898(48968,yaoxuetao's raspi6)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48230,yaoxuetao's raspi7)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50292,yaoxuetao's raspi7)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(48972,yaoxuetao's raspi7)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48236,yaoxuetao's raspi31)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50294,yaoxuetao's raspi31)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(48976,yaoxuetao's raspi31)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48238,yaoxuetao's raspi9)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(48978,yaoxuetao's raspi9)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50296,yaoxuetao's raspi9)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48242,yaoxuetao's raspi57)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50298,yaoxuetao's raspi57)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(48984,yaoxuetao's raspi57)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48246,yaoxuetao's raspi40)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50300,yaoxuetao's raspi40)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48250,yaoxuetao's raspi47)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50302,yaoxuetao's raspi47)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48254,yaoxuetao's raspi52)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50304,yaoxuetao's raspi52)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48258,yaoxuetao's raspi38)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50306,yaoxuetao's raspi38)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48262,yaoxuetao's raspi59)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50308,yaoxuetao's raspi59)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48266,yaoxuetao's raspi86)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50310,yaoxuetao's raspi86)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48270,yaoxuetao's raspi36)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50312,yaoxuetao's raspi36)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48274,yaoxuetao's raspi49)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50314,yaoxuetao's raspi49)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48278,yaoxuetao's raspi68)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50318,yaoxuetao's raspi68)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48282,yaoxuetao's raspi32)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50320,yaoxuetao's raspi32)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<AThread select tick==0>
+
+in line 2482errno=0,Success
+
+<\AThread select tick==0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48286,yaoxuetao's raspi73)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<AThread select graph==0>
+
+in line 2442errno=0,Success
+
+<\AThread select graph==0>
+
+
+
+<AThread select graph==0>
+
+in line 2442errno=0,Success
+
+<\AThread select graph==0>
+
+
+
+<data recv == 0>
+
+in line 492(50324,yaoxuetao's raspi73)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48300,yaoxuetao's raspi80)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50330,yaoxuetao's raspi80)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48302,yaoxuetao's raspi70)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50332,yaoxuetao's raspi70)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48304,yaoxuetao's raspi85)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50348,yaoxuetao's raspi85)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48312,yaoxuetao's raspi44)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50350,yaoxuetao's raspi44)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48316,yaoxuetao's raspi75)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50352,yaoxuetao's raspi75)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48318,yaoxuetao's raspi69)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50316,yaoxuetao's raspi69)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48324,yaoxuetao's raspi41)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50346,yaoxuetao's raspi41)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48326,yaoxuetao's raspi46)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50354,yaoxuetao's raspi46)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48330,yaoxuetao's raspi81)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50356,yaoxuetao's raspi81)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48332,yaoxuetao's raspi22)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50358,yaoxuetao's raspi22)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48338,yaoxuetao's raspi8)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50360,yaoxuetao's raspi8)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48342,yaoxuetao's raspi58)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50364,yaoxuetao's raspi58)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48344,yaoxuetao's raspi67)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50366,yaoxuetao's raspi67)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48350,yaoxuetao's raspi29)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50368,yaoxuetao's raspi29)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48358,yaoxuetao's raspi20)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50370,yaoxuetao's raspi20)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48362,yaoxuetao's raspi56)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50372,yaoxuetao's raspi56)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48366,yaoxuetao's raspi21)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50374,yaoxuetao's raspi21)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48354,yaoxuetao's raspi62)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50376,yaoxuetao's raspi62)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48370,yaoxuetao's raspi19)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50378,yaoxuetao's raspi19)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48374,yaoxuetao's raspi53)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50362,yaoxuetao's raspi53)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48376,yaoxuetao's raspi39)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50380,yaoxuetao's raspi39)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48382,yaoxuetao's raspi18)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50382,yaoxuetao's raspi18)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48386,yaoxuetao's raspi42)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50386,yaoxuetao's raspi42)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48390,yaoxuetao's raspi63)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50384,yaoxuetao's raspi63)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48392,yaoxuetao's raspi37)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50410,yaoxuetao's raspi37)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48398,yaoxuetao's raspi77)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50418,yaoxuetao's raspi77)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48402,yaoxuetao's raspi28)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50406,yaoxuetao's raspi28)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48404,yaoxuetao's raspi65)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50422,yaoxuetao's raspi65)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48408,yaoxuetao's raspi50)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50426,yaoxuetao's raspi50)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48414,yaoxuetao's raspi51)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50408,yaoxuetao's raspi51)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48416,yaoxuetao's raspi88)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50432,yaoxuetao's raspi88)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48426,yaoxuetao's raspi72)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50392,yaoxuetao's raspi72)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48430,yaoxuetao's raspi89)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50390,yaoxuetao's raspi89)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48434,yaoxuetao's raspi79)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50388,yaoxuetao's raspi79)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48440,yaoxuetao's raspi76)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50342,yaoxuetao's raspi76)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48444,yaoxuetao's raspi71)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50334,yaoxuetao's raspi71)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48448,yaoxuetao's raspi43)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48450,yaoxuetao's raspi64)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50338,yaoxuetao's raspi43)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50336,yaoxuetao's raspi64)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48458,yaoxuetao's raspi74)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48462,yaoxuetao's raspi16)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50404,yaoxuetao's raspi74)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50396,yaoxuetao's raspi16)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48466,yaoxuetao's raspi30)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50412,yaoxuetao's raspi30)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48422,yaoxuetao's raspi35)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50394,yaoxuetao's raspi35)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50428,yaoxuetao's raspi66)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50424,yaoxuetao's raspi87)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48454,yaoxuetao's raspi66)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48154,yaoxuetao's raspi0)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(48158,yaoxuetao's raspi3)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 930(48896,yaoxuetao's raspi0)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50250,yaoxuetao's raspi0)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(48988,yaoxuetao's raspi40)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(48992,yaoxuetao's raspi47)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 898(48996,yaoxuetao's raspi52)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(50248,yaoxuetao's raspi3)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 930(48900,yaoxuetao's raspi3)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(49000,yaoxuetao's raspi38)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(49004,yaoxuetao's raspi59)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(49008,yaoxuetao's raspi86)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(49012,yaoxuetao's raspi36)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(49016,yaoxuetao's raspi49)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(49020,yaoxuetao's raspi68)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(49024,yaoxuetao's raspi32)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(49032,yaoxuetao's raspi73)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(49038,yaoxuetao's raspi80)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(49040,yaoxuetao's raspi70)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(49042,yaoxuetao's raspi85)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(49052,yaoxuetao's raspi44)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 930(49054,yaoxuetao's raspi75)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 930(49058,yaoxuetao's raspi69)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(49050,yaoxuetao's raspi41)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(49064,yaoxuetao's raspi46)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 898(49066,yaoxuetao's raspi81)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 930(49072,yaoxuetao's raspi22)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(49078,yaoxuetao's raspi8)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(49080,yaoxuetao's raspi58)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(49084,yaoxuetao's raspi67)errno=104,Connection reset by peer,n=-1
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 898(49090,yaoxuetao's raspi29)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 898(49096,yaoxuetao's raspi20)errno=104,Connection reset by peer,n=-1
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(49104,yaoxuetao's raspi56)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 930(49108,yaoxuetao's raspi21)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(49112,yaoxuetao's raspi62)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(49100,yaoxuetao's raspi19)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(49092,yaoxuetao's raspi53)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(49116,yaoxuetao's raspi39)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 898(49122,yaoxuetao's raspi18)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(49124,yaoxuetao's raspi42)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(49128,yaoxuetao's raspi63)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(49132,yaoxuetao's raspi37)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 930(49138,yaoxuetao's raspi77)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(49140,yaoxuetao's raspi28)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(49144,yaoxuetao's raspi65)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 930(49150,yaoxuetao's raspi87)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(49140,yaoxuetao's raspi50)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(49154,yaoxuetao's raspi51)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(49156,yaoxuetao's raspi88)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 930(49162,yaoxuetao's raspi35)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(49164,yaoxuetao's raspi72)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 898(49168,yaoxuetao's raspi89)errno=104,Connection reset by peer,n=-1
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(49172,yaoxuetao's raspi79)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(49180,yaoxuetao's raspi76)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 898(49182,yaoxuetao's raspi71)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(49186,yaoxuetao's raspi43)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(49190,yaoxuetao's raspi64)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 930(49176,yaoxuetao's raspi66)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(49196,yaoxuetao's raspi74)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(49200,yaoxuetao's raspi16)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(49204,yaoxuetao's raspi30)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<AThread select tick==0>
+
+in line 2482errno=0,Success
+
+<\AThread select tick==0>
+
+
+
+<AThread select graph==0>
+
+in line 2442errno=0,Success
+
+<\AThread select graph==0>
+
+
+
+<AThread select graph==0>
+
+in line 2442errno=0,Success
+
+<\AThread select graph==0>
+
+
+
+<AThread select graph==0>
+
+in line 2442errno=0,Success
+
+<\AThread select graph==0>
+
+
+
+<tick select == 0>
+
+in line 1476(yaoxuetao's raspi87)errno=0,Success,n=0
+
+<\tick select == 0>
+
+
+
+<AThread select graph==0>
+
+in line 2442errno=0,Success
+
+<\AThread select graph==0>
+
+
+
+<AThread select graph==0>
+
+in line 2442errno=0,Success
+
+<\AThread select graph==0>
+
+
+
+<AThread select graph==0>
+
+in line 2442errno=0,Success
+
+<\AThread select graph==0>
+

@@ -1,3677 +1,2666 @@
 debug:94,wrapStack inited!
 debug:326,WrapMap inited!
-main:3420
+main:5611
 delete from board_data where month !=6 and id > 0
-AThread:3431
-Adata:3433
-BThread:3432Bconnect:3435
+AThread:5615
+BThread:5616Adata:5617
+Bconnect:5618
 debug:1665,Bconn working
-Agraph:3434
-debug:2205,ATH working
-Bdata:3436
+Bdata:5620
 debug:1522,Bdata working
-debug:2682,BTH working
+debug:2205,ATH working
+Agraph:5619
+debug:2694,BTH working
 stackV lock
-debug:2316,
+debug:2320,
 stackV unlock
-debug:2492,
-debug:2494,
-debug:2496,
-debug:2498,
-debug:2500,
-debug:2502,
 debug:2504,
 debug:2506,
-debug:2573,before add element
-ticktock:3647
-debug:2591,after add element
-debug:2592,before create dir
-debug:2593,after create workdir
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:5664
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
 debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+debug:2603,after add element
+ticktock:5665
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
 debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:46:08 2022
+stackV lock
+stackV unlock
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
 
 
 
 just for one time should it be
 
 
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:46:18 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:46:26 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:46:30 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:46:31 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:46:35 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:46:39 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:46:49 2022
-debug:2492,
-debug:2494,
-debug:2496,
-debug:2498,
-debug:2500,
-debug:2502,
+stackV lock
+stackV unlock
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
 debug:2504,
 debug:2506,
-debug:2591,after add element
-debug:2592,before create dir
-debug:2593,after create workdir
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:5684
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
 debug:2205,ATH working
-ticktock:3736
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50258] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
 
 
 
 just for one time should it be
 
 
-debug:1248,before send data to B
-debug:1291,{"boardName":"yaoxuetao's stm32f103","humi":"86.0","light":"1","position":"dandelion hotel 206","smoke":"1","temp":"28.9","time":"Wed Jun  1 00:46:55 2022","type":"data"}
-glen=153666
-debug:1313,
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:46:55 2022
-name=yaoxuetao's stm32f103
-pos=dandelion hotel 206
-type=stm32
-name=yaoxuetao's raspi
-pos=yaoxuetao's personal office
-type=raspi
----B(id)---1
----B(id)---2
-debug:2682,BTH working
-debug:1667,Bconn epoll shit
-in Bcon:1689,ptr:e0001d20
-high_temp=30.000000,len=150994944
-debug:1665,Bconn working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0001eb0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:46:58 2022
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0001eb0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:47:00 2022
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0001eb0
----~B(id)---()1 yaoxuetao's stm32f103
-debug:1522,Bdata working
-name=yaoxuetao's stm32f103
-pos=dandelion hotel 206
-type=stm32
-name=yaoxuetao's raspi
-pos=yaoxuetao's personal office
-type=raspi
----B(id)---2
----B(id)---3
-debug:2682,BTH working
-debug:1667,Bconn epoll shit
-in Bcon:1689,ptr:e0001d20
-Anymous:socket error:connection with board [192.168.1.108:48398]:Success
-nodesA locked
-nodesA unlocked
----~B(id)---()2 yaoxuetao's stm32f103
-debug:1665,Bconn working
-debug:1667,Bconn epoll shit
-in Bcon:1689,ptr:e0001f70
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0002000
-not verified yet:socket error:connection with board [192.168.1.108:48408]:Success
----~B(id)---()1 not connect yet
-debug:1522,Bdata working
----~B(id)---()0 not connect yet
-debug:1665,Bconn working
-name=yaoxuetao's stm32f103
-pos=dandelion hotel 206
-type=stm32
-name=yaoxuetao's raspi
-pos=yaoxuetao's personal office
-type=raspi
----B(id)---1
----B(id)---2
-debug:2682,BTH working
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:47:08 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:47:18 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:47:20 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:47:21 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:47:25 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:47:30 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:47:36 2022
-debug:1667,Bconn epoll shit
-in Bcon:1689,ptr:e00020c0
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0002150
-not verified yet:socket error:connection with board [192.168.1.108:48414]:Success
----~B(id)---()1 not connect yet
-debug:1522,Bdata working
----~B(id)---()0 not connect yet
-debug:1665,Bconn working
-name=yaoxuetao's stm32f103
-pos=dandelion hotel 206
-type=stm32
-name=yaoxuetao's raspi
-pos=yaoxuetao's personal office
-type=raspi
----B(id)---1
----B(id)---2
-debug:2682,BTH working
-debug:1667,Bconn epoll shit
-in Bcon:1689,ptr:e0002210
-not verified yet:socket error:connection with board [192.168.1.108:48486]:Success
----~B(id)---()1 not connect yet
-debug:1665,Bconn working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00022a0
----~B(id)---()0 not connect yet
-debug:1522,Bdata working
-name=yaoxuetao's stm32f103
-pos=dandelion hotel 206
-type=stm32
-name=yaoxuetao's raspi
-pos=yaoxuetao's personal office
-type=raspi
----B(id)---1
----B(id)---2
-debug:2682,BTH working
-debug:1667,Bconn epoll shit
-in Bcon:1689,ptr:e0002330
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00023c0
-not verified yet:socket error:connection with board [192.168.1.108:48492]:Success
----~B(id)---()1 not connect yet
-debug:1522,Bdata working
----~B(id)---()0 not connect yet
-debug:1665,Bconn working
-name=yaoxuetao's stm32f103
-pos=dandelion hotel 206
-type=stm32
-name=yaoxuetao's raspi
-pos=yaoxuetao's personal office
-type=raspi
----B(id)---1
----B(id)---2
-debug:2682,BTH working
-debug:1667,Bconn epoll shit
-in Bcon:1689,ptr:e0002450
-debug:951,
-high_temp=30.000000,len=150994944
-debug:1665,Bconn working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:47:41 2022
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1667,Bconn epoll shit
-in Bcon:1689,ptr:e0002450
-debug:1665,Bconn working
-debug:1667,Bconn epoll shit
-in Bcon:1689,ptr:e0002450
-debug:1665,Bconn working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:47:48 2022
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1667,Bconn epoll shit
-in Bcon:1689,ptr:e0002450
-debug:1665,Bconn working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:47:56 2022
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:47:57 2022
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:951,
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:48:04 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:48:05 2022
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:48:08 2022
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:48:14 2022
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-debug:951,
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:48:21 2022
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:951,
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:48:25 2022
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:48:30 2022
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:48:33 2022
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:48:37 2022
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:48:45 2022
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:48:48 2022
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:48:49 2022
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:48:50 2022
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-debug:951,
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:48:53 2022
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:951,
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:49:00 2022
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:49:04 2022
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:49:07 2022
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:49:18 2022
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-debug:951,
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:49:24 2022
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:951,
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:49:27 2022
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:49:35 2022
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-debug:951,
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:49:43 2022
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:951,
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:49:50 2022
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:50:00 2022
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:50:03 2022
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1667,Bconn epoll shit
-in Bcon:1689,ptr:e0002450
-Anymous:socket error:connection with board [192.168.1.108:48498]:Success
-nodesA locked
-nodesA unlocked
----~B(id)---()1 yaoxuetao's stm32f103
-debug:1665,Bconn working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00024e0
----~B(id)---()0 yaoxuetao's stm32f103
-debug:1522,Bdata working
-name=yaoxuetao's stm32f103
-pos=dandelion hotel 206
-type=stm32
-name=yaoxuetao's raspi
-pos=yaoxuetao's personal office
-type=raspi
----B(id)---1
----B(id)---2
-debug:2682,BTH working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0002600
-debug:1667,Bconn epoll shit
-in Bcon:1689,ptr:e0002570
-not verified yet:socket error:connection with board [192.168.1.108:48908]:Success
----~B(id)---()1 not connect yet
-debug:1522,Bdata working
----~B(id)---()0 not connect yet
-debug:1665,Bconn working
-debug:951,
-name=yaoxuetao's stm32f103
-pos=dandelion hotel 206
-type=stm32
-name=yaoxuetao's raspi
-pos=yaoxuetao's personal office
-type=raspi
----B(id)---1
----B(id)---2
-debug:2682,BTH working
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:50:05 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:50:12 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:50:19 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:50:29 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:50:34 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:50:43 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:50:48 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:50:55 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:51:05 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:51:14 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:51:17 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:51:23 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:51:27 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:51:34 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:51:43 2022
-debug:951,
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0002600
----~B(id)---()1 not connect yet
-debug:1522,Bdata working
-debug:1667,Bconn epoll shit
-in Bcon:1689,ptr:e0001950
-not verified yet:socket error:connection with board [192.168.1.108:48916]:Success
----~B(id)---()0 not connect yet
-debug:1665,Bconn working
-name=yaoxuetao's stm32f103
-pos=dandelion hotel 206
-type=stm32
-name=yaoxuetao's raspi
-pos=yaoxuetao's personal office
-type=raspi
----B(id)---1
----B(id)---2
-debug:2682,BTH working
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:51:44 2022
-debug:1667,Bconn epoll shit
-in Bcon:1689,ptr:e0001950
-not verified yet:socket error:connection with board [192.168.1.108:49180]:Success
----~B(id)---()1 not connect yet
-debug:1665,Bconn working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0002600
----~B(id)---()0 not connect yet
-debug:1522,Bdata working
-name=yaoxuetao's stm32f103
-pos=dandelion hotel 206
-type=stm32
-name=yaoxuetao's raspi
-pos=yaoxuetao's personal office
-type=raspi
----B(id)---1
----B(id)---2
-debug:2682,BTH working
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:51:53 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:51:55 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:51:58 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:52:04 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:52:10 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:52:16 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:52:22 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:52:28 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:52:31 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:52:41 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:52:47 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:52:48 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:52:56 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:53:03 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:53:06 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:53:07 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:53:09 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:53:11 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:53:20 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:53:26 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:53:36 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:53:39 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:53:42 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:53:56 2022
-debug:951,
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0001950
-debug:1667,Bconn epoll shit
-in Bcon:1689,ptr:e0002600
-not verified yet:socket error:connection with board [192.168.1.108:49186]:Success
----~B(id)---()1 not connect yet
-debug:1522,Bdata working
----~B(id)---()0 not connect yet
-debug:1665,Bconn working
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:54:00 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:54:09 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:54:42 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:55:03 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:55:05 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:55:14 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:55:16 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:55:19 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:55:26 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:55:47 2022
-debug:951,
-495:board[192.168.1.222:49876] has disconnected:Success
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:5697
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50260] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:5705
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50262] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:5706
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50264] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+/home/yaoxuetao/yaoxuetao's raspi0/photos/Wed Jun  1 03:04:36 2022
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:5729
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50266] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:951,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+ticktock:5746
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50268] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:5766
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50270] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:5776
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50272] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+/home/yaoxuetao/yaoxuetao's raspi0/photos/Wed Jun  1 03:04:48 2022
+debug:951,
+/home/yaoxuetao/yaoxuetao's raspi3/photos/Wed Jun  1 03:04:36 2022
+debug:951,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:5787
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50274] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:5799
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50276] has disconnected:Success
 stackV lock
 stackV unlock
 debug:546,
 stackV lock
-debug:2316,
 stackV unlock
-debug:2492,
-debug:2494,
-debug:2496,
-debug:2498,
-debug:2500,
-debug:2502,
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+/home/yaoxuetao/yaoxuetao's raspi3/photos/Wed Jun  1 03:04:51 2022
 debug:2504,
 debug:2506,
-debug:2573,before add element
-debug:2591,after add element
-debug:2592,before create dir
-debug:2593,after create workdir
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:5807
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
 debug:2205,ATH working
-ticktock:3894
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:59:08 2022
-debug:951,
-
-
-
-just for one time should it be
-
-
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:59:12 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:59:24 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 00:59:29 2022
-debug:951,
-495:board[192.168.1.222:49888] has disconnected:Success
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50280] has disconnected:Success
 stackV lock
 stackV unlock
 debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:5808
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
 debug:2205,ATH working
 stackV lock
-debug:2316,
+debug:2320,
 stackV unlock
-debug:2492,
-debug:2494,
-debug:2496,
-debug:2498,
-debug:2500,
-debug:2502,
-debug:2504,
-debug:2506,
-debug:2573,before add element
-ticktock:3988
-debug:2591,after add element
-debug:2592,before create dir
-debug:2593,after create workdir
-debug:2205,ATH working
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:02:30 2022
-
-
-
-just for one time should it be
-
-
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:02:37 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:02:47 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:02:58 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:03:09 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:03:16 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:03:25 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:03:32 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:03:40 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:03:45 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:03:47 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:03:57 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:04:04 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:04:06 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:04:14 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:04:25 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:04:26 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:04:36 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:04:40 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:04:48 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:04:57 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:04:59 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:05:01 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:05:06 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:05:08 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:05:11 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:05:12 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:05:23 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:05:31 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:05:38 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:05:44 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:05:52 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:05:53 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:05:58 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:06:06 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:06:15 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:06:24 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:06:29 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:06:33 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:06:40 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:06:48 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:06:57 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:07:04 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:07:10 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:07:19 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:07:23 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:07:29 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:07:39 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:07:44 2022
-name=yaoxuetao's raspi
-pos=yaoxuetao's personal office
-type=raspi
----B(id)---1
----B(id)---2
-debug:2682,BTH working
-debug:1667,Bconn epoll shit
-in Bcon:1689,ptr:e0001950
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00026c0
-not verified yet:socket error:connection with board [192.168.1.108:50804]:Success
----~B(id)---()1 not connect yet
-debug:1522,Bdata working
----~B(id)---()0 not connect yet
-debug:1665,Bconn working
-name=yaoxuetao's raspi
-pos=yaoxuetao's personal office
-type=raspi
----B(id)---1
----B(id)---2
-debug:2682,BTH working
-debug:1667,Bconn epoll shit
-in Bcon:1689,ptr:e0001400
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00011e0
-not verified yet:socket error:connection with board [192.168.1.108:50810]:Success
----~B(id)---()1 not connect yet
-debug:1522,Bdata working
----~B(id)---()0 not connect yet
-debug:1665,Bconn working
-name=yaoxuetao's raspi
-pos=yaoxuetao's personal office
-type=raspi
----B(id)---1
----B(id)---2
-debug:2682,BTH working
-debug:2492,
-debug:2494,
-debug:2496,
-debug:2498,
-debug:2500,
-debug:2502,
-debug:2504,
-debug:2506,
-ticktock:4049
-debug:2591,after add element
-debug:2592,before create dir
-debug:2593,after create workdir
-debug:2205,ATH working
-
-
-
-just for one time should it be
-
-
-debug:1248,before send data to B
-debug:1291,{"boardName":"yaoxuetao's stm32f103","humi":"80.0","light":"1","position":"dandelion hotel 206","smoke":"1","temp":"27.8","time":"Wed Jun  1 01:07:52 2022","type":"data"}
-glen=153666
-debug:1313,
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:07:53 2022
-debug:1667,Bconn epoll shit
-in Bcon:1689,ptr:e0001400
-not verified yet:socket error:connection with board [192.168.1.108:50816]:Success
----~B(id)---()1 not connect yet
-debug:1665,Bconn working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e00011e0
----~B(id)---()0 not connect yet
-debug:1522,Bdata working
-name=yaoxuetao's stm32f103
-pos=dandelion hotel 206
-type=stm32
-name=yaoxuetao's raspi
-pos=yaoxuetao's personal office
-type=raspi
----B(id)---1
----B(id)---2
-debug:2682,BTH working
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:08:02 2022
-debug:1667,Bconn epoll shit
-in Bcon:1689,ptr:e0002600
-high_temp=30.000000,len=150994944
-debug:1665,Bconn working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0001950
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0001950
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1667,Bconn epoll shit
-in Bcon:1689,ptr:e0002600
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0001950
-Anymous:socket error:connection with board [192.168.1.108:50832]:Success
-nodesA locked
-nodesA unlocked
----~B(id)---()1 yaoxuetao's stm32f103
-debug:1522,Bdata working
----~B(id)---()0 yaoxuetao's stm32f103
-debug:1665,Bconn working
-name=yaoxuetao's stm32f103
-pos=dandelion hotel 206
-type=stm32
-name=yaoxuetao's raspi
-pos=yaoxuetao's personal office
-type=raspi
----B(id)---1
----B(id)---2
-debug:2682,BTH working
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:08:07 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:08:09 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:08:20 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:08:30 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:08:32 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:08:36 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:08:39 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:08:42 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:08:45 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:08:53 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:09:01 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:09:11 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:09:21 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:09:23 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:09:29 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:09:38 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:09:40 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:09:42 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:09:46 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:09:54 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:10:03 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:10:07 2022
-debug:1667,Bconn epoll shit
-in Bcon:1689,ptr:e0002600
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0001950
-not verified yet:socket error:connection with board [192.168.1.108:50838]:Success
----~B(id)---()1 not connect yet
-debug:1522,Bdata working
----~B(id)---()0 not connect yet
-debug:1665,Bconn working
-name=yaoxuetao's stm32f103
-pos=dandelion hotel 206
-type=stm32
-name=yaoxuetao's raspi
-pos=yaoxuetao's personal office
-type=raspi
----B(id)---1
----B(id)---2
-debug:2682,BTH working
-debug:1667,Bconn epoll shit
-in Bcon:1689,ptr:e0002600
-high_temp=30.000000,len=150994944
-debug:1665,Bconn working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0001950
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:10:13 2022
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0001950
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0001950
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0001950
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0001950
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0001950
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1667,Bconn epoll shit
-in Bcon:1689,ptr:e0002600
-debug:1665,Bconn working
-debug:1667,Bconn epoll shit
-in Bcon:1689,ptr:e0002600
-debug:1665,Bconn working
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:10:19 2022
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0001950
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:951,
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0001950
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:10:21 2022
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0001950
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0001950
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0001950
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0001950
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0001950
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0001950
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0001950
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0001950
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:10:31 2022
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0001950
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:10:32 2022
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0001950
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:10:33 2022
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0001950
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0001950
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0001950
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0001950
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0001950
-debug:951,
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:10:39 2022
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0001950
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:10:42 2022
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0001950
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0001950
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1522,Bdata working
-debug:1667,Bconn epoll shit
-in Bcon:1689,ptr:e0002600
-Anymous:socket error:connection with board [192.168.1.108:50844]:Success
-nodesA locked
-nodesA unlocked
----~B(id)---()1 yaoxuetao's stm32f103
-debug:1665,Bconn working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0001950
----~B(id)---()0 yaoxuetao's stm32f103
-debug:1522,Bdata working
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:10:50 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:11:00 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:11:04 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:11:13 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:11:14 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:11:18 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:11:24 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:11:27 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:11:35 2022
-name=yaoxuetao's stm32f103
-pos=dandelion hotel 206
-type=stm32
-name=yaoxuetao's raspi
-pos=yaoxuetao's personal office
-type=raspi
----B(id)---1
----B(id)---2
-debug:2682,BTH working
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:11:43 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:11:45 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:11:51 2022
-debug:951,
-debug:1667,Bconn epoll shit
-in Bcon:1689,ptr:e0001950
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0002600
-not verified yet:socket error:connection with board [192.168.1.108:50958]:Success
----~B(id)---()1 not connect yet
-debug:1522,Bdata working
----~B(id)---()0 not connect yet
-debug:1665,Bconn working
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:11:59 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:12:01 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:12:09 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:12:13 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:12:16 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:12:25 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:12:30 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:12:37 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:12:46 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:12:51 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:13:01 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:13:06 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:13:16 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:13:18 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:13:23 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:13:25 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:13:27 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:13:29 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:13:33 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:13:35 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:13:38 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:13:44 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:13:47 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:13:51 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:13:52 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:13:58 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:14:07 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:14:15 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:14:17 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:14:18 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:14:24 2022
-debug:2205,ATH working
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:14:34 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:14:36 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:14:39 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:14:43 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:14:48 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:14:51 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:15:02 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:15:04 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:15:14 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:15:19 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:15:22 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:15:27 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:15:30 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:15:35 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:15:44 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:15:49 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:15:57 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:16:07 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:16:15 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:16:23 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:16:26 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:16:31 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:16:40 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:16:48 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:16:53 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:16:57 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:17:04 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:17:08 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:17:16 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:17:23 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:17:31 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:17:38 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:17:39 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:17:41 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:17:42 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:17:48 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:17:52 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:18:02 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:18:11 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:18:16 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:18:21 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:18:24 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:18:34 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:18:42 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:18:47 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:18:56 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:19:00 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:19:01 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:19:12 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:19:14 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:19:22 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:19:26 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:19:35 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:19:42 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:19:45 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:19:49 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:19:59 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:20:08 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:20:17 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:20:25 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:20:32 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:20:41 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:20:44 2022
-debug:2492,
-debug:2494,
-debug:2496,
-debug:2498,
-debug:2500,
-debug:2502,
-debug:2504,
-debug:2506,
-ticktock:4217
-debug:2591,after add element
-debug:2592,before create dir
-debug:2593,after create workdir
-debug:2205,ATH working
-
-
-
-just for one time should it be
-
-
-debug:1248,before send data to B
-debug:1291,{"boardName":"yaoxuetao's stm32f103","humi":"89.0","light":"1","position":"dandelion hotel 206","smoke":"1","temp":"28.5","time":"Wed Jun  1 01:20:48 2022","type":"data"}
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:20:51 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:21:01 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:21:07 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:21:09 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:21:13 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:21:21 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:21:22 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:21:30 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:21:33 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:21:36 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:21:43 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:21:44 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:21:54 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:22:01 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:22:05 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:22:16 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:22:22 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:22:29 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:22:39 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:22:48 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:22:53 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:22:59 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:23:00 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:23:09 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:23:15 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:23:17 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:23:25 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:23:28 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:23:35 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:23:41 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:23:49 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:23:53 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:23:59 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:24:02 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:24:09 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:24:18 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:24:27 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:24:34 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:24:42 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:24:45 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:24:46 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:24:50 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:24:52 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:25:03 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:25:05 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:25:11 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:25:20 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:25:28 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:25:32 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:25:41 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:25:49 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:25:57 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:26:02 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:26:10 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:26:18 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:26:19 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:26:28 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:26:35 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:26:40 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:26:46 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:26:57 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:26:59 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:27:08 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:27:14 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:27:20 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:27:27 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:27:31 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:27:39 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:27:42 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:27:45 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:27:54 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:27:58 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:28:07 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:28:10 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:28:15 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:28:25 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:28:33 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:28:38 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:28:45 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:28:56 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:28:59 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:29:02 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:29:12 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:29:22 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:29:24 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:29:31 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:29:33 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:29:43 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:29:45 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:29:52 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:29:57 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:30:01 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:30:11 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:30:16 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:30:26 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:30:33 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:30:35 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:30:38 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:30:41 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:30:48 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:30:56 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:30:58 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:31:00 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:31:06 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:31:09 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:31:14 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:31:20 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:31:21 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:31:30 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:31:33 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:31:37 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:31:40 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:31:48 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:31:51 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:31:52 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:31:53 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:32:03 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:32:08 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:32:18 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:32:20 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:32:29 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:32:37 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:32:42 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:32:49 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:32:53 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:32:57 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:33:00 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:33:05 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:33:13 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:33:20 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:33:22 2022
-debug:2492,
-debug:2494,
-debug:2496,
-debug:2498,
-debug:2500,
-debug:2502,
-debug:2504,
-debug:2506,
-ticktock:4339
-debug:2591,after add element
-debug:2592,before create dir
-debug:2593,after create workdir
-debug:2205,ATH working
-
-
-
-just for one time should it be
-
-
-debug:1248,before send data to B
-debug:1291,{"boardName":"yaoxuetao's stm32f103","humi":"91.0","light":"1","position":"dandelion hotel 206","smoke":"1","temp":"27.3","time":"Wed Jun  1 01:33:24 2022","type":"data"}
-glen=153666
-debug:1313,
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:33:29 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:33:30 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:33:31 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:33:34 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:33:37 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:33:42 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:33:52 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:33:56 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:34:01 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:34:02 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:34:10 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:34:20 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:34:30 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:34:39 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:34:41 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:34:51 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:34:59 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:35:04 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:35:06 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:35:07 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:35:11 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:35:20 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:35:27 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:35:29 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:35:39 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:35:41 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:35:46 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:35:52 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:36:02 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:36:06 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:36:12 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:36:18 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:36:22 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:36:27 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:36:38 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:36:46 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:36:47 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:36:56 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:36:59 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:37:06 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:37:16 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:37:27 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:37:34 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:37:44 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:37:53 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:38:01 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:38:02 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:38:10 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:38:14 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:38:16 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:38:26 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:38:33 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:38:35 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:38:42 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:38:51 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:38:53 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:39:01 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:39:04 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:39:11 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:39:21 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:39:29 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:39:33 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:39:41 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:39:42 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:39:50 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:39:57 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:39:58 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:39:59 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:40:04 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:40:08 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:40:17 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:40:23 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:40:27 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:40:33 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:40:40 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:40:43 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:40:48 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:40:56 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:41:05 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:41:12 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:41:14 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:41:15 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:41:18 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:41:21 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:41:30 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:41:31 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:41:35 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:41:42 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:41:48 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:41:58 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:42:06 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:42:11 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:42:14 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:42:18 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:42:24 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:42:27 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:42:38 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:42:44 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:42:49 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:42:56 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:43:06 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:43:11 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:43:12 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:43:15 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:43:17 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:43:27 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:43:31 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:43:38 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:43:45 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:43:49 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:43:55 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:44:02 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:44:06 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:44:14 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:44:24 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:44:26 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:44:36 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:44:40 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:44:50 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:44:57 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:45:03 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:45:09 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:45:10 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:45:17 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:45:27 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:45:36 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:45:37 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:45:38 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:45:43 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:45:51 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:45:57 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:46:02 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:46:04 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:46:13 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:46:19 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:46:22 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:46:30 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:46:39 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:46:40 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:46:45 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:46:51 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:46:56 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:46:58 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:47:06 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:47:10 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:47:13 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:47:15 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:47:18 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:47:24 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:47:25 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:47:33 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:47:44 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:47:52 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:47:53 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:48:01 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:48:11 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:48:19 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:48:28 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:48:38 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:48:41 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:48:46 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:48:53 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:49:02 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:49:10 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:49:13 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:49:18 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:49:19 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:49:21 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:49:27 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:49:28 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:49:34 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:49:43 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:49:50 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:50:00 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:50:08 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:50:18 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:50:20 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:50:29 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:50:30 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:50:38 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:50:39 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:50:49 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:50:57 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:51:06 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:51:08 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:51:13 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:51:22 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:51:32 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:51:35 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:51:43 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:51:48 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:51:58 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:52:01 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:52:04 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:52:11 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:52:19 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:52:27 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:52:36 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:52:37 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:52:40 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:52:42 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:52:48 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:52:49 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:52:56 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:53:04 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:53:05 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:53:11 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:53:20 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:53:29 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:53:37 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:53:43 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:53:54 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:54:03 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:54:06 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:54:16 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:54:17 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:54:24 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:54:34 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:54:36 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:54:38 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:54:44 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:54:50 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:54:53 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:55:02 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:55:10 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:55:12 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:55:20 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:55:26 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:55:36 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:55:45 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:55:54 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:56:04 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:56:10 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:56:11 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:56:20 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:56:21 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:56:23 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:56:27 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:56:37 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:56:40 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:56:43 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:56:48 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:56:51 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:56:53 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:57:02 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:57:03 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:57:06 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:57:15 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:57:24 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:57:28 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:57:30 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:57:37 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:57:47 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:57:51 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:57:58 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:58:07 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:58:11 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:58:15 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:58:20 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:58:25 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:58:28 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:58:33 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:58:40 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:58:47 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:58:54 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:58:59 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:59:07 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:59:15 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:59:25 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:59:32 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:59:41 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:59:44 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:59:49 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:59:50 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:59:53 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 01:59:57 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:00:01 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:00:09 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:00:12 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:00:17 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:00:20 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:00:23 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:00:26 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:00:29 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:00:36 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:00:44 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:00:46 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:00:48 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:00:49 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:00:56 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:01:02 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:01:07 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:01:10 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:01:21 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:01:22 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:01:32 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:01:37 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:01:48 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:01:55 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:01:58 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:02:08 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:02:15 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:02:20 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:02:25 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:02:34 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:02:44 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:02:51 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:02:55 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:03:04 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:03:14 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:03:23 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:03:24 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:03:26 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:03:35 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:03:39 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:03:40 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:03:46 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:03:53 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:03:55 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:04:03 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:04:07 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:04:14 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:04:16 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:04:23 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:04:31 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:04:35 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:04:41 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:04:43 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:04:45 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:04:50 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:04:57 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:04:59 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:05:01 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:05:05 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:05:10 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:05:12 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:05:17 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:05:19 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:05:23 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:05:25 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:05:29 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:05:33 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:05:36 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:05:43 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:05:45 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:05:52 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:05:59 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:06:09 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:06:13 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:06:21 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:06:28 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:06:38 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:06:42 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:06:51 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:06:57 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:07:00 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:07:03 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:07:06 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:07:12 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:07:18 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:07:26 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:07:27 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:07:36 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:07:37 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:07:43 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:07:45 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:07:48 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:07:57 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:08:02 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:08:10 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:08:13 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:08:20 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:08:31 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:08:38 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:08:41 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:08:46 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:08:51 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:08:59 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:09:03 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:09:12 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:09:17 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:09:26 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:09:35 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:09:44 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:09:53 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:09:59 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:10:01 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:10:02 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:10:11 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:10:18 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:10:27 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:10:33 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:10:43 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:10:49 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:10:57 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:11:04 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:11:13 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:11:22 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:11:28 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:11:35 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:11:42 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:11:50 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:11:53 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:12:02 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:12:06 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:12:13 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:12:15 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:12:24 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:12:30 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:12:37 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:12:46 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:12:48 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:12:52 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:13:01 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:13:03 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:13:08 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:13:10 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:13:14 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:13:21 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:13:31 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:13:42 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:13:47 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:13:54 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:14:03 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:14:05 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:14:09 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:14:13 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:14:16 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:14:20 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:14:30 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:14:38 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:14:40 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:14:49 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:14:50 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:15:00 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:15:04 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:15:13 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:15:17 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:15:21 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:15:25 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:15:34 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:15:36 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:15:43 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:15:47 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:15:57 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:16:05 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:16:13 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:16:16 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:16:26 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:16:30 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:16:35 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:16:44 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:16:45 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:16:47 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:16:56 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:17:00 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:17:04 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:17:08 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:17:14 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:17:23 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:17:25 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:17:30 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:17:40 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:17:41 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:17:50 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:17:52 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:17:56 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:18:02 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:18:07 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:18:14 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:18:15 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:18:19 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:18:30 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:18:37 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:18:44 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:18:55 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:19:01 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:19:07 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:19:09 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:19:14 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:19:15 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:19:20 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:19:26 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:19:27 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:19:32 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:19:38 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:19:45 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:19:55 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:20:03 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:20:06 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:20:14 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:20:24 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:20:34 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:20:43 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:20:53 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:21:00 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:21:02 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:21:07 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:21:10 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:21:17 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:21:18 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:21:23 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:21:33 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:21:35 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:21:38 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:21:45 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:21:47 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:21:55 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:21:57 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:22:01 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:22:03 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:22:05 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:22:12 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:22:21 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:22:26 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:22:27 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:22:33 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:22:34 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:22:44 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:22:46 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:22:51 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:23:00 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:23:03 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:23:06 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:23:16 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:23:19 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:23:29 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:23:30 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:23:37 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:23:41 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:23:49 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:23:59 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:24:07 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:24:15 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:24:16 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:24:26 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:24:30 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:24:32 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:24:38 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:24:46 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:24:52 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:25:01 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:25:11 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:25:14 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:25:23 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:25:28 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:25:34 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:25:37 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:25:44 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:25:52 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:25:58 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:26:08 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:26:16 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:26:24 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:26:28 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:26:34 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:26:37 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:26:39 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:26:46 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:26:48 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:26:55 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:27:01 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:27:12 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:27:15 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:27:19 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:27:22 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:27:26 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:27:35 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:27:41 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:27:50 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:27:56 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:27:58 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:28:08 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:28:14 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:28:19 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:28:28 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:28:38 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:28:47 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:28:57 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:29:06 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:29:11 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:29:18 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:29:26 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:29:28 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:29:32 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:29:34 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:29:44 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:29:50 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:29:56 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:30:04 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:30:10 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:30:12 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:30:15 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:30:23 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:30:27 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:30:33 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:30:44 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:30:51 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:30:57 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:31:03 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:31:11 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:31:13 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:31:20 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:31:27 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:31:33 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:31:35 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:31:39 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:31:46 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:31:56 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:32:01 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:32:05 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:32:12 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:32:13 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:32:16 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:32:23 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:32:30 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:32:34 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:32:39 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:32:41 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:32:42 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:32:46 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:32:55 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:32:57 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:33:03 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:33:09 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:33:18 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:33:21 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:33:27 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:33:32 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:33:40 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:33:42 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:33:46 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:33:55 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:34:03 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:34:13 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:34:19 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:34:27 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:34:32 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:34:37 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:34:44 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:34:54 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:35:04 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:35:05 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:35:08 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:35:10 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:35:19 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:35:27 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:35:36 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:35:42 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:35:52 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:36:01 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:36:10 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:36:20 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:36:23 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:36:27 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:36:34 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:36:43 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:36:52 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:36:54 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:36:58 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:37:04 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:37:09 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:37:16 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:37:21 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:37:24 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:37:31 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:37:32 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:37:42 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:37:45 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:37:52 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:38:00 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:38:04 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:38:10 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:38:19 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:38:26 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:38:36 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:38:46 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:38:51 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:39:01 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:39:06 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:39:12 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:39:21 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:39:26 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:39:31 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:39:40 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:39:49 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:39:51 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:39:58 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:40:06 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:40:11 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:40:12 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:40:14 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:40:16 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:40:25 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:40:33 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:40:37 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:40:44 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:40:52 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:40:57 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:41:06 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:41:12 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:41:15 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:41:18 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:41:19 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:41:29 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:41:40 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:41:42 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:41:51 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:41:55 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:42:06 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:42:11 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:42:20 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:42:31 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:42:40 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:42:46 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:42:54 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:43:03 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:43:12 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:43:19 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:43:23 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:43:27 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:43:36 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:43:43 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:43:50 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:43:57 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:44:01 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:44:11 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:44:14 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:44:17 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:44:22 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:44:26 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:44:34 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:44:40 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:44:46 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:44:56 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:45:01 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:45:06 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:45:08 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:45:14 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:45:24 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:45:27 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:45:36 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:45:47 2022
-name=yaoxuetao's raspi
-pos=yaoxuetao's personal office
-type=raspi
----B(id)---1
----B(id)---2
-debug:2682,BTH working
-debug:1667,Bconn epoll shit
-in Bcon:1689,ptr:e0002600
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0002720
-not verified yet:socket error:connection with board [192.168.1.108:55864]:Success
----~B(id)---()1 not connect yet
-debug:1522,Bdata working
----~B(id)---()0 not connect yet
-debug:1665,Bconn working
-debug:951,
-name=yaoxuetao's raspi
-pos=yaoxuetao's personal office
-type=raspi
----B(id)---1
----B(id)---2
-debug:2682,BTH working
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:45:49 2022
-debug:1667,Bconn epoll shit
-in Bcon:1689,ptr:e0001400
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0001800
-not verified yet:socket error:connection with board [192.168.1.108:55870]:Success
----~B(id)---()1 not connect yet
-debug:1522,Bdata working
----~B(id)---()0 not connect yet
-debug:1665,Bconn working
-name=yaoxuetao's raspi
-pos=yaoxuetao's personal office
-type=raspi
----B(id)---1
----B(id)---2
-debug:2682,BTH working
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:45:59 2022
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:46:05 2022
-debug:1667,Bconn epoll shit
-in Bcon:1689,ptr:e0001400
-high_temp=30.000000,len=150994944
-debug:1665,Bconn working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0000fa0
-{"type":"month data","board name":"yaoxuetao's raspi"}03"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0000fa0
-{"type":"month data","board name":"yaoxuetao's raspi"}03"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0000fa0
-{"type":"month data","board name":"yaoxuetao's raspi"}03"}
-debug:1522,Bdata working
-debug:1667,Bconn epoll shit
-in Bcon:1689,ptr:e0001400
-debug:1665,Bconn working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0000fa0
-debug:1667,Bconn epoll shit
-in Bcon:1689,ptr:e0001400
-{"type":"month data","board name":"yaoxuetao's raspi"}03"}
-debug:1522,Bdata working
-debug:1665,Bconn working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0000fa0
-{"type":"month data","board name":"yaoxuetao's raspi"}03"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0000fa0
-{"type":"month data","board name":"yaoxuetao's raspi"}03"}
-debug:1522,Bdata working
-debug:1667,Bconn epoll shit
-in Bcon:1689,ptr:e0001400
-mysql_query() select data succeed
-debug:1665,Bconn working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0000fa0
-{"type":"month data","board name":"yaoxuetao's raspi"}03"}
-debug:1522,Bdata working
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:46:15 2022
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0000fa0
-{"type":"month data","board name":"yaoxuetao's raspi"}03"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0000fa0
-{"type":"month data","board name":"yaoxuetao's raspi"}03"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0000fa0
-{"type":"month data","board name":"yaoxuetao's raspi"}03"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0000fa0
-{"type":"month data","board name":"yaoxuetao's raspi"}03"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0000fa0
-{"type":"month data","board name":"yaoxuetao's raspi"}03"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0000fa0
-{"type":"month data","board name":"yaoxuetao's raspi"}03"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0000fa0
-{"type":"month data","board name":"yaoxuetao's raspi"}03"}
-debug:1522,Bdata working
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:46:22 2022
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0000fa0
-{"type":"month data","board name":"yaoxuetao's raspi"}03"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0000fa0
-{"type":"month data","board name":"yaoxuetao's raspi"}03"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0000fa0
-{"type":"month data","board name":"yaoxuetao's raspi"}03"}
-debug:1522,Bdata working
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:46:26 2022
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0000fa0
-{"type":"month data","board name":"yaoxuetao's raspi"}03"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0000fa0
-{"type":"month data","board name":"yaoxuetao's raspi"}03"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0000fa0
-{"type":"month data","board name":"yaoxuetao's raspi"}03"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0000fa0
-{"type":"month data","board name":"yaoxuetao's raspi"}03"}
-debug:1667,Bconn epoll shit
-in Bcon:1689,ptr:e0001400
-Anymous:socket error:connection with board [192.168.1.108:55876]:Success
-nodesA locked
-nodesA unlocked
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0000fa0
----~B(id)---()1 yaoxuetao's raspi
-debug:1522,Bdata working
----~B(id)---()0 yaoxuetao's raspi
-debug:1665,Bconn working
-name=yaoxuetao's raspi
-pos=yaoxuetao's personal office
-type=raspi
----B(id)---1
----B(id)---2
-debug:2682,BTH working
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:46:34 2022
-debug:1667,Bconn epoll shit
-in Bcon:1689,ptr:e0001400
-high_temp=30.000000,len=150994944
-debug:1665,Bconn working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0001800
-{"type":"month data","board name":"yaoxuetao's raspi"}03"}
-debug:1522,Bdata working
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:46:35 2022
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0001800
-{"type":"month data","board name":"yaoxuetao's raspi"}03"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0001800
-{"type":"month data","board name":"yaoxuetao's raspi"}03"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0001800
-{"type":"month data","board name":"yaoxuetao's raspi"}03"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0001800
-{"type":"month data","board name":"yaoxuetao's raspi"}03"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0001800
-{"type":"month data","board name":"yaoxuetao's raspi"}03"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0001800
-{"type":"month data","board name":"yaoxuetao's raspi"}03"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0001800
-{"type":"month data","board name":"yaoxuetao's raspi"}03"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0001800
-{"type":"month data","board name":"yaoxuetao's raspi"}03"}
-debug:1522,Bdata working
-debug:951,
-/home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:46:43 2022
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0001800
-{"type":"month data","board name":"yaoxuetao's raspi"}03"}
-debug:1522,Bdata working
-debug:1526,Bconn epoll shit
-in Bdata:1547,ptr:e0001800
-{"type":"month data","board name":"yaoxuetao's raspi"}03"}
-debug:1522,Bdata working
+495:board[192.168.1.222:50282] has disconnected:Success
 stackV lock
-debug:2316,
 stackV unlock
-debug:2492,
-debug:2494,
-debug:2496,
-debug:2498,
-debug:2500,
-debug:2502,
+debug:546,
 debug:2504,
 debug:2506,
-debug:2573,before add element
-debug:2591,after add element
-debug:2592,before create dir
-debug:2593,after create workdir
-ticktock:4847
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:5809
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
 debug:2205,ATH working
 stackV lock
-debug:2316,
+debug:2320,
 stackV unlock
+495:board[192.168.1.222:50284] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+ticktock:5810
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50286] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:5811
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50288] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:5812
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50290] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:5813
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50292] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:5814
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50294] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:5815
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50296] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:5816
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50298] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:5817
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50300] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+ticktock:5818
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50302] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:5819
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50304] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+ticktock:5820
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50306] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:5821
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50308] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+ticktock:5822
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50310] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:5823
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50312] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:5824
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50314] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:5836
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50318] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:5837
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50320] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+stackV lock
+stackV unlock
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:5845
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+stackV lock
+stackV unlock
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+stackV lock
+stackV unlock
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50324] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+ticktock:5864
+stackV lock
+debug:2320,
+stackV unlock
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+495:board[192.168.1.222:50330] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2585,before add element
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+ticktock:5865
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50332] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:5866
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50348] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+debug:2603,after add element
+debug:2604,before create dir
+ticktock:5868
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50350] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+ticktock:5869
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50352] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+debug:2603,after add element
+ticktock:5870
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50316] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:5871
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+495:board[192.168.1.222:50346] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2585,before add element
+ticktock:5872
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50354] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+ticktock:5873
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50356] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:5874
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50358] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+debug:2603,after add element
+ticktock:5875
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+495:board[192.168.1.222:50360] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2585,before add element
+ticktock:5876
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50364] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:5888
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50366] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:5889
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50368] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:5890
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50370] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:5898
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50372] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+ticktock:5899
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50374] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:5900
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50376] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:5901
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50378] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:5902
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50362] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+ticktock:5903
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50380] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:5904
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50382] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:5905
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50386] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:5906
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50384] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:5907
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50410] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+ticktock:5908
+stackV lock
+debug:2320,
+stackV unlock
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+495:board[192.168.1.222:50418] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2585,before add element
+ticktock:5909
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+495:board[192.168.1.222:50406] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2585,before add element
+ticktock:5910
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50422] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:5911
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:5912
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50426] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:5913
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50408] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+ticktock:5914
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50432] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:5926
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+ticktock:5927
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50392] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:5928
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50390] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+ticktock:5929
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50388] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:5937
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50342] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:5938
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50334] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:5939
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+debug:2603,after add element
+ticktock:5940
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+
+
+
+just for one time should it be
+
+
+495:board[192.168.1.222:50338] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+495:board[192.168.1.222:50336] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+debug:2603,after add element
+ticktock:5941
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:5942
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:5943
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50404] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+495:board[192.168.1.222:50396] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+ticktock:5944
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+495:board[192.168.1.222:50412] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+495:board[192.168.1.222:50394] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+495:board[192.168.1.222:50428] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+495:board[192.168.1.222:50424] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+495:board[192.168.1.222:50250] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+495:board[192.168.1.222:50248] has disconnected:Success
+stackV lock
+stackV unlock
+debug:546,
+stackV lock
+stackV unlock
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+stackV lock
+stackV unlock
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+stackV lock
+stackV unlock
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+stackV lock
+stackV unlock
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+stackV lock
+stackV unlock
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+stackV lock
+stackV unlock
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+stackV lock
+stackV unlock
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:6004
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+
+
+
+just for one time should it be
+
+
+stackV lock
+debug:2320,
+stackV unlock
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:6030
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:6031
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+ticktock:6032
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:6033
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:6034
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+ticktock:6035
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:6036
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:6037
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:6038
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:6039
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:6040
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:6041
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:6042
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+ticktock:6043
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:6044
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:6045
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:6046
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:6047
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:6048
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+stackV lock
+debug:2320,
+stackV unlock
+debug:2504,
+debug:2506,
+debug:2508,
+debug:2510,
+debug:2512,
+debug:2514,
+debug:2516,
+debug:2518,
+debug:2585,before add element
+ticktock:6049
+debug:2603,after add element
+debug:2604,before create dir
+debug:2605,after create workdir
+debug:2205,ATH working
+
+
+
+just for one time should it be
+
+
+
+
+
+just for one time should it be
+
+
+
+
+
+just for one time should it be
+
+
+
+
+
+just for one time should it be
+
+
+
+
+
+just for one time should it be
+
+
+
+
+
+just for one time should it be
+
+
+
+
+
+just for one time should it be
+
+
+
+
+
+just for one time should it be
+
+
+
+
+
+just for one time should it be
+
+
+
+
+
+just for one time should it be
+
+
+
+
+
+just for one time should it be
+
+
+
+
+
+just for one time should it be
+
+
+
+
+
+just for one time should it be
+
+
+
+
+
+just for one time should it be
+
+
+
+
+
+just for one time should it be
+
+
+
+
+
+just for one time should it be
+
+
+
+
+
+just for one time should it be
+
+
+
+
+
+just for one time should it be
+
+
+
+
+
+just for one time should it be
+
+
+
+
+
+just for one time should it be
+
+
+name=yaoxuetao's raspi17
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi16
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi3
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi4
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi1
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi0
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi8
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi6
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi19
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi9
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi13
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi14
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi18
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi2
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi15
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi11
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi12
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi7
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi10
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi5
+pos=yaoxuetao's personal office
+type=raspi
+---B(id)---1
+---B(id)---2
+debug:2694,BTH working
+debug:1667,Bconn epoll shit
+in Bcon:1689,ptr:e0001c30
+debug:1526,Bconn epoll shit
+in Bdata:1547,ptr:e00085c0
+not verified yet:socket error:connection with board [192.168.1.108:56594]:Success
+---~B(id)---()1 not connect yet
+debug:1522,Bdata working
+---~B(id)---()0 not connect yet
+debug:1665,Bconn working
+name=yaoxuetao's raspi17
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi16
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi3
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi4
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi1
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi0
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi8
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi6
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi19
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi9
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi13
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi14
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi18
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi2
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi15
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi11
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi12
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi7
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi10
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi5
+pos=yaoxuetao's personal office
+type=raspi
+---B(id)---1
+---B(id)---2
+debug:2694,BTH working
+debug:1667,Bconn epoll shit
+debug:1526,Bconn epoll shit
+in Bdata:1547,ptr:e0008330
+in Bcon:1689,ptr:e0008240
+not verified yet:socket error:connection with board [192.168.1.108:56600]:Success
+---~B(id)---()1 not connect yet
+debug:1522,Bdata working
+---~B(id)---()0 not connect yet
+debug:1665,Bconn working
+name=yaoxuetao's raspi17
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi16
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi3
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi4
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi1
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi0
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi8
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi6
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi19
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi9
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi13
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi14
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi18
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi2
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi15
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi11
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi12
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi7
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi10
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi5
+pos=yaoxuetao's personal office
+type=raspi
+---B(id)---1
+---B(id)---2
+debug:2694,BTH working
+debug:1667,Bconn epoll shit
+in Bcon:1689,ptr:e00083c0
+not verified yet:socket error:connection with board [192.168.1.108:56606]:Success
+---~B(id)---()1 not connect yet
+debug:1665,Bconn working
+debug:1526,Bconn epoll shit
+in Bdata:1547,ptr:e00084b0
+---~B(id)---()0 not connect yet
+debug:1522,Bdata working
+name=yaoxuetao's raspi17
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi16
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi3
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi4
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi1
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi0
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi8
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi6
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi19
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi9
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi13
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi14
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi18
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi2
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi15
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi11
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi12
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi7
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi10
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi5
+pos=yaoxuetao's personal office
+type=raspi
+---B(id)---1
+---B(id)---2
+debug:2694,BTH working
+debug:1667,Bconn epoll shit
+in Bcon:1689,ptr:e0008650
+not verified yet:socket error:connection with board [192.168.1.108:56612]:Success
+---~B(id)---()1 not connect yet
+debug:1665,Bconn working
+debug:1526,Bconn epoll shit
+in Bdata:1547,ptr:e0008e70
+---~B(id)---()0 not connect yet
+debug:1522,Bdata working
+name=yaoxuetao's raspi17
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi16
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi3
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi4
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi1
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi0
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi8
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi6
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi19
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi9
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi13
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi14
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi18
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi2
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi15
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi11
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi12
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi7
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi10
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi5
+pos=yaoxuetao's personal office
+type=raspi
+---B(id)---1
+---B(id)---2
+debug:2694,BTH working
+debug:1667,Bconn epoll shit
+in Bcon:1689,ptr:e00086e0
+debug:1526,Bconn epoll shit
+in Bdata:1547,ptr:e00087d0
+not verified yet:socket error:connection with board [192.168.1.108:56632]:Success
+---~B(id)---()1 not connect yet
+debug:1522,Bdata working
+---~B(id)---()0 not connect yet
+debug:1665,Bconn working
+name=yaoxuetao's raspi17
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi16
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi3
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi4
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi1
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi0
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi8
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi6
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi19
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi9
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi13
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi14
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi18
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi2
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi15
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi11
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi12
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi7
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi10
+pos=yaoxuetao's personal office
+type=raspi
+name=yaoxuetao's raspi5
+pos=yaoxuetao's personal office
+type=raspi
+---B(id)---1
+---B(id)---2
+debug:2694,BTH working
+debug:1667,Bconn epoll shit
+in Bcon:1689,ptr:e0008860
+debug:1526,Bconn epoll shit
+in Bdata:1547,ptr:e0008950
+not verified yet:socket error:connection with board [192.168.1.108:56648]:Success
+---~B(id)---()1 not connect yet
+debug:1522,Bdata working
+---~B(id)---()0 not connect yet

@@ -16061,3 +16061,45 @@ in line 22src = /home/yaoxuetao/yaoxuetao's raspi/photos/Wed Jun  1 02:46:43 202
 
 in line 25in opencv
 in line 27in opencv 
+
+
+<normal>
+
+in line 22src = /home/yaoxuetao/yaoxuetao's raspi0/photos/Wed Jun  1 03:04:36 2022,dest=/home/yaoxuetao/yaoxuetao's raspi0/faces/Wed Jun  1 03:04:36 2022.jpg
+
+<\normal>
+
+in line 25in opencv
+in line 27in opencv 
+
+
+<normal>
+
+in line 22src = /home/yaoxuetao/yaoxuetao's raspi0/photos/Wed Jun  1 03:04:48 2022,dest=/home/yaoxuetao/yaoxuetao's raspi0/faces/Wed Jun  1 03:04:48 2022.jpg
+
+<\normal>
+
+in line 25in opencv
+in line 27in opencv 
+
+
+<normal>
+
+in line 22src = /home/yaoxuetao/yaoxuetao's raspi3/photos/Wed Jun  1 03:04:36 2022,dest=/home/yaoxuetao/yaoxuetao's raspi3/faces/Wed Jun  1 03:04:36 2022.jpg
+
+<\normal>
+
+in line 25in opencv
+in line 27in opencv 
+in line 55in opencv:face detected
+
+
+<normal>
+
+in line 22src = /home/yaoxuetao/yaoxuetao's raspi3/photos/Wed Jun  1 03:04:51 2022,dest=/home/yaoxuetao/yaoxuetao's raspi3/faces/Wed Jun  1 03:04:51 2022.jpg
+
+<\normal>
+
+in line 25in opencv
+in line 27in opencv 
+clean check error: Success

@@ -2226,7 +2226,7 @@ void *AThread(void *arg)
         }
         n = recv(connfdData, &len_tmp, sizeof(len_tmp), MSG_WAITALL);
 
-        if (n == 0 | errno == ECONNRESET)
+        if (n == 0 | errno == ECONNRESET | errno == EAGAIN)
         {
             FTDEBUG("AThread.log", "AThread recv==0|errno == ECONNRESET", "errno=%d,%s", errno, strerror(errno));
             FTDEBUG("A.log", "AThread recv==0|errno == ECONNRESET", "errno=%d,%s", errno, strerror(errno));
@@ -2234,19 +2234,19 @@ void *AThread(void *arg)
             close(connfdData);
             continue;
         }
-        else if (n < 0 && errno != ECONNRESET)
+        else if (n < 0 && errno != ECONNRESET && errno != EAGAIN)
         {
             FTDEBUG("AThread.log", "AThread recv<0", "errno=%d,%s", errno, strerror(errno));
             exit(1);
         }
         len_tmp = ntohl(len_tmp);
         n = recv(connfdData, message_buffer, len_tmp, MSG_WAITALL);
-        if (n < 0 && errno != ECONNRESET)
+        if (n < 0 && errno != ECONNRESET && errno != EAGAIN)
         {
             FTDEBUG("AThread.log", "AThread recv<0", "errno=%d,%s", errno, strerror(errno));
             exit(1);
         }
-        if (n == 0 | errno == ECONNRESET)
+        if (n == 0 | errno == ECONNRESET | errno == EAGAIN)
         {
             FTDEBUG("AThread.log", "AThread recv==0|errno == ECONNRESET", "errno=%d,%s", errno, strerror(errno));
             FTDEBUG("A.log", "AThread recv==0|errno == ECONNRESET", "errno=%d,%s", errno, strerror(errno));
@@ -2259,14 +2259,14 @@ void *AThread(void *arg)
         // recv type
         FTDEBUG("AThread.log", "message_buffer", "%s", message_buffer);
         n = recv(connfdData, &len_tmp, sizeof(len_tmp), MSG_WAITALL);
-        if (n == 0 | errno == ECONNRESET)
+        if (n == 0 | errno == ECONNRESET | errno == EAGAIN)
         {
             FTDEBUG("AThread.log", "AThread recv==0|errno == ECONNRESET", "errno=%d,%s", errno, strerror(errno));
             FTDEBUG("A.log", "(%s)AThread recv==0|errno == ECONNRESET", "errno=%d,%s", message_buffer, errno, strerror(errno));
             close(connfdData);
             continue;
         }
-        else if (n < 0 && errno != ECONNRESET)
+        else if (n < 0 && errno != ECONNRESET && errno != EAGAIN)
         {
             FTDEBUG("AThread.log", "AThread recv<0", "errno=%d,%s", message_buffer, errno, strerror(errno));
             exit(1);
@@ -2274,12 +2274,12 @@ void *AThread(void *arg)
         len_tmp = ntohl(len_tmp);
 
         n = recv(connfdData, type_buffer, len_tmp, MSG_WAITALL);
-        if (n < 0 && errno != ECONNRESET)
+        if (n < 0 && errno != ECONNRESET && errno != EAGAIN)
         {
             FTDEBUG("AThread.log", "AThread recv<0", "errno=%d,%s", message_buffer, errno, strerror(errno));
             exit(1);
         }
-        if (n == 0 | errno == ECONNRESET)
+        if (n == 0 | errno == ECONNRESET | errno == EAGAIN)
         {
             FTDEBUG("AThread.log", "AThread recv==0|errno == ECONNRESET", "errno=%d,%s", errno, strerror(errno));
             FTDEBUG("A.log", "(%s)AThread recv==0|errno == ECONNRESET", "errno=%d,%s", message_buffer, errno, strerror(errno));
@@ -2427,7 +2427,12 @@ void *AThread(void *arg)
             }
         }
         // TO DO 这样的逻辑可能导致卡死，需要设置超时
-
+        insurance = {0, 0};
+        if (setsockopt(connfdData, SOL_SOCKET, SO_RCVTIMEO, &insurance, sizeof(insurance)) < 0)
+        {
+            FTDEBUG("AThread.log", "set data recv timeout failed", "errno=(%s,%d)", strerror(errno), errno);
+            exit(1);
+        }
         FD_ZERO(&accept_tout);
         FD_SET(listenAgraph, &accept_tout);
         maxfd = listenAgraph + 1;
