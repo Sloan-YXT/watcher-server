@@ -2392,7 +2392,8 @@ void *AThread(void *arg)
             if (code == -1)
             {
                 n = recv(connfdData, message_buffer, 100, 0);
-                FTDEBUG("A.log", "AThread send<0", "(%s)n=%d", message_buffer, n);
+                FTDEBUG("AThread.log", "AThread code == -1", "(%s)n=%d", message_buffer, n);
+                FTDEBUG("A.log", "AThread code == -1", "(%s)n=%d", message_buffer, n);
                 close(connfdData);
                 continue;
             }
@@ -2401,6 +2402,18 @@ void *AThread(void *arg)
         else
         {
             code = -1;
+            // TODO
+            nodesA.lock();
+            n = nodesA.count(message_buffer);
+            // printf("in 1432:%s,%d\n",message_buffer,n);
+            nodesA.unlock();
+            if (n != 0)
+            {
+                FTDEBUG("A.log", "AThread code==-1(stm32)", "(%s)code=%d", message_buffer, code);
+                FTDEBUG("AThread.log", "AThread code==-1(stm32)", "(%s)code=%d", message_buffer, code);
+                close(connfdData);
+                continue;
+            }
         }
         // TO DO 这样的逻辑可能导致卡死，需要设置超时
 
