@@ -1,0 +1,144 @@
+
+
+<tick select == 0>
+
+in line 1476(yaoxuetao's stm32f103)errno=0,Success,n=0
+
+<\tick select == 0>
+
+
+
+<AThread select graph==0>
+
+in line 2434errno=0,Success
+
+<\AThread select graph==0>
+
+
+
+<tick select == 0>
+
+in line 1476(yaoxuetao's stm32f103)errno=0,Success,n=0
+
+<\tick select == 0>
+
+
+
+<graph recv == 0>
+
+in line 867(48170,yaoxuetao's raspi)errno=0,Success,n=0
+
+<\graph recv == 0>
+
+
+
+<tick recv == 0>
+
+in line 1488(47428,yaoxuetao's raspi)errno=0,Success,n=0
+
+<\tick recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(49706,yaoxuetao's raspi)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick select == 0>
+
+in line 1476(yaoxuetao's raspi)errno=0,Success,n=0
+
+<\tick select == 0>
+
+
+
+<graph recv == 0>
+
+in line 982(48340,yaoxuetao's raspi)errno=0,Success,n=2863
+
+<\graph recv == 0>
+
+
+
+<data recv == 0>
+
+in line 492(49876,yaoxuetao's raspi)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<tick select == 0>
+
+in line 1476(yaoxuetao's raspi)errno=0,Success,n=0
+
+<\tick select == 0>
+
+
+
+<data recv == 0>
+
+in line 492(49888,yaoxuetao's raspi)errno=0,Success,n=0
+
+<\data recv == 0>
+
+
+
+<graph recv == 0>
+
+in line 982(48352,yaoxuetao's raspi)errno=0,Success,n=18820
+
+<\graph recv == 0>
+
+
+
+<tick select == 0>
+
+in line 1476(yaoxuetao's stm32f103)errno=0,Success,n=0
+
+<\tick select == 0>
+
+
+
+<AThread select graph==0>
+
+in line 2434errno=0,Success
+
+<\AThread select graph==0>
+
+
+
+<AThread code==-1(stm32)>
+
+in line 2419(yaoxuetao's stm32f103)code=-1
+
+<\AThread code==-1(stm32)>
+
+
+
+<tick select == 0>
+
+in line 1476(yaoxuetao's stm32f103)errno=0,Success,n=0
+
+<\tick select == 0>
+
+
+
+<tick select == 0>
+
+in line 1476(yaoxuetao's stm32f103)errno=0,Success,n=0
+
+<\tick select == 0>
+
+
+
+<tick select == 0>
+
+in line 1476(yaoxuetao's stm32f103)errno=0,Success,n=0
+
+<\tick select == 0>
+

@@ -2,7 +2,7 @@
 
 <message_buffer>
 
-in line 2249yaoxuetao's stm32f103
+in line 2256yaoxuetao's stm32f103
 
 <\message_buffer>
 
@@ -10,7 +10,7 @@ in line 2249yaoxuetao's stm32f103
 
 <accept port>
 
-in line 2449graph=(yaoxuetao's stm32f103,7172)
+in line 2456graph=(yaoxuetao's stm32f103,18538)
 
 <\accept port>
 
@@ -18,7 +18,7 @@ in line 2449graph=(yaoxuetao's stm32f103,7172)
 
 <accept port>
 
-in line 2480tick=(yaoxuetao's stm32f103,38908)
+in line 2487tick=(yaoxuetao's stm32f103,35537)
 
 <\accept port>
 
@@ -26,7 +26,7 @@ in line 2480tick=(yaoxuetao's stm32f103,38908)
 
 <message_buffer>
 
-in line 2249yaoxuetao's raspi0
+in line 2256yaoxuetao's raspi
 
 <\message_buffer>
 
@@ -34,7 +34,7 @@ in line 2249yaoxuetao's raspi0
 
 <accept port>
 
-in line 2400data=(yaoxuetao's raspi0,33000)
+in line 2407data=(yaoxuetao's raspi,49706)
 
 <\accept port>
 
@@ -42,7 +42,7 @@ in line 2400data=(yaoxuetao's raspi0,33000)
 
 <accept port>
 
-in line 2449graph=(yaoxuetao's raspi0,50740)
+in line 2456graph=(yaoxuetao's raspi,48170)
 
 <\accept port>
 
@@ -50,7 +50,7 @@ in line 2449graph=(yaoxuetao's raspi0,50740)
 
 <accept port>
 
-in line 2480tick=(yaoxuetao's raspi0,35878)
+in line 2487tick=(yaoxuetao's raspi,47428)
 
 <\accept port>
 
@@ -58,7 +58,23 @@ in line 2480tick=(yaoxuetao's raspi0,35878)
 
 <message_buffer>
 
-in line 2249yaoxuetao's raspi1
+in line 2256yaoxuetao's stm32f103
+
+<\message_buffer>
+
+
+
+<AThread select graph==0>
+
+in line 2433errno=0,Success
+
+<\AThread select graph==0>
+
+
+
+<message_buffer>
+
+in line 2256yaoxuetao's stm32f103
 
 <\message_buffer>
 
@@ -66,7 +82,7 @@ in line 2249yaoxuetao's raspi1
 
 <accept port>
 
-in line 2400data=(yaoxuetao's raspi1,33002)
+in line 2456graph=(yaoxuetao's stm32f103,22863)
 
 <\accept port>
 
@@ -74,15 +90,7 @@ in line 2400data=(yaoxuetao's raspi1,33002)
 
 <accept port>
 
-in line 2449graph=(yaoxuetao's raspi1,50744)
-
-<\accept port>
-
-
-
-<accept port>
-
-in line 2480tick=(yaoxuetao's raspi1,35882)
+in line 2487tick=(yaoxuetao's stm32f103,47974)
 
 <\accept port>
 
@@ -90,7 +98,7 @@ in line 2480tick=(yaoxuetao's raspi1,35882)
 
 <message_buffer>
 
-in line 2249yaoxuetao's raspi23
+in line 2256yaoxuetao's raspi
 
 <\message_buffer>
 
@@ -98,7 +106,7 @@ in line 2249yaoxuetao's raspi23
 
 <accept port>
 
-in line 2400data=(yaoxuetao's raspi23,33004)
+in line 2407data=(yaoxuetao's raspi,49876)
 
 <\accept port>
 
@@ -106,7 +114,7 @@ in line 2400data=(yaoxuetao's raspi23,33004)
 
 <accept port>
 
-in line 2449graph=(yaoxuetao's raspi23,50748)
+in line 2456graph=(yaoxuetao's raspi,48340)
 
 <\accept port>
 
@@ -114,7 +122,7 @@ in line 2449graph=(yaoxuetao's raspi23,50748)
 
 <accept port>
 
-in line 2480tick=(yaoxuetao's raspi23,35886)
+in line 2487tick=(yaoxuetao's raspi,47598)
 
 <\accept port>
 
@@ -122,7 +130,7 @@ in line 2480tick=(yaoxuetao's raspi23,35886)
 
 <message_buffer>
 
-in line 2249yaoxuetao's raspi10
+in line 2256yaoxuetao's stm32f103
 
 <\message_buffer>
 
@@ -130,7 +138,7 @@ in line 2249yaoxuetao's raspi10
 
 <accept port>
 
-in line 2400data=(yaoxuetao's raspi10,33006)
+in line 2456graph=(yaoxuetao's stm32f103,4680)
 
 <\accept port>
 
@@ -138,15 +146,7 @@ in line 2400data=(yaoxuetao's raspi10,33006)
 
 <accept port>
 
-in line 2449graph=(yaoxuetao's raspi10,50752)
-
-<\accept port>
-
-
-
-<accept port>
-
-in line 2480tick=(yaoxuetao's raspi10,35890)
+in line 2487tick=(yaoxuetao's stm32f103,41245)
 
 <\accept port>
 
@@ -154,7 +154,7 @@ in line 2480tick=(yaoxuetao's raspi10,35890)
 
 <message_buffer>
 
-in line 2249yaoxuetao's raspi11
+in line 2256yaoxuetao's raspi
 
 <\message_buffer>
 
@@ -162,7 +162,7 @@ in line 2249yaoxuetao's raspi11
 
 <accept port>
 
-in line 2400data=(yaoxuetao's raspi11,33008)
+in line 2407data=(yaoxuetao's raspi,49888)
 
 <\accept port>
 
@@ -170,7 +170,7 @@ in line 2400data=(yaoxuetao's raspi11,33008)
 
 <accept port>
 
-in line 2449graph=(yaoxuetao's raspi11,50756)
+in line 2456graph=(yaoxuetao's raspi,48352)
 
 <\accept port>
 
@@ -178,7 +178,7 @@ in line 2449graph=(yaoxuetao's raspi11,50756)
 
 <accept port>
 
-in line 2480tick=(yaoxuetao's raspi11,35894)
+in line 2487tick=(yaoxuetao's raspi,47610)
 
 <\accept port>
 
@@ -186,7 +186,23 @@ in line 2480tick=(yaoxuetao's raspi11,35894)
 
 <message_buffer>
 
-in line 2249yaoxuetao's raspi15
+in line 2256yaoxuetao's stm32f103
+
+<\message_buffer>
+
+
+
+<AThread select graph==0>
+
+in line 2433errno=0,Success
+
+<\AThread select graph==0>
+
+
+
+<message_buffer>
+
+in line 2256yaoxuetao's raspi
 
 <\message_buffer>
 
@@ -194,7 +210,7 @@ in line 2249yaoxuetao's raspi15
 
 <accept port>
 
-in line 2400data=(yaoxuetao's raspi15,33010)
+in line 2407data=(yaoxuetao's raspi,49908)
 
 <\accept port>
 
@@ -202,7 +218,7 @@ in line 2400data=(yaoxuetao's raspi15,33010)
 
 <accept port>
 
-in line 2449graph=(yaoxuetao's raspi15,50760)
+in line 2456graph=(yaoxuetao's raspi,48372)
 
 <\accept port>
 
@@ -210,7 +226,7 @@ in line 2449graph=(yaoxuetao's raspi15,50760)
 
 <accept port>
 
-in line 2480tick=(yaoxuetao's raspi15,35898)
+in line 2487tick=(yaoxuetao's raspi,47630)
 
 <\accept port>
 
@@ -218,7 +234,7 @@ in line 2480tick=(yaoxuetao's raspi15,35898)
 
 <message_buffer>
 
-in line 2249yaoxuetao's raspi16
+in line 2256yaoxuetao's stm32f103
 
 <\message_buffer>
 
@@ -226,7 +242,7 @@ in line 2249yaoxuetao's raspi16
 
 <accept port>
 
-in line 2400data=(yaoxuetao's raspi16,33012)
+in line 2456graph=(yaoxuetao's stm32f103,39354)
 
 <\accept port>
 
@@ -234,15 +250,7 @@ in line 2400data=(yaoxuetao's raspi16,33012)
 
 <accept port>
 
-in line 2449graph=(yaoxuetao's raspi16,50764)
-
-<\accept port>
-
-
-
-<accept port>
-
-in line 2480tick=(yaoxuetao's raspi16,35902)
+in line 2487tick=(yaoxuetao's stm32f103,16879)
 
 <\accept port>
 
@@ -250,7 +258,23 @@ in line 2480tick=(yaoxuetao's raspi16,35902)
 
 <message_buffer>
 
-in line 2249yaoxuetao's raspi18
+in line 2256yaoxuetao's stm32f103
+
+<\message_buffer>
+
+
+
+<AThread code==-1(stm32)>
+
+in line 2420(yaoxuetao's stm32f103)code=-1
+
+<\AThread code==-1(stm32)>
+
+
+
+<message_buffer>
+
+in line 2256yaoxuetao's stm32f103
 
 <\message_buffer>
 
@@ -258,7 +282,7 @@ in line 2249yaoxuetao's raspi18
 
 <accept port>
 
-in line 2400data=(yaoxuetao's raspi18,33014)
+in line 2456graph=(yaoxuetao's stm32f103,43770)
 
 <\accept port>
 
@@ -266,15 +290,7 @@ in line 2400data=(yaoxuetao's raspi18,33014)
 
 <accept port>
 
-in line 2449graph=(yaoxuetao's raspi18,50768)
-
-<\accept port>
-
-
-
-<accept port>
-
-in line 2480tick=(yaoxuetao's raspi18,35906)
+in line 2487tick=(yaoxuetao's stm32f103,21097)
 
 <\accept port>
 
@@ -282,7 +298,7 @@ in line 2480tick=(yaoxuetao's raspi18,35906)
 
 <message_buffer>
 
-in line 2249yaoxuetao's raspi4
+in line 2256yaoxuetao's stm32f103
 
 <\message_buffer>
 
@@ -290,7 +306,7 @@ in line 2249yaoxuetao's raspi4
 
 <accept port>
 
-in line 2400data=(yaoxuetao's raspi4,33016)
+in line 2456graph=(yaoxuetao's stm32f103,12721)
 
 <\accept port>
 
@@ -298,15 +314,7 @@ in line 2400data=(yaoxuetao's raspi4,33016)
 
 <accept port>
 
-in line 2449graph=(yaoxuetao's raspi4,50772)
-
-<\accept port>
-
-
-
-<accept port>
-
-in line 2480tick=(yaoxuetao's raspi4,35910)
+in line 2487tick=(yaoxuetao's stm32f103,47618)
 
 <\accept port>
 
@@ -314,7 +322,7 @@ in line 2480tick=(yaoxuetao's raspi4,35910)
 
 <message_buffer>
 
-in line 2249yaoxuetao's raspi5
+in line 2256yaoxuetao's raspi0
 
 <\message_buffer>
 
@@ -322,7 +330,7 @@ in line 2249yaoxuetao's raspi5
 
 <accept port>
 
-in line 2400data=(yaoxuetao's raspi5,33018)
+in line 2407data=(yaoxuetao's raspi0,49952)
 
 <\accept port>
 
@@ -330,7 +338,7 @@ in line 2400data=(yaoxuetao's raspi5,33018)
 
 <accept port>
 
-in line 2449graph=(yaoxuetao's raspi5,50776)
+in line 2456graph=(yaoxuetao's raspi0,25136)
 
 <\accept port>
 
@@ -338,7 +346,7 @@ in line 2449graph=(yaoxuetao's raspi5,50776)
 
 <accept port>
 
-in line 2480tick=(yaoxuetao's raspi5,35914)
+in line 2487tick=(yaoxuetao's raspi0,18196)
 
 <\accept port>
 
@@ -346,7 +354,7 @@ in line 2480tick=(yaoxuetao's raspi5,35914)
 
 <message_buffer>
 
-in line 2249yaoxuetao's raspi24
+in line 2256yaoxuetao's raspi1
 
 <\message_buffer>
 
@@ -354,471 +362,7 @@ in line 2249yaoxuetao's raspi24
 
 <accept port>
 
-in line 2400data=(yaoxuetao's raspi24,33020)
-
-<\accept port>
-
-
-
-<accept port>
-
-in line 2449graph=(yaoxuetao's raspi24,50780)
-
-<\accept port>
-
-
-
-<accept port>
-
-in line 2480tick=(yaoxuetao's raspi24,35918)
-
-<\accept port>
-
-
-
-<message_buffer>
-
-in line 2249yaoxuetao's raspi3
-
-<\message_buffer>
-
-
-
-<accept port>
-
-in line 2400data=(yaoxuetao's raspi3,33022)
-
-<\accept port>
-
-
-
-<accept port>
-
-in line 2449graph=(yaoxuetao's raspi3,50784)
-
-<\accept port>
-
-
-
-<accept port>
-
-in line 2480tick=(yaoxuetao's raspi3,35922)
-
-<\accept port>
-
-
-
-<message_buffer>
-
-in line 2249yaoxuetao's raspi22
-
-<\message_buffer>
-
-
-
-<accept port>
-
-in line 2400data=(yaoxuetao's raspi22,33024)
-
-<\accept port>
-
-
-
-<accept port>
-
-in line 2449graph=(yaoxuetao's raspi22,50788)
-
-<\accept port>
-
-
-
-<accept port>
-
-in line 2480tick=(yaoxuetao's raspi22,35926)
-
-<\accept port>
-
-
-
-<message_buffer>
-
-in line 2249yaoxuetao's raspi7
-
-<\message_buffer>
-
-
-
-<accept port>
-
-in line 2400data=(yaoxuetao's raspi7,33026)
-
-<\accept port>
-
-
-
-<accept port>
-
-in line 2449graph=(yaoxuetao's raspi7,50792)
-
-<\accept port>
-
-
-
-<accept port>
-
-in line 2480tick=(yaoxuetao's raspi7,35930)
-
-<\accept port>
-
-
-
-<message_buffer>
-
-in line 2249yaoxuetao's raspi9
-
-<\message_buffer>
-
-
-
-<accept port>
-
-in line 2400data=(yaoxuetao's raspi9,33028)
-
-<\accept port>
-
-
-
-<accept port>
-
-in line 2449graph=(yaoxuetao's raspi9,50796)
-
-<\accept port>
-
-
-
-<accept port>
-
-in line 2480tick=(yaoxuetao's raspi9,35934)
-
-<\accept port>
-
-
-
-<message_buffer>
-
-in line 2249yaoxuetao's raspi8
-
-<\message_buffer>
-
-
-
-<accept port>
-
-in line 2400data=(yaoxuetao's raspi8,33030)
-
-<\accept port>
-
-
-
-<accept port>
-
-in line 2449graph=(yaoxuetao's raspi8,50800)
-
-<\accept port>
-
-
-
-<accept port>
-
-in line 2480tick=(yaoxuetao's raspi8,35938)
-
-<\accept port>
-
-
-
-<message_buffer>
-
-in line 2249yaoxuetao's raspi13
-
-<\message_buffer>
-
-
-
-<accept port>
-
-in line 2400data=(yaoxuetao's raspi13,33032)
-
-<\accept port>
-
-
-
-<accept port>
-
-in line 2449graph=(yaoxuetao's raspi13,50804)
-
-<\accept port>
-
-
-
-<accept port>
-
-in line 2480tick=(yaoxuetao's raspi13,35942)
-
-<\accept port>
-
-
-
-<message_buffer>
-
-in line 2249yaoxuetao's raspi2
-
-<\message_buffer>
-
-
-
-<accept port>
-
-in line 2400data=(yaoxuetao's raspi2,33034)
-
-<\accept port>
-
-
-
-<accept port>
-
-in line 2449graph=(yaoxuetao's raspi2,50808)
-
-<\accept port>
-
-
-
-<accept port>
-
-in line 2480tick=(yaoxuetao's raspi2,35946)
-
-<\accept port>
-
-
-
-<message_buffer>
-
-in line 2249yaoxuetao's raspi6
-
-<\message_buffer>
-
-
-
-<accept port>
-
-in line 2400data=(yaoxuetao's raspi6,33036)
-
-<\accept port>
-
-
-
-<accept port>
-
-in line 2449graph=(yaoxuetao's raspi6,50812)
-
-<\accept port>
-
-
-
-<accept port>
-
-in line 2480tick=(yaoxuetao's raspi6,35950)
-
-<\accept port>
-
-
-
-<message_buffer>
-
-in line 2249yaoxuetao's raspi12
-
-<\message_buffer>
-
-
-
-<accept port>
-
-in line 2400data=(yaoxuetao's raspi12,33038)
-
-<\accept port>
-
-
-
-<accept port>
-
-in line 2449graph=(yaoxuetao's raspi12,50816)
-
-<\accept port>
-
-
-
-<accept port>
-
-in line 2480tick=(yaoxuetao's raspi12,35954)
-
-<\accept port>
-
-
-
-<message_buffer>
-
-in line 2249yaoxuetao's raspi14
-
-<\message_buffer>
-
-
-
-<accept port>
-
-in line 2400data=(yaoxuetao's raspi14,33040)
-
-<\accept port>
-
-
-
-<accept port>
-
-in line 2449graph=(yaoxuetao's raspi14,50820)
-
-<\accept port>
-
-
-
-<accept port>
-
-in line 2480tick=(yaoxuetao's raspi14,35958)
-
-<\accept port>
-
-
-
-<message_buffer>
-
-in line 2249yaoxuetao's raspi19
-
-<\message_buffer>
-
-
-
-<accept port>
-
-in line 2400data=(yaoxuetao's raspi19,33042)
-
-<\accept port>
-
-
-
-<accept port>
-
-in line 2449graph=(yaoxuetao's raspi19,50824)
-
-<\accept port>
-
-
-
-<accept port>
-
-in line 2480tick=(yaoxuetao's raspi19,35962)
-
-<\accept port>
-
-
-
-<message_buffer>
-
-in line 2249yaoxuetao's raspi21
-
-<\message_buffer>
-
-
-
-<accept port>
-
-in line 2400data=(yaoxuetao's raspi21,33044)
-
-<\accept port>
-
-
-
-<accept port>
-
-in line 2449graph=(yaoxuetao's raspi21,50828)
-
-<\accept port>
-
-
-
-<accept port>
-
-in line 2480tick=(yaoxuetao's raspi21,35966)
-
-<\accept port>
-
-
-
-<message_buffer>
-
-in line 2249yaoxuetao's raspi17
-
-<\message_buffer>
-
-
-
-<accept port>
-
-in line 2400data=(yaoxuetao's raspi17,33046)
-
-<\accept port>
-
-
-
-<accept port>
-
-in line 2449graph=(yaoxuetao's raspi17,50832)
-
-<\accept port>
-
-
-
-<accept port>
-
-in line 2480tick=(yaoxuetao's raspi17,35970)
-
-<\accept port>
-
-
-
-<message_buffer>
-
-in line 2249yaoxuetao's raspi20
-
-<\message_buffer>
-
-
-
-<accept port>
-
-in line 2400data=(yaoxuetao's raspi20,33048)
-
-<\accept port>
-
-
-
-<accept port>
-
-in line 2449graph=(yaoxuetao's raspi20,50836)
-
-<\accept port>
-
-
-
-<accept port>
-
-in line 2480tick=(yaoxuetao's raspi20,35974)
+in line 2407data=(yaoxuetao's raspi1,49954)
 
 <\accept port>
 

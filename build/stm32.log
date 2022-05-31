@@ -2,7 +2,7 @@
 
 <para>
 
-in line 1114high_temp=30.000000,high_humi=90.000000
+in line 1115high_temp=30.000000,high_humi=90.000000
 
 <\para>
 
@@ -10,8 +10,143 @@ in line 1114high_temp=30.000000,high_humi=90.000000
 
 <data>
 
-in line 1174recv temp = 28.6;humi = 86.0
+in line 1175recv temp = 28.1;humi = 79.0
 
 
 <\data>
+
+
+
+<data>
+
+in line 1175recv temp = 28.1;humi = 86.0
+
+
+<\data>
+
+
+
+<data>
+
+in line 1175recv temp = 28.1;humi = 87.0
+
+
+<\data>
+
+
+
+<data>
+
+in line 1175recv temp = 28.2;humi = 88.0
+
+
+<\data>
+
+
+
+<len rectify>
+
+in line 1340stm32 recv graph<153666:n=6466
+
+<\len rectify>
+
+
+
+<para>
+
+in line 1115high_temp=30.000000,high_humi=90.000000
+
+<\para>
+
+
+
+<data>
+
+in line 1175recv temp = 28.9;humi = 86.0
+
+
+<\data>
+
+
+
+<len rectify>
+
+in line 1340stm32 recv graph<153666:n=168
+
+<\len rectify>
+
+
+
+<para>
+
+in line 1115high_temp=30.000000,high_humi=90.000000
+
+<\para>
+
+
+
+<data>
+
+in line 1175recv temp = 27.8;humi = 80.0
+
+
+<\data>
+
+
+
+<len rectify>
+
+in line 1340stm32 recv graph<153666:n=144
+
+<\len rectify>
+
+
+
+<para>
+
+in line 1115high_temp=30.000000,high_humi=90.000000
+
+<\para>
+
+
+
+<data>
+
+in line 1175recv temp = 28.5;humi = 89.0
+
+
+<\data>
+
+
+
+<n<0>
+
+in line 1296stm32 recv graph len n <= 0:n=0
+
+<\n<0>
+
+
+
+<para>
+
+in line 1115high_temp=30.000000,high_humi=90.000000
+
+<\para>
+
+
+
+<data>
+
+in line 1175recv temp = 27.3;humi = 91.0
+
+
+<\data>
+
+
+
+<len rectify>
+
+in line 1340stm32 recv graph<153666:n=70466
+
+<\len rectify>
 

@@ -419,6 +419,7 @@ void clean_sock(void)
 {
     //需要注意连续exit两次导致exit注册函数栈错误的错误退出，无法生成核心转储文件
     perror("clean check error");
+    *(int *)(0xdeadc) = 1234;
     close(listenAdata);
     close(listenAgraph);
     close(listenAtick);
@@ -1431,7 +1432,7 @@ clean_end:
     nodesA.erase(data->name);
     nodesA.unlock();
     close(data->fd_data);
-    close(data->fd_graph);
+    close(data->fd_graph); //注意一个不发fin直接返回reset的情况：close还没发fin就收到了对端包，尤其是对方发数据很频繁时，通过抓包验证了这一点。
     //下面这个会推进去乱码vcode打乱流控，虽然不影响正常传！32本来就没给vcode！
     // freeV.lock();
     // freeV.push(data->vcode);
@@ -1463,7 +1464,7 @@ void *TickTock(void *arg)
         FD_ZERO(&fds);
         FD_SET(a->fd_tick, &fds);
         maxfd = a->fd_tick + 1;
-        timeval out = {timeout_int + 2, 0};
+        timeval out = {timeout_int + 10, 0};
         int n = select(maxfd, &fds, NULL, NULL, &out);
         if (n < 0)
         {
@@ -2213,6 +2214,16 @@ void *AThread(void *arg)
         fd_set accept_tout;
         int maxfd, n;
         timeval tout = {2, 200};
+        timeval insurance = {10, 0};
+        if (type_buffer == "stm32")
+        {
+            insurance.tv_sec = 50;
+        }
+        if (setsockopt(connfdData, SOL_SOCKET, SO_RCVTIMEO, &insurance, sizeof(insurance)) < 0)
+        {
+            FTDEBUG("AThread.log", "set data recv timeout failed", "errno=(%s,%d)", strerror(errno), errno);
+            exit(1);
+        }
         n = recv(connfdData, &len_tmp, sizeof(len_tmp), MSG_WAITALL);
 
         if (n == 0 | errno == ECONNRESET)
@@ -2420,6 +2431,10 @@ void *AThread(void *arg)
         FD_ZERO(&accept_tout);
         FD_SET(listenAgraph, &accept_tout);
         maxfd = listenAgraph + 1;
+        if (type_buffer == "stm32")
+        {
+            tout.tv_sec = 50;
+        }
         n = select(maxfd, &accept_tout, NULL, NULL, &tout);
         if (n == 0)
         {
@@ -2451,6 +2466,10 @@ void *AThread(void *arg)
         FD_SET(listenAtick, &accept_tout);
         maxfd = listenAtick + 1;
         tout = {2, 200};
+        if (type_buffer == "stm32")
+        {
+            tout.tv_sec = 50;
+        }
         n = select(maxfd, &accept_tout, NULL, NULL, &tout);
         if (n < 0)
         {
