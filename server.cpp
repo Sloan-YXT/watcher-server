@@ -2698,15 +2698,14 @@ void *BThread(void *arg)
         else if (n < 0)
         {
             FTDEBUG("BThread.log", "select<0", "n=%d,errno=%d,%s", n, errno, strerror(errno));
-            printf("select failed in %d:%s\n", __LINE__, strerror(errno));
-            close(connfdData);
-            continue;
+            exit(1);
+            // close(connfdData);
+            // continue;
         }
         connfdWarn = accept(listenBwarn, (struct sockaddr *)&clientWarn, &client_addr_warn_len);
         if (connfdWarn < 0)
         {
             FTDEBUG("BThread.log", "accept2<0", "n=%d,errno=%d,%s", n, errno, strerror(errno));
-            perror("error accepting from android:");
             exit(1);
         }
         FD_ZERO(&accept_tout);
@@ -2720,21 +2719,22 @@ void *BThread(void *arg)
         {
             FTDEBUG("BThread.log", "select==0", "n=%d", n);
             close(connfdData);
+            close(connfdWarn);
             continue;
         }
         else if (n < 0)
         {
             FTDEBUG("BThread.log", "select<0", "n=%d,errno=%d,%s", n, errno, strerror(errno));
-            close(connfdData);
-            continue;
+            exit(1);
+            // close(connfdData);
+            // close(connfdWarn);
+            // continue;
         }
         connfdOther = accept(listenBother, (sockaddr *)&clientOther, &client_addr_other_len);
         if (connfdOther < 0)
         {
             FTDEBUG("BThread.log", "accept3<0", "n=%d,errno=%d,%s", n, errno, strerror(errno));
-            perror("error accepting from android:");
-            continue;
-            // exit(1);
+            exit(1);
         }
 
         json Bdata;

@@ -1,15 +1,39 @@
 debug:94,wrapStack inited!
 debug:326,WrapMap inited!
-main:26536
+main:4397
 delete from board_data where month !=5 and id > 0
-AThread:26537
-BThread:26538Adata:26539
-Bconnect:26540
+AThread:4398
+BThread:4399Bconnect:4400
 debug:1664,Bconn working
-debug:2204,ATH working
-Agraph:26542
+Adata:4401
 debug:2675,BTH working
-Bdata:26541
+debug:2204,ATH working
+Agraph:4403
+Bdata:4402
+debug:1521,Bdata working
+---B(id)---1
+---B(id)---2
+debug:2675,BTH working
+debug:1666,Bconn epoll shit
+in Bcon:1688,ptr:ec001150
+debug:1525,Bconn epoll shit
+in Bdata:1546,ptr:ec0011e0
+not verified yet:socket error:connection with board [192.168.1.108:54996]:Success
+---~B(id)---()1 not connect yet
+debug:1521,Bdata working
+---~B(id)---()0 not connect yet
+debug:1664,Bconn working
+---B(id)---1
+---B(id)---2
+debug:2675,BTH working
+debug:1666,Bconn epoll shit
+in Bcon:1688,ptr:ec0012d0
+not verified yet:socket error:connection with board [192.168.1.108:55006]:Success
+---~B(id)---()1 not connect yet
+debug:1664,Bconn working
+debug:1525,Bconn epoll shit
+in Bdata:1546,ptr:ec001360
+---~B(id)---()0 not connect yet
 debug:1521,Bdata working
 ---B(id)---1
 ---B(id)---2
@@ -26,7 +50,7 @@ debug:2584,after add element
 debug:2585,before create dir
 debug:2586,after create workdir
 debug:2204,ATH working
-ticktock:26619
+ticktock:4469
 
 
 
@@ -34,18 +58,18 @@ just for one time should it be
 
 
 debug:1247,before send data to B
-debug:1290,{"boardName":"yaoxuetao's stm32f103","humi":"84.0","light":"1","position":"dandelion hotel 206","smoke":"1","temp":"27.3","time":"Tue May 31 15:00:27 2022","type":"data"}
+debug:1290,{"boardName":"yaoxuetao's stm32f103","humi":"86.0","light":"1","position":"dandelion hotel 206","smoke":"1","temp":"28.6","time":"Tue May 31 15:43:19 2022","type":"data"}
 glen=153666
 debug:1312,
 debug:1666,Bconn epoll shit
-in Bcon:1688,ptr:68001150
-debug:1525,Bconn epoll shit
-in Bdata:1546,ptr:680011e0
-not verified yet:socket error:connection with board [192.168.1.108:51904]:Success
+in Bcon:1688,ptr:ec001450
+not verified yet:socket error:connection with board [192.168.1.108:55012]:Success
 ---~B(id)---()1 not connect yet
-debug:1521,Bdata working
----~B(id)---()0 not connect yet
 debug:1664,Bconn working
+debug:1525,Bconn epoll shit
+in Bdata:1546,ptr:ec0014e0
+---~B(id)---()0 not connect yet
+debug:1521,Bdata working
 name=yaoxuetao's stm32f103
 pos=dandelion hotel 206
 type=stm32
@@ -53,79 +77,207 @@ type=stm32
 ---B(id)---2
 debug:2675,BTH working
 debug:1666,Bconn epoll shit
-in Bcon:1688,ptr:68001a80
+in Bcon:1688,ptr:ec001d80
 high_temp=30.000000,len=150994944
 debug:1664,Bconn working
 debug:1525,Bconn epoll shit
-in Bdata:1546,ptr:68001b10
+in Bdata:1546,ptr:ec001e10
 {"type":"month data","board name":"yaoxuetao's stm32f103"}
 debug:1521,Bdata working
 debug:1525,Bconn epoll shit
-in Bdata:1546,ptr:68001b10
+in Bdata:1546,ptr:ec001e10
 {"type":"month data","board name":"yaoxuetao's stm32f103"}
 debug:1521,Bdata working
 debug:1525,Bconn epoll shit
-in Bdata:1546,ptr:68001b10
+in Bdata:1546,ptr:ec001e10
 {"type":"month data","board name":"yaoxuetao's stm32f103"}
 debug:1521,Bdata working
 debug:1525,Bconn epoll shit
-in Bdata:1546,ptr:68001b10
+in Bdata:1546,ptr:ec001e10
 {"type":"month data","board name":"yaoxuetao's stm32f103"}
 debug:1521,Bdata working
 debug:1525,Bconn epoll shit
-in Bdata:1546,ptr:68001b10
+in Bdata:1546,ptr:ec001e10
 {"type":"month data","board name":"yaoxuetao's stm32f103"}
 debug:1521,Bdata working
 debug:1525,Bconn epoll shit
-in Bdata:1546,ptr:68001b10
+in Bdata:1546,ptr:ec001e10
 {"type":"month data","board name":"yaoxuetao's stm32f103"}
 debug:1521,Bdata working
 debug:1525,Bconn epoll shit
-in Bdata:1546,ptr:68001b10
+in Bdata:1546,ptr:ec001e10
 {"type":"month data","board name":"yaoxuetao's stm32f103"}
 debug:1521,Bdata working
 debug:1525,Bconn epoll shit
-in Bdata:1546,ptr:68001b10
+in Bdata:1546,ptr:ec001e10
 {"type":"month data","board name":"yaoxuetao's stm32f103"}
 debug:1521,Bdata working
 debug:1525,Bconn epoll shit
-in Bdata:1546,ptr:68001b10
+in Bdata:1546,ptr:ec001e10
 {"type":"month data","board name":"yaoxuetao's stm32f103"}
 debug:1521,Bdata working
 debug:1525,Bconn epoll shit
-in Bdata:1546,ptr:68001b10
+in Bdata:1546,ptr:ec001e10
 {"type":"month data","board name":"yaoxuetao's stm32f103"}
 debug:1521,Bdata working
 debug:1525,Bconn epoll shit
-in Bdata:1546,ptr:68001b10
+in Bdata:1546,ptr:ec001e10
 {"type":"month data","board name":"yaoxuetao's stm32f103"}
 debug:1521,Bdata working
 debug:1525,Bconn epoll shit
-in Bdata:1546,ptr:68001b10
+in Bdata:1546,ptr:ec001e10
 {"type":"month data","board name":"yaoxuetao's stm32f103"}
 debug:1521,Bdata working
 debug:1525,Bconn epoll shit
-in Bdata:1546,ptr:68001b10
+in Bdata:1546,ptr:ec001e10
 {"type":"month data","board name":"yaoxuetao's stm32f103"}
 debug:1521,Bdata working
 debug:1525,Bconn epoll shit
-in Bdata:1546,ptr:68001b10
+in Bdata:1546,ptr:ec001e10
 {"type":"month data","board name":"yaoxuetao's stm32f103"}
 debug:1521,Bdata working
 debug:1525,Bconn epoll shit
-in Bdata:1546,ptr:68001b10
+in Bdata:1546,ptr:ec001e10
 {"type":"month data","board name":"yaoxuetao's stm32f103"}
 debug:1521,Bdata working
+stackV lock
+debug:2309,
+stackV unlock
+debug:2485,
+debug:2487,
+debug:2489,
+debug:2491,
+debug:2493,
+debug:2495,
+debug:2497,
+debug:2499,
+debug:2566,before add element
+debug:2584,after add element
+debug:2585,before create dir
+debug:2586,after create workdir
+debug:2204,ATH working
+ticktock:4494
+stackV lock
+debug:2309,
+stackV unlock
+debug:2485,
+debug:2487,
+debug:2489,
+debug:2491,
+debug:2493,
+debug:2495,
+debug:2497,
+debug:2499,
+debug:2566,before add element
+debug:2584,after add element
+debug:2585,before create dir
+debug:2586,after create workdir
+debug:2204,ATH working
+ticktock:4496
+stackV lock
+debug:2309,
+stackV unlock
+debug:2485,
+debug:2487,
+debug:2489,
+debug:2491,
+debug:2493,
+debug:2495,
+debug:2497,
+debug:2499,
+debug:2566,before add element
+debug:2584,after add element
+debug:2585,before create dir
+debug:2586,after create workdir
+debug:2204,ATH working
+ticktock:4497
+stackV lock
+debug:2309,
+stackV unlock
+debug:2485,
+debug:2487,
+debug:2489,
+debug:2491,
+debug:2493,
+debug:2495,
+debug:2497,
+debug:2499,
+debug:2566,before add element
+debug:2584,after add element
+debug:2585,before create dir
+debug:2586,after create workdir
+debug:2204,ATH working
+ticktock:4498
+stackV lock
+debug:2309,
+stackV unlock
+debug:2485,
+debug:2487,
+debug:2489,
+debug:2491,
+debug:2493,
+debug:2495,
+debug:2497,
+debug:2499,
+debug:2566,before add element
+debug:2584,after add element
+debug:2585,before create dir
+debug:2586,after create workdir
+debug:2204,ATH working
+ticktock:4499
+stackV lock
+debug:2309,
+stackV unlock
+debug:2485,
+debug:2487,
+debug:2489,
+debug:2491,
+debug:2493,
+debug:2495,
+debug:2497,
+debug:2499,
+debug:2566,before add element
+debug:2584,after add element
+debug:2585,before create dir
+debug:2586,after create workdir
+debug:2204,ATH working
+ticktock:4500
+stackV lock
+debug:2309,
+stackV unlock
 debug:1525,Bconn epoll shit
-in Bdata:1546,ptr:68001b10
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1521,Bdata working
-debug:1525,Bconn epoll shit
-in Bdata:1546,ptr:68001b10
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1521,Bdata working
-debug:1525,Bconn epoll shit
-in Bdata:1546,ptr:68001b10
+in Bdata:1546,ptr:ec001e10
+debug:2485,
+debug:2487,
+debug:2489,
+debug:2491,
+debug:2493,
+debug:2495,
+debug:2497,
+debug:2499,
+debug:2566,before add element
+debug:2584,after add element
+debug:2585,before create dir
+debug:2586,after create workdir
+debug:2204,ATH working
+ticktock:4501
+stackV lock
+debug:2309,
+stackV unlock
+debug:2485,
+debug:2487,
+debug:2489,
+debug:2491,
+debug:2493,
+debug:2495,
+debug:2497,
+debug:2499,
+debug:2566,before add element
+debug:2584,after add element
+debug:2585,before create dir
+debug:2586,after create workdir
+debug:2204,ATH working
+ticktock:4502
 stackV lock
 debug:2309,
 stackV unlock
@@ -144,7 +296,7 @@ debug:2584,after add element
 debug:2585,before create dir
 debug:2586,after create workdir
 debug:2204,ATH working
-ticktock:26683
+ticktock:4503
 stackV lock
 debug:2309,
 stackV unlock
@@ -161,16 +313,82 @@ debug:2584,after add element
 debug:2585,before create dir
 debug:2586,after create workdir
 debug:2204,ATH working
-ticktock:26684
+ticktock:4504
+stackV lock
+debug:2309,
+stackV unlock
+debug:2485,
+debug:2487,
+debug:2489,
+debug:2491,
+debug:2493,
+debug:2495,
+debug:2497,
+debug:2499,
+debug:2566,before add element
+debug:2584,after add element
+debug:2585,before create dir
+debug:2586,after create workdir
+debug:2204,ATH working
+ticktock:4505
+stackV lock
+debug:2309,
+stackV unlock
+debug:2485,
+debug:2487,
+debug:2489,
+debug:2491,
+debug:2493,
+debug:2495,
+debug:2497,
+debug:2499,
+debug:2566,before add element
+debug:2584,after add element
+debug:2585,before create dir
+debug:2586,after create workdir
+debug:2204,ATH working
+stackV lock
+debug:2309,
+stackV unlock
+ticktock:4506
+debug:2485,
+debug:2487,
+debug:2489,
+debug:2491,
+debug:2493,
+debug:2495,
+debug:2497,
+debug:2499,
+debug:2566,before add element
+debug:2584,after add element
+debug:2585,before create dir
+debug:2586,after create workdir
+debug:2204,ATH working
+ticktock:4507
+stackV lock
+debug:2309,
+stackV unlock
+debug:2485,
+debug:2487,
+debug:2489,
+debug:2491,
+debug:2493,
+debug:2495,
+debug:2497,
+debug:2499,
+debug:2566,before add element
+debug:2584,after add element
+debug:2585,before create dir
+debug:2586,after create workdir
+debug:2204,ATH working
+ticktock:4508
 stackV lock
 debug:2309,
 stackV unlock
 debug:1525,Bconn epoll shit
-in Bdata:1546,ptr:68001b10
+in Bdata:1546,ptr:ec001e10
 {"type":"month data","board name":"yaoxuetao's stm32f103"}
 debug:1521,Bdata working
-debug:1525,Bconn epoll shit
-in Bdata:1546,ptr:68001b10
 debug:2485,
 debug:2487,
 debug:2489,
@@ -184,12 +402,46 @@ debug:2584,after add element
 debug:2585,before create dir
 debug:2586,after create workdir
 debug:2204,ATH working
+ticktock:4509
 stackV lock
 debug:2309,
 stackV unlock
-ticktock:26685
-{"type":"month data","board name":"yaoxuetao's stm32f103"}
-debug:1521,Bdata working
+
+
+
+just for one time should it be
+
+
+
+
+
+just for one time should it be
+
+
+
+
+
+just for one time should it be
+
+
+
+
+
+just for one time should it be
+
+
+
+
+
+just for one time should it be
+
+
+
+
+
+just for one time should it be
+
+
 debug:2485,
 debug:2487,
 debug:2489,
@@ -203,7 +455,7 @@ debug:2584,after add element
 debug:2585,before create dir
 debug:2586,after create workdir
 debug:2204,ATH working
-ticktock:26686
+ticktock:4510
 stackV lock
 debug:2309,
 stackV unlock
@@ -220,26 +472,9 @@ just for one time should it be
 
 
 debug:1525,Bconn epoll shit
-in Bdata:1546,ptr:68001b10
+in Bdata:1546,ptr:ec001e10
 {"type":"month data","board name":"yaoxuetao's stm32f103"}
 debug:1521,Bdata working
-debug:2485,
-debug:2487,
-debug:2489,
-debug:2491,
-debug:2493,
-debug:2495,
-debug:2497,
-debug:2499,
-debug:2566,before add element
-debug:2584,after add element
-debug:2585,before create dir
-debug:2586,after create workdir
-debug:2204,ATH working
-ticktock:26695
-stackV lock
-debug:2309,
-stackV unlock
 
 
 
@@ -252,25 +487,66 @@ just for one time should it be
 just for one time should it be
 
 
-debug:2485,
-debug:2487,
-debug:2489,
-debug:2491,
-debug:2493,
-debug:2495,
-debug:2497,
-debug:2499,
-debug:2566,before add element
-debug:2584,after add element
-debug:2585,before create dir
-debug:2586,after create workdir
-debug:2204,ATH working
-ticktock:26696
-stackV lock
-debug:2309,
-stackV unlock
+
+
+
+just for one time should it be
+
+
+
+
+
+just for one time should it be
+
+
+
+
+
+just for one time should it be
+
+
+
+
+
+just for one time should it be
+
+
 debug:1525,Bconn epoll shit
-in Bdata:1546,ptr:68001b10
+in Bdata:1546,ptr:ec001e10
+debug:2485,
+debug:2487,
+debug:2489,
+debug:2491,
+debug:2493,
+debug:2495,
+debug:2497,
+debug:2499,
+debug:2566,before add element
+debug:2584,after add element
+debug:2585,before create dir
+debug:2586,after create workdir
+debug:2204,ATH working
+ticktock:4511
+stackV lock
+debug:2309,
+stackV unlock
+debug:2485,
+debug:2487,
+debug:2489,
+debug:2491,
+debug:2493,
+debug:2495,
+debug:2497,
+debug:2499,
+debug:2566,before add element
+debug:2584,after add element
+debug:2585,before create dir
+debug:2586,after create workdir
+debug:2204,ATH working
+ticktock:4512
+stackV lock
+debug:2309,
+stackV unlock
 {"type":"month data","board name":"yaoxuetao's stm32f103"}
 debug:1521,Bdata working
 debug:2485,
@@ -286,328 +562,273 @@ debug:2584,after add element
 debug:2585,before create dir
 debug:2586,after create workdir
 debug:2204,ATH working
-ticktock:26697
+ticktock:4513
 stackV lock
 debug:2309,
 stackV unlock
+debug:2485,
+debug:2487,
+debug:2489,
+debug:2491,
+debug:2493,
+debug:2495,
+debug:2497,
+debug:2499,
+debug:2566,before add element
+debug:2584,after add element
+debug:2585,before create dir
+debug:2586,after create workdir
+debug:2204,ATH working
+ticktock:4514
+stackV lock
+debug:2309,
+stackV unlock
+debug:2485,
+debug:2487,
+debug:2489,
+debug:2491,
+debug:2493,
+debug:2495,
+debug:2497,
+debug:2499,
+debug:2566,before add element
+debug:2584,after add element
+debug:2585,before create dir
+debug:2586,after create workdir
+debug:2204,ATH working
+ticktock:4515
+stackV lock
+debug:2309,
+stackV unlock
+debug:2485,
+debug:2487,
+debug:2489,
+debug:2491,
+debug:2493,
+debug:2495,
+debug:2497,
+debug:2499,
+debug:2566,before add element
+debug:2584,after add element
+debug:2585,before create dir
+debug:2586,after create workdir
+debug:2204,ATH working
+ticktock:4516
+stackV lock
+debug:2309,
+stackV unlock
+debug:2485,
+debug:2487,
+debug:2489,
+debug:2491,
+debug:2493,
+debug:2495,
+debug:2497,
+debug:2499,
+debug:2566,before add element
+debug:2584,after add element
+debug:2585,before create dir
+debug:2586,after create workdir
+debug:2204,ATH working
+ticktock:4517
+stackV lock
+debug:2309,
+stackV unlock
+debug:2485,
+debug:2487,
+debug:2489,
+debug:2491,
+debug:2493,
+debug:2495,
+debug:2497,
+debug:2499,
+debug:2566,before add element
+debug:2584,after add element
+debug:2585,before create dir
+debug:2586,after create workdir
+debug:2204,ATH working
+ticktock:4518
+stackV lock
+debug:2309,
+stackV unlock
+debug:2485,
+debug:2487,
+debug:2489,
+debug:2491,
+debug:2493,
+debug:2495,
+debug:2497,
+debug:2499,
+debug:2566,before add element
+debug:2584,after add element
+debug:2585,before create dir
+debug:2586,after create workdir
+debug:2204,ATH working
+ticktock:4519
 
 
 
 just for one time should it be
 
 
-debug:2485,
-debug:2487,
-debug:2489,
-debug:2491,
-debug:2493,
-debug:2495,
-debug:2497,
-debug:2499,
-debug:2566,before add element
-debug:2584,after add element
-debug:2585,before create dir
-debug:2586,after create workdir
-debug:2204,ATH working
-ticktock:26732
-stackV lock
-debug:2309,
-stackV unlock
-debug:2485,
-debug:2487,
-debug:2489,
-debug:2491,
-debug:2493,
-debug:2495,
-debug:2497,
-debug:2499,
-debug:2566,before add element
-debug:2584,after add element
-debug:2585,before create dir
-debug:2586,after create workdir
-debug:2204,ATH working
-ticktock:26733
-stackV lock
-debug:2309,
-stackV unlock
+
+
+
+just for one time should it be
+
+
 debug:1525,Bconn epoll shit
-in Bdata:1546,ptr:68001b10
+in Bdata:1546,ptr:ec001e10
 {"type":"month data","board name":"yaoxuetao's stm32f103"}
 debug:1521,Bdata working
-debug:2485,
-debug:2487,
-debug:2489,
-debug:2491,
-debug:2493,
-debug:2495,
-debug:2497,
-debug:2499,
-debug:2566,before add element
-debug:2584,after add element
-debug:2585,before create dir
-debug:2586,after create workdir
-debug:2204,ATH working
-ticktock:26734
-stackV lock
-debug:2309,
-stackV unlock
 
 
 
 just for one time should it be
 
 
-debug:2485,
-debug:2487,
-debug:2489,
-debug:2491,
-debug:2493,
-debug:2495,
-debug:2497,
-debug:2499,
-debug:2566,before add element
-debug:2584,after add element
-debug:2585,before create dir
-debug:2586,after create workdir
-debug:2204,ATH working
-ticktock:26735
-stackV lock
-debug:2309,
-stackV unlock
 
 
 
 just for one time should it be
 
 
-debug:2485,
-debug:2487,
-debug:2489,
-debug:2491,
-debug:2493,
-debug:2495,
-debug:2497,
-debug:2499,
-debug:2566,before add element
-debug:2584,after add element
-debug:2585,before create dir
-debug:2586,after create workdir
-debug:2204,ATH working
-stackV lock
-debug:2309,
-stackV unlock
-ticktock:26736
-debug:2485,
-debug:2487,
-debug:2489,
-debug:2491,
-debug:2493,
-debug:2495,
-debug:2497,
-debug:2499,
-debug:2566,before add element
-debug:2584,after add element
-debug:2585,before create dir
-debug:2586,after create workdir
-debug:2204,ATH working
-ticktock:26737
-stackV lock
-debug:2309,
-stackV unlock
+
+
+
+just for one time should it be
+
+
+
+
+
+just for one time should it be
+
+
+
+
+
+just for one time should it be
+
+
 debug:1525,Bconn epoll shit
-in Bdata:1546,ptr:68001b10
+in Bdata:1546,ptr:ec001e10
 {"type":"month data","board name":"yaoxuetao's stm32f103"}
 debug:1521,Bdata working
-debug:2485,
-debug:2487,
-debug:2489,
-debug:2491,
-debug:2493,
-debug:2495,
-debug:2497,
-debug:2499,
-debug:2566,before add element
-debug:2584,after add element
-debug:2585,before create dir
-debug:2586,after create workdir
-debug:2204,ATH working
-ticktock:26738
-stackV lock
-debug:2309,
-stackV unlock
-debug:2485,
-debug:2487,
-debug:2489,
-debug:2491,
-debug:2493,
-debug:2495,
-debug:2497,
-debug:2499,
-debug:2566,before add element
-debug:2584,after add element
-debug:2585,before create dir
-debug:2586,after create workdir
-debug:2204,ATH working
-ticktock:26739
-stackV lock
-debug:2309,
-stackV unlock
-debug:2485,
-debug:2487,
-debug:2489,
-debug:2491,
-debug:2493,
-debug:2495,
-debug:2497,
-debug:2499,
-debug:2566,before add element
-debug:2584,after add element
-debug:2585,before create dir
-debug:2586,after create workdir
-debug:2204,ATH working
-stackV lock
-debug:2309,
-stackV unlock
-ticktock:26740
-debug:2485,
-debug:2487,
-debug:2489,
-debug:2491,
-debug:2493,
-debug:2495,
-debug:2497,
-debug:2499,
-debug:2566,before add element
-debug:2584,after add element
-debug:2585,before create dir
-debug:2586,after create workdir
-debug:2204,ATH working
-ticktock:26741
-stackV lock
-debug:2309,
-stackV unlock
-debug:2485,
-debug:2487,
-debug:2489,
-debug:2491,
-debug:2493,
-debug:2495,
-debug:2497,
-debug:2499,
-debug:2566,before add element
-debug:2584,after add element
-debug:2585,before create dir
-debug:2586,after create workdir
-debug:2204,ATH working
-ticktock:26742
-stackV lock
-debug:2309,
-stackV unlock
-debug:2485,
-debug:2487,
-debug:2489,
-debug:2491,
-debug:2493,
-debug:2495,
-debug:2497,
-debug:2499,
-debug:2566,before add element
-debug:2584,after add element
-debug:2585,before create dir
-debug:2586,after create workdir
-debug:2204,ATH working
-ticktock:26743
-stackV lock
-debug:2309,
-stackV unlock
-debug:2485,
-debug:2487,
-debug:2489,
-debug:2491,
-debug:2493,
-debug:2495,
-debug:2497,
-debug:2499,
-debug:2566,before add element
-debug:2584,after add element
-debug:2585,before create dir
-debug:2586,after create workdir
-debug:2204,ATH working
-ticktock:26744
-stackV lock
-debug:2309,
-stackV unlock
 
 
 
 just for one time should it be
 
 
-debug:2485,
-debug:2487,
-debug:2489,
-debug:2491,
-debug:2493,
-debug:2495,
-debug:2497,
-debug:2499,
-debug:2566,before add element
-debug:2584,after add element
-debug:2585,before create dir
-debug:2586,after create workdir
-debug:2204,ATH working
-ticktock:26745
-stackV lock
-debug:2309,
-stackV unlock
-debug:2485,
-debug:2487,
-debug:2489,
-debug:2491,
-debug:2493,
-debug:2495,
-debug:2497,
-debug:2499,
-debug:2566,before add element
-debug:2584,after add element
-debug:2585,before create dir
-debug:2586,after create workdir
-debug:2204,ATH working
-ticktock:26746
-stackV lock
-debug:2309,
-stackV unlock
-debug:2485,
-debug:2487,
-debug:2489,
-debug:2491,
-debug:2493,
-debug:2495,
-debug:2497,
-debug:2499,
-debug:2566,before add element
-debug:2584,after add element
-debug:2585,before create dir
-debug:2586,after create workdir
-debug:2204,ATH working
-ticktock:26747
-stackV lock
-debug:2309,
-stackV unlock
-debug:2485,
-debug:2487,
-debug:2489,
-debug:2491,
-debug:2493,
-debug:2495,
-debug:2497,
-debug:2499,
-debug:2566,before add element
-debug:2584,after add element
-debug:2585,before create dir
-debug:2586,after create workdir
-debug:2204,ATH working
-ticktock:26748
-stackV lock
-debug:2309,
-stackV unlock
+
+
+
+just for one time should it be
+
+
+
+
+
+just for one time should it be
+
+
+
+
+
+just for one time should it be
+
+
+debug:1525,Bconn epoll shit
+in Bdata:1546,ptr:ec001e10
+{"type":"month data","board name":"yaoxuetao's stm32f103"}
+debug:1521,Bdata working
+debug:1525,Bconn epoll shit
+in Bdata:1546,ptr:ec001e10
+{"type":"month data","board name":"yaoxuetao's stm32f103"}
+debug:1521,Bdata working
+debug:1525,Bconn epoll shit
+in Bdata:1546,ptr:ec001e10
+{"type":"month data","board name":"yaoxuetao's stm32f103"}
+debug:1521,Bdata working
+debug:1525,Bconn epoll shit
+in Bdata:1546,ptr:ec001e10
+{"type":"month data","board name":"yaoxuetao's stm32f103"}
+debug:1521,Bdata working
+debug:1525,Bconn epoll shit
+in Bdata:1546,ptr:ec001e10
+{"type":"month data","board name":"yaoxuetao's stm32f103"}
+debug:1521,Bdata working
+debug:1525,Bconn epoll shit
+in Bdata:1546,ptr:ec001e10
+{"type":"month data","board name":"yaoxuetao's stm32f103"}
+debug:1521,Bdata working
+debug:1525,Bconn epoll shit
+in Bdata:1546,ptr:ec001e10
+{"type":"month data","board name":"yaoxuetao's stm32f103"}
+debug:1521,Bdata working
+debug:1525,Bconn epoll shit
+in Bdata:1546,ptr:ec001e10
+{"type":"month data","board name":"yaoxuetao's stm32f103"}
+debug:1521,Bdata working
+debug:1525,Bconn epoll shit
+in Bdata:1546,ptr:ec001e10
+{"type":"month data","board name":"yaoxuetao's stm32f103"}
+debug:1521,Bdata working
+debug:1525,Bconn epoll shit
+in Bdata:1546,ptr:ec001e10
+{"type":"month data","board name":"yaoxuetao's stm32f103"}
+debug:1521,Bdata working
+debug:1525,Bconn epoll shit
+in Bdata:1546,ptr:ec001e10
+{"type":"month data","board name":"yaoxuetao's stm32f103"}
+debug:1521,Bdata working
+debug:1525,Bconn epoll shit
+in Bdata:1546,ptr:ec001e10
+{"type":"month data","board name":"yaoxuetao's stm32f103"}
+debug:1521,Bdata working
+debug:1525,Bconn epoll shit
+in Bdata:1546,ptr:ec001e10
+{"type":"month data","board name":"yaoxuetao's stm32f103"}
+debug:1521,Bdata working
+debug:1525,Bconn epoll shit
+in Bdata:1546,ptr:ec001e10
+{"type":"month data","board name":"yaoxuetao's stm32f103"}
+debug:1521,Bdata working
+debug:1525,Bconn epoll shit
+in Bdata:1546,ptr:ec001e10
+{"type":"month data","board name":"yaoxuetao's stm32f103"}
+debug:1521,Bdata working
+debug:1525,Bconn epoll shit
+in Bdata:1546,ptr:ec001e10
+{"type":"month data","board name":"yaoxuetao's stm32f103"}
+debug:1521,Bdata working
+debug:1525,Bconn epoll shit
+in Bdata:1546,ptr:ec001e10
+{"type":"month data","board name":"yaoxuetao's stm32f103"}
+debug:1521,Bdata working
+debug:1525,Bconn epoll shit
+in Bdata:1546,ptr:ec001e10
+{"type":"month data","board name":"yaoxuetao's stm32f103"}
+debug:1521,Bdata working
+debug:1525,Bconn epoll shit
+in Bdata:1546,ptr:ec001e10
+{"type":"month data","board name":"yaoxuetao's stm32f103"}
+debug:1521,Bdata working
+debug:1525,Bconn epoll shit
+in Bdata:1546,ptr:ec001e10
+{"type":"month data","board name":"yaoxuetao's stm32f103"}
+debug:1521,Bdata working
+debug:1525,Bconn epoll shit
+in Bdata:1546,ptr:ec001e10
+{"type":"month data","board name":"yaoxuetao's stm32f103"}
+debug:1521,Bdata working
+debug:1666,Bconn epoll shit
+in Bcon:1688,ptr:ec001d80
+debug:1664,Bconn working
+debug:1666,Bconn epoll shit
+in Bcon:1688,ptr:ec001d80
+debug:1664,Bconn working
+debug:1525,Bconn epoll shit
+in Bdata:1546,ptr:ec001e10
+{"type":"month data","board name":"ya
